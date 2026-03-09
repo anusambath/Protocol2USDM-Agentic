@@ -1,0 +1,12 @@
+export { Workbench } from './Workbench';
+export { ActivityBar } from './ActivityBar';
+export { NavTree } from './NavTree';
+export { PanelSplitter } from './PanelSplitter';
+export { PanelTabBar } from './PanelTabBar';
+export { RightPanel } from './RightPanel';
+export { StatusBar } from './StatusBar';
+export { Sidebar } from './Sidebar';
+export { CenterPanel } from './CenterPanel';
+export { SearchPanel } from './SearchPanel';
+export { QualityPanel } from './QualityPanel';
+export { CommandPalette } from './CommandPalette';

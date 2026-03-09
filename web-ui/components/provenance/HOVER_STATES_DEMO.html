@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Provenance Hover States Demo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            border: 'hsl(214.3 31.8% 91.4%)',
+            input: 'hsl(214.3 31.8% 91.4%)',
+            ring: 'hsl(221.2 83.2% 53.3%)',
+            background: 'hsl(0 0% 100%)',
+            foreground: 'hsl(222.2 84% 4.9%)',
+            primary: {
+              DEFAULT: 'hsl(221.2 83.2% 53.3%)',
+              foreground: 'hsl(210 40% 98%)',
+            },
+            secondary: {
+              DEFAULT: 'hsl(210 40% 96.1%)',
+              foreground: 'hsl(222.2 47.4% 11.2%)',
+            },
+            destructive: {
+              DEFAULT: 'hsl(0 84.2% 60.2%)',
+              foreground: 'hsl(210 40% 98%)',
+            },
+            muted: {
+              DEFAULT: 'hsl(210 40% 96.1%)',
+              foreground: 'hsl(215.4 16.3% 46.9%)',
+            },
+            accent: {
+              DEFAULT: 'hsl(210 40% 96.1%)',
+              foreground: 'hsl(222.2 47.4% 11.2%)',
+            },
+          },
+        },
+      },
+      darkMode: 'class',
+    }
+  </script>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    }
+    .demo-section {
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      border: 1px solid hsl(214.3 31.8% 91.4%);
+      border-radius: 0.5rem;
+      background: white;
+    }
+    .dark .demo-section {
+      background: hsl(222.2 84% 4.9%);
+      border-color: hsl(217.2 32.6% 17.5%);
+    }
+  </style>
+</head>
+<body class="bg-background text-foreground p-8">
+  <div class="max-w-4xl mx-auto">
+    <div class="flex items-center justify-between mb-8">
+      <h1 class="text-3xl font-bold">Provenance Hover States Demo</h1>
+      <button 
+        onclick="document.documentElement.classList.toggle('dark')"
+        class="px-4 py-2 bg-secondary hover:bg-secondary/80 rounded-md transition-all duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
+      >
+        Toggle Dark Mode
+      </button>
+    </div>
+
+    <p class="text-muted-foreground mb-8">
+      This demo showcases all hover states and visual feedback in the provenance display system.
+      Hover over each element to see the transition animations (150ms ease-in-out).
+      Use Tab to navigate with keyboard and see focus states.
+    </p>
+
+    <!-- ProvenanceInline Component -->
+    <div class="demo-section">
+      <h2 class="text-xl font-semibold mb-4">ProvenanceInline Component</h2>
+      
+      <div class="flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
+        <span class="text-primary">ℹ️</span>
+        <span class="flex flex-wrap items-center gap-1.5">
+          <span class="font-medium text-foreground">SOA Agent</span>
+          <span class="text-muted-foreground">•</span>
+          <span class="text-foreground">Gemini 1.5 Pro</span>
+          <span class="text-muted-foreground">•</span>
+          <span class="text-foreground">pages 12-15</span>
+          <span class="text-muted-foreground">•</span>
+          <span class="text-green-600 dark:text-green-400">95%</span>
+        </span>
+
+        <!-- Preview Button -->
+        <button
+          class="ml-2 px-2 py-0.5 text-xs font-medium text-primary hover:text-primary/80 border border-border rounded-md hover:bg-accent transition-all duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:shadow-sm"
+        >
+          🔍 Preview
+        </button>
+
+        <!-- View All Link -->
+        <button
+          class="ml-1 text-xs text-primary hover:text-primary/80 hover:underline focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 rounded transition-all duration-150 ease-in-out"
+        >
+          View All
+        </button>
+      </div>
+    </div>
+
+    <!-- ProvenanceSidebar Component -->
+    <div class="demo-section">
+      <h2 class="text-xl font-semibold mb-4">ProvenanceSidebar Component</h2>
+      
+      <div class="flex items-center gap-2 mb-4">
+        <!-- Pin Button (Unpinned) -->
+        <button
+          class="p-2 text-muted-foreground hover:bg-accent hover:text-accent-foreground rounded-md transition-all duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
+          title="Pin sidebar"
+        >
+          📌
+        </button>
+
+        <!-- Pin Button (Pinned) -->
+        <button
+          class="p-2 text-primary bg-primary/10 hover:bg-primary/20 rounded-md transition-all duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
+          title="Unpin sidebar"
+        >
+          📌
+        </button>
+
+        <!-- Close Button -->
+        <button
+          class="p-2 text-muted-foreground hover:bg-accent hover:text-accent-foreground rounded-md transition-all duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
+          title="Close sidebar"
+        >
+          ✕
+        </button>
+      </div>
+
+      <!-- Draggable Divider -->
+      <div class="mb-4">
+        <div class="text-sm text-muted-foreground mb-2">Draggable Divider:</div>
+        <div
+          class="h-1 bg-border hover:bg-primary cursor-row-resize transition-all duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-ring rounded"
+          tabindex="0"
+        ></div>
+      </div>
+
+      <!-- Retry Button -->
+      <button
+        class="px-3 py-1.5 text-xs font-medium text-destructive-foreground bg-destructive hover:bg-destructive/90 rounded-md transition-all duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
+      >
+        Retry
+      </button>
+    </div>
+
+    <!-- ProvenanceDetails Component -->
+    <div class="demo-section">
+      <h2 class="text-xl font-semibold mb-4">ProvenanceDetails Component</h2>
+      
+      <div>
+        <div class="text-xs text-muted-foreground uppercase tracking-wide mb-2">
+          Protocol Pages
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <button
+            class="inline-flex items-center px-2 py-1 text-xs font-medium text-primary bg-primary/10 rounded-md hover:bg-primary/20 transition-all duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:shadow-sm"
+          >
+            Page 12
+          </button>
+          <button
+            class="inline-flex items-center px-2 py-1 text-xs font-medium text-primary bg-primary/10 rounded-md hover:bg-primary/20 transition-all duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:shadow-sm"
+          >
+            Page 13
+          </button>
+          <button
+            class="inline-flex items-center px-2 py-1 text-xs font-medium text-primary bg-primary/10 rounded-md hover:bg-primary/20 transition-all duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:shadow-sm"
+          >
+            Page 14
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ProtocolPreview Component -->
+    <div class="demo-section">
+      <h2 class="text-xl font-semibold mb-4">ProtocolPreview Component</h2>
+      
+      <!-- Page Navigation -->
+      <div class="flex items-center gap-2 mb-4">
+        <button
+          class="px-3 py-1.5 text-sm font-medium text-foreground bg-secondary rounded-md hover:bg-secondary/80 transition-all duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
+        >
+          ← Prev
+        </button>
+        <span class="text-sm text-muted-foreground">Page 12 (1 of 4)</span>
+        <button
+          class="px-3 py-1.5 text-sm font-medium text-foreground bg-secondary rounded-md hover:bg-secondary/80 transition-all duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
+        >
+          Next →
+        </button>
+      </div>
+
+      <!-- Zoom Controls -->
+      <div class="flex items-center gap-2 mb-4">
+        <button
+          class="px-2 py-1.5 text-sm font-medium text-foreground bg-secondary rounded-md hover:bg-secondary/80 transition-all duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
+        >
+          −
+        </button>
+        <button
+          class="px-3 py-1.5 text-sm font-medium text-foreground bg-secondary rounded-md hover:bg-secondary/80 transition-all duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
+        >
+          100%
+        </button>
+        <button
+          class="px-2 py-1.5 text-sm font-medium text-foreground bg-secondary rounded-md hover:bg-secondary/80 transition-all duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
+        >
+          +
+        </button>
+      </div>
+
+      <!-- Fullscreen Button -->
+      <button
+        class="px-3 py-1.5 text-sm font-medium text-foreground bg-secondary rounded-md hover:bg-secondary/80 transition-all duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
+      >
+        ⛶ Fullscreen
+      </button>
+    </div>
+
+    <!-- Disabled States -->
+    <div class="demo-section">
+      <h2 class="text-xl font-semibold mb-4">Disabled States</h2>
+      <p class="text-sm text-muted-foreground mb-4">
+        Disabled buttons should not show hover effects and should have reduced opacity.
+      </p>
+      
+      <div class="flex items-center gap-2">
+        <button
+          disabled
+          class="px-3 py-1.5 text-sm font-medium text-foreground bg-secondary rounded-md hover:bg-secondary/80 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
+        >
+          Disabled Button
+        </button>
+        
+        <button
+          disabled
+          class="px-2 py-0.5 text-xs font-medium text-primary hover:text-primary/80 border border-border rounded-md hover:bg-accent transition-all duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-transparent"
+        >
+          🔍 Preview
+        </button>
+      </div>
+    </div>
+
+    <!-- Keyboard Focus Demo -->
+    <div class="demo-section">
+      <h2 class="text-xl font-semibold mb-4">Keyboard Focus States</h2>
+      <p class="text-sm text-muted-foreground mb-4">
+        Press Tab to navigate through these buttons and see the focus ring. 
+        The focus ring should be visible and use the design system color.
+      </p>
+      
+      <div class="flex flex-wrap items-center gap-2">
+        <button
+          class="px-3 py-1.5 text-sm font-medium text-foreground bg-secondary rounded-md hover:bg-secondary/80 transition-all duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
+        >
+          Button 1
+        </button>
+        <button
+          class="px-3 py-1.5 text-sm font-medium text-foreground bg-secondary rounded-md hover:bg-secondary/80 transition-all duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
+        >
+          Button 2
+        </button>
+        <button
+          class="px-3 py-1.5 text-sm font-medium text-foreground bg-secondary rounded-md hover:bg-secondary/80 transition-all duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
+        >
+          Button 3
+        </button>
+        <button
+          class="px-2 py-0.5 text-xs font-medium text-primary hover:text-primary/80 border border-border rounded-md hover:bg-accent transition-all duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:shadow-sm"
+        >
+          🔍 Preview
+        </button>
+      </div>
+    </div>
+
+    <!-- Summary -->
+    <div class="demo-section bg-muted">
+      <h2 class="text-xl font-semibold mb-4">Hover State Standards</h2>
+      <ul class="space-y-2 text-sm">
+        <li class="flex items-start gap-2">
+          <span class="text-green-600 dark:text-green-400">✓</span>
+          <span><strong>Transition Duration:</strong> 150ms for all interactions</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-green-600 dark:text-green-400">✓</span>
+          <span><strong>Easing Function:</strong> ease-in-out for smooth, natural feel</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-green-600 dark:text-green-400">✓</span>
+          <span><strong>Visual Feedback:</strong> Background color change, text color change, or shadow</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-green-600 dark:text-green-400">✓</span>
+          <span><strong>Focus Integration:</strong> Focus ring visible with hover state</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-green-600 dark:text-green-400">✓</span>
+          <span><strong>Dark Mode:</strong> All colors adapt using semantic tokens</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-green-600 dark:text-green-400">✓</span>
+          <span><strong>Disabled States:</strong> No hover effect, reduced opacity</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    // Add keyboard event listeners for demonstration
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Tab') {
+        console.log('Tab pressed - focus should move to next element');
+      }
+    });
+
+    // Log hover events for demonstration
+    document.querySelectorAll('button').forEach(button => {
+      button.addEventListener('mouseenter', () => {
+        console.log('Hover started on:', button.textContent.trim());
+      });
+      button.addEventListener('mouseleave', () => {
+        console.log('Hover ended on:', button.textContent.trim());
+      });
+    });
+  </script>
+</body>
+</html>

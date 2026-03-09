@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Overview Tab Demo</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f9fafb;
+      padding: 24px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 24px;
+      color: #111827;
+    }
+
+    h2 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 16px;
+      color: #111827;
+    }
+
+    h3 {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      color: #111827;
+    }
+
+    .section {
+      margin-bottom: 32px;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      padding: 16px;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    }
+
+    .card-label {
+      font-size: 14px;
+      color: #6b7280;
+      margin-bottom: 8px;
+    }
+
+    .card-value {
+      font-size: 32px;
+      font-weight: 700;
+      color: #111827;
+    }
+
+    .card-subtext {
+      font-size: 12px;
+      color: #6b7280;
+      margin-top: 4px;
+    }
+
+    .alert {
+      background: #fff7ed;
+      border: 1px solid #fed7aa;
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .alert-icon {
+      color: #ea580c;
+      font-size: 20px;
+    }
+
+    .alert-title {
+      font-weight: 600;
+      color: #7c2d12;
+      margin-bottom: 4px;
+    }
+
+    .alert-text {
+      font-size: 14px;
+      color: #9a3412;
+    }
+
+    .charts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 24px;
+    }
+
+    .chart-item {
+      margin-bottom: 16px;
+    }
+
+    .chart-label {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 4px;
+      font-size: 14px;
+    }
+
+    .chart-name {
+      font-weight: 500;
+      color: #111827;
+      text-transform: capitalize;
+    }
+
+    .chart-count {
+      color: #6b7280;
+    }
+
+    .bar-container {
+      height: 24px;
+      background: #f3f4f6;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .bar {
+      height: 100%;
+      background: #3b82f6;
+      transition: width 0.3s ease;
+    }
+
+    .source-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 0;
+      border-bottom: 1px solid #f3f4f6;
+    }
+
+    .source-item:last-child {
+      border-bottom: none;
+    }
+
+    .source-label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+    }
+
+    .color-box {
+      width: 16px;
+      height: 16px;
+      border-radius: 4px;
+    }
+
+    .color-green { background: #22c55e; }
+    .color-blue { background: #3b82f6; }
+    .color-purple { background: #a855f7; }
+    .color-gray { background: #6b7280; }
+
+    .bar-red { background: #ef4444; }
+    .bar-orange { background: #f97316; }
+    .bar-yellow { background: #eab308; }
+    .bar-blue { background: #3b82f6; }
+    .bar-green { background: #22c55e; }
+
+    .model-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 0;
+      border-bottom: 1px solid #f3f4f6;
+    }
+
+    .model-item:last-child {
+      border-bottom: none;
+    }
+
+    .model-name {
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .model-count {
+      font-size: 14px;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Overview Tab - Provenance Statistics</h1>
+
+    <!-- Enhanced Statistics Dashboard -->
+    <div class="section">
+      <h2>Overview Statistics</h2>
+      <div class="stats-grid">
+        <div class="card">
+          <div class="card-label">Total Entities</div>
+          <div class="card-value">50</div>
+        </div>
+        <div class="card">
+          <div class="card-label">Coverage</div>
+          <div class="card-value">96%</div>
+          <div class="card-subtext">48 / 50</div>
+        </div>
+        <div class="card">
+          <div class="card-label">Avg Confidence</div>
+          <div class="card-value">82%</div>
+        </div>
+        <div class="card">
+          <div class="card-label">Confidence Range</div>
+          <div class="card-value" style="font-size: 20px;">35% - 98%</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Low Confidence Alert -->
+    <div class="alert">
+      <div class="alert-icon">⚠️</div>
+      <div>
+        <div class="alert-title">Low Confidence Entities</div>
+        <div class="alert-text">3 entities have confidence below 50%</div>
+      </div>
+    </div>
+
+    <!-- Charts Grid -->
+    <div class="charts-grid">
+      <!-- Agent Contribution Chart -->
+      <div class="card">
+        <h3>Agent Contributions</h3>
+        <div class="chart-item">
+          <div class="chart-label">
+            <span class="chart-name">activity agent</span>
+            <span class="chart-count">15</span>
+          </div>
+          <div class="bar-container">
+            <div class="bar" style="width: 100%;"></div>
+          </div>
+        </div>
+        <div class="chart-item">
+          <div class="chart-label">
+            <span class="chart-name">metadata agent</span>
+            <span class="chart-count">10</span>
+          </div>
+          <div class="bar-container">
+            <div class="bar" style="width: 67%;"></div>
+          </div>
+        </div>
+        <div class="chart-item">
+          <div class="chart-label">
+            <span class="chart-name">eligibility agent</span>
+            <span class="chart-count">8</span>
+          </div>
+          <div class="bar-container">
+            <div class="bar" style="width: 53%;"></div>
+          </div>
+        </div>
+        <div class="chart-item">
+          <div class="chart-label">
+            <span class="chart-name">objectives agent</span>
+            <span class="chart-count">8</span>
+          </div>
+          <div class="bar-container">
+            <div class="bar" style="width: 53%;"></div>
+          </div>
+        </div>
+        <div class="chart-item">
+          <div class="chart-label">
+            <span class="chart-name">interventions agent</span>
+            <span class="chart-count">7</span>
+          </div>
+          <div class="bar-container">
+            <div class="bar" style="width: 47%;"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Source Type Breakdown -->
+      <div class="card">
+        <h3>Source Type Breakdown</h3>
+        <div class="source-item">
+          <div class="source-label">
+            <div class="color-box color-green"></div>
+            <span>Both (Text + Vision)</span>
+          </div>
+          <span class="chart-count">30</span>
+        </div>
+        <div class="source-item">
+          <div class="source-label">
+            <div class="color-box color-blue"></div>
+            <span>Text Only</span>
+          </div>
+          <span class="chart-count">10</span>
+        </div>
+        <div class="source-item">
+          <div class="source-label">
+            <div class="color-box color-purple"></div>
+            <span>Vision Only</span>
+          </div>
+          <span class="chart-count">5</span>
+        </div>
+        <div class="source-item">
+          <div class="source-label">
+            <div class="color-box color-gray"></div>
+            <span>Derived</span>
+          </div>
+          <span class="chart-count">3</span>
+        </div>
+      </div>
+
+      <!-- Confidence Distribution Histogram -->
+      <div class="card">
+        <h3>Confidence Distribution</h3>
+        <div class="chart-item">
+          <div class="chart-label">
+            <span class="chart-name">0-0.2</span>
+            <span class="chart-count">0</span>
+          </div>
+          <div class="bar-container">
+            <div class="bar bar-red" style="width: 0%;"></div>
+          </div>
+        </div>
+        <div class="chart-item">
+          <div class="chart-label">
+            <span class="chart-name">0.2-0.4</span>
+            <span class="chart-count">3</span>
+          </div>
+          <div class="bar-container">
+            <div class="bar bar-orange" style="width: 30%;"></div>
+          </div>
+        </div>
+        <div class="chart-item">
+          <div class="chart-label">
+            <span class="chart-name">0.4-0.6</span>
+            <span class="chart-count">5</span>
+          </div>
+          <div class="bar-container">
+            <div class="bar bar-yellow" style="width: 50%;"></div>
+          </div>
+        </div>
+        <div class="chart-item">
+          <div class="chart-label">
+            <span class="chart-name">0.6-0.8</span>
+            <span class="chart-count">12</span>
+          </div>
+          <div class="bar-container">
+            <div class="bar bar-blue" style="width: 100%;"></div>
+          </div>
+        </div>
+        <div class="chart-item">
+          <div class="chart-label">
+            <span class="chart-name">0.8-1.0</span>
+            <span class="chart-count">28</span>
+          </div>
+          <div class="bar-container">
+            <div class="bar bar-green" style="width: 100%;"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Model Usage Breakdown -->
+      <div class="card">
+        <h3>Model Usage</h3>
+        <div class="model-item">
+          <span class="model-name">🔷 gemini-2.5-flash</span>
+          <span class="model-count">35</span>
+        </div>
+        <div class="model-item">
+          <span class="model-name">🟣 claude-opus-4</span>
+          <span class="model-count">13</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

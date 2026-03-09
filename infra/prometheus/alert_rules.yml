@@ -1,0 +1,73 @@
+# Alerting rules for Protocol2USDM
+groups:
+  - name: p2u_agent_alerts
+    rules:
+      # Agent failure rate > 10%
+      - alert: HighAgentFailureRate
+        expr: rate(p2u_agent_failures_total[5m]) / rate(p2u_agent_executions_total[5m]) > 0.1
+        for: 5m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Agent failure rate above 10%"
+          description: "Agent {{ $labels.agent_id }} has a failure rate of {{ $value | humanizePercentage }}"
+
+      # Extraction time > 10 minutes
+      - alert: SlowExtraction
+        expr: p2u_extraction_duration_seconds > 600
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Extraction taking longer than 10 minutes"
+          description: "Protocol {{ $labels.protocol_id }} extraction has been running for {{ $value | humanizeDuration }}"
+
+      # Queue depth > 100
+      - alert: HighQueueDepth
+        expr: p2u_message_queue_depth > 100
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Message queue depth is high"
+          description: "Queue depth is {{ $value }}, indicating backpressure"
+
+  - name: p2u_system_alerts
+    rules:
+      # Memory usage > 80%
+      - alert: HighMemoryUsage
+        expr: process_resident_memory_bytes / 1024 / 1024 / 1024 > 3.2
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Memory usage above 80% of 4GB limit"
+
+      # Redis connection failures
+      - alert: RedisConnectionFailure
+        expr: p2u_redis_connection_errors_total > 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Redis connection failures detected"
+
+  - name: p2u_quality_alerts
+    rules:
+      # USDM validation failure rate
+      - alert: USDMValidationFailures
+        expr: rate(p2u_usdm_validation_failures_total[15m]) > 0.05
+        for: 10m
+        labels:
+          severity: warning
+        annotations:
+          summary: "USDM validation failure rate above 5%"
+
+      # Low enrichment coverage
+      - alert: LowEnrichmentCoverage
+        expr: p2u_enrichment_coverage_ratio < 0.7
+        for: 15m
+        labels:
+          severity: warning
+        annotations:
+          summary: "NCI EVS enrichment coverage below 70%"

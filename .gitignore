@@ -1,0 +1,84 @@
+# Environment & secrets
+.env
+google-cloud-key.json
+*-key.json
+.git-ssh
+.git-ssh.pub
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+venv/
+.venv/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Kiro specs (development artifacts)
+.kiro/
+
+# Claude settings
+.claude/
+
+# Archive (legacy code)
+archive/
+
+# AI-generated docs (development artifacts)
+docs-by-claude/
+
+# Pipeline output
+output/
+
+# Checkpoints
+checkpoints/
+test_checkpoints/
+
+# Input files (PDFs, CSVs, golden JSONs — large/proprietary)
+input/
+
+# Test data & outputs
+test_data/
+tests/test_outputs/
+tests/archive/
+
+# EVS terminology cache
+core/evs_cache/
+cache/
+
+# CDISC CORE engine binaries
+tools/core/core-windows.zip
+tools/core/core/
+
+# Tools - standalone scripts and external engines
+tools/*.py
+tools/cdisc-rules-engine/
+tools/usdm-rules/
+
+# Benchmark results
+benchmark_results/
+
+# Scratch / temp files
+usdm_validation.json
+soa_images/
+soa_final.json
+soa_merged.json
+soa_text.json
+soa_vision.json
+soa_final.html
+llm_cleaned_output.txt
+llm_raw_output.txt
+_tmp_write.py
+
+# Node modules (web-ui)
+web-ui/node_modules/
+web-ui/.next/
