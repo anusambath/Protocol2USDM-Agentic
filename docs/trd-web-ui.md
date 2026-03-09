@@ -1614,22 +1614,6 @@ EXPOSE 3000
 CMD ["npm", "start"]
 ```
 
-**docker-compose.yml:**
-```yaml
-version: '3.8'
-
-services:
-  web-ui:
-    build: ./web-ui
-    ports:
-      - "3000:3000"
-    volumes:
-      - ../output:/app/output:ro
-    environment:
-      - PROTOCOL_OUTPUT_DIR=/app/output
-      - NODE_ENV=production
-```
-
 ---
 
 ## 8. Testing Strategy

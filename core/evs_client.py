@@ -7,8 +7,6 @@ Maintains a local cache for offline operation and performance.
 API References:
 - EVS CT API (CDISC CT): https://evs.nci.nih.gov/swagger-ui.html#/ct
 - EVS REST API (NCIt): https://api-evsrest.nci.nih.gov/
-
-Based on the approach from https://github.com/Panikos/AIBC
 """
 from __future__ import annotations
 

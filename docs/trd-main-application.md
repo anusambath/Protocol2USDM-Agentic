@@ -1504,33 +1504,6 @@ ENV PYTHONUNBUFFERED=1
 ENTRYPOINT ["python", "run_extraction.py"]
 ```
 
-**`docker-compose.yml`:**
-```yaml
-version: '3.8'
-
-services:
-  protocol2usdm:
-    build: .
-    volumes:
-      - ./input:/app/input
-      - ./output:/app/output
-      - ./.env:/app/.env
-    environment:
-      - GOOGLE_CLOUD_PROJECT=${GOOGLE_CLOUD_PROJECT}
-      - GOOGLE_CLOUD_LOCATION=${GOOGLE_CLOUD_LOCATION}
-      - OPENAI_API_KEY=${OPENAI_API_KEY}
-    command: input/protocol.pdf --complete
-  
-  web-ui:
-    build: ./web-ui
-    ports:
-      - "3000:3000"
-    volumes:
-      - ./output:/app/output
-    environment:
-      - NODE_ENV=production
-```
-
 ---
 
 ## 6. Testing Strategy

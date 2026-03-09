@@ -5,8 +5,6 @@ Enriches USDM entities with standardized terminology codes from:
 - NCI Thesaurus (via EVS API)
 - CDISC Controlled Terminology
 
-Uses the EVS client with local caching for offline operation.
-Based on the approach from https://github.com/Panikos/AIBC
 """
 
 import json

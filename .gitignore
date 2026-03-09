@@ -64,6 +64,9 @@ tools/*.py
 tools/cdisc-rules-engine/
 tools/usdm-rules/
 
+# Scripts (developer/ops utilities)
+scripts/
+
 # Benchmark results
 benchmark_results/
 
