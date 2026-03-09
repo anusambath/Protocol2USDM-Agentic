@@ -26,6 +26,8 @@ import re
 from dataclasses import dataclass, field
 from typing import Dict, List, Optional, Any, Set, Tuple
 
+from core.constants import extension_url
+
 logger = logging.getLogger(__name__)
 
 
@@ -939,7 +941,7 @@ class ExecutionModelPromoter:
         They are stored in an extension for reference by downstream tools.
         """
         # Get or create conceptual anchors extension
-        ext_url = "https://protocol2usdm.io/extensions/x-executionModel-conceptualAnchors"
+        ext_url = extension_url("x-executionModel-conceptualAnchors")
         
         if 'extensionAttributes' not in design:
             design['extensionAttributes'] = []
@@ -1376,13 +1378,13 @@ class ExecutionModelPromoter:
                 extensions = target_estimand.setdefault('extensionAttributes', [])
                 # Check if algorithm extension already exists
                 has_algo_ext = any(
-                    ext.get('url') == 'https://protocol2usdm.io/extensions/x-algorithm'
+                    ext.get('url') == extension_url('x-algorithm')
                     for ext in extensions
                 )
                 if not has_algo_ext:
                     extensions.append({
                         "id": str(uuid.uuid4()),
-                        "url": "https://protocol2usdm.io/extensions/x-algorithm",
+                        "url": extension_url("x-algorithm"),
                         "valueString": algorithm_text,
                         "instanceType": "ExtensionAttribute"
                     })

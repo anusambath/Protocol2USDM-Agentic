@@ -19,6 +19,8 @@ from .base import (
     normalize_for_matching,
 )
 
+from core.constants import extension_url
+
 logger = logging.getLogger(__name__)
 
 
@@ -127,7 +129,7 @@ class ReconciledActivity(ReconciledEntity):
         # Activity type
         extra_extensions.append({
             "id": str(uuid.uuid4()),
-            "url": "https://protocol2usdm.io/extensions/x-activityType",
+            "url": extension_url("x-activityType"),
             "instanceType": "ExtensionAttribute",
             "valueString": self.activity_type
         })
@@ -136,7 +138,7 @@ class ReconciledActivity(ReconciledEntity):
         if self.group_name:
             extra_extensions.append({
                 "id": str(uuid.uuid4()),
-                "url": "https://protocol2usdm.io/extensions/x-activityGroup",
+                "url": extension_url("x-activityGroup"),
                 "instanceType": "ExtensionAttribute",
                 "valueString": self.group_name
             })
@@ -145,14 +147,14 @@ class ReconciledActivity(ReconciledEntity):
         if self.is_conditional:
             extra_extensions.append({
                 "id": str(uuid.uuid4()),
-                "url": "https://protocol2usdm.io/extensions/x-activityConditional",
+                "url": extension_url("x-activityConditional"),
                 "instanceType": "ExtensionAttribute",
                 "valueBoolean": True
             })
             if self.condition_text:
                 extra_extensions.append({
                     "id": str(uuid.uuid4()),
-                    "url": "https://protocol2usdm.io/extensions/x-activityConditionText",
+                    "url": extension_url("x-activityConditionText"),
                     "instanceType": "ExtensionAttribute",
                     "valueString": self.condition_text
                 })
@@ -161,7 +163,7 @@ class ReconciledActivity(ReconciledEntity):
         if self.repetition_id:
             extra_extensions.append({
                 "id": str(uuid.uuid4()),
-                "url": "https://protocol2usdm.io/extensions/x-activityRepetitionId",
+                "url": extension_url("x-activityRepetitionId"),
                 "instanceType": "ExtensionAttribute",
                 "valueString": self.repetition_id
             })
@@ -170,7 +172,7 @@ class ReconciledActivity(ReconciledEntity):
         if self.timing_info:
             extra_extensions.append({
                 "id": str(uuid.uuid4()),
-                "url": "https://protocol2usdm.io/extensions/x-activityTiming",
+                "url": extension_url("x-activityTiming"),
                 "instanceType": "ExtensionAttribute",
                 "valueString": str(self.timing_info)
             })

@@ -27,6 +27,8 @@ from dataclasses import dataclass, field
 from typing import Dict, List, Optional, Any, Set
 from difflib import SequenceMatcher
 
+from core.constants import extension_url
+
 logger = logging.getLogger(__name__)
 
 
@@ -90,7 +92,7 @@ class ReconciledEpoch:
         # Epoch category
         extensions.append({
             "id": str(uuid.uuid4()),
-            "url": "https://protocol2usdm.io/extensions/x-epochCategory",
+            "url": extension_url("x-epochCategory"),
             "instanceType": "ExtensionAttribute",
             "valueString": self.epoch_category
         })
@@ -99,7 +101,7 @@ class ReconciledEpoch:
         if self.sequence_order is not None:
             extensions.append({
                 "id": str(uuid.uuid4()),
-                "url": "https://protocol2usdm.io/extensions/x-epochSequenceOrder",
+                "url": extension_url("x-epochSequenceOrder"),
                 "instanceType": "ExtensionAttribute",
                 "valueString": str(self.sequence_order)
             })
@@ -108,7 +110,7 @@ class ReconciledEpoch:
         if self.raw_name != self.name:
             extensions.append({
                 "id": str(uuid.uuid4()),
-                "url": "https://protocol2usdm.io/extensions/x-epochRawName",
+                "url": extension_url("x-epochRawName"),
                 "instanceType": "ExtensionAttribute",
                 "valueString": self.raw_name
             })
@@ -116,7 +118,7 @@ class ReconciledEpoch:
         # Sources attribution
         extensions.append({
             "id": str(uuid.uuid4()),
-            "url": "https://protocol2usdm.io/extensions/x-epochSources",
+            "url": extension_url("x-epochSources"),
             "instanceType": "ExtensionAttribute",
             "valueString": ",".join(self.sources)
         })
@@ -125,7 +127,7 @@ class ReconciledEpoch:
         if self.footnote_refs:
             extensions.append({
                 "id": str(uuid.uuid4()),
-                "url": "https://protocol2usdm.io/extensions/x-epochFootnoteRefs",
+                "url": extension_url("x-epochFootnoteRefs"),
                 "instanceType": "ExtensionAttribute",
                 "valueString": ",".join(self.footnote_refs)
             })

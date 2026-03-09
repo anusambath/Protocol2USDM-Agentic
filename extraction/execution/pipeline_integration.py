@@ -37,6 +37,8 @@ from .execution_model_promoter import ExecutionModelPromoter, promote_execution_
 
 from .processing_warnings import get_processing_warnings, _add_processing_warning
 
+from core.constants import extension_url
+
 logger = logging.getLogger(__name__)
 
 
@@ -800,7 +802,7 @@ def _create_extension_attribute(
     
     ext = {
         "id": str(uuid.uuid4()),
-        "url": f"https://protocol2usdm.io/extensions/{name}",
+        "url": extension_url(name),
         "instanceType": "ExtensionAttribute",
     }
     
@@ -840,7 +842,7 @@ def _set_canonical_extension(
     if 'extensionAttributes' not in design:
         design['extensionAttributes'] = []
     
-    url = f"https://protocol2usdm.io/extensions/{name}"
+    url = extension_url(name)
     
     # Remove any existing extension with this URL
     design['extensionAttributes'] = [

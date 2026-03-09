@@ -4,7 +4,7 @@ This document defines the structured extension schema for SAP-derived concepts t
 
 ## Extension Namespace
 
-All Protocol2USDM SAP extensions use the namespace: `https://protocol2usdm.io/extensions/`
+All Protocol2USDM SAP extensions use the namespace: `https://anusambath.github.io/Protocol2USDM-Agentic/extensions/`
 
 ## SAP Extraction Overview
 
@@ -28,14 +28,14 @@ The SAP extractor (`extraction/conditional/sap_extractor.py`) extracts the follo
 
 ### 1. Statistical Methods (STATO Mapping)
 
-**URL**: `https://protocol2usdm.io/extensions/x-sap-statistical-methods`
+**URL**: `https://anusambath.github.io/Protocol2USDM-Agentic/extensions/x-sap-statistical-methods`
 
 **Purpose**: Primary and secondary statistical analysis methods with STATO ontology mapping for interoperability.
 
 ```json
 {
   "id": "ext_sap_statistical_methods",
-  "url": "https://protocol2usdm.io/extensions/x-sap-statistical-methods",
+  "url": "https://anusambath.github.io/Protocol2USDM-Agentic/extensions/x-sap-statistical-methods",
   "instanceType": "ExtensionAttribute",
   "valueString": "[{\"id\": \"sm_1\", \"name\": \"ANCOVA\", \"description\": \"...\", \"statoCode\": \"STATO:0000029\", ...}]"
 }
@@ -77,14 +77,14 @@ interface StatisticalMethod {
 
 ### 2. Multiplicity Adjustments
 
-**URL**: `https://protocol2usdm.io/extensions/x-sap-multiplicity-adjustments`
+**URL**: `https://anusambath.github.io/Protocol2USDM-Agentic/extensions/x-sap-multiplicity-adjustments`
 
 **Purpose**: Methods for controlling Type I error across multiple endpoints/hypotheses.
 
 ```json
 {
   "id": "ext_sap_multiplicity_adjustments",
-  "url": "https://protocol2usdm.io/extensions/x-sap-multiplicity-adjustments",
+  "url": "https://anusambath.github.io/Protocol2USDM-Agentic/extensions/x-sap-multiplicity-adjustments",
   "instanceType": "ExtensionAttribute",
   "valueString": "[{\"id\": \"mult_1\", \"name\": \"Hochberg Procedure\", \"methodType\": \"familywise\", ...}]"
 }
@@ -108,14 +108,14 @@ interface MultiplicityAdjustment {
 
 ### 3. Sensitivity Analyses
 
-**URL**: `https://protocol2usdm.io/extensions/x-sap-sensitivity-analyses`
+**URL**: `https://anusambath.github.io/Protocol2USDM-Agentic/extensions/x-sap-sensitivity-analyses`
 
 **Purpose**: Pre-specified sensitivity and supportive analyses for robustness assessment.
 
 ```json
 {
   "id": "ext_sap_sensitivity_analyses",
-  "url": "https://protocol2usdm.io/extensions/x-sap-sensitivity-analyses",
+  "url": "https://anusambath.github.io/Protocol2USDM-Agentic/extensions/x-sap-sensitivity-analyses",
   "instanceType": "ExtensionAttribute",
   "valueString": "[{\"id\": \"sens_1\", \"name\": \"Per Protocol Analysis\", \"analysisType\": \"sensitivity\", ...}]"
 }
@@ -138,14 +138,14 @@ interface SensitivityAnalysis {
 
 ### 4. Subgroup Analyses
 
-**URL**: `https://protocol2usdm.io/extensions/x-sap-subgroup-analyses`
+**URL**: `https://anusambath.github.io/Protocol2USDM-Agentic/extensions/x-sap-subgroup-analyses`
 
 **Purpose**: Pre-specified subgroup analyses with interaction testing specifications.
 
 ```json
 {
   "id": "ext_sap_subgroup_analyses",
-  "url": "https://protocol2usdm.io/extensions/x-sap-subgroup-analyses",
+  "url": "https://anusambath.github.io/Protocol2USDM-Agentic/extensions/x-sap-subgroup-analyses",
   "instanceType": "ExtensionAttribute",
   "valueString": "[{\"id\": \"sub_1\", \"name\": \"Age Subgroup\", \"subgroupVariable\": \"Age\", ...}]"
 }
@@ -168,14 +168,14 @@ interface SubgroupAnalysis {
 
 ### 5. Interim Analyses
 
-**URL**: `https://protocol2usdm.io/extensions/x-sap-interim-analyses`
+**URL**: `https://anusambath.github.io/Protocol2USDM-Agentic/extensions/x-sap-interim-analyses`
 
 **Purpose**: Interim analysis plan including stopping boundaries and alpha spending.
 
 ```json
 {
   "id": "ext_sap_interim_analyses",
-  "url": "https://protocol2usdm.io/extensions/x-sap-interim-analyses",
+  "url": "https://anusambath.github.io/Protocol2USDM-Agentic/extensions/x-sap-interim-analyses",
   "instanceType": "ExtensionAttribute",
   "valueString": "[{\"id\": \"ia_1\", \"name\": \"Interim Analysis 1\", \"informationFraction\": 0.5, ...}]"
 }
@@ -200,14 +200,14 @@ interface InterimAnalysis {
 
 ### 6. Sample Size Calculations
 
-**URL**: `https://protocol2usdm.io/extensions/x-sap-sample-size-calculations`
+**URL**: `https://anusambath.github.io/Protocol2USDM-Agentic/extensions/x-sap-sample-size-calculations`
 
 **Purpose**: Power and sample size calculation assumptions.
 
 ```json
 {
   "id": "ext_sap_sample_size_calculations",
-  "url": "https://protocol2usdm.io/extensions/x-sap-sample-size-calculations",
+  "url": "https://anusambath.github.io/Protocol2USDM-Agentic/extensions/x-sap-sample-size-calculations",
   "instanceType": "ExtensionAttribute",
   "valueString": "[{\"id\": \"ss_1\", \"name\": \"Primary Endpoint\", \"targetSampleSize\": 100, \"power\": 0.80, ...}]"
 }
@@ -232,14 +232,14 @@ interface SampleSizeCalculation {
 
 ### 7. Derived Variables
 
-**URL**: `https://protocol2usdm.io/extensions/x-sap-derived-variables`
+**URL**: `https://anusambath.github.io/Protocol2USDM-Agentic/extensions/x-sap-derived-variables`
 
 **Purpose**: Calculation formulas for derived endpoints from SAP.
 
 ```json
 {
   "id": "ext_sap_derived_variables",
-  "url": "https://protocol2usdm.io/extensions/x-sap-derived-variables",
+  "url": "https://anusambath.github.io/Protocol2USDM-Agentic/extensions/x-sap-derived-variables",
   "instanceType": "ExtensionAttribute",
   "valueString": "[{\"id\": \"dv_1\", \"name\": \"Copper Balance\", \"formula\": \"Input - Output\", \"unit\": \"mg/day\"}]"
 }
@@ -260,14 +260,14 @@ interface DerivedVariable {
 
 ### 8. Data Handling Rules
 
-**URL**: `https://protocol2usdm.io/extensions/x-sap-data-handling-rules`
+**URL**: `https://anusambath.github.io/Protocol2USDM-Agentic/extensions/x-sap-data-handling-rules`
 
 **Purpose**: Missing data and BLQ handling rules from SAP.
 
 ```json
 {
   "id": "ext_sap_data_handling_rules",
-  "url": "https://protocol2usdm.io/extensions/x-sap-data-handling-rules",
+  "url": "https://anusambath.github.io/Protocol2USDM-Agentic/extensions/x-sap-data-handling-rules",
   "instanceType": "ExtensionAttribute",
   "valueString": "[{\"id\": \"rule_1\", \"name\": \"Missing Data\", \"rule\": \"No imputation\"}]"
 }

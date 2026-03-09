@@ -20,6 +20,8 @@ from .base import (
     fuzzy_match_names,
 )
 
+from core.constants import extension_url
+
 logger = logging.getLogger(__name__)
 
 
@@ -143,7 +145,7 @@ class ReconciledEncounter(ReconciledEntity):
         # Encounter type
         extra_extensions.append({
             "id": str(uuid.uuid4()),
-            "url": "https://protocol2usdm.io/extensions/x-encounterType",
+            "url": extension_url("x-encounterType"),
             "instanceType": "ExtensionAttribute",
             "valueString": self.encounter_type
         })
@@ -152,7 +154,7 @@ class ReconciledEncounter(ReconciledEntity):
         if self.study_day is not None:
             extra_extensions.append({
                 "id": str(uuid.uuid4()),
-                "url": "https://protocol2usdm.io/extensions/x-encounterStudyDay",
+                "url": extension_url("x-encounterStudyDay"),
                 "instanceType": "ExtensionAttribute",
                 "valueInteger": self.study_day
             })
@@ -161,7 +163,7 @@ class ReconciledEncounter(ReconciledEntity):
         if self.study_week is not None:
             extra_extensions.append({
                 "id": str(uuid.uuid4()),
-                "url": "https://protocol2usdm.io/extensions/x-encounterStudyWeek",
+                "url": extension_url("x-encounterStudyWeek"),
                 "instanceType": "ExtensionAttribute",
                 "valueInteger": self.study_week
             })
@@ -171,7 +173,7 @@ class ReconciledEncounter(ReconciledEntity):
             window_str = f"{self.window_lower or 0}/{self.window_upper or 0}"
             extra_extensions.append({
                 "id": str(uuid.uuid4()),
-                "url": "https://protocol2usdm.io/extensions/x-encounterWindow",
+                "url": extension_url("x-encounterWindow"),
                 "instanceType": "ExtensionAttribute",
                 "valueString": window_str
             })
@@ -180,7 +182,7 @@ class ReconciledEncounter(ReconciledEntity):
         if not self.is_required:
             extra_extensions.append({
                 "id": str(uuid.uuid4()),
-                "url": "https://protocol2usdm.io/extensions/x-encounterOptional",
+                "url": extension_url("x-encounterOptional"),
                 "instanceType": "ExtensionAttribute",
                 "valueBoolean": True
             })
@@ -189,7 +191,7 @@ class ReconciledEncounter(ReconciledEntity):
         if self.timing_label:
             extra_extensions.append({
                 "id": str(uuid.uuid4()),
-                "url": "https://protocol2usdm.io/extensions/x-encounterTimingLabel",
+                "url": extension_url("x-encounterTimingLabel"),
                 "instanceType": "ExtensionAttribute",
                 "valueString": self.timing_label
             })

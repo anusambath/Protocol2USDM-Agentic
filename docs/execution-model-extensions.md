@@ -4,7 +4,7 @@ This document defines the structured extension schema for execution model concep
 
 ## Extension Namespace
 
-All Protocol2USDM extensions use the namespace: `https://protocol2usdm.io/extensions/`
+All Protocol2USDM extensions use the namespace: `https://anusambath.github.io/Protocol2USDM-Agentic/extensions/`
 
 ## Concepts Requiring Extensions
 
@@ -26,14 +26,14 @@ Per the USDM v4.0 schema analysis, the following concepts have no native USDM en
 
 ### 1. Sampling Constraints
 
-**URL**: `https://protocol2usdm.io/extensions/x-executionModel-samplingConstraints`
+**URL**: `https://anusambath.github.io/Protocol2USDM-Agentic/extensions/x-executionModel-samplingConstraints`
 
 **Purpose**: Defines observation density rules (e.g., "at least 3 samples within 2 hours post-dose").
 
 ```json
 {
   "id": "string (UUID)",
-  "url": "https://protocol2usdm.io/extensions/x-executionModel-samplingConstraints",
+  "url": "https://anusambath.github.io/Protocol2USDM-Agentic/extensions/x-executionModel-samplingConstraints",
   "instanceType": "ExtensionAttribute",
   "valueString": "[{\"activityId\": \"act_123\", \"minSamples\": 3, \"maxSamples\": 5, \"windowDuration\": \"PT2H\", \"relativeTo\": \"FirstDose\"}]"
 }
@@ -55,14 +55,14 @@ interface SamplingConstraint {
 
 ### 2. Execution Type Classification
 
-**URL**: `https://protocol2usdm.io/extensions/x-executionModel-executionType`
+**URL**: `https://anusambath.github.io/Protocol2USDM-Agentic/extensions/x-executionModel-executionType`
 
 **Purpose**: Classifies activities as WINDOW, EPISODE, SINGLE, or RECURRING for synthetic data generation.
 
 ```json
 {
   "id": "string (UUID)",
-  "url": "https://protocol2usdm.io/extensions/x-executionModel-executionType",
+  "url": "https://anusambath.github.io/Protocol2USDM-Agentic/extensions/x-executionModel-executionType",
   "instanceType": "ExtensionAttribute",
   "valueString": "WINDOW"
 }
@@ -78,14 +78,14 @@ interface SamplingConstraint {
 
 ### 3. Endpoint Algorithm
 
-**URL**: `https://protocol2usdm.io/extensions/x-algorithm`
+**URL**: `https://anusambath.github.io/Protocol2USDM-Agentic/extensions/x-algorithm`
 
 **Purpose**: Stores the computational formula for endpoint calculation (the "how" that Estimand doesn't capture).
 
 ```json
 {
   "id": "string (UUID)",
-  "url": "https://protocol2usdm.io/extensions/x-algorithm",
+  "url": "https://anusambath.github.io/Protocol2USDM-Agentic/extensions/x-algorithm",
   "instanceType": "ExtensionAttribute",
   "valueString": "PG >= 70 OR (PG - nadir) >= 20"
 }
@@ -97,14 +97,14 @@ interface SamplingConstraint {
 
 ### 4. Derived Variables
 
-**URL**: `https://protocol2usdm.io/extensions/x-executionModel-derivedVariables`
+**URL**: `https://anusambath.github.io/Protocol2USDM-Agentic/extensions/x-executionModel-derivedVariables`
 
 **Purpose**: Defines derivation rules like change-from-baseline, LOCF, MMRM imputation.
 
 ```json
 {
   "id": "string (UUID)",
-  "url": "https://protocol2usdm.io/extensions/x-executionModel-derivedVariables",
+  "url": "https://anusambath.github.io/Protocol2USDM-Agentic/extensions/x-executionModel-derivedVariables",
   "instanceType": "ExtensionAttribute",
   "valueString": "[{\"name\": \"CFB_PG\", \"type\": \"ChangeFromBaseline\", \"sourceVariable\": \"PG\", \"baselineVisit\": \"Day 1\"}]"
 }
@@ -127,14 +127,14 @@ interface DerivedVariable {
 
 ### 5. Analysis Windows
 
-**URL**: `https://protocol2usdm.io/extensions/x-executionModel-analysisWindows`
+**URL**: `https://anusambath.github.io/Protocol2USDM-Agentic/extensions/x-executionModel-analysisWindows`
 
 **Purpose**: Defines temporal analysis phases (baseline period, accumulation phase, steady-state window).
 
 ```json
 {
   "id": "string (UUID)",
-  "url": "https://protocol2usdm.io/extensions/x-executionModel-analysisWindows",
+  "url": "https://anusambath.github.io/Protocol2USDM-Agentic/extensions/x-executionModel-analysisWindows",
   "instanceType": "ExtensionAttribute",
   "valueString": "[{\"name\": \"Baseline\", \"startDay\": -7, \"endDay\": 0}, {\"name\": \"Accumulation\", \"startDay\": 1, \"endDay\": 10}]"
 }
@@ -156,14 +156,14 @@ interface AnalysisWindow {
 
 ### 6. Randomization Scheme
 
-**URL**: `https://protocol2usdm.io/extensions/x-executionModel-randomizationScheme`
+**URL**: `https://anusambath.github.io/Protocol2USDM-Agentic/extensions/x-executionModel-randomizationScheme`
 
 **Purpose**: Operational randomization details beyond USDM's scope.
 
 ```json
 {
   "id": "string (UUID)",
-  "url": "https://protocol2usdm.io/extensions/x-executionModel-randomizationScheme",
+  "url": "https://anusambath.github.io/Protocol2USDM-Agentic/extensions/x-executionModel-randomizationScheme",
   "instanceType": "ExtensionAttribute",
   "valueString": "{\"allocationRatio\": \"1:1\", \"blockSize\": [4, 6], \"stratificationFactors\": [\"Site\", \"Disease Severity\"], \"method\": \"IWRS\"}"
 }
@@ -184,14 +184,14 @@ interface RandomizationScheme {
 
 ### 7. Conceptual Time Anchors
 
-**URL**: `https://protocol2usdm.io/extensions/x-executionModel-conceptualAnchors`
+**URL**: `https://anusambath.github.io/Protocol2USDM-Agentic/extensions/x-executionModel-conceptualAnchors`
 
 **Purpose**: Pure timing references that don't create visit or activity instances.
 
 ```json
 {
   "id": "string (UUID)",
-  "url": "https://protocol2usdm.io/extensions/x-executionModel-conceptualAnchors",
+  "url": "https://anusambath.github.io/Protocol2USDM-Agentic/extensions/x-executionModel-conceptualAnchors",
   "instanceType": "ExtensionAttribute",
   "valueString": "[{\"id\": \"anchor_cycle\", \"name\": \"CycleStart\", \"classification\": \"Conceptual\", \"note\": \"Pure timing reference\"}]"
 }

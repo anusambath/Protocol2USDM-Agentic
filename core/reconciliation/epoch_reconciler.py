@@ -18,6 +18,8 @@ from .base import (
     extract_footnote_refs,
 )
 
+from core.constants import extension_url
+
 logger = logging.getLogger(__name__)
 
 
@@ -93,7 +95,7 @@ class ReconciledEpoch(ReconciledEntity):
         if self.epoch_category:
             extra_extensions.append({
                 "id": str(uuid.uuid4()),
-                "url": "https://protocol2usdm.io/extensions/x-epochCategory",
+                "url": extension_url("x-epochCategory"),
                 "instanceType": "ExtensionAttribute",
                 "valueString": self.epoch_category
             })
@@ -101,7 +103,7 @@ class ReconciledEpoch(ReconciledEntity):
         if self.sequence_order is not None:
             extra_extensions.append({
                 "id": str(uuid.uuid4()),
-                "url": "https://protocol2usdm.io/extensions/x-epochSequenceOrder",
+                "url": extension_url("x-epochSequenceOrder"),
                 "instanceType": "ExtensionAttribute",
                 "valueString": str(self.sequence_order)
             })

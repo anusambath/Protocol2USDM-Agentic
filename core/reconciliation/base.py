@@ -13,6 +13,8 @@ from dataclasses import dataclass, field
 from typing import Dict, List, Optional, Any, Set, TypeVar, Generic
 from difflib import SequenceMatcher
 
+from core.constants import extension_url
+
 logger = logging.getLogger(__name__)
 
 
@@ -167,7 +169,7 @@ class ReconciledEntity:
         if self.raw_name != self.name:
             extensions.append({
                 "id": str(uuid.uuid4()),
-                "url": f"https://protocol2usdm.io/extensions/x-{self.instance_type.lower()}RawName",
+                "url": extension_url(f"x-{self.instance_type.lower()}RawName"),
                 "instanceType": "ExtensionAttribute",
                 "valueString": self.raw_name
             })
@@ -175,7 +177,7 @@ class ReconciledEntity:
         # Sources attribution
         extensions.append({
             "id": str(uuid.uuid4()),
-            "url": f"https://protocol2usdm.io/extensions/x-{self.instance_type.lower()}Sources",
+                "url": extension_url(f"x-{self.instance_type.lower()}Sources"),
             "instanceType": "ExtensionAttribute",
             "valueString": ",".join(self.sources)
         })
@@ -184,7 +186,7 @@ class ReconciledEntity:
         if self.footnote_refs:
             extensions.append({
                 "id": str(uuid.uuid4()),
-                "url": f"https://protocol2usdm.io/extensions/x-{self.instance_type.lower()}FootnoteRefs",
+                "url": extension_url(f"x-{self.instance_type.lower()}FootnoteRefs"),
                 "instanceType": "ExtensionAttribute",
                 "valueString": ",".join(self.footnote_refs)
             })
@@ -193,7 +195,7 @@ class ReconciledEntity:
         if category:
             extensions.append({
                 "id": str(uuid.uuid4()),
-                "url": f"https://protocol2usdm.io/extensions/x-{self.instance_type.lower()}Category",
+                "url": extension_url(f"x-{self.instance_type.lower()}Category"),
                 "instanceType": "ExtensionAttribute",
                 "valueString": category
             })
@@ -202,7 +204,7 @@ class ReconciledEntity:
         if sequence_order is not None:
             extensions.append({
                 "id": str(uuid.uuid4()),
-                "url": f"https://protocol2usdm.io/extensions/x-{self.instance_type.lower()}SequenceOrder",
+                "url": extension_url(f"x-{self.instance_type.lower()}SequenceOrder"),
                 "instanceType": "ExtensionAttribute",
                 "valueString": str(sequence_order)
             })

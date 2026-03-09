@@ -31,6 +31,7 @@ import {
   Hash,
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { extensionUrl } from '@/lib/constants';
 
 interface ExtensionsViewProps {
   usdm: Record<string, unknown> | null;
@@ -677,7 +678,7 @@ export function ExtensionsView({ usdm }: ExtensionsViewProps) {
     const result: string[] = [];
     
     // Visit windows insight
-    const visitWindows = extensionsByUrl.get('https://protocol2usdm.io/extensions/x-executionModel-visitWindows');
+    const visitWindows = extensionsByUrl.get(extensionUrl('x-executionModel-visitWindows'));
     if (visitWindows && visitWindows.values.length > 0) {
       const windows = visitWindows.values[0] as { targetDay?: number }[];
       if (Array.isArray(windows)) {
@@ -689,7 +690,7 @@ export function ExtensionsView({ usdm }: ExtensionsViewProps) {
     }
     
     // Dosing insight
-    const dosing = extensionsByUrl.get('https://protocol2usdm.io/extensions/x-executionModel-dosingRegimens');
+    const dosing = extensionsByUrl.get(extensionUrl('x-executionModel-dosingRegimens'));
     if (dosing && dosing.values.length > 0) {
       const regimens = dosing.values[0] as { treatmentName?: string }[];
       if (Array.isArray(regimens)) {
@@ -699,7 +700,7 @@ export function ExtensionsView({ usdm }: ExtensionsViewProps) {
     }
     
     // Footnotes insight
-    const footnotes = extensionsByUrl.get('https://protocol2usdm.io/extensions/x-footnoteConditions');
+    const footnotes = extensionsByUrl.get(extensionUrl('x-footnoteConditions'));
     if (footnotes && footnotes.values.length > 0) {
       const conditions = footnotes.values[0] as unknown[];
       if (Array.isArray(conditions)) {
@@ -708,7 +709,7 @@ export function ExtensionsView({ usdm }: ExtensionsViewProps) {
     }
     
     // State machine insight
-    const stateMachine = extensionsByUrl.get('https://protocol2usdm.io/extensions/x-executionModel-stateMachine');
+    const stateMachine = extensionsByUrl.get(extensionUrl('x-executionModel-stateMachine'));
     if (stateMachine && stateMachine.values.length > 0) {
       const sm = stateMachine.values[0] as { transitions?: unknown[] };
       if (sm?.transitions) {

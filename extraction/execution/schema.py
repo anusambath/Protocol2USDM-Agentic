@@ -13,6 +13,8 @@ from enum import Enum
 from dataclasses import dataclass, field
 from typing import Dict, List, Optional, Any, Union
 
+from core.constants import EXTENSION_NAMESPACE, extension_url
+
 
 class AnchorType(Enum):
     """Types of time anchors."""
@@ -1421,7 +1423,7 @@ class ExecutionModelExtension:
         import uuid
         return {
             "id": f"ext_execution_model_{uuid.uuid4()}",
-            "url": "https://protocol2usdm.io/extensions/x-executionModel",
+            "url": extension_url("x-executionModel"),
             "instanceType": "ExtensionAttribute",
             # New: valueObject instead of valueString
             "valueObject": self.to_dict(),
@@ -1455,7 +1457,7 @@ def get_execution_model_json_schema() -> Dict[str, Any]:
     """
     return {
         "$schema": "https://json-schema.org/draft/2020-12/schema",
-        "$id": "https://protocol2usdm.io/schemas/execution-model-extension.json",
+        "$id": f"{EXTENSION_NAMESPACE.replace('/extensions', '/schemas')}/execution-model-extension.json",
         "title": "ExecutionModelExtension",
         "description": "Typed execution model extension for USDM",
         "type": "object",

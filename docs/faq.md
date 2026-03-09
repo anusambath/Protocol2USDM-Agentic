@@ -53,11 +53,5 @@ A: The pipeline continues with remaining agents (graceful degradation). Failed a
 
 ## Monitoring
 
-**Q: How do I access Grafana dashboards?**
-A: When running with Docker Compose, Grafana is at `http://localhost:3001`. Default credentials: admin / p2u_grafana.
-
 **Q: What metrics are tracked?**
-A: Agent execution time, success/failure rates, confidence scores, entity counts, queue depth, enrichment coverage, and USDM validation results.
-
-**Q: How do I set up alerts?**
-A: Alert rules are pre-configured in `infra/prometheus/alert_rules.yml`. Configure notification channels (email, Slack) in Grafana's alerting settings.
+A: Agent execution time, success/failure rates, confidence scores, entity counts, queue depth, enrichment coverage, and USDM validation results. 

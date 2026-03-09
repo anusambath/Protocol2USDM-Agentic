@@ -32,6 +32,8 @@ from .pdf_utils import (
     render_pages_to_images,
 )
 from .constants import (
+    EXTENSION_NAMESPACE,
+    extension_url,
     USDM_VERSION,
     SYSTEM_NAME,
     SYSTEM_VERSION,
@@ -88,6 +90,8 @@ __all__ = [
     "render_page_to_image",
     "render_pages_to_images",
     # Constants
+    "EXTENSION_NAMESPACE",
+    "extension_url",
     "USDM_VERSION",
     "SYSTEM_NAME",
     "SYSTEM_VERSION",

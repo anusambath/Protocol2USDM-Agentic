@@ -4,6 +4,15 @@ Centralized constants for Protocol2USDM pipeline.
 All pipeline-wide constants should be defined here to ensure consistency.
 """
 
+# Extension Namespace (for USDM extensionAttributes)
+EXTENSION_NAMESPACE: str = "https://anusambath.github.io/Protocol2USDM-Agentic/extensions"
+
+
+def extension_url(name: str) -> str:
+    """Build a full extension URL from a short name, e.g. 'x-epochCategory'."""
+    return f"{EXTENSION_NAMESPACE}/{name}"
+
+
 # USDM Schema Version
 USDM_VERSION: str = "4.0"
 
