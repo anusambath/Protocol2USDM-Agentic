@@ -1,0 +1,561 @@
+{
+  "entities": {
+    "activities": {
+      "act_1": "text",
+      "act_2": "text",
+      "act_3": "text",
+      "act_4": "text",
+      "act_5": "text",
+      "act_6": "text",
+      "act_7": "text",
+      "act_8": "text",
+      "act_9": "text",
+      "act_10": "text",
+      "act_11": "text",
+      "act_12": "text",
+      "act_13": "text",
+      "act_14": "text",
+      "act_15": "text",
+      "act_16": "text",
+      "act_17": "text",
+      "act_18": "text",
+      "act_19": "text",
+      "act_20": "text",
+      "act_21": "text",
+      "act_22": "text",
+      "act_23": "text",
+      "act_24": "text",
+      "act_25": "text",
+      "act_26": "text",
+      "act_27": "text",
+      "act_28": "text",
+      "act_29": "text",
+      "act_30": "text",
+      "act_31": "text",
+      "act_32": "text",
+      "act_33": "text",
+      "act_34": "text",
+      "act_35": "text",
+      "act_36": "text"
+    },
+    "plannedTimepoints": {},
+    "encounters": {},
+    "epochs": {},
+    "activityGroups": {}
+  },
+  "cells": {
+    "activity_t_1|encounter_v_1": "text",
+    "activity_t_2|encounter_v_3": "text",
+    "activity_t_2|encounter_v_14": "text",
+    "activity_t_3|encounter_v_12": "text",
+    "activity_t_3|encounter_v_23": "text",
+    "activity_t_4|encounter_v_13": "text",
+    "activity_t_5|encounter_v_1": "text",
+    "activity_t_5|encounter_v_3": "text",
+    "activity_t_5|encounter_v_8": "text",
+    "activity_t_6|encounter_v_1": "text",
+    "activity_t_6|encounter_v_3": "text",
+    "activity_t_6|encounter_v_12": "text",
+    "activity_t_6|encounter_v_24": "text",
+    "activity_t_7|encounter_v_1": "text",
+    "activity_t_8|encounter_v_1": "text",
+    "activity_t_8|encounter_v_3": "text",
+    "activity_t_9|encounter_v_1": "text",
+    "activity_t_9|encounter_v_3": "text",
+    "activity_t_10|encounter_v_1": "text",
+    "activity_t_11|encounter_v_1": "text",
+    "activity_t_12|encounter_v_1": "text",
+    "activity_t_13|encounter_v_1": "text",
+    "activity_t_13|encounter_v_8": "text",
+    "activity_t_14|encounter_v_1": "text",
+    "activity_t_14|encounter_v_3": "text",
+    "activity_t_14|encounter_v_14": "text",
+    "activity_t_14|encounter_v_24": "text",
+    "activity_t_15|encounter_v_1": "text",
+    "activity_t_15|encounter_v_3": "text",
+    "activity_t_15|encounter_v_14": "text",
+    "activity_t_15|encounter_v_23": "text",
+    "activity_t_16|encounter_v_4": "text",
+    "activity_t_17|encounter_v_5": "text",
+    "activity_t_18|encounter_v_2": "text",
+    "activity_t_19|encounter_v_8": "text",
+    "activity_t_19|encounter_v_9": "text",
+    "activity_t_19|encounter_v_10": "text",
+    "activity_t_19|encounter_v_11": "text",
+    "activity_t_19|encounter_v_12": "text",
+    "activity_t_19|encounter_v_13": "text",
+    "activity_t_19|encounter_v_14": "text",
+    "activity_t_19|encounter_v_15": "text",
+    "activity_t_19|encounter_v_16": "text",
+    "activity_t_19|encounter_v_17": "text",
+    "activity_t_20|encounter_v_18": "text",
+    "activity_t_20|encounter_v_19": "text",
+    "activity_t_20|encounter_v_20": "text",
+    "activity_t_20|encounter_v_21": "text",
+    "activity_t_20|encounter_v_22": "text",
+    "activity_t_21|encounter_v_13": "text",
+    "activity_t_21|encounter_v_14": "text",
+    "activity_t_22|encounter_v_8": "text",
+    "activity_t_22|encounter_v_9": "text",
+    "activity_t_22|encounter_v_10": "text",
+    "activity_t_22|encounter_v_14": "text",
+    "activity_t_22|encounter_v_15": "text",
+    "activity_t_22|encounter_v_16": "text",
+    "activity_t_22|encounter_v_17": "text",
+    "activity_t_22|encounter_v_18": "text",
+    "activity_t_22|encounter_v_19": "text",
+    "activity_t_22|encounter_v_20": "text",
+    "activity_t_22|encounter_v_21": "text",
+    "activity_t_22|encounter_v_22": "text",
+    "activity_t_22|encounter_v_23": "text",
+    "activity_t_23|encounter_v_8": "text",
+    "activity_t_23|encounter_v_9": "text",
+    "activity_t_23|encounter_v_10": "text",
+    "activity_t_23|encounter_v_14": "text",
+    "activity_t_23|encounter_v_15": "text",
+    "activity_t_23|encounter_v_16": "text",
+    "activity_t_23|encounter_v_17": "text",
+    "activity_t_23|encounter_v_18": "text",
+    "activity_t_23|encounter_v_19": "text",
+    "activity_t_23|encounter_v_20": "text",
+    "activity_t_23|encounter_v_21": "text",
+    "activity_t_23|encounter_v_22": "text",
+    "activity_t_23|encounter_v_23": "text",
+    "activity_t_23|encounter_v_24": "text",
+    "activity_t_24|encounter_v_1": "text",
+    "activity_t_24|encounter_v_3": "text",
+    "activity_t_24|encounter_v_5": "text",
+    "activity_t_24|encounter_v_11": "text",
+    "activity_t_24|encounter_v_13": "text",
+    "activity_t_24|encounter_v_14": "text",
+    "activity_t_24|encounter_v_17": "text",
+    "activity_t_24|encounter_v_19": "text",
+    "activity_t_24|encounter_v_23": "text",
+    "activity_t_24|encounter_v_24": "text",
+    "activity_t_25|encounter_v_1": "text",
+    "activity_t_25|encounter_v_3": "text",
+    "activity_t_25|encounter_v_11": "text",
+    "activity_t_25|encounter_v_13": "text",
+    "activity_t_25|encounter_v_14": "text",
+    "activity_t_25|encounter_v_17": "text",
+    "activity_t_25|encounter_v_23": "text",
+    "activity_t_25|encounter_v_24": "text",
+    "activity_t_26|encounter_v_1": "text",
+    "activity_t_26|encounter_v_3": "text",
+    "activity_t_26|encounter_v_14": "text",
+    "activity_t_26|encounter_v_24": "text",
+    "activity_t_27|encounter_v_4": "text",
+    "activity_t_28|encounter_v_1": "text",
+    "activity_t_28|encounter_v_4": "text",
+    "activity_t_28|encounter_v_8": "text",
+    "activity_t_28|encounter_v_12": "text",
+    "activity_t_28|encounter_v_14": "text",
+    "activity_t_28|encounter_v_23": "text",
+    "activity_t_28|encounter_v_24": "text",
+    "activity_t_29|encounter_v_1": "text",
+    "activity_t_29|encounter_v_4": "text",
+    "activity_t_29|encounter_v_8": "text",
+    "activity_t_29|encounter_v_12": "text",
+    "activity_t_29|encounter_v_14": "text",
+    "activity_t_29|encounter_v_23": "text",
+    "activity_t_29|encounter_v_24": "text",
+    "activity_t_30|encounter_v_1": "text",
+    "activity_t_30|encounter_v_3": "text",
+    "activity_t_30|encounter_v_4": "text",
+    "activity_t_30|encounter_v_5": "text",
+    "activity_t_30|encounter_v_6": "text",
+    "activity_t_30|encounter_v_7": "text",
+    "activity_t_30|encounter_v_8": "text",
+    "activity_t_30|encounter_v_9": "text",
+    "activity_t_30|encounter_v_10": "text",
+    "activity_t_30|encounter_v_11": "text",
+    "activity_t_30|encounter_v_12": "text",
+    "activity_t_30|encounter_v_13": "text",
+    "activity_t_30|encounter_v_14": "text",
+    "activity_t_30|encounter_v_15": "text",
+    "activity_t_30|encounter_v_16": "text",
+    "activity_t_30|encounter_v_17": "text",
+    "activity_t_30|encounter_v_18": "text",
+    "activity_t_30|encounter_v_19": "text",
+    "activity_t_30|encounter_v_20": "text",
+    "activity_t_30|encounter_v_21": "text",
+    "activity_t_30|encounter_v_22": "text",
+    "activity_t_30|encounter_v_23": "text",
+    "activity_t_30|encounter_v_24": "text",
+    "activity_t_31|encounter_v_4": "text",
+    "activity_t_31|encounter_v_5": "text",
+    "activity_t_31|encounter_v_6": "text",
+    "activity_t_31|encounter_v_7": "text",
+    "activity_t_31|encounter_v_8": "text",
+    "activity_t_31|encounter_v_9": "text",
+    "activity_t_31|encounter_v_10": "text",
+    "activity_t_31|encounter_v_14": "text",
+    "activity_t_31|encounter_v_15": "text",
+    "activity_t_31|encounter_v_16": "text",
+    "activity_t_31|encounter_v_17": "text",
+    "activity_t_31|encounter_v_18": "text",
+    "activity_t_31|encounter_v_19": "text",
+    "activity_t_31|encounter_v_20": "text",
+    "activity_t_31|encounter_v_21": "text",
+    "activity_t_31|encounter_v_22": "text",
+    "activity_t_32|encounter_v_4": "text",
+    "activity_t_32|encounter_v_5": "text",
+    "activity_t_32|encounter_v_6": "text",
+    "activity_t_32|encounter_v_7": "text",
+    "activity_t_32|encounter_v_8": "text",
+    "activity_t_32|encounter_v_9": "text",
+    "activity_t_32|encounter_v_10": "text",
+    "activity_t_32|encounter_v_11": "text",
+    "activity_t_32|encounter_v_12": "text",
+    "activity_t_32|encounter_v_14": "text",
+    "activity_t_32|encounter_v_15": "text",
+    "activity_t_32|encounter_v_16": "text",
+    "activity_t_32|encounter_v_17": "text",
+    "activity_t_32|encounter_v_18": "text",
+    "activity_t_32|encounter_v_19": "text",
+    "activity_t_32|encounter_v_20": "text",
+    "activity_t_32|encounter_v_21": "text",
+    "activity_t_32|encounter_v_22": "text",
+    "activity_t_33|encounter_v_7": "text",
+    "activity_t_33|encounter_v_8": "text",
+    "activity_t_33|encounter_v_9": "text",
+    "activity_t_33|encounter_v_10": "text",
+    "activity_t_33|encounter_v_11": "text",
+    "activity_t_33|encounter_v_16": "text",
+    "activity_t_33|encounter_v_17": "text",
+    "activity_t_33|encounter_v_18": "text",
+    "activity_t_33|encounter_v_19": "text",
+    "activity_t_33|encounter_v_20": "text",
+    "activity_t_33|encounter_v_21": "text",
+    "activity_t_33|encounter_v_22": "text",
+    "activity_t_34|encounter_v_7": "text",
+    "activity_t_34|encounter_v_8": "text",
+    "activity_t_34|encounter_v_9": "text",
+    "activity_t_34|encounter_v_10": "text",
+    "activity_t_34|encounter_v_11": "text",
+    "activity_t_34|encounter_v_16": "text",
+    "activity_t_34|encounter_v_17": "text",
+    "activity_t_34|encounter_v_18": "text",
+    "activity_t_34|encounter_v_19": "text",
+    "activity_t_34|encounter_v_20": "text",
+    "activity_t_34|encounter_v_21": "text",
+    "activity_t_34|encounter_v_22": "text",
+    "activity_t_35|encounter_v_7": "text",
+    "activity_t_35|encounter_v_8": "text",
+    "activity_t_35|encounter_v_9": "text",
+    "activity_t_35|encounter_v_10": "text",
+    "activity_t_35|encounter_v_11": "text",
+    "activity_t_35|encounter_v_16": "text",
+    "activity_t_35|encounter_v_17": "text",
+    "activity_t_35|encounter_v_18": "text",
+    "activity_t_35|encounter_v_19": "text",
+    "activity_t_35|encounter_v_20": "text",
+    "activity_t_35|encounter_v_21": "text",
+    "activity_t_35|encounter_v_22": "text",
+    "activity_t_36|encounter_v_1": "text",
+    "activity_t_36|encounter_v_3": "text",
+    "activity_t_36|encounter_v_4": "text",
+    "activity_t_36|encounter_v_5": "text",
+    "activity_t_36|encounter_v_6": "text",
+    "activity_t_36|encounter_v_7": "text",
+    "activity_t_36|encounter_v_8": "text",
+    "activity_t_36|encounter_v_9": "text",
+    "activity_t_36|encounter_v_10": "text",
+    "activity_t_36|encounter_v_11": "text",
+    "activity_t_36|encounter_v_12": "text",
+    "activity_t_36|encounter_v_13": "text",
+    "activity_t_36|encounter_v_14": "text",
+    "activity_t_36|encounter_v_15": "text",
+    "activity_t_36|encounter_v_16": "text",
+    "activity_t_36|encounter_v_17": "text",
+    "activity_t_36|encounter_v_18": "text",
+    "activity_t_36|encounter_v_19": "text",
+    "activity_t_36|encounter_v_20": "text",
+    "activity_t_36|encounter_v_21": "text",
+    "activity_t_36|encounter_v_22": "text",
+    "activity_t_36|encounter_v_23": "text",
+    "activity_t_36|encounter_v_24": "text"
+  },
+  "cellFootnotes": {
+    "activity_t_3|encounter_v_12": [
+      "f"
+    ],
+    "activity_t_3|encounter_v_23": [
+      "f"
+    ],
+    "activity_t_4|encounter_v_13": [
+      "g"
+    ],
+    "activity_t_7|encounter_v_1": [
+      "h"
+    ],
+    "activity_t_11|encounter_v_1": [
+      "i"
+    ],
+    "activity_t_12|encounter_v_1": [
+      "j"
+    ],
+    "activity_t_13|encounter_v_1": [
+      "j"
+    ],
+    "activity_t_13|encounter_v_8": [
+      "j"
+    ],
+    "activity_t_14|encounter_v_1": [
+      "k"
+    ],
+    "activity_t_14|encounter_v_3": [
+      "k"
+    ],
+    "activity_t_14|encounter_v_14": [
+      "k"
+    ],
+    "activity_t_14|encounter_v_24": [
+      "k"
+    ],
+    "activity_t_15|encounter_v_1": [
+      "l"
+    ],
+    "activity_t_15|encounter_v_3": [
+      "l"
+    ],
+    "activity_t_15|encounter_v_14": [
+      "l"
+    ],
+    "activity_t_15|encounter_v_23": [
+      "l"
+    ],
+    "activity_t_21|encounter_v_13": [
+      "n"
+    ],
+    "activity_t_21|encounter_v_14": [
+      "n"
+    ],
+    "activity_t_22|encounter_v_8": [
+      "p"
+    ],
+    "activity_t_22|encounter_v_14": [
+      "p"
+    ],
+    "activity_t_22|encounter_v_16": [
+      "p"
+    ],
+    "activity_t_22|encounter_v_22": [
+      "p"
+    ],
+    "activity_t_23|encounter_v_8": [
+      "p"
+    ],
+    "activity_t_23|encounter_v_14": [
+      "p"
+    ],
+    "activity_t_23|encounter_v_16": [
+      "p"
+    ],
+    "activity_t_23|encounter_v_22": [
+      "p"
+    ],
+    "activity_t_24|encounter_v_1": [
+      "q"
+    ],
+    "activity_t_24|encounter_v_3": [
+      "q"
+    ],
+    "activity_t_24|encounter_v_5": [
+      "r"
+    ],
+    "activity_t_24|encounter_v_11": [
+      "q"
+    ],
+    "activity_t_24|encounter_v_13": [
+      "g"
+    ],
+    "activity_t_24|encounter_v_14": [
+      "q"
+    ],
+    "activity_t_24|encounter_v_17": [
+      "r"
+    ],
+    "activity_t_24|encounter_v_19": [
+      "q"
+    ],
+    "activity_t_24|encounter_v_23": [
+      "q"
+    ],
+    "activity_t_24|encounter_v_24": [
+      "q"
+    ],
+    "activity_t_25|encounter_v_13": [
+      "g"
+    ],
+    "activity_t_27|encounter_v_4": [
+      "t"
+    ],
+    "activity_t_28|encounter_v_1": [
+      "u"
+    ],
+    "activity_t_28|encounter_v_4": [
+      "u"
+    ],
+    "activity_t_28|encounter_v_8": [
+      "u"
+    ],
+    "activity_t_28|encounter_v_12": [
+      "u"
+    ],
+    "activity_t_28|encounter_v_14": [
+      "u"
+    ],
+    "activity_t_28|encounter_v_23": [
+      "u"
+    ],
+    "activity_t_28|encounter_v_24": [
+      "u"
+    ],
+    "activity_t_29|encounter_v_1": [
+      "k"
+    ],
+    "activity_t_29|encounter_v_4": [
+      "k"
+    ],
+    "activity_t_29|encounter_v_8": [
+      "k"
+    ],
+    "activity_t_29|encounter_v_12": [
+      "k"
+    ],
+    "activity_t_29|encounter_v_14": [
+      "k"
+    ],
+    "activity_t_29|encounter_v_23": [
+      "k"
+    ],
+    "activity_t_29|encounter_v_24": [
+      "k"
+    ],
+    "activity_t_31|encounter_v_4": [
+      "v"
+    ],
+    "activity_t_31|encounter_v_5": [
+      "v"
+    ],
+    "activity_t_31|encounter_v_6": [
+      "v"
+    ],
+    "activity_t_31|encounter_v_7": [
+      "v"
+    ],
+    "activity_t_31|encounter_v_8": [
+      "v"
+    ],
+    "activity_t_31|encounter_v_9": [
+      "v"
+    ],
+    "activity_t_31|encounter_v_10": [
+      "v"
+    ],
+    "activity_t_31|encounter_v_14": [
+      "v"
+    ],
+    "activity_t_31|encounter_v_15": [
+      "v"
+    ],
+    "activity_t_31|encounter_v_16": [
+      "v"
+    ],
+    "activity_t_31|encounter_v_17": [
+      "v"
+    ],
+    "activity_t_31|encounter_v_18": [
+      "v"
+    ],
+    "activity_t_31|encounter_v_19": [
+      "v"
+    ],
+    "activity_t_31|encounter_v_20": [
+      "v"
+    ],
+    "activity_t_31|encounter_v_21": [
+      "v"
+    ],
+    "activity_t_31|encounter_v_22": [
+      "v"
+    ],
+    "activity_t_34|encounter_v_7": [
+      "w"
+    ],
+    "activity_t_34|encounter_v_8": [
+      "w"
+    ],
+    "activity_t_34|encounter_v_9": [
+      "w"
+    ],
+    "activity_t_34|encounter_v_10": [
+      "w"
+    ],
+    "activity_t_34|encounter_v_11": [
+      "w"
+    ],
+    "activity_t_34|encounter_v_16": [
+      "w"
+    ],
+    "activity_t_34|encounter_v_17": [
+      "w"
+    ],
+    "activity_t_34|encounter_v_18": [
+      "w"
+    ],
+    "activity_t_34|encounter_v_19": [
+      "w"
+    ],
+    "activity_t_34|encounter_v_20": [
+      "w"
+    ],
+    "activity_t_34|encounter_v_21": [
+      "w"
+    ],
+    "activity_t_34|encounter_v_22": [
+      "w"
+    ],
+    "activity_t_35|encounter_v_7": [
+      "x"
+    ],
+    "activity_t_35|encounter_v_8": [
+      "x"
+    ],
+    "activity_t_35|encounter_v_9": [
+      "x"
+    ],
+    "activity_t_35|encounter_v_10": [
+      "x"
+    ],
+    "activity_t_35|encounter_v_11": [
+      "x"
+    ],
+    "activity_t_35|encounter_v_16": [
+      "x"
+    ],
+    "activity_t_35|encounter_v_17": [
+      "x"
+    ],
+    "activity_t_35|encounter_v_18": [
+      "x"
+    ],
+    "activity_t_35|encounter_v_19": [
+      "x"
+    ],
+    "activity_t_35|encounter_v_20": [
+      "x"
+    ],
+    "activity_t_35|encounter_v_21": [
+      "x"
+    ],
+    "activity_t_35|encounter_v_22": [
+      "x"
+    ]
+  },
+  "metadata": {
+    "model": "gemini-2.5-flash",
+    "extraction_type": "text"
+  }
+}

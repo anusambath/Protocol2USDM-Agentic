@@ -36,15 +36,9 @@ archive/
 # AI-generated docs (development artifacts)
 docs-by-claude/
 
-# Pipeline output
-output/
-
 # Checkpoints
 checkpoints/
 test_checkpoints/
-
-# Input files (PDFs, CSVs, golden JSONs — large/proprietary)
-input/
 
 # Test data & outputs
 test_data/

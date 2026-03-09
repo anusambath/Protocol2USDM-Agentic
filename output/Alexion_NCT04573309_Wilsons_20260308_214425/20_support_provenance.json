@@ -1,0 +1,352 @@
+{
+  "agent_id": "provenance",
+  "timestamp": "2026-03-08T22:06:45.250384",
+  "success": true,
+  "data": {
+    "provenance": {
+      "generated_at": "2026-03-08T21:44:40.286803",
+      "summary": {
+        "total_entities": 17,
+        "entities_with_provenance": 17,
+        "coverage_percent": 100.0,
+        "avg_confidence": 0.68,
+        "min_confidence": 0.64,
+        "max_confidence": 0.72,
+        "source_type_counts": {
+          "text": 17
+        },
+        "agent_contribution_counts": {
+          "metadata_agent": 17
+        },
+        "low_confidence_count": 0
+      },
+      "records": [
+        {
+          "entity_id": "title_1",
+          "entity_type": "study_title",
+          "source_agent_id": "metadata_agent",
+          "confidence_score": 0.72,
+          "source_pages": [
+            0,
+            1,
+            2
+          ],
+          "model_used": "gemini-2.5-flash",
+          "source_type": "text",
+          "extraction_timestamp": "2026-03-08T21:44:40.279967",
+          "parent_entity_id": null,
+          "contributing_agents": [
+            "metadata_agent"
+          ]
+        },
+        {
+          "entity_id": "title_2",
+          "entity_type": "study_title",
+          "source_agent_id": "metadata_agent",
+          "confidence_score": 0.72,
+          "source_pages": [
+            0,
+            1,
+            2
+          ],
+          "model_used": "gemini-2.5-flash",
+          "source_type": "text",
+          "extraction_timestamp": "2026-03-08T21:44:40.279991",
+          "parent_entity_id": null,
+          "contributing_agents": [
+            "metadata_agent"
+          ]
+        },
+        {
+          "entity_id": "sid_1",
+          "entity_type": "study_identifier",
+          "source_agent_id": "metadata_agent",
+          "confidence_score": 0.68,
+          "source_pages": [
+            0,
+            1,
+            2
+          ],
+          "model_used": "gemini-2.5-flash",
+          "source_type": "text",
+          "extraction_timestamp": "2026-03-08T21:44:40.279999",
+          "parent_entity_id": null,
+          "contributing_agents": [
+            "metadata_agent"
+          ]
+        },
+        {
+          "entity_id": "sid_2",
+          "entity_type": "study_identifier",
+          "source_agent_id": "metadata_agent",
+          "confidence_score": 0.68,
+          "source_pages": [
+            0,
+            1,
+            2
+          ],
+          "model_used": "gemini-2.5-flash",
+          "source_type": "text",
+          "extraction_timestamp": "2026-03-08T21:44:40.280005",
+          "parent_entity_id": null,
+          "contributing_agents": [
+            "metadata_agent"
+          ]
+        },
+        {
+          "entity_id": "sid_3",
+          "entity_type": "study_identifier",
+          "source_agent_id": "metadata_agent",
+          "confidence_score": 0.68,
+          "source_pages": [
+            0,
+            1,
+            2
+          ],
+          "model_used": "gemini-2.5-flash",
+          "source_type": "text",
+          "extraction_timestamp": "2026-03-08T21:44:40.280010",
+          "parent_entity_id": null,
+          "contributing_agents": [
+            "metadata_agent"
+          ]
+        },
+        {
+          "entity_id": "sid_4",
+          "entity_type": "study_identifier",
+          "source_agent_id": "metadata_agent",
+          "confidence_score": 0.68,
+          "source_pages": [
+            0,
+            1,
+            2
+          ],
+          "model_used": "gemini-2.5-flash",
+          "source_type": "text",
+          "extraction_timestamp": "2026-03-08T21:44:40.280019",
+          "parent_entity_id": null,
+          "contributing_agents": [
+            "metadata_agent"
+          ]
+        },
+        {
+          "entity_id": "org_1",
+          "entity_type": "organization",
+          "source_agent_id": "metadata_agent",
+          "confidence_score": 0.68,
+          "source_pages": [
+            0,
+            1,
+            2
+          ],
+          "model_used": "gemini-2.5-flash",
+          "source_type": "text",
+          "extraction_timestamp": "2026-03-08T21:44:40.280024",
+          "parent_entity_id": null,
+          "contributing_agents": [
+            "metadata_agent"
+          ]
+        },
+        {
+          "entity_id": "org_2",
+          "entity_type": "organization",
+          "source_agent_id": "metadata_agent",
+          "confidence_score": 0.68,
+          "source_pages": [
+            0,
+            1,
+            2
+          ],
+          "model_used": "gemini-2.5-flash",
+          "source_type": "text",
+          "extraction_timestamp": "2026-03-08T21:44:40.280029",
+          "parent_entity_id": null,
+          "contributing_agents": [
+            "metadata_agent"
+          ]
+        },
+        {
+          "entity_id": "org_3",
+          "entity_type": "organization",
+          "source_agent_id": "metadata_agent",
+          "confidence_score": 0.68,
+          "source_pages": [
+            0,
+            1,
+            2
+          ],
+          "model_used": "gemini-2.5-flash",
+          "source_type": "text",
+          "extraction_timestamp": "2026-03-08T21:44:40.280034",
+          "parent_entity_id": null,
+          "contributing_agents": [
+            "metadata_agent"
+          ]
+        },
+        {
+          "entity_id": "org_4",
+          "entity_type": "organization",
+          "source_agent_id": "metadata_agent",
+          "confidence_score": 0.68,
+          "source_pages": [
+            0,
+            1,
+            2
+          ],
+          "model_used": "gemini-2.5-flash",
+          "source_type": "text",
+          "extraction_timestamp": "2026-03-08T21:44:40.280039",
+          "parent_entity_id": null,
+          "contributing_agents": [
+            "metadata_agent"
+          ]
+        },
+        {
+          "entity_id": "role_1",
+          "entity_type": "study_role",
+          "source_agent_id": "metadata_agent",
+          "confidence_score": 0.64,
+          "source_pages": [
+            0,
+            1,
+            2
+          ],
+          "model_used": "gemini-2.5-flash",
+          "source_type": "text",
+          "extraction_timestamp": "2026-03-08T21:44:40.280044",
+          "parent_entity_id": null,
+          "contributing_agents": [
+            "metadata_agent"
+          ]
+        },
+        {
+          "entity_id": "role_2",
+          "entity_type": "study_role",
+          "source_agent_id": "metadata_agent",
+          "confidence_score": 0.64,
+          "source_pages": [
+            0,
+            1,
+            2
+          ],
+          "model_used": "gemini-2.5-flash",
+          "source_type": "text",
+          "extraction_timestamp": "2026-03-08T21:44:40.280049",
+          "parent_entity_id": null,
+          "contributing_agents": [
+            "metadata_agent"
+          ]
+        },
+        {
+          "entity_id": "role_3",
+          "entity_type": "study_role",
+          "source_agent_id": "metadata_agent",
+          "confidence_score": 0.64,
+          "source_pages": [
+            0,
+            1,
+            2
+          ],
+          "model_used": "gemini-2.5-flash",
+          "source_type": "text",
+          "extraction_timestamp": "2026-03-08T21:44:40.280056",
+          "parent_entity_id": null,
+          "contributing_agents": [
+            "metadata_agent"
+          ]
+        },
+        {
+          "entity_id": "role_4",
+          "entity_type": "study_role",
+          "source_agent_id": "metadata_agent",
+          "confidence_score": 0.64,
+          "source_pages": [
+            0,
+            1,
+            2
+          ],
+          "model_used": "gemini-2.5-flash",
+          "source_type": "text",
+          "extraction_timestamp": "2026-03-08T21:44:40.280063",
+          "parent_entity_id": null,
+          "contributing_agents": [
+            "metadata_agent"
+          ]
+        },
+        {
+          "entity_id": "ind_1",
+          "entity_type": "indication",
+          "source_agent_id": "metadata_agent",
+          "confidence_score": 0.68,
+          "source_pages": [
+            0,
+            1,
+            2
+          ],
+          "model_used": "gemini-2.5-flash",
+          "source_type": "text",
+          "extraction_timestamp": "2026-03-08T21:44:40.280068",
+          "parent_entity_id": null,
+          "contributing_agents": [
+            "metadata_agent"
+          ]
+        },
+        {
+          "entity_id": "study_phase_1",
+          "entity_type": "study_phase",
+          "source_agent_id": "metadata_agent",
+          "confidence_score": 0.72,
+          "source_pages": [
+            0,
+            1,
+            2
+          ],
+          "model_used": "gemini-2.5-flash",
+          "source_type": "text",
+          "extraction_timestamp": "2026-03-08T21:44:40.280073",
+          "parent_entity_id": null,
+          "contributing_agents": [
+            "metadata_agent"
+          ]
+        },
+        {
+          "entity_id": "study_metadata_1",
+          "entity_type": "metadata",
+          "source_agent_id": "metadata_agent",
+          "confidence_score": 0.72,
+          "source_pages": [
+            0,
+            1,
+            2
+          ],
+          "model_used": "gemini-2.5-flash",
+          "source_type": "text",
+          "extraction_timestamp": "2026-03-08T21:44:40.280079",
+          "parent_entity_id": null,
+          "contributing_agents": [
+            "metadata_agent"
+          ]
+        }
+      ]
+    },
+    "output_path": null,
+    "record_count": 17,
+    "summary": {
+      "total_entities": 17,
+      "entities_with_provenance": 17,
+      "coverage_percent": 100.0,
+      "avg_confidence": 0.68,
+      "min_confidence": 0.64,
+      "max_confidence": 0.72,
+      "source_type_counts": {
+        "text": 17
+      },
+      "agent_contribution_counts": {
+        "metadata_agent": 17
+      },
+      "low_confidence_count": 0
+    }
+  },
+  "error": null,
+  "confidence": 1.0
+}
