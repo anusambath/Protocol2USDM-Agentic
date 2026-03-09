@@ -40,7 +40,7 @@ A: Use `PipelineConfig(skip_agents=["agent_id_1", "agent_id_2"])`.
 A: Yes. Install Python 3.9+, run `pip install -r requirements.txt`, set your API key, and use the CLI (`python run_extraction.py protocol.pdf`) or Python API directly.
 
 **Q: Where are the output files?**
-A: In a timestamped directory under `output/`, e.g., `output/NCT12345_Protocol_20260301_120000/`. Each agent's output is saved as a numbered JSON file (e.g., `01_extraction_metadata.json`). A `result.md` summary is also generated.
+A: In a timestamped directory under `output/`, e.g., `output/NCT12345_Protocol_20260301_120000/`. Each agent's output is saved as a numbered JSON file (e.g., `01_extraction_metadata.json`, `14_extraction_biomedical_concepts.json`). A `result.md` summary is also generated.
 
 **Q: What is the postprocessing agent?**
 A: The `PostprocessingAgent` runs after extraction to apply SoA post-processing including superscript/footnote normalization, activity-group linking, and name cleanup. Separate agents handle CDISC CORE validation, schema validation, and NCI EVS enrichment.

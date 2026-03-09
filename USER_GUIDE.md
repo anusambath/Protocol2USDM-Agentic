@@ -10,8 +10,8 @@
 ### Setup
 
 ```bash
-git clone https://github.com/anusambath/Protocol2USDM_Agentic.git
-cd Protocol2USDM_Agentic
+git clone https://github.com/anusambath/Protocol2USDM-Agentic.git
+cd Protocol2USDM-Agentic
 
 python -m venv .venv
 source .venv/bin/activate   # macOS/Linux
@@ -91,7 +91,7 @@ python run_extraction.py protocol.pdf --model gemini-2.5-pro --fast-model gemini
 python run_extraction.py protocol.pdf --skip scheduling_agent execution_agent
 
 # Batch processing
-python run_extraction.py input/trial/*/Protocol.pdf --workers 2
+python run_extraction.py input/test_trials/*.pdf --workers 2
 ```
 
 ### Checkpoint Resume
@@ -120,13 +120,34 @@ Each run creates a timestamped directory:
 
 ```
 output/<protocol_name>_<timestamp>/
-├── <protocol_name>_usdm.json           # Primary USDM v4.0 output
-├── <protocol_name>_provenance.json     # Entity-level provenance (page sources)
-├── 9_final_soa_provenance.json         # SoA cell-level provenance
-├── id_mapping.json                     # Simple ID → UUID mapping
-├── conformance_report.json             # CDISC CORE validation results
-├── result.md                           # Extraction summary
-└── <protocol_name>.pdf                 # Copy of source PDF
+├── 01_extraction_metadata.json           # Metadata agent
+├── 02_extraction_soa_vision.json         # SoA Vision agent
+├── 03_extraction_soa_text.json           # SoA Text agent
+├── 04_extraction_narrative.json          # Narrative agent
+├── 05_extraction_document_structure.json # Document Structure agent
+├── 06_extraction_eligibility.json        # Eligibility agent
+├── 07_extraction_objectives.json         # Objectives agent
+├── 08_extraction_study_design.json       # Study Design agent
+├── 09_extraction_procedures_devices.json # Procedures & Devices agent
+├── 10_extraction_interventions.json      # Interventions agent
+├── 11_extraction_scheduling_logic.json   # Scheduling agent
+├── 12_extraction_execution_model.json    # Execution Model agent
+├── 13_extraction_advanced_entities.json  # Advanced Entities agent
+├── 14_extraction_biomedical_concepts.json # Biomedical Concepts agent
+├── 15_quality_postprocessing.json        # Post-processing
+├── 16_quality_reconciliation.json        # Reconciliation
+├── 17_quality_validation.json            # Validation
+├── 18_quality_enrichment.json            # NCI EVS Enrichment
+├── 19_support_usdm_generator.json        # USDM assembly
+├── 20_support_provenance.json            # Provenance generation
+├── <protocol_name>_usdm.json            # Primary USDM v4.0 output
+├── <protocol_name>_provenance.json      # Entity-level provenance (page sources)
+├── 9_final_soa_provenance.json          # SoA cell-level provenance
+├── id_mapping.json                      # Simple ID → UUID mapping
+├── conformance_report.json              # CDISC CORE validation results
+├── result.md                            # Extraction summary
+├── soa_page_*.png                       # SoA page images (if vision enabled)
+└── <protocol_name>.pdf                  # Copy of source PDF
 ```
 
 ### USDM JSON Structure

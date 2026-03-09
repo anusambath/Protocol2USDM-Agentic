@@ -49,7 +49,7 @@ config = PipelineConfig(
 
 pipeline = ExtractionPipeline(config)
 pipeline.initialize()
-result = pipeline.run("input/test_trials/NCT12345/NCT12345_Protocol.pdf")
+result = pipeline.run("input/test_trials/NCT12345_Protocol.pdf")
 pipeline.shutdown()
 
 print(f"Success: {result.success}")
@@ -62,7 +62,7 @@ print(f"USDM: {result.usdm_path}")
 ```python
 import glob
 
-pdfs = glob.glob("input/test_trials/*/*.pdf")
+pdfs = glob.glob("input/test_trials/*.pdf")
 pipeline = ExtractionPipeline(config)
 pipeline.initialize()
 
@@ -78,18 +78,34 @@ pipeline.shutdown()
 ```
 output/
   {protocol_name}_{YYYYMMDD_HHMMSS}/
-    01_extraction_metadata.json        # Step 1: Metadata
-    02_extraction_soa_vision.json      # Step 2: SoA Vision
-    ...                                # Steps 3-13: Other extraction agents
-    14_quality_postprocessing.json     # Step 14: Post-processing
-    15_quality_reconciliation.json     # Step 15: Reconciliation
-    16_quality_validation.json         # Step 16: Validation
-    17_quality_enrichment.json         # Step 17: Enrichment
-    18_support_usdm_generator.json     # Step 18: USDM generation
-    19_support_provenance.json         # Step 19: Provenance
-    {protocol_name}_usdm.json         # USDM v4.0 JSON
-    {protocol_name}_provenance.json   # Entity provenance
-    result.md                          # Execution summary with timing/tokens
+    01_extraction_metadata.json              # Metadata
+    02_extraction_soa_vision.json            # SoA Vision
+    03_extraction_soa_text.json              # SoA Text
+    04_extraction_narrative.json             # Narrative
+    05_extraction_document_structure.json    # Document Structure
+    06_extraction_eligibility.json           # Eligibility
+    07_extraction_objectives.json            # Objectives
+    08_extraction_study_design.json          # Study Design
+    09_extraction_procedures_devices.json    # Procedures & Devices
+    10_extraction_interventions.json         # Interventions
+    11_extraction_scheduling_logic.json      # Scheduling Logic
+    12_extraction_execution_model.json       # Execution Model
+    13_extraction_advanced_entities.json     # Advanced Entities
+    14_extraction_biomedical_concepts.json   # Biomedical Concepts
+    15_quality_postprocessing.json           # Post-processing
+    16_quality_reconciliation.json           # Reconciliation
+    17_quality_validation.json               # Validation
+    18_quality_enrichment.json               # Enrichment
+    19_support_usdm_generator.json           # USDM generation
+    20_support_provenance.json               # Provenance
+    {protocol_name}_usdm.json               # USDM v4.0 JSON
+    {protocol_name}_provenance.json         # Entity provenance
+    9_final_soa_provenance.json             # SoA cell-level provenance
+    conformance_report.json                 # CDISC CORE validation
+    id_mapping.json                         # Simple ID → UUID mapping
+    result.md                               # Execution summary with timing/tokens
+    soa_page_*.png                          # SoA page images (if vision enabled)
+    {protocol_name}.pdf                     # Copy of source PDF
 ```
 
 ## Running Tests

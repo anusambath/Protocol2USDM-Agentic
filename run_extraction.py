@@ -5,7 +5,7 @@ Usage:
     # Run extraction on a PDF
     python run_extraction.py path/to/protocol.pdf
     python run_extraction.py path/to/protocol.pdf --model gemini-2.0-flash
-    python run_extraction.py input/test_trials/*/Protocol.pdf --workers 2
+    python run_extraction.py input/test_trials/*.pdf --workers 2
     
     # List available checkpoints
     python run_extraction.py --list-checkpoints
