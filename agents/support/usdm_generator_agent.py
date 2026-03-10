@@ -288,6 +288,7 @@ def _build_empty_usdm_skeleton() -> Dict[str, Any]:
                             "encounters": [],
                             "procedures": [],
                             "studyInterventions": [],
+                            "soaFootnotes": [],
                             "scheduleTimelines": [],
                             "eligibilityCriteria": [],
                             "elements": [],
@@ -819,36 +820,49 @@ def _normalize_codelists(usdm: Dict[str, Any]) -> None:
         if not enc.get("nextId"):
             enc["nextId"] = encounters[i + 1]["id"]
 
-    # Assign epochId to encounters that lack one (required for UI column grouping)
-    # Match by name heuristic; fall back to distributing encounters across epochs evenly.
+    # Resolve encounter→epoch mapping captured during entity placement.
+    # The map was built from vision-extracted epochIds (e.g. "epoch_1") which
+    # reference the header_structure epoch IDs, NOT the USDM epoch entity IDs
+    # (e.g. "epoch_v_1").  We resolve them here by matching epoch names from
+    # the header_structure to the actual USDM epoch entities.
     epochs = design.get("epochs", [])
-    if epochs:
-        epoch_count = len(epochs)
-        enc_count = len(encounters)
-        for i, enc in enumerate(encounters):
-            if not enc.get("epochId"):
-                enc_name = enc.get("name", "").lower()
-                matched = None
-                for ep in epochs:
-                    ep_name = ep.get("name", "").lower()
-                    # Match on any shared keyword
-                    ep_words = set(ep_name.split())
-                    enc_words = set(enc_name.split())
-                    if ep_words & enc_words:
-                        matched = ep["id"]
-                        break
-                if matched is None:
-                    # Positional fallback: spread encounters evenly across epochs
-                    epoch_idx = (i * epoch_count) // max(enc_count, 1)
-                    matched = epochs[min(epoch_idx, epoch_count - 1)]["id"]
-                enc["epochId"] = matched
+    raw_enc_epoch_map = design.get("_encounterEpochMap", {})
 
-    # Cache encounter→epochId mapping BEFORE epochId gets stripped later.
-    # This is used by timeline synthesis to assign epochId to ScheduledActivityInstances.
-    design["_encounterEpochMap"] = {
-        enc["id"]: enc.get("epochId", "")
-        for enc in encounters if enc.get("id")
-    }
+    if raw_enc_epoch_map and epochs:
+        # Build a lookup from header-structure epoch ID → USDM epoch entity ID.
+        # The header_structure stores epochs with IDs like "epoch_1" and names
+        # like "Screening".  The USDM epoch entities have IDs like "epoch_v_1"
+        # and the same names.  Match by name (case-insensitive).
+        header_epochs = design.get("_headerEpochs", [])
+        header_id_to_name = {ep["id"]: ep.get("name", "") for ep in header_epochs}
+        usdm_name_to_id: Dict[str, str] = {}
+        for ep in epochs:
+            usdm_name_to_id[ep.get("name", "").lower().strip()] = ep["id"]
+
+        stale_to_usdm: Dict[str, str] = {}
+        for hdr_id, hdr_name in header_id_to_name.items():
+            resolved = usdm_name_to_id.get(hdr_name.lower().strip())
+            if resolved:
+                stale_to_usdm[hdr_id] = resolved
+
+        # Resolve the map values from stale IDs to USDM IDs
+        resolved_map: Dict[str, str] = {}
+        for enc_id, stale_epoch_id in raw_enc_epoch_map.items():
+            resolved = stale_to_usdm.get(stale_epoch_id)
+            if resolved:
+                resolved_map[enc_id] = resolved
+            elif stale_epoch_id in {ep["id"] for ep in epochs}:
+                # Already a valid USDM epoch ID
+                resolved_map[enc_id] = stale_epoch_id
+
+        design["_encounterEpochMap"] = resolved_map
+
+        # Also set epochId on encounter objects for UI column grouping
+        for enc in encounters:
+            if not enc.get("epochId"):
+                mapped = resolved_map.get(enc.get("id"))
+                if mapped:
+                    enc["epochId"] = mapped
 
     # Fix StudyCell epochIds to match actual epoch IDs (DDF00243)
     # Extraction may create cells with epochIds like "epoch_1" while
@@ -1370,11 +1384,36 @@ def _ensure_sponsor_identifier(usdm: Dict[str, Any]) -> None:
             epochs = design.get("epochs", [])
             epoch_ids = [ep["id"] for ep in epochs] if epochs else []
 
-            # Use cached encounter→epoch mapping from _normalize_codelists
-            _enc_epoch_map = design.pop("_encounterEpochMap", {})
+            # Use cached encounter→epoch mapping captured during entity placement.
+            # The map values may be stale header-structure epoch IDs (e.g. "epoch_1")
+            # that need resolving to actual USDM epoch entity IDs (e.g. "epoch_v_1").
+            raw_enc_epoch_map = design.pop("_encounterEpochMap", {})
+            header_epochs = design.get("_headerEpochs", [])
+
+            # Build stale→USDM epoch ID lookup by matching epoch names
+            _stale_to_usdm: Dict[str, str] = {}
+            if header_epochs and epochs:
+                hdr_id_to_name = {ep["id"]: ep.get("name", "") for ep in header_epochs}
+                usdm_name_to_id: Dict[str, str] = {}
+                for ep in epochs:
+                    usdm_name_to_id[ep.get("name", "").lower().strip()] = ep["id"]
+                for hdr_id, hdr_name in hdr_id_to_name.items():
+                    resolved = usdm_name_to_id.get(hdr_name.lower().strip())
+                    if resolved:
+                        _stale_to_usdm[hdr_id] = resolved
+
+            valid_epoch_set = set(epoch_ids)
+            _enc_epoch_map: Dict[str, str] = {}
+            for enc_id, stale_epoch_id in raw_enc_epoch_map.items():
+                if stale_epoch_id in valid_epoch_set:
+                    _enc_epoch_map[enc_id] = stale_epoch_id
+                else:
+                    resolved = _stale_to_usdm.get(stale_epoch_id)
+                    if resolved:
+                        _enc_epoch_map[enc_id] = resolved
 
             def _match_epoch(enc_name: str) -> Optional[str]:
-                """Match an encounter name to the best epoch."""
+                """Match an encounter name to the best epoch by keyword."""
                 low = enc_name.lower()
                 for ep in epochs:
                     ep_name = ep.get("name", "").lower()
@@ -1388,14 +1427,7 @@ def _ensure_sponsor_identifier(usdm: Dict[str, Any]) -> None:
                         return ep["id"]
                     if "fu visit" in low and "fu visit" in ep_name:
                         return ep["id"]
-                # Word overlap fallback
-                for ep in epochs:
-                    ep_name = ep.get("name", "").lower()
-                    ep_words = set(ep_name.split())
-                    enc_words = set(low.split())
-                    if ep_words & enc_words:
-                        return ep["id"]
-                return epoch_ids[0] if epoch_ids else None
+                return None
 
             # Build scheduled instances from extracted SoA tick data (activity_timepoints)
             # Group by encounterId so each instance lists all activities performed at that encounter.
@@ -1403,6 +1435,8 @@ def _ensure_sponsor_identifier(usdm: Dict[str, Any]) -> None:
             sched_instances_raw = design.pop("_scheduledInstances", [])
 
             instances: list = []
+            # Collect footnoteRefs per encounter (union of all cell-level refs)
+            enc_footnote_labels: dict = {}  # enc_id -> set of footnote labels
             if sched_instances_raw:
                 from collections import defaultdict
                 enc_to_activities: dict = defaultdict(list)
@@ -1411,6 +1445,10 @@ def _ensure_sponsor_identifier(usdm: Dict[str, Any]) -> None:
                     act_id = si.get("activityId")
                     if enc_id and act_id:
                         enc_to_activities[enc_id].append(act_id)
+                    # Collect footnote labels for this encounter
+                    fn_refs = si.get("footnoteRefs", [])
+                    if fn_refs and enc_id:
+                        enc_footnote_labels.setdefault(enc_id, set()).update(fn_refs)
 
                 enc_map = {enc.get("id"): enc for enc in design.get("encounters", []) if enc.get("id")}
                 for enc_id, activity_ids in enc_to_activities.items():
@@ -1437,6 +1475,10 @@ def _ensure_sponsor_identifier(usdm: Dict[str, Any]) -> None:
                             "encounterId": enc_id,
                             "instanceType": "ScheduledActivityInstance",
                         })
+
+            # ── SoAFootnotes: build from header_structure footnotes ─────────
+            _build_soa_footnotes(design, instances, enc_footnote_labels,
+                                 sched_instances_raw)
 
             # entryId should reference the first encounter or activity
             entry_id = instances[0]["id"] if instances else None
@@ -1485,6 +1527,82 @@ def _ensure_sponsor_identifier(usdm: Dict[str, Any]) -> None:
         ]
 
 
+def _build_soa_footnotes(design: Dict[str, Any],
+                          instances: List[Dict[str, Any]],
+                          enc_footnote_labels: Dict[str, set],
+                          sched_instances_raw: List[Dict[str, Any]]) -> None:
+    """
+    Build SoAFootnote objects from header_structure footnotes and wire
+    footnoteIds onto ScheduledActivityInstance objects.
+
+    Footnote text comes from the header_structure entity (vision extraction).
+    Footnote labels come from cellFootnotes in provenance / footnoteRefs on
+    scheduled_instance entities.
+    """
+    import re as _re
+
+    # Collect ALL unique footnote labels referenced by any cell
+    all_labels: set = set()
+    for si in sched_instances_raw:
+        fn_refs = si.get("footnoteRefs", [])
+        if fn_refs:
+            all_labels.update(fn_refs)
+    for labels in enc_footnote_labels.values():
+        all_labels.update(labels)
+
+    if not all_labels:
+        return
+
+    # Try to get footnote text from header_structure stored in design notes
+    # or from the _headerFootnotes stash (set by _generate)
+    raw_footnotes: List[str] = design.pop("_headerFootnotes", [])
+
+    # Parse footnote strings into {label: text} map
+    # Formats: "a. text...", "1. text...", "a) text...", "*. text..."
+    label_to_text: Dict[str, str] = {}
+    for fn_str in raw_footnotes:
+        fn_str = fn_str.strip()
+        # Match: "a. text", "aa. text", "1. text", "*. text", "a) text"
+        m = _re.match(r'^([a-zA-Z]+|\d+|\*)[.\)]\s*(.+)', fn_str, _re.DOTALL)
+        if m:
+            label = m.group(1).lower()
+            text = m.group(2).strip()
+            label_to_text[label] = text
+
+    # Create SoAFootnote objects for each referenced label
+    label_to_footnote_id: Dict[str, str] = {}
+    soa_footnotes: List[Dict[str, Any]] = []
+    for label in sorted(all_labels):
+        fn_id = str(uuid.uuid4()).replace("-", "_")
+        label_to_footnote_id[label.lower()] = fn_id
+        soa_footnotes.append({
+            "id": fn_id,
+            "instanceType": "SoAFootnote",
+            "label": label,
+            "text": label_to_text.get(label.lower(), ""),
+        })
+
+    if soa_footnotes:
+        design.setdefault("soaFootnotes", []).extend(soa_footnotes)
+
+    # Wire footnoteIds onto instances based on per-cell footnoteRefs
+    # Build a map: enc_id -> set of footnote IDs
+    enc_to_fn_ids: Dict[str, List[str]] = {}
+    for enc_id, labels in enc_footnote_labels.items():
+        fn_ids = []
+        for lbl in sorted(labels):
+            fn_id = label_to_footnote_id.get(lbl.lower())
+            if fn_id:
+                fn_ids.append(fn_id)
+        if fn_ids:
+            enc_to_fn_ids[enc_id] = fn_ids
+
+    for inst in instances:
+        enc_id = inst.get("encounterId")
+        if enc_id and enc_id in enc_to_fn_ids:
+            inst["footnoteIds"] = enc_to_fn_ids[enc_id]
+
+
 def _post_normalize_cleanup(usdm: Dict[str, Any]) -> None:
     """
     Final cleanup pass after normalize_usdm_data().
@@ -1514,6 +1632,12 @@ def _post_normalize_cleanup(usdm: Dict[str, Any]) -> None:
 
     # Remove internal encounter→epoch cache (used during timeline synthesis)
     design.pop("_encounterEpochMap", None)
+
+    # Remove internal header footnotes stash (consumed by _build_soa_footnotes)
+    design.pop("_headerFootnotes", None)
+
+    # Remove internal header epoch stash (consumed by _normalize_codelists)
+    design.pop("_headerEpochs", None)
 
     # Strip null entryId from ScheduleTimelines (must be string or absent — DDF00082)
     for tl in design.get("scheduleTimelines", []):
@@ -2319,6 +2443,25 @@ class USDMGeneratorAgent(BaseAgent):
                 types_seen.add(etype)
                 continue
 
+            # header_structure: stash footnote text and epoch data for later use
+            if etype == "header_structure":
+                try:
+                    hs_data = entity.data or {}
+                    structure = hs_data.get("structure", {})
+                    design = usdm["study"]["versions"][0]["studyDesigns"][0]
+                    footnotes = structure.get("footnotes", [])
+                    if footnotes:
+                        design["_headerFootnotes"] = footnotes
+                    # Stash header epoch data so _normalize_codelists can resolve
+                    # stale epoch IDs (e.g. "epoch_1") to USDM epoch entity IDs.
+                    col_hierarchy = structure.get("columnHierarchy", {})
+                    hdr_epochs = col_hierarchy.get("epochs", [])
+                    if hdr_epochs:
+                        design["_headerEpochs"] = hdr_epochs
+                except (KeyError, IndexError):
+                    pass
+                continue
+
             # Apply include/exclude filters
             if include_types and etype not in include_types:
                 continue
@@ -2329,6 +2472,16 @@ class USDMGeneratorAgent(BaseAgent):
             entity_data = dict(entity.data)
             if "id" not in entity_data:
                 entity_data["id"] = entity.id
+
+            # Capture encounter→epochId mapping BEFORE epochId gets stripped.
+            # Timeline synthesis (_ensure_sponsor_identifier) needs this mapping
+            # but runs before _normalize_codelists where it was previously built.
+            if etype == "encounter" and entity_data.get("epochId"):
+                try:
+                    enc_epoch_stash = usdm["study"]["versions"][0]["studyDesigns"][0].setdefault("_encounterEpochMap", {})
+                    enc_epoch_stash[entity_data["id"]] = entity_data["epochId"]
+                except (KeyError, IndexError):
+                    pass
 
             # Strip internal/debug properties not in USDM schema
             entity_data = _sanitize_entity_data(entity_data)
