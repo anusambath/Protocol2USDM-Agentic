@@ -96,6 +96,62 @@ def parse_annotation_type(type_str: str) -> AnnotationType:
     return type_map.get(type_str.lower(), AnnotationType.FOOTNOTE)
 
 
+def _repair_truncated_json(json_str: str) -> Optional[Dict[str, Any]]:
+    """Attempt to repair a truncated JSON response from the LLM.
+
+    When the LLM hits its token limit the JSON is cut mid-stream.  We try
+    to salvage as much data as possible by:
+    1. Stripping any trailing incomplete value (unterminated string, etc.)
+    2. Closing all open arrays and objects.
+    """
+    # Remove trailing incomplete string literal
+    # Find the last complete JSON value boundary
+    s = json_str.rstrip()
+
+    # If it ends mid-string, back up to the last complete element
+    # Try progressively trimming from the end
+    for trim in range(min(500, len(s))):
+        candidate = s[:len(s) - trim] if trim else s
+        # Count open braces/brackets
+        opens = 0
+        open_brackets = 0
+        in_string = False
+        escape = False
+        for ch in candidate:
+            if escape:
+                escape = False
+                continue
+            if ch == '\\' and in_string:
+                escape = True
+                continue
+            if ch == '"':
+                in_string = not in_string
+                continue
+            if in_string:
+                continue
+            if ch == '{':
+                opens += 1
+            elif ch == '}':
+                opens -= 1
+            elif ch == '[':
+                open_brackets += 1
+            elif ch == ']':
+                open_brackets -= 1
+
+        if not in_string:
+            # Remove any trailing comma
+            candidate = candidate.rstrip().rstrip(',')
+            # Close open brackets/braces
+            candidate += ']' * open_brackets + '}' * opens
+            try:
+                return json.loads(candidate)
+            except json.JSONDecodeError:
+                continue
+
+    return None
+
+
+
 def extract_document_structure(
     pdf_path: str,
     model: str = "gemini-2.5-pro",
@@ -119,6 +175,7 @@ def extract_document_structure(
     
     prompt = get_document_structure_prompt(text)
     system_prompt = get_system_prompt()
+    json_str = ""
     
     try:
         full_prompt = f"{system_prompt}\n\n{prompt}"
@@ -128,7 +185,7 @@ def extract_document_structure(
             json_mode=True,
             extractor_name="document_structure",
             temperature=0.1,
-            max_tokens=32768,
+            max_tokens=65536,
         )
         response = result.get('response', '')
         
@@ -156,7 +213,23 @@ def extract_document_structure(
                 model_used=model,
             )
         
-        raw_data = json.loads(json_str)
+        try:
+            raw_data = json.loads(json_str)
+        except json.JSONDecodeError as e:
+            logger.warning(f"Failed to parse LLM response: {e}")
+            logger.info("Attempting to repair truncated JSON...")
+            repaired = _repair_truncated_json(json_str)
+            if repaired is not None:
+                logger.info("Successfully repaired truncated JSON")
+                raw_data = repaired
+            else:
+                logger.error("JSON repair failed")
+                return DocumentStructureResult(
+                    success=False,
+                    error=f"JSON parse error: {e}",
+                    pages_used=pages,
+                    model_used=model,
+                )
         
         # Parse content references
         content_references = []
@@ -223,14 +296,6 @@ def extract_document_structure(
         
         return result
         
-    except json.JSONDecodeError as e:
-        logger.error(f"Failed to parse LLM response: {e}")
-        return DocumentStructureResult(
-            success=False,
-            error=f"JSON parse error: {e}",
-            pages_used=pages,
-            model_used=model,
-        )
     except Exception as e:
         logger.error(f"Extraction failed: {e}")
         return DocumentStructureResult(

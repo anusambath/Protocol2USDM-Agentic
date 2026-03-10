@@ -118,18 +118,16 @@ class TestPreservationNonEncounterEntities:
     
     def test_procedure_entities_with_similar_names_are_merged(self):
         """
-        Concrete test: Procedure entities with fuzzy score >= 0.85 are merged.
+        Concrete test: Procedure entities are now in _SKIP_DEDUP_TYPES and
+        should NOT be merged, even when fuzzy score >= 0.85.
         
-        Validates Requirement 3.1: Non-encounter entities continue to use fuzzy matching.
+        This prevents numbered procedures (e.g. "Procedure 1" vs "Procedure 2")
+        from being incorrectly collapsed.
         """
         entities = [
             _make_entity("e1", entity_type="procedure", name="ECG Recording", source="soa_vision_agent"),
             _make_entity("e2", entity_type="procedure", name="ECG Recordings", source="soa_text_agent"),
         ]
-        
-        # Verify fuzzy score is high
-        score = fuzzy_match_score("ECG Recording", "ECG Recordings")
-        assert score >= 0.85, f"Test setup: fuzzy score should be >= 0.85, got {score:.2f}"
         
         # Run reconciliation
         agent = ReconciliationAgent()
@@ -137,11 +135,11 @@ class TestPreservationNonEncounterEntities:
         task = _make_task(entities)
         result = agent.execute(task)
         
-        # PRESERVATION CHECK: Procedures should be merged
+        # Procedures are now skip-dedup: both should survive
         assert result.success
         report = result.data["report"]
-        assert report["duplicates_merged"] >= 1, "Procedure entities should be merged"
-        assert report["total_entities_after"] == 1, "Should have 1 procedure after merge"
+        assert report["duplicates_merged"] == 0, "Procedure entities should NOT be merged (skip-dedup type)"
+        assert report["total_entities_after"] == 2, "Should have 2 procedures (no merge)"
     
     def test_intervention_entities_with_similar_names_are_merged(self):
         """

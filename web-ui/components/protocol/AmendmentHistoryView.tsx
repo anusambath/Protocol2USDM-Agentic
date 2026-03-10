@@ -33,7 +33,7 @@ interface Amendment {
 
 export function AmendmentHistoryView({ usdm, provenance, idMapping }: AmendmentHistoryViewProps) {
   // Initialize provenance hook
-  const { getProvenanceByIndex } = useEntityProvenance({
+  const { getProvenance, getProvenanceByIndex } = useEntityProvenance({
     provenance: provenance ?? null,
     idMapping: idMapping ?? undefined,
   });
@@ -92,8 +92,10 @@ export function AmendmentHistoryView({ usdm, provenance, idMapping }: AmendmentH
                 const displayDate = amendment.effectiveDate || amendment.date;
                 const displaySummary = amendment.summary || amendment.description;
                 
-                // Get provenance by index
-                const amendmentProvenance = getProvenanceByIndex('amendment', i);
+                // Get provenance - try by entity ID first, then by index
+                const amendmentProvenance = 
+                  (amendment.id ? getProvenance(amendment.id, 'study_amendment') : null) ??
+                  getProvenanceByIndex('study_amendment', i);
                 
                 return (
                   <div key={amendment.id || i} className="relative pl-10">
@@ -178,8 +180,8 @@ export function AmendmentHistoryView({ usdm, provenance, idMapping }: AmendmentH
                       {amendmentProvenance && (
                         <div className="mt-3 pt-3 border-t">
                           <ProvenanceInline
-                            entityType="amendment"
-                            entityId={`amd_${i + 1}`}
+                            entityType="study_amendment"
+                            entityId={amendment.id || `amend_${i + 1}`}
                             provenance={amendmentProvenance}
                             showViewAll={false}
                           />

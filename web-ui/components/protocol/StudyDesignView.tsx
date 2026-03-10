@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { GitBranch, Layers, Grid3X3, Shield, AlertTriangle, Info, CheckCircle2, Shuffle } from 'lucide-react';
 import { ProvenanceInline } from '@/components/provenance/ProvenanceInline';
-import { getEntityProvenance } from '@/lib/provenance/loader';
+import { useEntityProvenance } from '@/lib/hooks/useEntityProvenance';
 import { ProvenanceDataExtended } from '@/lib/provenance/types';
 
 interface StudyDesignViewProps {
@@ -98,6 +98,12 @@ interface Activity {
 }
 
 export function StudyDesignView({ usdm, provenance, idMapping }: StudyDesignViewProps) {
+  // Initialize provenance hook
+  const { getProvenance } = useEntityProvenance({
+    provenance,
+    idMapping: idMapping ?? undefined,
+  });
+
   if (!usdm) {
     return (
       <Card>
@@ -126,7 +132,7 @@ export function StudyDesignView({ usdm, provenance, idMapping }: StudyDesignView
   }
 
   // Get provenance for study design entity
-  const designProvenance = getEntityProvenance(provenance, idMapping, 'study_design', 'sd_1');
+  const designProvenance = getProvenance('sd_1', 'study_design');
 
   // Extract design components
   const arms = (design.arms as Arm[]) ?? [];
@@ -360,6 +366,16 @@ export function StudyDesignView({ usdm, provenance, idMapping }: StudyDesignView
                   {arm.description && (
                     <p className="text-sm text-muted-foreground">{arm.description}</p>
                   )}
+                  {arm.id && getProvenance(arm.id, 'study_arm') && (
+                    <div className="mt-2">
+                      <ProvenanceInline
+                        entityType="study_arm"
+                        entityId={arm.id}
+                        provenance={getProvenance(arm.id, 'study_arm')}
+                        showViewAll={false}
+                      />
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
@@ -387,6 +403,16 @@ export function StudyDesignView({ usdm, provenance, idMapping }: StudyDesignView
                   )}
                   {epoch.description && (
                     <p className="text-xs text-muted-foreground mt-1">{epoch.description}</p>
+                  )}
+                  {epoch.id && getProvenance(epoch.id, 'epoch') && (
+                    <div className="mt-2">
+                      <ProvenanceInline
+                        entityType="epoch"
+                        entityId={epoch.id}
+                        provenance={getProvenance(epoch.id, 'epoch')}
+                        showViewAll={false}
+                      />
+                    </div>
                   )}
                 </div>
               ))}
@@ -524,6 +550,16 @@ export function StudyDesignView({ usdm, provenance, idMapping }: StudyDesignView
                             {name}
                           </Badge>
                         ))}
+                      </div>
+                    )}
+                    {group.id && getProvenance(group.id, 'activity_group') && (
+                      <div className="mt-2">
+                        <ProvenanceInline
+                          entityType="activity_group"
+                          entityId={group.id}
+                          provenance={getProvenance(group.id, 'activity_group')}
+                          showViewAll={false}
+                        />
                       </div>
                     )}
                   </div>

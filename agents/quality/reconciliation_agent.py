@@ -39,7 +39,6 @@ FOOTNOTE_PATTERNS = [
     r"\s*\[\d+\]\s*$",              # trailing [1], [2]
     r"\s*\(\d+\)\s*$",              # trailing (1), (2)
     r"\s*[a-z]\)\s*$",              # trailing a), b)
-    r"\s*\d+\s*$",                  # trailing bare numbers (only at end after letter)
     r"[\*†‡§¶#]+",                  # inline footnote symbols
 ]
 
@@ -144,10 +143,10 @@ def clean_entity_name(name: str) -> str:
         return name
     cleaned = name.strip()
     # Remove trailing footnote patterns first (order matters)
-    for pat in _FOOTNOTE_RE[:6]:  # trailing patterns
+    for pat in _FOOTNOTE_RE[:4]:  # trailing patterns (symbols, [n], (n), a))
         cleaned = pat.sub("", cleaned)
     # Remove inline footnote symbols
-    for pat in _FOOTNOTE_RE[5:]:
+    for pat in _FOOTNOTE_RE[4:]:
         cleaned = pat.sub("", cleaned)
     # Normalise whitespace
     cleaned = _MULTI_SPACE_RE.sub(" ", cleaned).strip()
@@ -481,7 +480,20 @@ class ReconciliationAgent(BaseAgent):
             etype = e.get("entity_type", "")
             by_type.setdefault(etype, []).append(e)
 
+        # Entity types that are inherently sequential and should never be
+        # merged even when their names are similar (e.g. "Amendment 2" vs
+        # "Amendment 5" differ by one digit but are distinct entities).
+        _SKIP_DEDUP_TYPES = {
+            "study_amendment", "amendment", "amendment_reason",
+            "abbreviation", "governance_date",
+            "eligibility_criterion", "criterion_item",
+            "objective", "endpoint", "procedure",
+        }
+
         for etype, type_entities in by_type.items():
+            if etype in _SKIP_DEDUP_TYPES:
+                continue
+
             for i, ea in enumerate(type_entities):
                 eid_a = ea.get("id", "")
                 if eid_a in used:
