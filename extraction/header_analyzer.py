@@ -47,16 +47,36 @@ EXTRACT:
    - These span multiple columns (e.g., "Screening", "Treatment", "Follow-up")
    - Usually in the first header row with merged cells
    
-2. **Encounters** - One per COLUMN, from SUB-HEADER rows below the epoch row
+2. **Encounters** - One per COLUMN, from the PLANNED VISIT DAY sub-header row
    - CRITICAL: Each encounter MUST have a UNIQUE name
    - Include timing info from sub-headers (e.g., "Screening (-42 to -9)", "Day -6 through -4", "Week 4")
    - If multiple columns are under the same epoch, use the sub-header text to make names unique
    - Pattern: "{Epoch} ({Timing})" or just "{Timing}" if timing is descriptive enough
    - NEVER use the same name for multiple encounters - look for day numbers, week numbers, or visit numbers
    
+   CRITICAL - 3-ROW HEADER STRUCTURE:
+   Many SoA tables have 3 header rows:
+     Row 1: EPOCH names (merged cells spanning multiple columns) - these are epochs, NOT encounters
+     Row 2: PLANNED VISIT DAY (e.g., "Day 1", "Day 4", "Day 8") - these ARE the encounters
+     Row 3: VISIT WINDOW (e.g., "±3D", "-1/+3D", "± 14D") - these are NOT encounters
+   
+   Visit window text describes how many days before/after the planned visit day the actual visit
+   can occur. Visit windows must be captured as the `window` property on the encounter's
+   corresponding PlannedTimepoint, NOT as separate encounters.
+   
+   Examples of visit window text that should NOT become encounters:
+   - "±3D", "± 3D", "-1/+3D", "± 14D", "-1/+3 Days"
+   - "Cycle 1 -1/+3D" means Cycle 1 has a window of -1/+3 days
+   - "Cycles 2 and later ± 3D" means Cycles 2+ have a window of ±3 days
+   
+   If you see text like "±", "+/-", or day-range offsets in a row below the visit day row,
+   that is a VISIT WINDOW row - fold it into the corresponding encounter's PlannedTimepoint
+   as the `window` field, do NOT create a new encounter from it.
+   
 3. **PlannedTimepoints** - Timing information for each encounter (one per encounter)
    - The valueLabel should have the specific timing (e.g., "Day -14", "Week 0", "Day 28")
    - Link each timepoint to its encounter via encounterId
+   - If a visit window row exists (Row 3), capture it in the `window` field (e.g., "±3D", "-1/+3D")
    
 4. **ActivityGroups** - Row section headers (e.g., "Safety Assessments", "Efficacy", "Labs")
    - These are the bold/highlighted rows that group related activities
@@ -91,11 +111,11 @@ Return a JSON object with this exact structure:
       {"id": "enc_5", "name": "Week 8", "epochId": "epoch_2"}
     ],
     "plannedTimepoints": [
-      {"id": "pt_1", "name": "Screening (-42 to -9)", "encounterId": "enc_1", "valueLabel": "Day -42 to -9", "description": "Initial screening"},
-      {"id": "pt_2", "name": "Screening (-21)", "encounterId": "enc_2", "valueLabel": "Day -21", "description": "Final screening"},
-      {"id": "pt_3", "name": "Day 1 (Baseline)", "encounterId": "enc_3", "valueLabel": "Day 1", "description": "Baseline visit"},
-      {"id": "pt_4", "name": "Week 4", "encounterId": "enc_4", "valueLabel": "Week 4", "description": "Treatment visit"},
-      {"id": "pt_5", "name": "Week 8", "encounterId": "enc_5", "valueLabel": "Week 8", "description": "Treatment visit"}
+      {"id": "pt_1", "name": "Screening (-42 to -9)", "encounterId": "enc_1", "valueLabel": "Day -42 to -9", "window": null, "description": "Initial screening"},
+      {"id": "pt_2", "name": "Screening (-21)", "encounterId": "enc_2", "valueLabel": "Day -21", "window": null, "description": "Final screening"},
+      {"id": "pt_3", "name": "Day 1 (Baseline)", "encounterId": "enc_3", "valueLabel": "Day 1", "window": "±3D", "description": "Baseline visit"},
+      {"id": "pt_4", "name": "Week 4", "encounterId": "enc_4", "valueLabel": "Week 4", "window": "-1/+3D", "description": "Treatment visit"},
+      {"id": "pt_5", "name": "Week 8", "encounterId": "enc_5", "valueLabel": "Week 8", "window": "±3D", "description": "Treatment visit"}
     ]
   },
   "rowGroups": [
@@ -150,6 +170,14 @@ CRITICAL - UNIQUE ENCOUNTER NAMES:
 - Pattern examples: "Day -6 through -4", "Inpatient Period (Day 1)", "Week 4 Visit"
 - If you cannot find unique timing, number them: "Inpatient Day 1", "Inpatient Day 2", etc.
 - The viewer needs unique names to distinguish columns - duplicates break the display
+
+CRITICAL - VISIT WINDOWS ARE NOT ENCOUNTERS:
+- If the SoA table has a row with text like "±3D", "-1/+3D", "± 14D", "-1/+3 Days", these are VISIT WINDOWS
+- Visit windows describe the allowed deviation from the planned visit day
+- Do NOT create encounters from visit window text
+- Instead, capture the visit window text in the `window` field of the corresponding PlannedTimepoint
+- The number of encounters should match the number of COLUMNS in the table, not the number of header rows
+- Count the actual data columns (where tick marks appear) to verify your encounter count
 
 ROW GROUP VISUAL PROPERTIES (required for each group):
 - `isBold`: true if the text appears bold/emphasized

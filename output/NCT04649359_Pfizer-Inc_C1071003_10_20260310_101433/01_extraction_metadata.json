@@ -1,0 +1,266 @@
+{
+  "agent_id": "metadata_agent",
+  "timestamp": "2026-03-10T10:14:46.508053",
+  "confidence": 0.85,
+  "entity_count": 12,
+  "entities": [
+    {
+      "id": "title_1",
+      "entity_type": "study_title",
+      "data": {
+        "id": "title_1",
+        "text": "AN OPEN-LABEL, MULTICENTER, NON-RANDOMIZED PHASE 2 STUDY OF ELRANATAMAB (PF-06863135) MONOTHERAPY IN PARTICIPANTS WITH MULTIPLE MYELOMA WHO ARE REFRACTORY TO AT LEAST ONE PROTEASOME INHIBITOR, ONE IMMUNOMODULATORY DRUG AND ONE ANTI-CD38 ANTIBODY",
+        "type": {
+          "id": "79056bd9-a68d-45ff-b24f-d80f757c7554",
+          "code": "C207616",
+          "codeSystem": "http://www.cdisc.org",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Official Study Title",
+          "instanceType": "Code"
+        },
+        "instanceType": "StudyTitle"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "title_2",
+      "entity_type": "study_title",
+      "data": {
+        "id": "title_2",
+        "text": "A Phase 2 Study of Elranatamab (PF-06863135) Monotherapy in Participants With MM Who Are Refractory to at Least One PI, One IMiD and One Anti-CD38 mAb",
+        "type": {
+          "id": "97a8432b-eb08-4fc3-be06-b840003cf4e8",
+          "code": "C207617",
+          "codeSystem": "http://www.cdisc.org",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Brief Study Title",
+          "instanceType": "Code"
+        },
+        "instanceType": "StudyTitle"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "title_3",
+      "entity_type": "study_title",
+      "data": {
+        "id": "title_3",
+        "text": "MAGNETISMM-3",
+        "type": {
+          "id": "115ef01b-f96f-45c0-ab0f-4f3b34df0828",
+          "code": "C207620",
+          "codeSystem": "http://www.cdisc.org",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Study Acronym",
+          "instanceType": "Code"
+        },
+        "instanceType": "StudyTitle"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "sid_1",
+      "entity_type": "study_identifier",
+      "data": {
+        "id": "sid_1",
+        "text": "NCT04649359",
+        "scopeId": "org_ct_gov",
+        "instanceType": "StudyIdentifier",
+        "identifierType": {
+          "code": "NCT",
+          "codeSystem": "USDM",
+          "decode": "ClinicalTrials.gov Identifier"
+        }
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "sid_2",
+      "entity_type": "study_identifier",
+      "data": {
+        "id": "sid_2",
+        "text": "C1071003",
+        "scopeId": "org_1",
+        "instanceType": "StudyIdentifier",
+        "identifierType": {
+          "code": "SponsorProtocolNumber",
+          "codeSystem": "USDM",
+          "decode": "Sponsor Protocol Number"
+        }
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "sid_3",
+      "entity_type": "study_identifier",
+      "data": {
+        "id": "sid_3",
+        "text": "2020-004533-21",
+        "scopeId": "org_eudract",
+        "instanceType": "StudyIdentifier",
+        "identifierType": {
+          "code": "EudraCT",
+          "codeSystem": "USDM",
+          "decode": "EudraCT Number"
+        }
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "sid_4",
+      "entity_type": "study_identifier",
+      "data": {
+        "id": "sid_4",
+        "text": "133940",
+        "scopeId": "org_unknown",
+        "instanceType": "StudyIdentifier",
+        "identifierType": {
+          "code": "IND",
+          "codeSystem": "USDM",
+          "decode": "FDA IND Number"
+        }
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "org_1",
+      "entity_type": "organization",
+      "data": {
+        "id": "org_1",
+        "name": "Pfizer Inc.",
+        "type": {
+          "id": "fe241056-577f-456b-b3bf-0dd38e20b8c4",
+          "code": "C54086",
+          "codeSystem": "http://www.cdisc.org",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Pharmaceutical Company",
+          "instanceType": "Code"
+        },
+        "identifier": "Pfizer Inc.",
+        "identifierScheme": "DUNS",
+        "instanceType": "Organization"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "role_1",
+      "entity_type": "study_role",
+      "data": {
+        "id": "role_1",
+        "name": "Sponsor",
+        "code": {
+          "id": "37bb6c5d-221a-4525-b9fa-4c5e19bced27",
+          "code": "C70793",
+          "codeSystem": "http://www.cdisc.org",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Sponsor",
+          "instanceType": "Code"
+        },
+        "organizationIds": [
+          "org_1"
+        ],
+        "instanceType": "StudyRole"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "ind_1",
+      "entity_type": "indication",
+      "data": {
+        "id": "ind_1",
+        "name": "Multiple Myeloma",
+        "isRareDisease": false,
+        "instanceType": "Indication",
+        "description": "Participants with Multiple Myeloma who are refractory to at least one proteasome inhibitor, one immunomodulatory drug and one anti-CD38 antibody"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "study_phase_1",
+      "entity_type": "study_phase",
+      "data": {
+        "code": "Phase2",
+        "codeSystem": "USDM",
+        "decode": "Phase2"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "study_metadata_1",
+      "entity_type": "metadata",
+      "data": {
+        "name": "C1071003",
+        "description": "",
+        "label": "",
+        "versionIdentifier": "1"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    }
+  ],
+  "metadata_summary": {
+    "study_name": "C1071003",
+    "title_count": 3,
+    "identifier_count": 4,
+    "organization_count": 1
+  }
+}

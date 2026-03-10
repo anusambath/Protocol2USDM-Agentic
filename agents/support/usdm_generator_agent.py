@@ -843,6 +843,13 @@ def _normalize_codelists(usdm: Dict[str, Any]) -> None:
                     matched = epochs[min(epoch_idx, epoch_count - 1)]["id"]
                 enc["epochId"] = matched
 
+    # Cache encounter→epochId mapping BEFORE epochId gets stripped later.
+    # This is used by timeline synthesis to assign epochId to ScheduledActivityInstances.
+    design["_encounterEpochMap"] = {
+        enc["id"]: enc.get("epochId", "")
+        for enc in encounters if enc.get("id")
+    }
+
     # Fix StudyCell epochIds to match actual epoch IDs (DDF00243)
     # Extraction may create cells with epochIds like "epoch_1" while
     # actual epochs are "epoch_v_1". Remap by position.
@@ -1363,6 +1370,9 @@ def _ensure_sponsor_identifier(usdm: Dict[str, Any]) -> None:
             epochs = design.get("epochs", [])
             epoch_ids = [ep["id"] for ep in epochs] if epochs else []
 
+            # Use cached encounter→epoch mapping from _normalize_codelists
+            _enc_epoch_map = design.pop("_encounterEpochMap", {})
+
             def _match_epoch(enc_name: str) -> Optional[str]:
                 """Match an encounter name to the best epoch."""
                 low = enc_name.lower()
@@ -1372,9 +1382,18 @@ def _ensure_sponsor_identifier(usdm: Dict[str, Any]) -> None:
                         return ep["id"]
                     if ("cycle" in low or "treatment" in low or "randomiz" in low) and ("treatment" in ep_name or "cycle" in ep_name):
                         return ep["id"]
-                    if ("discon" in low or "end of" in low or "completion" in low) and ("end" in ep_name or "discon" in ep_name):
+                    if ("discon" in low or "end of" in low or "completion" in low or "eot" in low) and ("end" in ep_name or "discon" in ep_name or "eot" in ep_name):
                         return ep["id"]
-                    if ("follow" in low or "survival" in low or "post" in low) and ("follow" in ep_name or "post" in ep_name):
+                    if ("follow" in low or "survival" in low or "ltfu" in low) and ("follow" in ep_name or "ltfu" in ep_name):
+                        return ep["id"]
+                    if "fu visit" in low and "fu visit" in ep_name:
+                        return ep["id"]
+                # Word overlap fallback
+                for ep in epochs:
+                    ep_name = ep.get("name", "").lower()
+                    ep_words = set(ep_name.split())
+                    enc_words = set(low.split())
+                    if ep_words & enc_words:
                         return ep["id"]
                 return epoch_ids[0] if epoch_ids else None
 
@@ -1400,7 +1419,7 @@ def _ensure_sponsor_identifier(usdm: Dict[str, Any]) -> None:
                     instances.append({
                         "id": str(uuid.uuid4()).replace("-", "_"),
                         "name": enc_name,
-                        "epochId": enc.get("epochId") or _match_epoch(enc_name),
+                        "epochId": _enc_epoch_map.get(enc_id) or enc.get("epochId") or _match_epoch(enc_name),
                         "encounterId": enc_id,
                         "activityIds": activity_ids,
                         "instanceType": "ScheduledActivityInstance",
@@ -1414,7 +1433,7 @@ def _ensure_sponsor_identifier(usdm: Dict[str, Any]) -> None:
                         instances.append({
                             "id": str(uuid.uuid4()).replace("-", "_"),
                             "name": enc_name,
-                            "epochId": _match_epoch(enc_name),
+                            "epochId": _enc_epoch_map.get(enc_id) or _match_epoch(enc_name),
                             "encounterId": enc_id,
                             "instanceType": "ScheduledActivityInstance",
                         })
@@ -1492,6 +1511,9 @@ def _post_normalize_cleanup(usdm: Dict[str, Any]) -> None:
     # Strip epochId from all Encounters (not in USDM 4.0 Encounter schema — DDF00125)
     for enc in design.get("encounters", []):
         enc.pop("epochId", None)
+
+    # Remove internal encounter→epoch cache (used during timeline synthesis)
+    design.pop("_encounterEpochMap", None)
 
     # Strip null entryId from ScheduleTimelines (must be string or absent — DDF00082)
     for tl in design.get("scheduleTimelines", []):

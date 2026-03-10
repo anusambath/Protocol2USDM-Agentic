@@ -1,0 +1,530 @@
+{
+  "agent_id": "studydesign_agent",
+  "timestamp": "2026-03-10T10:37:39.365558",
+  "confidence": 0.85,
+  "entity_count": 17,
+  "entities": [
+    {
+      "id": "sd_1",
+      "entity_type": "study_design",
+      "data": {
+        "id": "sd_1",
+        "name": "Study Design",
+        "instanceType": "InterventionalStudyDesign",
+        "trialIntentTypes": [
+          {
+            "code": "Treatment",
+            "codeSystem": "USDM",
+            "decode": "Treatment"
+          }
+        ],
+        "trialType": {
+          "code": "Interventional",
+          "codeSystem": "USDM",
+          "decode": "Interventional"
+        },
+        "blindingSchema": {
+          "code": "Open Label",
+          "codeSystem": "USDM",
+          "decode": "Open Label"
+        },
+        "maskedRoles": [
+          "Outcome Assessor"
+        ],
+        "randomizationType": {
+          "code": "Non-Randomized",
+          "codeSystem": "USDM",
+          "decode": "Non-Randomized"
+        },
+        "armIds": [
+          "arm_1"
+        ],
+        "cohortIds": [
+          "cohort_1",
+          "cohort_2",
+          "cohort_3"
+        ],
+        "therapeuticAreas": [
+          "Oncology"
+        ]
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        12,
+        13,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "arm_1",
+      "entity_type": "study_arm",
+      "data": {
+        "id": "arm_1",
+        "name": "Tepotinib Monotherapy",
+        "type": {
+          "code": "Experimental Arm",
+          "codeSystem": "USDM",
+          "decode": "Experimental Arm"
+        },
+        "instanceType": "StudyArm",
+        "description": "Subjects receive tepotinib 500 mg once daily in 21-day cycles until disease progression, death, adverse event, or withdrawal of consent."
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        12,
+        13,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "cohort_1",
+      "entity_type": "study_cohort",
+      "data": {
+        "id": "cohort_1",
+        "name": "Part 1: Cohort A",
+        "instanceType": "StudyCohort",
+        "characteristic": "Subjects with METex14 skipping alterations (regardless of MET amplification status), including at least 25 second or further line subjects."
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        12,
+        13,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "cohort_2",
+      "entity_type": "study_cohort",
+      "data": {
+        "id": "cohort_2",
+        "name": "Part 1: Cohort B",
+        "instanceType": "StudyCohort",
+        "characteristic": "Subjects with MET amplification and negative for METex14 skipping alterations. May include analysis sets for GCN gain ≥4 and < 6, and GCN gain ≥ 6."
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        12,
+        13,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "cohort_3",
+      "entity_type": "study_cohort",
+      "data": {
+        "id": "cohort_3",
+        "name": "Part 2: Cohort C",
+        "instanceType": "StudyCohort",
+        "characteristic": "Confirmatory cohort for subjects with METex14 skipping alterations (regardless of MET amplification status), including at least 50 first-line, 30 second-line, and 20 third-line subjects."
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        12,
+        13,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "cell_1",
+      "entity_type": "study_cell",
+      "data": {
+        "id": "cell_1",
+        "armId": "arm_1",
+        "epochId": "epoch_1",
+        "elementIds": [
+          "elem_1"
+        ],
+        "instanceType": "StudyCell"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        12,
+        13,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "cell_2",
+      "entity_type": "study_cell",
+      "data": {
+        "id": "cell_2",
+        "armId": "arm_1",
+        "epochId": "epoch_2",
+        "elementIds": [
+          "elem_2"
+        ],
+        "instanceType": "StudyCell"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        12,
+        13,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "cell_3",
+      "entity_type": "study_cell",
+      "data": {
+        "id": "cell_3",
+        "armId": "arm_1",
+        "epochId": "epoch_3",
+        "elementIds": [
+          "elem_3"
+        ],
+        "instanceType": "StudyCell"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        12,
+        13,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "cell_4",
+      "entity_type": "study_cell",
+      "data": {
+        "id": "cell_4",
+        "armId": "arm_1",
+        "epochId": "epoch_4",
+        "elementIds": [
+          "elem_4"
+        ],
+        "instanceType": "StudyCell"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        12,
+        13,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "cell_5",
+      "entity_type": "study_cell",
+      "data": {
+        "id": "cell_5",
+        "armId": "arm_1",
+        "epochId": "epoch_5",
+        "elementIds": [
+          "elem_5"
+        ],
+        "instanceType": "StudyCell"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        12,
+        13,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "cell_6",
+      "entity_type": "study_cell",
+      "data": {
+        "id": "cell_6",
+        "armId": "arm_1",
+        "epochId": "epoch_6",
+        "elementIds": [
+          "elem_6"
+        ],
+        "instanceType": "StudyCell"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        12,
+        13,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "elem_1",
+      "entity_type": "study_element",
+      "data": {
+        "id": "elem_1",
+        "name": "Tepotinib Monotherapy - Prescreening Period",
+        "instanceType": "StudyElement",
+        "description": "Treatment period for Tepotinib Monotherapy during Prescreening Period"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        12,
+        13,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "elem_2",
+      "entity_type": "study_element",
+      "data": {
+        "id": "elem_2",
+        "name": "Tepotinib Monotherapy - Screening Period",
+        "instanceType": "StudyElement",
+        "description": "Treatment period for Tepotinib Monotherapy during Screening Period"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        12,
+        13,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "elem_3",
+      "entity_type": "study_element",
+      "data": {
+        "id": "elem_3",
+        "name": "Tepotinib Monotherapy - Treatment Period",
+        "instanceType": "StudyElement",
+        "description": "Treatment period for Tepotinib Monotherapy during Treatment Period"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        12,
+        13,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "elem_4",
+      "entity_type": "study_element",
+      "data": {
+        "id": "elem_4",
+        "name": "Tepotinib Monotherapy - End of Treatment Visit",
+        "instanceType": "StudyElement",
+        "description": "Treatment period for Tepotinib Monotherapy during End of Treatment Visit"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        12,
+        13,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "elem_5",
+      "entity_type": "study_element",
+      "data": {
+        "id": "elem_5",
+        "name": "Tepotinib Monotherapy - Post treatment Follow-up Visit",
+        "instanceType": "StudyElement",
+        "description": "Treatment period for Tepotinib Monotherapy during Post treatment Follow-up Visit"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        12,
+        13,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "elem_6",
+      "entity_type": "study_element",
+      "data": {
+        "id": "elem_6",
+        "name": "Tepotinib Monotherapy - Survival Follow-up",
+        "instanceType": "StudyElement",
+        "description": "Treatment period for Tepotinib Monotherapy during Survival Follow-up"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        12,
+        13,
+        14,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    }
+  ],
+  "design_summary": {
+    "arm_count": 1,
+    "cohort_count": 3,
+    "cell_count": 6
+  }
+}

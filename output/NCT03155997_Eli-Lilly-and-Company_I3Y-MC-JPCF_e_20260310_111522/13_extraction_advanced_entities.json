@@ -1,0 +1,411 @@
+{
+  "agent_id": "advanced_agent",
+  "timestamp": "2026-03-10T11:16:31.174677",
+  "confidence": 0.85,
+  "entity_count": 7,
+  "entities": [
+    {
+      "id": "amend_1",
+      "entity_type": "study_amendment",
+      "data": {
+        "id": "amend_1",
+        "number": "1",
+        "name": "Amendment 1",
+        "scope": {
+          "id": "02f9dc9d-9382-40df-b520-a1d7b95dc248",
+          "code": "Global",
+          "codeSystem": "USDM",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Global",
+          "instanceType": "Code"
+        },
+        "primaryReason": {
+          "id": "8dcbcc3e-ca1f-4409-abe6-a85c2b0e6a50",
+          "code": {
+            "id": "b3ef7a9e-5ace-42b7-aa81-1fc0e2240ba6",
+            "code": "C98782",
+            "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "codeSystemVersion": "25.01d",
+            "decode": "Protocol Amendment",
+            "instanceType": "Code"
+          },
+          "otherReason": "Protocol Amendment",
+          "instanceType": "StudyAmendmentReason"
+        },
+        "geographicScopes": [
+          {
+            "id": "b91ec7d7-29e6-4387-97c2-906604685205",
+            "type": {
+              "id": "09f7d136-7ea2-4bce-bef0-95be1462c87f",
+              "code": "Global",
+              "codeSystem": "USDM",
+              "codeSystemVersion": "2024-09-27",
+              "decode": "Global",
+              "instanceType": "Code"
+            },
+            "instanceType": "GeographicScope"
+          }
+        ],
+        "instanceType": "StudyAmendment",
+        "summary": "Amendment 1 to the protocol",
+        "dateValues": [
+          {
+            "id": "gd_amend_1_app",
+            "name": "Amendment 1 Approval Date",
+            "dateValue": "2017-10-11",
+            "geographicScopes": [],
+            "type": {
+              "id": "baa202e8-ef28-4191-b80e-f6c8c0d65032",
+              "code": "C99903",
+              "codeSystem": "http://www.cdisc.org",
+              "codeSystemVersion": "2024-09-27",
+              "decode": "Protocol Approved Date",
+              "instanceType": "Code"
+            },
+            "instanceType": "GovernanceDate"
+          }
+        ],
+        "previousVersion": "Original Protocol",
+        "newVersion": "1"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "amend_2",
+      "entity_type": "study_amendment",
+      "data": {
+        "id": "amend_2",
+        "number": "2",
+        "name": "Amendment 2",
+        "scope": {
+          "id": "1fbbb197-dd62-43e8-a15b-db4cf181b508",
+          "code": "Global",
+          "codeSystem": "USDM",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Global",
+          "instanceType": "Code"
+        },
+        "primaryReason": {
+          "id": "98d41f85-9a75-4efc-8d5e-473b7837977a",
+          "code": {
+            "id": "5be048f1-d868-44b2-a391-61ef459b89f3",
+            "code": "C98782",
+            "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "codeSystemVersion": "25.01d",
+            "decode": "Protocol Amendment",
+            "instanceType": "Code"
+          },
+          "otherReason": "Protocol Amendment",
+          "instanceType": "StudyAmendmentReason"
+        },
+        "geographicScopes": [
+          {
+            "id": "2737cfe3-6e9e-47af-bd13-b18ca7870f38",
+            "type": {
+              "id": "d4bbf878-287a-4b08-bea2-d05f88a5c17b",
+              "code": "Global",
+              "codeSystem": "USDM",
+              "codeSystemVersion": "2024-09-27",
+              "decode": "Global",
+              "instanceType": "Code"
+            },
+            "instanceType": "GeographicScope"
+          }
+        ],
+        "instanceType": "StudyAmendment",
+        "summary": "Amendment 2 to the protocol",
+        "dateValues": [
+          {
+            "id": "gd_amend_2_app",
+            "name": "Amendment 2 Approval Date",
+            "dateValue": "2018-06-29",
+            "geographicScopes": [],
+            "type": {
+              "id": "08cdd31a-5d0e-4149-aa9e-38f9eec5f2c5",
+              "code": "C99903",
+              "codeSystem": "http://www.cdisc.org",
+              "codeSystemVersion": "2024-09-27",
+              "decode": "Protocol Approved Date",
+              "instanceType": "Code"
+            },
+            "instanceType": "GovernanceDate"
+          }
+        ],
+        "previousVersion": "1",
+        "newVersion": "2"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "amend_3",
+      "entity_type": "study_amendment",
+      "data": {
+        "id": "amend_3",
+        "number": "3",
+        "name": "Amendment 3",
+        "scope": {
+          "id": "94d2c9d1-2242-4ced-8bf2-3f9e97263bec",
+          "code": "Global",
+          "codeSystem": "USDM",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Global",
+          "instanceType": "Code"
+        },
+        "primaryReason": {
+          "id": "b98b1e73-df73-4e6d-947a-2ff0289e128d",
+          "code": {
+            "id": "e78cb945-37bb-4a65-bedd-4f29e688be0c",
+            "code": "C98782",
+            "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "codeSystemVersion": "25.01d",
+            "decode": "Protocol Amendment",
+            "instanceType": "Code"
+          },
+          "otherReason": "Protocol Amendment",
+          "instanceType": "StudyAmendmentReason"
+        },
+        "geographicScopes": [
+          {
+            "id": "458cc407-f6ec-4138-b4ed-c16175994438",
+            "type": {
+              "id": "cd187b52-1d16-4c71-98dd-2b4db4161161",
+              "code": "Global",
+              "codeSystem": "USDM",
+              "codeSystemVersion": "2024-09-27",
+              "decode": "Global",
+              "instanceType": "Code"
+            },
+            "instanceType": "GeographicScope"
+          }
+        ],
+        "instanceType": "StudyAmendment",
+        "summary": "Amendment 3 to the protocol",
+        "dateValues": [
+          {
+            "id": "gd_amend_3_app",
+            "name": "Amendment 3 Approval Date",
+            "dateValue": "2018-12-19",
+            "geographicScopes": [],
+            "type": {
+              "id": "f7dda64f-e556-4ef2-8548-dcbe7bba77db",
+              "code": "C99903",
+              "codeSystem": "http://www.cdisc.org",
+              "codeSystemVersion": "2024-09-27",
+              "decode": "Protocol Approved Date",
+              "instanceType": "Code"
+            },
+            "instanceType": "GovernanceDate"
+          }
+        ],
+        "previousVersion": "2",
+        "newVersion": "3"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "amend_4",
+      "entity_type": "study_amendment",
+      "data": {
+        "id": "amend_4",
+        "number": "4",
+        "name": "Amendment 4",
+        "scope": {
+          "id": "75142520-78bc-4c40-be1f-ea9528140606",
+          "code": "Global",
+          "codeSystem": "USDM",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Global",
+          "instanceType": "Code"
+        },
+        "primaryReason": {
+          "id": "21da4de4-ea42-433d-8bc3-ccec9472f6ac",
+          "code": {
+            "id": "cccb35ce-fce1-438b-a295-1f8c90660669",
+            "code": "C98782",
+            "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "codeSystemVersion": "25.01d",
+            "decode": "Protocol Amendment",
+            "instanceType": "Code"
+          },
+          "otherReason": "Protocol Amendment",
+          "instanceType": "StudyAmendmentReason"
+        },
+        "geographicScopes": [
+          {
+            "id": "4b16c2bc-3344-4c4e-9cfc-fee76783a40c",
+            "type": {
+              "id": "6e68e030-5608-4bc3-9ce3-f0819ebb4492",
+              "code": "Global",
+              "codeSystem": "USDM",
+              "codeSystemVersion": "2024-09-27",
+              "decode": "Global",
+              "instanceType": "Code"
+            },
+            "instanceType": "GeographicScope"
+          }
+        ],
+        "instanceType": "StudyAmendment",
+        "summary": "Amendment 4 to the protocol",
+        "dateValues": [
+          {
+            "id": "gd_amend_4_app",
+            "name": "Amendment 4 Approval Date",
+            "dateValue": "2019-06-25",
+            "geographicScopes": [],
+            "type": {
+              "id": "d7a1b1ec-172b-4ef4-a2d7-31cdf6c557e9",
+              "code": "C99903",
+              "codeSystem": "http://www.cdisc.org",
+              "codeSystemVersion": "2024-09-27",
+              "decode": "Protocol Approved Date",
+              "instanceType": "Code"
+            },
+            "instanceType": "GovernanceDate"
+          }
+        ],
+        "previousVersion": "3",
+        "newVersion": "4"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "amend_5",
+      "entity_type": "study_amendment",
+      "data": {
+        "id": "amend_5",
+        "number": "5",
+        "name": "Amendment 5",
+        "scope": {
+          "id": "2c6c5658-ccc6-405f-87ac-56c84ecb77a6",
+          "code": "Global",
+          "codeSystem": "USDM",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Global",
+          "instanceType": "Code"
+        },
+        "primaryReason": {
+          "id": "5f69d4ac-3de2-47ca-9591-d7137f9d5ccd",
+          "code": {
+            "id": "93412acf-f2d4-4f18-bfe9-5bf5c1f390b3",
+            "code": "C98782",
+            "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "codeSystemVersion": "25.01d",
+            "decode": "Protocol Amendment",
+            "instanceType": "Code"
+          },
+          "otherReason": "Protocol Amendment",
+          "instanceType": "StudyAmendmentReason"
+        },
+        "geographicScopes": [
+          {
+            "id": "129dfe8f-6b7b-4b11-bfd0-021e15ee3fea",
+            "type": {
+              "id": "2864fb19-aab1-463e-aa6a-b2bccb06fbdc",
+              "code": "Global",
+              "codeSystem": "USDM",
+              "codeSystemVersion": "2024-09-27",
+              "decode": "Global",
+              "instanceType": "Code"
+            },
+            "instanceType": "GeographicScope"
+          }
+        ],
+        "instanceType": "StudyAmendment",
+        "summary": "Amendment 5 to the protocol",
+        "dateValues": [
+          {
+            "id": "gd_amend_5_app",
+            "name": "Amendment 5 Approval Date",
+            "dateValue": "2019-09-18",
+            "geographicScopes": [],
+            "type": {
+              "id": "5ac43df1-c57d-4b81-92f3-fb61672ea18d",
+              "code": "C99903",
+              "codeSystem": "http://www.cdisc.org",
+              "codeSystemVersion": "2024-09-27",
+              "decode": "Protocol Approved Date",
+              "instanceType": "Code"
+            },
+            "instanceType": "GovernanceDate"
+          }
+        ],
+        "previousVersion": "4",
+        "newVersion": "5"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "geo_1",
+      "entity_type": "geographic_scope",
+      "data": {
+        "id": "geo_1",
+        "name": "Study Geographic Scope",
+        "scopeType": "National",
+        "instanceType": "GeographicScope",
+        "countryIds": [
+          "country_1"
+        ]
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "country_1",
+      "entity_type": "country",
+      "data": {
+        "id": "country_1",
+        "name": "United States",
+        "instanceType": "Country",
+        "code": "US"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "advanced_summary": {
+    "amendment_count": 5,
+    "country_count": 1,
+    "site_count": 0,
+    "has_geographic_scope": true
+  }
+}

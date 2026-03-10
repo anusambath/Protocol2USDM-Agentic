@@ -1,0 +1,398 @@
+{
+  "agent_id": "metadata_agent",
+  "timestamp": "2026-03-09T19:21:48.702648",
+  "confidence": 0.85,
+  "entity_count": 17,
+  "entities": [
+    {
+      "id": "title_1",
+      "entity_type": "study_title",
+      "data": {
+        "id": "title_1",
+        "text": "A Phase II single-arm trial to investigate tepotinib in advanced (locally advanced or metastatic) non-small cell lung cancer with MET exon 14 (METex14) skipping alterations or MET amplification (VISION)",
+        "type": {
+          "id": "d60497ce-1bb5-4470-bed9-d8aca897bcc5",
+          "code": "C207616",
+          "codeSystem": "http://www.cdisc.org",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Official Study Title",
+          "instanceType": "Code"
+        },
+        "instanceType": "StudyTitle"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "title_2",
+      "entity_type": "study_title",
+      "data": {
+        "id": "title_2",
+        "text": "Tepotinib Phase II in NSCLC harboring MET alterations",
+        "type": {
+          "id": "0d6cb6a5-d01b-4c87-86e7-04f2e80989fd",
+          "code": "C207617",
+          "codeSystem": "http://www.cdisc.org",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Brief Study Title",
+          "instanceType": "Code"
+        },
+        "instanceType": "StudyTitle"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "title_3",
+      "entity_type": "study_title",
+      "data": {
+        "id": "title_3",
+        "text": "VISION",
+        "type": {
+          "id": "ef569a4a-cc4e-4e5c-861a-422e0a56faa1",
+          "code": "C207620",
+          "codeSystem": "http://www.cdisc.org",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Study Acronym",
+          "instanceType": "Code"
+        },
+        "instanceType": "StudyTitle"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "sid_1",
+      "entity_type": "study_identifier",
+      "data": {
+        "id": "sid_1",
+        "text": "MS200095-0022",
+        "scopeId": "org_1",
+        "instanceType": "StudyIdentifier",
+        "identifierType": {
+          "code": "SponsorProtocolNumber",
+          "codeSystem": "USDM",
+          "decode": "Sponsor Protocol Number"
+        }
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "sid_2",
+      "entity_type": "study_identifier",
+      "data": {
+        "id": "sid_2",
+        "text": "128073",
+        "scopeId": "org_unknown",
+        "instanceType": "StudyIdentifier",
+        "identifierType": {
+          "code": "IND",
+          "codeSystem": "USDM",
+          "decode": "FDA IND Number"
+        }
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "sid_3",
+      "entity_type": "study_identifier",
+      "data": {
+        "id": "sid_3",
+        "text": "2015-005696-24",
+        "scopeId": "org_eudract",
+        "instanceType": "StudyIdentifier",
+        "identifierType": {
+          "code": "EudraCT",
+          "codeSystem": "USDM",
+          "decode": "EudraCT Number"
+        }
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "org_1",
+      "entity_type": "organization",
+      "data": {
+        "id": "org_1",
+        "name": "Merck KGaA",
+        "type": {
+          "id": "c5335945-63a6-4e20-b0ce-8f82f5b1bd92",
+          "code": "C54086",
+          "codeSystem": "http://www.cdisc.org",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Pharmaceutical Company",
+          "instanceType": "Code"
+        },
+        "identifier": "Merck KGaA",
+        "identifierScheme": "DUNS",
+        "instanceType": "Organization"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "org_2",
+      "entity_type": "organization",
+      "data": {
+        "id": "org_2",
+        "name": "EMD Serono Research & Development Institute, Inc",
+        "type": {
+          "id": "2577fb96-ef72-44a3-b35c-a1474ddb1098",
+          "code": "C54086",
+          "codeSystem": "http://www.cdisc.org",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Pharmaceutical Company",
+          "instanceType": "Code"
+        },
+        "identifier": "EMD Serono Research & Development Institute, Inc",
+        "identifierScheme": "DUNS",
+        "instanceType": "Organization"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "org_3",
+      "entity_type": "organization",
+      "data": {
+        "id": "org_3",
+        "name": "Merck Serono Co., Ltd.",
+        "type": {
+          "id": "a64a50c8-f334-4506-8a84-0a2703e4c079",
+          "code": "C54086",
+          "codeSystem": "http://www.cdisc.org",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Pharmaceutical Company",
+          "instanceType": "Code"
+        },
+        "identifier": "Merck Serono Co., Ltd.",
+        "identifierScheme": "DUNS",
+        "instanceType": "Organization"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "org_4",
+      "entity_type": "organization",
+      "data": {
+        "id": "org_4",
+        "name": "Merck KGaA",
+        "type": {
+          "id": "c8897cb2-4b09-4dc8-afc8-ff813419f0ec",
+          "code": "C54086",
+          "codeSystem": "http://www.cdisc.org",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Pharmaceutical Company",
+          "instanceType": "Code"
+        },
+        "identifier": "Merck KGaA",
+        "identifierScheme": "DUNS",
+        "instanceType": "Organization"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "role_1",
+      "entity_type": "study_role",
+      "data": {
+        "id": "role_1",
+        "name": "Sponsor (for all countries except the USA and Japan)",
+        "code": {
+          "id": "6e9b8972-37bc-4924-82e1-d2a169651eeb",
+          "code": "C70793",
+          "codeSystem": "http://www.cdisc.org",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Sponsor",
+          "instanceType": "Code"
+        },
+        "organizationIds": [
+          "org_4"
+        ],
+        "instanceType": "StudyRole"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "role_2",
+      "entity_type": "study_role",
+      "data": {
+        "id": "role_2",
+        "name": "Sponsor (for sites in the USA)",
+        "code": {
+          "id": "4e30b7ed-c938-4c5d-8876-8fea09790bb6",
+          "code": "C70793",
+          "codeSystem": "http://www.cdisc.org",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Sponsor",
+          "instanceType": "Code"
+        },
+        "organizationIds": [
+          "org_2"
+        ],
+        "instanceType": "StudyRole"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "role_3",
+      "entity_type": "study_role",
+      "data": {
+        "id": "role_3",
+        "name": "Sponsor (for sites in Japan)",
+        "code": {
+          "id": "d05ad87d-ad7a-49ca-ad4f-f2d5f3d427cf",
+          "code": "C70793",
+          "codeSystem": "http://www.cdisc.org",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Sponsor",
+          "instanceType": "Code"
+        },
+        "organizationIds": [
+          "org_3"
+        ],
+        "instanceType": "StudyRole"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "role_4",
+      "entity_type": "study_role",
+      "data": {
+        "id": "role_4",
+        "name": "Medical Responsible (for all sites)",
+        "code": {
+          "id": "51f96ff7-2b13-4d71-bc0e-4274c884db5f",
+          "code": "C70793",
+          "codeSystem": "http://www.cdisc.org",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Sponsor",
+          "instanceType": "Code"
+        },
+        "organizationIds": [
+          "org_4"
+        ],
+        "instanceType": "StudyRole"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "ind_1",
+      "entity_type": "indication",
+      "data": {
+        "id": "ind_1",
+        "name": "Non-small cell lung cancer with MET exon 14 (METex14) skipping alterations or MET amplification",
+        "isRareDisease": false,
+        "instanceType": "Indication",
+        "description": "advanced (locally advanced or metastatic) non-small cell lung cancer with MET exon 14 (METex14) skipping alterations or MET amplification"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "study_phase_1",
+      "entity_type": "study_phase",
+      "data": {
+        "code": "Phase2",
+        "codeSystem": "USDM",
+        "decode": "Phase2"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "study_metadata_1",
+      "entity_type": "metadata",
+      "data": {
+        "name": "MS200095-0022",
+        "description": "",
+        "label": "",
+        "versionIdentifier": "1"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    }
+  ],
+  "metadata_summary": {
+    "study_name": "MS200095-0022",
+    "title_count": 3,
+    "identifier_count": 3,
+    "organization_count": 4
+  }
+}

@@ -124,10 +124,11 @@ class SoAVisionAgent(BaseExtractionAgent):
         if hasattr(structure, 'encounters'):
             for i, enc in enumerate(structure.encounters):
                 enc_name = enc.name if hasattr(enc, 'name') else str(enc)
+                epoch_id = enc.epochId if hasattr(enc, 'epochId') else ""
                 entities.append({
                     "id": f"encounter_v_{i+1}",
                     "entity_type": "encounter",
-                    "data": {"name": enc_name, "source": "vision", "order": i},
+                    "data": {"name": enc_name, "epochId": epoch_id, "source": "vision", "order": i},
                     "confidence": 0.85,
                     "source_pages": soa_pages,
                 })

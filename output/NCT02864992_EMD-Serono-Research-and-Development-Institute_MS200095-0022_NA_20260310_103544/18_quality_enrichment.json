@@ -1,0 +1,627 @@
+{
+  "agent_id": "enrichment_agent",
+  "timestamp": "2026-03-10T10:45:19.490554",
+  "success": true,
+  "data": {
+    "enrichment_results": [
+      {
+        "entity_id": "ind_1",
+        "entity_type": "indication",
+        "entity_name": "Non-small cell lung cancer (NSCLC)",
+        "enriched": true,
+        "source": "automatic",
+        "code": "C91445",
+        "code_system": "NCI Thesaurus",
+        "code_system_version": "24.0",
+        "display_name": "Non-Small Cell Lung Cancer Pathway",
+        "confidence": 0.33
+      },
+      {
+        "entity_id": "proc_informed_consent",
+        "entity_type": "procedure",
+        "entity_name": "Informed Consent",
+        "enriched": true,
+        "source": "automatic",
+        "code": "C16735",
+        "code_system": "NCI Thesaurus",
+        "code_system_version": "24.0",
+        "display_name": "Informed Consent",
+        "confidence": 1.0
+      },
+      {
+        "entity_id": "proc_physical_exam",
+        "entity_type": "procedure",
+        "entity_name": "Physical Examination",
+        "enriched": true,
+        "source": "automatic",
+        "code": "C20989",
+        "code_system": "NCI Thesaurus",
+        "code_system_version": "24.0",
+        "display_name": "Physical Examination",
+        "confidence": 1.0
+      },
+      {
+        "entity_id": "proc_vital_signs",
+        "entity_type": "procedure",
+        "entity_name": "Vital Signs Measurement",
+        "enriched": true,
+        "source": "automatic",
+        "code": "C49672",
+        "code_system": "NCI Thesaurus",
+        "code_system_version": "24.0",
+        "display_name": "Vital Signs Measurement",
+        "confidence": 1.0
+      },
+      {
+        "entity_id": "proc_weight_measure",
+        "entity_type": "procedure",
+        "entity_name": "Weight Measurement",
+        "enriched": true,
+        "source": "automatic",
+        "code": "C106569",
+        "code_system": "NCI Thesaurus",
+        "code_system_version": "24.0",
+        "display_name": "Specimen Weight Measurement",
+        "confidence": 0.7
+      },
+      {
+        "entity_id": "proc_height_measure",
+        "entity_type": "procedure",
+        "entity_name": "Height Measurement",
+        "enriched": true,
+        "source": "automatic",
+        "code": "C102267",
+        "code_system": "NCI Thesaurus",
+        "code_system_version": "24.0",
+        "display_name": "Endogenous Thrombin Potential Peak Height Measurement",
+        "confidence": 0.7
+      },
+      {
+        "entity_id": "proc_ecog_ps_assessment",
+        "entity_type": "procedure",
+        "entity_name": "ECOG Performance Status Assessment",
+        "enriched": true,
+        "source": "automatic",
+        "code": "C105721",
+        "code_system": "NCI Thesaurus",
+        "code_system_version": "24.0",
+        "display_name": "ECOG Performance Status",
+        "confidence": 0.7
+      },
+      {
+        "entity_id": "proc_medical_history_collection",
+        "entity_type": "procedure",
+        "entity_name": "Medical and Disease History Collection",
+        "enriched": false,
+        "source": "automatic",
+        "error": "Best match score 0.25 below threshold 0.3"
+      },
+      {
+        "entity_id": "proc_ae_assessment",
+        "entity_type": "procedure",
+        "entity_name": "Adverse Events Assessment",
+        "enriched": false,
+        "source": "automatic",
+        "error": "Best match score 0.25 below threshold 0.3"
+      },
+      {
+        "entity_id": "proc_concomitant_med_proc_assessment",
+        "entity_type": "procedure",
+        "entity_name": "Concomitant Medication and Procedure Assessment",
+        "enriched": false,
+        "source": "automatic",
+        "error": "Best match score 0.17 below threshold 0.3"
+      },
+      {
+        "entity_id": "proc_pro_assessment",
+        "entity_type": "procedure",
+        "entity_name": "Patient Reported Outcomes Assessment",
+        "enriched": true,
+        "source": "automatic",
+        "code": "C95401",
+        "code_system": "NCI Thesaurus",
+        "code_system_version": "24.0",
+        "display_name": "Patient Reported Outcome",
+        "confidence": 0.7
+      },
+      {
+        "entity_id": "proc_tumor_recist_assessment",
+        "entity_type": "procedure",
+        "entity_name": "Tumor Assessment (RECIST Version 1.1)",
+        "enriched": false,
+        "source": "automatic",
+        "error": "Best match score 0.14 below threshold 0.3"
+      },
+      {
+        "entity_id": "proc_measurable_disease_confirm",
+        "entity_type": "procedure",
+        "entity_name": "Independent Confirmation of Measurable Disease",
+        "enriched": false,
+        "source": "automatic",
+        "error": "Best match score 0.17 below threshold 0.3"
+      },
+      {
+        "entity_id": "proc_survival_followup",
+        "entity_type": "procedure",
+        "entity_name": "Survival Follow-up",
+        "enriched": true,
+        "source": "automatic",
+        "code": "C176357",
+        "code_system": "NCI Thesaurus",
+        "code_system_version": "24.0",
+        "display_name": "Opted To Continue Into Survival Follow-Up",
+        "confidence": 0.7
+      },
+      {
+        "entity_id": "proc_oral_tepotinib_admin",
+        "entity_type": "procedure",
+        "entity_name": "Oral Administration of Tepotinib",
+        "enriched": true,
+        "source": "automatic",
+        "code": "C88314",
+        "code_system": "NCI Thesaurus",
+        "code_system_version": "24.0",
+        "display_name": "Tepotinib",
+        "confidence": 0.7
+      },
+      {
+        "entity_id": "proc_iv_contrast_admin",
+        "entity_type": "procedure",
+        "entity_name": "IV Contrast Enhancement Administration",
+        "enriched": false,
+        "source": "automatic",
+        "error": "Best match score 0.17 below threshold 0.3"
+      },
+      {
+        "entity_id": "proc_blood_sample_collection",
+        "entity_type": "procedure",
+        "entity_name": "Blood Sample Collection",
+        "enriched": true,
+        "source": "automatic",
+        "code": "C17610",
+        "code_system": "NCI Thesaurus",
+        "code_system_version": "24.0",
+        "display_name": "Blood Sample",
+        "confidence": 0.7
+      },
+      {
+        "entity_id": "proc_pk_blood_sample_collection",
+        "entity_type": "procedure",
+        "entity_name": "Pharmacokinetic Blood Sample Collection",
+        "enriched": true,
+        "source": "automatic",
+        "code": "C17610",
+        "code_system": "NCI Thesaurus",
+        "code_system_version": "24.0",
+        "display_name": "Blood Sample",
+        "confidence": 0.7
+      },
+      {
+        "entity_id": "proc_biomarker_blood_sample_collection",
+        "entity_type": "procedure",
+        "entity_name": "Exploratory Biomarker Blood Sample Collection",
+        "enriched": true,
+        "source": "automatic",
+        "code": "C17610",
+        "code_system": "NCI Thesaurus",
+        "code_system_version": "24.0",
+        "display_name": "Blood Sample",
+        "confidence": 0.7
+      },
+      {
+        "entity_id": "proc_pgx_blood_sample_collection",
+        "entity_type": "procedure",
+        "entity_name": "Pharmacogenetics Blood Sample Collection",
+        "enriched": true,
+        "source": "automatic",
+        "code": "C17610",
+        "code_system": "NCI Thesaurus",
+        "code_system_version": "24.0",
+        "display_name": "Blood Sample",
+        "confidence": 0.7
+      },
+      {
+        "entity_id": "proc_ctdna_blood_sample_collection",
+        "entity_type": "procedure",
+        "entity_name": "Circulating Tumor DNA Exploratory Analysis Blood Sample Collection",
+        "enriched": true,
+        "source": "automatic",
+        "code": "C17610",
+        "code_system": "NCI Thesaurus",
+        "code_system_version": "24.0",
+        "display_name": "Blood Sample",
+        "confidence": 0.7
+      },
+      {
+        "entity_id": "proc_tumor_biopsy",
+        "entity_type": "procedure",
+        "entity_name": "Tumor Biopsy",
+        "enriched": false,
+        "source": "automatic",
+        "error": "Best match score 0.17 below threshold 0.3"
+      },
+      {
+        "entity_id": "proc_liquid_biopsy",
+        "entity_type": "procedure",
+        "entity_name": "Liquid Biopsy",
+        "enriched": true,
+        "source": "automatic",
+        "code": "C135727",
+        "code_system": "NCI Thesaurus",
+        "code_system_version": "24.0",
+        "display_name": "Liquid Biopsy",
+        "confidence": 1.0
+      },
+      {
+        "entity_id": "proc_urine_sample_collection",
+        "entity_type": "procedure",
+        "entity_name": "Urine Sample Collection",
+        "enriched": true,
+        "source": "automatic",
+        "code": "C189126",
+        "code_system": "NCI Thesaurus",
+        "code_system_version": "24.0",
+        "display_name": "Urine Sample",
+        "confidence": 0.7
+      },
+      {
+        "entity_id": "proc_pleural_effusion_puncture",
+        "entity_type": "procedure",
+        "entity_name": "Pleural Effusion Puncture",
+        "enriched": false,
+        "source": "automatic",
+        "error": "Best match score 0.25 below threshold 0.3"
+      },
+      {
+        "entity_id": "proc_met_status_determination",
+        "entity_type": "procedure",
+        "entity_name": "MET Status Determination",
+        "enriched": false,
+        "source": "automatic",
+        "error": "Best match score 0.12 below threshold 0.3"
+      },
+      {
+        "entity_id": "proc_hematology_coag_tests",
+        "entity_type": "procedure",
+        "entity_name": "Hematology and Coagulation Laboratory Tests",
+        "enriched": true,
+        "source": "automatic",
+        "code": "C16673",
+        "code_system": "NCI Thesaurus",
+        "code_system_version": "24.0",
+        "display_name": "Hematology",
+        "confidence": 0.7
+      },
+      {
+        "entity_id": "proc_biochemistry_tests",
+        "entity_type": "procedure",
+        "entity_name": "Biochemistry Laboratory Tests",
+        "enriched": false,
+        "source": "automatic",
+        "error": "Best match score 0.1 below threshold 0.3"
+      },
+      {
+        "entity_id": "proc_urinalysis",
+        "entity_type": "procedure",
+        "entity_name": "Urinalysis",
+        "enriched": true,
+        "source": "automatic",
+        "code": "C17241",
+        "code_system": "NCI Thesaurus",
+        "code_system_version": "24.0",
+        "display_name": "Urinalysis",
+        "confidence": 1.0
+      },
+      {
+        "entity_id": "proc_serum_pregnancy_test",
+        "entity_type": "procedure",
+        "entity_name": "Serum Pregnancy Test",
+        "enriched": true,
+        "source": "automatic",
+        "code": "C92949",
+        "code_system": "NCI Thesaurus",
+        "code_system_version": "24.0",
+        "display_name": "Pregnancy Test",
+        "confidence": 0.7
+      },
+      {
+        "entity_id": "proc_urine_pregnancy_test",
+        "entity_type": "procedure",
+        "entity_name": "Urine Pregnancy Test",
+        "enriched": true,
+        "source": "automatic",
+        "code": "C92949",
+        "code_system": "NCI Thesaurus",
+        "code_system_version": "24.0",
+        "display_name": "Pregnancy Test",
+        "confidence": 0.7
+      },
+      {
+        "entity_id": "proc_ecg_recording",
+        "entity_type": "procedure",
+        "entity_name": "Electrocardiogram Recording",
+        "enriched": false,
+        "source": "automatic",
+        "error": "Best match score 0.17 below threshold 0.3"
+      },
+      {
+        "entity_id": "proc_echocardiography",
+        "entity_type": "procedure",
+        "entity_name": "Echocardiography",
+        "enriched": true,
+        "source": "automatic",
+        "code": "C16525",
+        "code_system": "NCI Thesaurus",
+        "code_system_version": "24.0",
+        "display_name": "Echocardiography Test",
+        "confidence": 0.7
+      },
+      {
+        "entity_id": "proc_ct_imaging",
+        "entity_type": "procedure",
+        "entity_name": "Computed Tomography Imaging",
+        "enriched": true,
+        "source": "automatic",
+        "code": "C174525",
+        "code_system": "NCI Thesaurus",
+        "code_system_version": "24.0",
+        "display_name": "Computed Tomography Imaging Mesothelioma Probability Score",
+        "confidence": 0.7
+      },
+      {
+        "entity_id": "proc_mri_imaging",
+        "entity_type": "procedure",
+        "entity_name": "Magnetic Resonance Imaging",
+        "enriched": true,
+        "source": "automatic",
+        "code": "C16809",
+        "code_system": "NCI Thesaurus",
+        "code_system_version": "24.0",
+        "display_name": "Magnetic Resonance Imaging",
+        "confidence": 1.0
+      },
+      {
+        "entity_id": "proc_pet_imaging",
+        "entity_type": "procedure",
+        "entity_name": "Positron Emission Tomography Imaging",
+        "enriched": true,
+        "source": "automatic",
+        "code": "C17007",
+        "code_system": "NCI Thesaurus",
+        "code_system_version": "24.0",
+        "display_name": "Positron Emission Tomography",
+        "confidence": 0.7
+      },
+      {
+        "entity_id": "proc_fdg_pet_imaging",
+        "entity_type": "procedure",
+        "entity_name": "Fludeoxyglucose Positron Emission Tomography",
+        "enriched": true,
+        "source": "automatic",
+        "code": "C17007",
+        "code_system": "NCI Thesaurus",
+        "code_system_version": "24.0",
+        "display_name": "Positron Emission Tomography",
+        "confidence": 0.7
+      },
+      {
+        "entity_id": "proc_chest_xray",
+        "entity_type": "procedure",
+        "entity_name": "Chest X-ray",
+        "enriched": false,
+        "source": "automatic",
+        "error": "Best match score 0.17 below threshold 0.3"
+      },
+      {
+        "entity_id": "proc_cytology_evaluation",
+        "entity_type": "procedure",
+        "entity_name": "Cytology Evaluation",
+        "enriched": true,
+        "source": "automatic",
+        "code": "C16491",
+        "code_system": "NCI Thesaurus",
+        "code_system_version": "24.0",
+        "display_name": "Cytology",
+        "confidence": 0.7
+      },
+      {
+        "entity_id": "proc_histological_confirmation",
+        "entity_type": "procedure",
+        "entity_name": "Histological Confirmation of NSCLC",
+        "enriched": false,
+        "source": "automatic",
+        "error": "Best match score 0.11 below threshold 0.3"
+      },
+      {
+        "entity_id": "proc_cytological_confirmation",
+        "entity_type": "procedure",
+        "entity_name": "Cytological Confirmation of NSCLC",
+        "enriched": false,
+        "source": "automatic",
+        "error": "Best match score 0.1 below threshold 0.3"
+      },
+      {
+        "entity_id": "proc_drug_dispensation",
+        "entity_type": "procedure",
+        "entity_name": "Drug Dispensation",
+        "enriched": false,
+        "source": "automatic",
+        "error": "Best match score 0.2 below threshold 0.3"
+      },
+      {
+        "entity_id": "dev_ecg_device",
+        "entity_type": "medical_device",
+        "entity_name": "Electrocardiogram Device",
+        "enriched": false,
+        "source": "automatic",
+        "error": "Best match score 0.17 below threshold 0.3"
+      },
+      {
+        "entity_id": "dev_ct_scanner",
+        "entity_type": "medical_device",
+        "entity_name": "Computed Tomography Scanner",
+        "enriched": false,
+        "source": "automatic",
+        "error": "Best match score 0.25 below threshold 0.3"
+      },
+      {
+        "entity_id": "dev_mri_scanner",
+        "entity_type": "medical_device",
+        "entity_name": "Magnetic Resonance Imaging Scanner",
+        "enriched": true,
+        "source": "automatic",
+        "code": "C16809",
+        "code_system": "NCI Thesaurus",
+        "code_system_version": "24.0",
+        "display_name": "Magnetic Resonance Imaging",
+        "confidence": 0.7
+      },
+      {
+        "entity_id": "dev_pet_scanner",
+        "entity_type": "medical_device",
+        "entity_name": "Positron Emission Tomography Scanner",
+        "enriched": true,
+        "source": "automatic",
+        "code": "C17007",
+        "code_system": "NCI Thesaurus",
+        "code_system_version": "24.0",
+        "display_name": "Positron Emission Tomography",
+        "confidence": 0.7
+      },
+      {
+        "entity_id": "dev_xray_machine",
+        "entity_type": "medical_device",
+        "entity_name": "X-ray Machine",
+        "enriched": false,
+        "source": "automatic",
+        "error": "Best match score 0.17 below threshold 0.3"
+      },
+      {
+        "entity_id": "dev_syringe",
+        "entity_type": "medical_device",
+        "entity_name": "Syringe",
+        "enriched": true,
+        "source": "automatic",
+        "code": "C43202",
+        "code_system": "NCI Thesaurus",
+        "code_system_version": "24.0",
+        "display_name": "Syringe",
+        "confidence": 1.0
+      },
+      {
+        "entity_id": "dev_iv_line_cannula",
+        "entity_type": "medical_device",
+        "entity_name": "IV Line/Cannula",
+        "enriched": false,
+        "source": "automatic",
+        "error": "Best match score 0.17 below threshold 0.3"
+      },
+      {
+        "entity_id": "int_1",
+        "entity_type": "study_intervention",
+        "entity_name": "Tepotinib",
+        "enriched": true,
+        "source": "automatic",
+        "code": "C88314",
+        "code_system": "NCI Thesaurus",
+        "code_system_version": "24.0",
+        "display_name": "Tepotinib",
+        "confidence": 1.0
+      },
+      {
+        "entity_id": "int_2",
+        "entity_type": "study_intervention",
+        "entity_name": "Prior anti-cancer therapies",
+        "enriched": false,
+        "source": "automatic",
+        "error": "Best match score 0.12 below threshold 0.3"
+      },
+      {
+        "entity_id": "int_3",
+        "entity_type": "study_intervention",
+        "entity_name": "P-gp, BCRP, OCT1, OCT2, MATE1, MATE2 inhibiting drugs",
+        "enriched": false,
+        "source": "automatic",
+        "error": "Best match score 0.0 below threshold 0.3"
+      },
+      {
+        "entity_id": "int_4",
+        "entity_type": "study_intervention",
+        "entity_name": "P-gp inducing drugs",
+        "enriched": false,
+        "source": "automatic",
+        "error": "Best match score 0.08 below threshold 0.3"
+      },
+      {
+        "entity_id": "int_5",
+        "entity_type": "study_intervention",
+        "entity_name": "P-gp, BCRP, OCT2, MATE1, MATE2, OCT1 transported drugs with narrow therapeutic window",
+        "enriched": true,
+        "source": "automatic",
+        "code": "C48921",
+        "code_system": "NCI Thesaurus",
+        "code_system_version": "24.0",
+        "display_name": "Window",
+        "confidence": 0.7
+      },
+      {
+        "entity_id": "int_6",
+        "entity_type": "study_intervention",
+        "entity_name": "Bisphosphonates",
+        "enriched": false,
+        "source": "automatic",
+        "error": "Best match score 0.0 below threshold 0.3"
+      },
+      {
+        "entity_id": "int_7",
+        "entity_type": "study_intervention",
+        "entity_name": "Agents for improving appetite",
+        "enriched": false,
+        "source": "automatic",
+        "error": "Best match score 0.1 below threshold 0.3"
+      },
+      {
+        "entity_id": "int_8",
+        "entity_type": "study_intervention",
+        "entity_name": "Anticonvulsants",
+        "enriched": false,
+        "source": "automatic",
+        "error": "Best match score 0.0 below threshold 0.3"
+      },
+      {
+        "entity_id": "int_9",
+        "entity_type": "study_intervention",
+        "entity_name": "Corticosteroids",
+        "enriched": true,
+        "source": "automatic",
+        "code": "C2322",
+        "code_system": "NCI Thesaurus",
+        "code_system_version": "24.0",
+        "display_name": "Corticosteroid",
+        "confidence": 0.7
+      },
+      {
+        "entity_id": "int_10",
+        "entity_type": "study_intervention",
+        "entity_name": "Localized radiation therapy",
+        "enriched": false,
+        "source": "automatic",
+        "error": "Best match score 0.25 below threshold 0.3"
+      }
+    ],
+    "coverage": {
+      "total_entities": 818,
+      "enrichable_entities": 59,
+      "enriched_entities": 33,
+      "failed_entities": 26,
+      "coverage_percent": 55.93,
+      "cache_hits": 0,
+      "cache_misses": 59,
+      "cache_hit_rate": 0.0,
+      "api_calls": 59,
+      "api_failures": 0
+    }
+  },
+  "error": null,
+  "confidence": 0.559322033898305
+}

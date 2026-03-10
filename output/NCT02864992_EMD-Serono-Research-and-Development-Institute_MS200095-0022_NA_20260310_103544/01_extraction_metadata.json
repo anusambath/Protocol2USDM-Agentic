@@ -1,0 +1,563 @@
+{
+  "agent_id": "metadata_agent",
+  "timestamp": "2026-03-10T10:35:59.182291",
+  "confidence": 0.85,
+  "entity_count": 24,
+  "entities": [
+    {
+      "id": "title_1",
+      "entity_type": "study_title",
+      "data": {
+        "id": "title_1",
+        "text": "A Phase II single-arm trial to investigate tepotinib in advanced (locally advanced or metastatic) non-small cell lung cancer with MET exon 14 (METex14) skipping alterations or MET amplification (VISION)",
+        "type": {
+          "id": "a19c3eef-1fb8-46b4-8b21-ffdc09acc49a",
+          "code": "C207616",
+          "codeSystem": "http://www.cdisc.org",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Official Study Title",
+          "instanceType": "Code"
+        },
+        "instanceType": "StudyTitle"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "title_2",
+      "entity_type": "study_title",
+      "data": {
+        "id": "title_2",
+        "text": "Tepotinib Phase II in NSCLC harboring MET alterations",
+        "type": {
+          "id": "a3bf4b90-3c05-4063-b421-28875358c5ea",
+          "code": "C207617",
+          "codeSystem": "http://www.cdisc.org",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Brief Study Title",
+          "instanceType": "Code"
+        },
+        "instanceType": "StudyTitle"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "title_3",
+      "entity_type": "study_title",
+      "data": {
+        "id": "title_3",
+        "text": "VISION",
+        "type": {
+          "id": "11126a8f-7b56-45f6-8e3d-44f5c723a492",
+          "code": "C207620",
+          "codeSystem": "http://www.cdisc.org",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Study Acronym",
+          "instanceType": "Code"
+        },
+        "instanceType": "StudyTitle"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "sid_1",
+      "entity_type": "study_identifier",
+      "data": {
+        "id": "sid_1",
+        "text": "MS200095-0022",
+        "scopeId": "org_1",
+        "instanceType": "StudyIdentifier",
+        "identifierType": {
+          "code": "SponsorProtocolNumber",
+          "codeSystem": "USDM",
+          "decode": "Sponsor Protocol Number"
+        }
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "sid_2",
+      "entity_type": "study_identifier",
+      "data": {
+        "id": "sid_2",
+        "text": "128073",
+        "scopeId": "org_unknown",
+        "instanceType": "StudyIdentifier",
+        "identifierType": {
+          "code": "IND",
+          "codeSystem": "USDM",
+          "decode": "FDA IND Number"
+        }
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "sid_3",
+      "entity_type": "study_identifier",
+      "data": {
+        "id": "sid_3",
+        "text": "2015-005696-24",
+        "scopeId": "org_eudract",
+        "instanceType": "StudyIdentifier",
+        "identifierType": {
+          "code": "EudraCT",
+          "codeSystem": "USDM",
+          "decode": "EudraCT Number"
+        }
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "sid_4",
+      "entity_type": "study_identifier",
+      "data": {
+        "id": "sid_4",
+        "text": "0900babe8131aa3fv1.0",
+        "scopeId": "org_4",
+        "instanceType": "StudyIdentifier",
+        "identifierType": {
+          "code": "Other",
+          "codeSystem": "USDM",
+          "decode": "Other Identifier"
+        }
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "sid_5",
+      "entity_type": "study_identifier",
+      "data": {
+        "id": "sid_5",
+        "text": "0900babe81380acf",
+        "scopeId": "org_4",
+        "instanceType": "StudyIdentifier",
+        "identifierType": {
+          "code": "Other",
+          "codeSystem": "USDM",
+          "decode": "Other Identifier"
+        }
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "sid_6",
+      "entity_type": "study_identifier",
+      "data": {
+        "id": "sid_6",
+        "text": "78691_3979755_4582057",
+        "scopeId": "org_4",
+        "instanceType": "StudyIdentifier",
+        "identifierType": {
+          "code": "Other",
+          "codeSystem": "USDM",
+          "decode": "Other Identifier"
+        }
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "org_1",
+      "entity_type": "organization",
+      "data": {
+        "id": "org_1",
+        "name": "Merck KGaA",
+        "type": {
+          "id": "01b5701c-34d1-4c52-82c6-aba11c2352f6",
+          "code": "C54086",
+          "codeSystem": "http://www.cdisc.org",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Pharmaceutical Company",
+          "instanceType": "Code"
+        },
+        "identifier": "Merck KGaA",
+        "identifierScheme": "DUNS",
+        "instanceType": "Organization"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "org_2",
+      "entity_type": "organization",
+      "data": {
+        "id": "org_2",
+        "name": "EMD Serono Research & Development Institute, Inc",
+        "type": {
+          "id": "83fe1c11-e823-4fb8-8030-41e7afa5ca67",
+          "code": "C54086",
+          "codeSystem": "http://www.cdisc.org",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Pharmaceutical Company",
+          "instanceType": "Code"
+        },
+        "identifier": "EMD Serono Research & Development Institute, Inc",
+        "identifierScheme": "DUNS",
+        "instanceType": "Organization"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "org_3",
+      "entity_type": "organization",
+      "data": {
+        "id": "org_3",
+        "name": "Merck Serono Co., Ltd.",
+        "type": {
+          "id": "9ea50c6d-f6f7-4516-ab36-a5fe1970ec83",
+          "code": "C54086",
+          "codeSystem": "http://www.cdisc.org",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Pharmaceutical Company",
+          "instanceType": "Code"
+        },
+        "identifier": "Merck Serono Co., Ltd.",
+        "identifierScheme": "DUNS",
+        "instanceType": "Organization"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "org_4",
+      "entity_type": "organization",
+      "data": {
+        "id": "org_4",
+        "name": "Merck KGaA",
+        "type": {
+          "id": "cdd3b87c-15f8-44fd-a1f2-140ae08f5252",
+          "code": "C54086",
+          "codeSystem": "http://www.cdisc.org",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Pharmaceutical Company",
+          "instanceType": "Code"
+        },
+        "identifier": "Merck KGaA",
+        "identifierScheme": "DUNS",
+        "instanceType": "Organization"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "org_5",
+      "entity_type": "organization",
+      "data": {
+        "id": "org_5",
+        "name": "Memorial Sloan Kettering Cancer Center",
+        "type": {
+          "id": "afeadc21-270e-4fdd-a389-cf6734889a04",
+          "code": "C25516",
+          "codeSystem": "http://www.cdisc.org",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Academic Institution",
+          "instanceType": "Code"
+        },
+        "identifier": "Memorial Sloan Kettering Cancer Center",
+        "identifierScheme": "DUNS",
+        "instanceType": "Organization"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "org_6",
+      "entity_type": "organization",
+      "data": {
+        "id": "org_6",
+        "name": "Health Canada",
+        "type": {
+          "id": "6b991bdf-524e-4a55-9551-36d37e20e846",
+          "code": "C25461",
+          "codeSystem": "http://www.cdisc.org",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Regulatory Agency",
+          "instanceType": "Code"
+        },
+        "identifier": "Health Canada",
+        "identifierScheme": "DUNS",
+        "instanceType": "Organization"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "role_1",
+      "entity_type": "study_role",
+      "data": {
+        "id": "role_1",
+        "name": "Sponsor (for all countries except the USA and Japan)",
+        "code": {
+          "id": "25d51452-221b-4260-910e-b5818efcceb9",
+          "code": "C70793",
+          "codeSystem": "http://www.cdisc.org",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Sponsor",
+          "instanceType": "Code"
+        },
+        "organizationIds": [
+          "org_4"
+        ],
+        "instanceType": "StudyRole"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "role_2",
+      "entity_type": "study_role",
+      "data": {
+        "id": "role_2",
+        "name": "Sponsor (for sites in the USA)",
+        "code": {
+          "id": "f28aba0b-bcfb-400d-91e4-fa9b995a7288",
+          "code": "C70793",
+          "codeSystem": "http://www.cdisc.org",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Sponsor",
+          "instanceType": "Code"
+        },
+        "organizationIds": [
+          "org_2"
+        ],
+        "instanceType": "StudyRole"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "role_3",
+      "entity_type": "study_role",
+      "data": {
+        "id": "role_3",
+        "name": "Sponsor (for sites in Japan)",
+        "code": {
+          "id": "b56bb648-dd12-463b-9e37-86be689c41e1",
+          "code": "C70793",
+          "codeSystem": "http://www.cdisc.org",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Sponsor",
+          "instanceType": "Code"
+        },
+        "organizationIds": [
+          "org_3"
+        ],
+        "instanceType": "StudyRole"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "role_4",
+      "entity_type": "study_role",
+      "data": {
+        "id": "role_4",
+        "name": "Medical Responsible (for all sites)",
+        "code": {
+          "id": "c20f29cd-8e02-49f1-8d83-4bad1077797a",
+          "code": "C70793",
+          "codeSystem": "http://www.cdisc.org",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Sponsor",
+          "instanceType": "Code"
+        },
+        "organizationIds": [
+          "org_4"
+        ],
+        "instanceType": "StudyRole"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "role_5",
+      "entity_type": "study_role",
+      "data": {
+        "id": "role_5",
+        "name": "Coordinating Investigator Site",
+        "code": {
+          "id": "53011f10-52aa-4fbd-82b0-507b6e64b498",
+          "code": "C25936",
+          "codeSystem": "http://www.cdisc.org",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Principal Investigator",
+          "instanceType": "Code"
+        },
+        "organizationIds": [
+          "org_5"
+        ],
+        "instanceType": "StudyRole"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "role_6",
+      "entity_type": "study_role",
+      "data": {
+        "id": "role_6",
+        "name": "Regulatory Authority (Disclosing Body)",
+        "code": {
+          "id": "858b3752-ded4-401e-8e17-61e088829c19",
+          "code": "C25461",
+          "codeSystem": "http://www.cdisc.org",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Regulatory Agency",
+          "instanceType": "Code"
+        },
+        "organizationIds": [
+          "org_6"
+        ],
+        "instanceType": "StudyRole"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "ind_1",
+      "entity_type": "indication",
+      "data": {
+        "id": "ind_1",
+        "name": "Non-small cell lung cancer (NSCLC)",
+        "isRareDisease": false,
+        "instanceType": "Indication",
+        "description": "advanced (locally advanced or metastatic) non-small cell lung cancer with MET exon 14 (METex14) skipping alterations or MET amplification"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "study_phase_1",
+      "entity_type": "study_phase",
+      "data": {
+        "code": "Phase2",
+        "codeSystem": "USDM",
+        "decode": "Phase2"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "study_metadata_1",
+      "entity_type": "metadata",
+      "data": {
+        "name": "MS200095-0022",
+        "description": "",
+        "label": "",
+        "versionIdentifier": "1"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    }
+  ],
+  "metadata_summary": {
+    "study_name": "MS200095-0022",
+    "title_count": 3,
+    "identifier_count": 6,
+    "organization_count": 6
+  }
+}

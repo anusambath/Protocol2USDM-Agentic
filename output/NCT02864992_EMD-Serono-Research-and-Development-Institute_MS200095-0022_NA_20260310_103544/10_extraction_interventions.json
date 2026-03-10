@@ -1,0 +1,1836 @@
+{
+  "agent_id": "interventions_agent",
+  "timestamp": "2026-03-10T10:39:59.833389",
+  "confidence": 0.85,
+  "entity_count": 40,
+  "entities": [
+    {
+      "id": "int_1",
+      "entity_type": "study_intervention",
+      "data": {
+        "id": "int_1",
+        "name": "Tepotinib",
+        "type": {
+          "id": "c9185aaa-4326-49df-8e94-1a929e111cfd",
+          "code": "C54121",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Investigational Product",
+          "instanceType": "Code"
+        },
+        "role": {
+          "id": "1e849d8c-2ffb-43d1-af99-657fb8159e20",
+          "code": "C54121",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Investigational Product",
+          "instanceType": "Code"
+        },
+        "instanceType": "StudyIntervention",
+        "description": "Investigational product for advanced NSCLC with MET exon 14 skipping alterations or MET amplification.",
+        "productIds": [
+          "prod_1"
+        ],
+        "administrationIds": [
+          "admin_1"
+        ]
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "int_2",
+      "entity_type": "study_intervention",
+      "data": {
+        "id": "int_2",
+        "name": "Prior anti-cancer therapies",
+        "type": {
+          "id": "0ed355d5-5f16-41a7-8908-7cbbc91a1ec5",
+          "code": "C54121",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Investigational Product",
+          "instanceType": "Code"
+        },
+        "role": {
+          "id": "c67915ac-f738-4011-a10f-0ca56d462c9b",
+          "code": "C54121",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Investigational Product",
+          "instanceType": "Code"
+        },
+        "instanceType": "StudyIntervention",
+        "description": "Prohibited within 21 days prior to the first dose of trial treatment. Includes chemotherapy, biological therapy, radiation therapy (non-palliative), hormonal therapy for anti-cancer purposes, targeted therapy, or other investigational anticancer therapy.",
+        "productIds": [
+          "prod_2"
+        ],
+        "administrationIds": [
+          "admin_2"
+        ]
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "int_3",
+      "entity_type": "study_intervention",
+      "data": {
+        "id": "int_3",
+        "name": "P-gp, BCRP, OCT1, OCT2, MATE1, MATE2 inhibiting drugs",
+        "type": {
+          "id": "4e2ce7c9-8a70-4617-b1fd-4bf839474f41",
+          "code": "C54126",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Concomitant Medication",
+          "instanceType": "Code"
+        },
+        "role": {
+          "id": "ce3f136e-40d0-4826-ad8e-bee018d03863",
+          "code": "C54126",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Concomitant Medication",
+          "instanceType": "Code"
+        },
+        "instanceType": "StudyIntervention",
+        "description": "Drugs for which the package insert/summary of product characteristics includes a contraindication for P-gp, BCRP, OCT1, OCT2, MATE1, and MATE2 inhibiting drugs (e.g., dabigatran, aliskiren).",
+        "productIds": [
+          "prod_3"
+        ],
+        "administrationIds": [
+          "admin_3"
+        ]
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "int_4",
+      "entity_type": "study_intervention",
+      "data": {
+        "id": "int_4",
+        "name": "P-gp inducing drugs",
+        "type": {
+          "id": "35908105-43bf-4fbb-b517-94292721c6ed",
+          "code": "C54126",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Concomitant Medication",
+          "instanceType": "Code"
+        },
+        "role": {
+          "id": "c35a4384-0b54-47c0-89bc-7f054d5df560",
+          "code": "C54126",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Concomitant Medication",
+          "instanceType": "Code"
+        },
+        "instanceType": "StudyIntervention",
+        "description": "Drugs known to induce P-gp and thereby may decrease efficacy of tepotinib (e.g., avasimibe, carbamazepine, phenytoin, rifampin, Saint John’s wort).",
+        "productIds": [
+          "prod_4"
+        ],
+        "administrationIds": [
+          "admin_4"
+        ]
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "int_5",
+      "entity_type": "study_intervention",
+      "data": {
+        "id": "int_5",
+        "name": "P-gp, BCRP, OCT2, MATE1, MATE2, OCT1 transported drugs with narrow therapeutic window",
+        "type": {
+          "id": "35b92308-44a2-4ad8-81dc-96cc6d80771c",
+          "code": "C54126",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Concomitant Medication",
+          "instanceType": "Code"
+        },
+        "role": {
+          "id": "debdf604-1070-45c2-80fd-fae96c864991",
+          "code": "C54126",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Concomitant Medication",
+          "instanceType": "Code"
+        },
+        "instanceType": "StudyIntervention",
+        "description": "Permitted with caution and close safety monitoring (e.g., rivaroxaban, apixaban, ranolazine, talinolol, digoxin, rosuvastatin, dofetilide, metformin).",
+        "productIds": [
+          "prod_5"
+        ],
+        "administrationIds": [
+          "admin_5"
+        ]
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "int_6",
+      "entity_type": "study_intervention",
+      "data": {
+        "id": "int_6",
+        "name": "Bisphosphonates",
+        "type": {
+          "id": "2a06361a-91e7-49d7-90a8-cf5c8cd870de",
+          "code": "C54126",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Concomitant Medication",
+          "instanceType": "Code"
+        },
+        "role": {
+          "id": "649c0339-1edd-445c-8ca7-72fe257aa7ed",
+          "code": "C54126",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Concomitant Medication",
+          "instanceType": "Code"
+        },
+        "instanceType": "StudyIntervention",
+        "description": "Supportive treatment, allowed to continue if initiated prior to trial entry. Prophylactic initiation during trial treatment should be avoided.",
+        "productIds": [
+          "prod_6"
+        ]
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "int_7",
+      "entity_type": "study_intervention",
+      "data": {
+        "id": "int_7",
+        "name": "Agents for improving appetite",
+        "type": {
+          "id": "219c6078-1403-4a5d-9331-1b512c02fd78",
+          "code": "C54126",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Concomitant Medication",
+          "instanceType": "Code"
+        },
+        "role": {
+          "id": "a3ba9843-6a48-49b1-995c-8211b482b2fe",
+          "code": "C54126",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Concomitant Medication",
+          "instanceType": "Code"
+        },
+        "instanceType": "StudyIntervention",
+        "description": "Supportive treatment, allowed to continue if initiated prior to trial entry.",
+        "productIds": [
+          "prod_7"
+        ]
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "int_8",
+      "entity_type": "study_intervention",
+      "data": {
+        "id": "int_8",
+        "name": "Anticonvulsants",
+        "type": {
+          "id": "f2cbc679-6b51-4d5c-a41b-494ee474707d",
+          "code": "C54126",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Concomitant Medication",
+          "instanceType": "Code"
+        },
+        "role": {
+          "id": "0c315594-ec72-45a6-8d28-f13999ff0655",
+          "code": "C54126",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Concomitant Medication",
+          "instanceType": "Code"
+        },
+        "instanceType": "StudyIntervention",
+        "description": "For symptomatic treatment of brain metastasis, with reduced risk for drug interactions (e.g., lamotrigine, levetiracetam, pregabalin, valproic acid).",
+        "productIds": [
+          "prod_8"
+        ]
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "int_9",
+      "entity_type": "study_intervention",
+      "data": {
+        "id": "int_9",
+        "name": "Corticosteroids",
+        "type": {
+          "id": "cff8f435-17df-4af9-aa8d-91be160d62ec",
+          "code": "C54125",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Rescue Medication",
+          "instanceType": "Code"
+        },
+        "role": {
+          "id": "71199856-55ae-430f-a053-dce5dec6e810",
+          "code": "C54125",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Rescue Medication",
+          "instanceType": "Code"
+        },
+        "instanceType": "StudyIntervention",
+        "description": "For treatment of confirmed Interstitial Lung Disease (ILD) according to institutional guidelines.",
+        "productIds": [
+          "prod_9"
+        ]
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "int_10",
+      "entity_type": "study_intervention",
+      "data": {
+        "id": "int_10",
+        "name": "Localized radiation therapy",
+        "type": {
+          "id": "54a2cb01-a57d-422a-a12a-d217042ccf28",
+          "code": "C54121",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Investigational Product",
+          "instanceType": "Code"
+        },
+        "role": {
+          "id": "a7d45db9-5c16-467e-8993-31b74fd86985",
+          "code": "C54121",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Investigational Product",
+          "instanceType": "Code"
+        },
+        "instanceType": "StudyIntervention",
+        "description": "Palliative radiation therapy to alleviate symptoms such as bone pain, provided it does not involve a target lesion(s) utilized for response determination.",
+        "productIds": [
+          "prod_10"
+        ]
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "prod_1",
+      "entity_type": "administrable_product",
+      "data": {
+        "id": "prod_1",
+        "name": "Tepotinib (TF2) 100 mg film-coated tablets",
+        "administrableDoseForm": {
+          "id": "70f5d3ff-4770-4deb-b31b-079681b0599e",
+          "code": "C42998",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Tablet",
+          "standardCode": {
+            "id": "7660ecdf-88ec-452f-8905-97ea0e52147e",
+            "code": "C42998",
+            "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "codeSystemVersion": "25.01d",
+            "decode": "Tablet",
+            "instanceType": "Code"
+          },
+          "instanceType": "Code"
+        },
+        "productDesignation": {
+          "id": "3d7b94cf-c0ca-4471-98f3-3603045d5de6",
+          "code": "C54121",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Investigational Product",
+          "instanceType": "Code"
+        },
+        "instanceType": "AdministrableProduct",
+        "strength": "100 mg",
+        "substanceIds": [
+          "sub_1"
+        ],
+        "manufacturer": "Merck KGaA"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "prod_2",
+      "entity_type": "administrable_product",
+      "data": {
+        "id": "prod_2",
+        "name": "Tepotinib (TF2) 500 mg film-coated tablets",
+        "administrableDoseForm": {
+          "id": "3b302b58-c2ac-44ee-b9d5-1ef83dc0814b",
+          "code": "C42998",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Tablet",
+          "standardCode": {
+            "id": "3f229197-96bd-4778-8a05-b6170daa376a",
+            "code": "C42998",
+            "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "codeSystemVersion": "25.01d",
+            "decode": "Tablet",
+            "instanceType": "Code"
+          },
+          "instanceType": "Code"
+        },
+        "productDesignation": {
+          "id": "817c76de-2701-46d7-bb09-92bedc0c62e4",
+          "code": "C54121",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Investigational Product",
+          "instanceType": "Code"
+        },
+        "instanceType": "AdministrableProduct",
+        "strength": "500 mg",
+        "substanceIds": [
+          "sub_2"
+        ],
+        "manufacturer": "Merck KGaA"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "prod_3",
+      "entity_type": "administrable_product",
+      "data": {
+        "id": "prod_3",
+        "name": "Tepotinib (TF3) 100 mg film-coated tablets",
+        "administrableDoseForm": {
+          "id": "ceb25f45-8734-4dac-831b-41c22c9b7f05",
+          "code": "C42998",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Tablet",
+          "standardCode": {
+            "id": "3bb116aa-ad47-4d41-ba01-83db683a7cfc",
+            "code": "C42998",
+            "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "codeSystemVersion": "25.01d",
+            "decode": "Tablet",
+            "instanceType": "Code"
+          },
+          "instanceType": "Code"
+        },
+        "productDesignation": {
+          "id": "ce383e24-fe2e-4e47-974c-b667c49b2378",
+          "code": "C54121",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Investigational Product",
+          "instanceType": "Code"
+        },
+        "instanceType": "AdministrableProduct",
+        "strength": "100 mg",
+        "manufacturer": "Merck KGaA"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "prod_4",
+      "entity_type": "administrable_product",
+      "data": {
+        "id": "prod_4",
+        "name": "Tepotinib (TF3) 250 mg film-coated tablets",
+        "administrableDoseForm": {
+          "id": "7e2ce033-3c19-4c33-8411-fe1387a959c2",
+          "code": "C42998",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Tablet",
+          "standardCode": {
+            "id": "9e9969e1-e31b-4953-b51f-afa4db8e2573",
+            "code": "C42998",
+            "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "codeSystemVersion": "25.01d",
+            "decode": "Tablet",
+            "instanceType": "Code"
+          },
+          "instanceType": "Code"
+        },
+        "productDesignation": {
+          "id": "a1ee93d1-2ca2-4909-9910-e0c0df7844f7",
+          "code": "C54121",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Investigational Product",
+          "instanceType": "Code"
+        },
+        "instanceType": "AdministrableProduct",
+        "strength": "250 mg",
+        "manufacturer": "Merck KGaA"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "prod_5",
+      "entity_type": "administrable_product",
+      "data": {
+        "id": "prod_5",
+        "name": "Rivaroxaban",
+        "administrableDoseForm": {
+          "id": "c2f931e4-5a71-420b-b810-d87e555c3451",
+          "code": "C17998",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Unknown",
+          "standardCode": {
+            "id": "255031dd-1cae-4bf4-97a5-24e76ad2bc57",
+            "code": "C17998",
+            "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "codeSystemVersion": "25.01d",
+            "decode": "Unknown",
+            "instanceType": "Code"
+          },
+          "instanceType": "Code"
+        },
+        "productDesignation": {
+          "id": "af004ae3-b2a4-4b71-a6cb-41facaf80afd",
+          "code": "C54121",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Investigational Product",
+          "instanceType": "Code"
+        },
+        "instanceType": "AdministrableProduct"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "prod_6",
+      "entity_type": "administrable_product",
+      "data": {
+        "id": "prod_6",
+        "name": "Apixaban",
+        "administrableDoseForm": {
+          "id": "a3235e12-7100-4647-b2c0-440347043823",
+          "code": "C17998",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Unknown",
+          "standardCode": {
+            "id": "d6adc58b-d733-44a8-8b95-83a62111d029",
+            "code": "C17998",
+            "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "codeSystemVersion": "25.01d",
+            "decode": "Unknown",
+            "instanceType": "Code"
+          },
+          "instanceType": "Code"
+        },
+        "productDesignation": {
+          "id": "f7c1279f-b325-423e-a1c0-0eb10abc172f",
+          "code": "C54121",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Investigational Product",
+          "instanceType": "Code"
+        },
+        "instanceType": "AdministrableProduct"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "prod_7",
+      "entity_type": "administrable_product",
+      "data": {
+        "id": "prod_7",
+        "name": "Ranolazine",
+        "administrableDoseForm": {
+          "id": "e26a6309-cc99-412c-b634-720599cefcc5",
+          "code": "C17998",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Unknown",
+          "standardCode": {
+            "id": "7e6bc85d-8dc7-4933-8dfb-15a91e3e1111",
+            "code": "C17998",
+            "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "codeSystemVersion": "25.01d",
+            "decode": "Unknown",
+            "instanceType": "Code"
+          },
+          "instanceType": "Code"
+        },
+        "productDesignation": {
+          "id": "4323a566-1bab-4883-b277-6fa36d6b2eb3",
+          "code": "C54121",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Investigational Product",
+          "instanceType": "Code"
+        },
+        "instanceType": "AdministrableProduct"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "prod_8",
+      "entity_type": "administrable_product",
+      "data": {
+        "id": "prod_8",
+        "name": "Talinolol",
+        "administrableDoseForm": {
+          "id": "4a71c9d1-c18a-413e-8c77-973c0ba706da",
+          "code": "C17998",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Unknown",
+          "standardCode": {
+            "id": "1360037c-5692-4d07-ad16-0f2fb8fcd7d5",
+            "code": "C17998",
+            "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "codeSystemVersion": "25.01d",
+            "decode": "Unknown",
+            "instanceType": "Code"
+          },
+          "instanceType": "Code"
+        },
+        "productDesignation": {
+          "id": "48b76b2c-97c1-47c4-ac0e-172bdb708003",
+          "code": "C54121",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Investigational Product",
+          "instanceType": "Code"
+        },
+        "instanceType": "AdministrableProduct"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "prod_9",
+      "entity_type": "administrable_product",
+      "data": {
+        "id": "prod_9",
+        "name": "Digoxin",
+        "administrableDoseForm": {
+          "id": "bfceec0f-ee4b-4386-8acd-c73e8aa49e3a",
+          "code": "C17998",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Unknown",
+          "standardCode": {
+            "id": "115a504d-c274-45f3-9d8e-600f57add438",
+            "code": "C17998",
+            "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "codeSystemVersion": "25.01d",
+            "decode": "Unknown",
+            "instanceType": "Code"
+          },
+          "instanceType": "Code"
+        },
+        "productDesignation": {
+          "id": "f63f2ca8-dfd0-4539-8c1a-8188f619820a",
+          "code": "C54121",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Investigational Product",
+          "instanceType": "Code"
+        },
+        "instanceType": "AdministrableProduct"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "prod_10",
+      "entity_type": "administrable_product",
+      "data": {
+        "id": "prod_10",
+        "name": "Rosuvastatin",
+        "administrableDoseForm": {
+          "id": "419765a8-9a8e-491d-8381-cd5eb7e8ff2b",
+          "code": "C17998",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Unknown",
+          "standardCode": {
+            "id": "e450ac1c-d7b6-459b-aa2d-283f5c6c9cb8",
+            "code": "C17998",
+            "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "codeSystemVersion": "25.01d",
+            "decode": "Unknown",
+            "instanceType": "Code"
+          },
+          "instanceType": "Code"
+        },
+        "productDesignation": {
+          "id": "7a98bec7-3293-44e0-9fd4-e723c59562f0",
+          "code": "C54121",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Investigational Product",
+          "instanceType": "Code"
+        },
+        "instanceType": "AdministrableProduct"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "prod_11",
+      "entity_type": "administrable_product",
+      "data": {
+        "id": "prod_11",
+        "name": "Dofetilide",
+        "administrableDoseForm": {
+          "id": "89629412-7f1b-4512-8860-bfdaeee1793f",
+          "code": "C17998",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Unknown",
+          "standardCode": {
+            "id": "21ca1698-79be-4416-b662-e3dc02e16b24",
+            "code": "C17998",
+            "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "codeSystemVersion": "25.01d",
+            "decode": "Unknown",
+            "instanceType": "Code"
+          },
+          "instanceType": "Code"
+        },
+        "productDesignation": {
+          "id": "6cf17da3-5cea-4c88-90f7-c643361b473f",
+          "code": "C54121",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Investigational Product",
+          "instanceType": "Code"
+        },
+        "instanceType": "AdministrableProduct"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "prod_12",
+      "entity_type": "administrable_product",
+      "data": {
+        "id": "prod_12",
+        "name": "Metformin",
+        "administrableDoseForm": {
+          "id": "a632d983-deb6-4320-b5bb-6364e1ca5543",
+          "code": "C17998",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Unknown",
+          "standardCode": {
+            "id": "c47d4721-2e23-4946-9978-d3398743d1d5",
+            "code": "C17998",
+            "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "codeSystemVersion": "25.01d",
+            "decode": "Unknown",
+            "instanceType": "Code"
+          },
+          "instanceType": "Code"
+        },
+        "productDesignation": {
+          "id": "09d5957b-f2f5-45f6-ad5f-c41dea73b145",
+          "code": "C54121",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Investigational Product",
+          "instanceType": "Code"
+        },
+        "instanceType": "AdministrableProduct"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "prod_13",
+      "entity_type": "administrable_product",
+      "data": {
+        "id": "prod_13",
+        "name": "Dabigatran",
+        "administrableDoseForm": {
+          "id": "a915c148-0d69-442c-b35d-d4b72d623386",
+          "code": "C17998",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Unknown",
+          "standardCode": {
+            "id": "87c4d233-f1f8-4256-918a-1a36a382abdd",
+            "code": "C17998",
+            "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "codeSystemVersion": "25.01d",
+            "decode": "Unknown",
+            "instanceType": "Code"
+          },
+          "instanceType": "Code"
+        },
+        "productDesignation": {
+          "id": "2a7087d5-cbb0-4332-b72d-edbf63c36720",
+          "code": "C54121",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Investigational Product",
+          "instanceType": "Code"
+        },
+        "instanceType": "AdministrableProduct"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "prod_14",
+      "entity_type": "administrable_product",
+      "data": {
+        "id": "prod_14",
+        "name": "Aliskiren",
+        "administrableDoseForm": {
+          "id": "f3876654-b2de-4b88-8f7f-6faa437d4e30",
+          "code": "C17998",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Unknown",
+          "standardCode": {
+            "id": "23f77e97-8a43-4e3d-bc8e-0f925e708109",
+            "code": "C17998",
+            "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "codeSystemVersion": "25.01d",
+            "decode": "Unknown",
+            "instanceType": "Code"
+          },
+          "instanceType": "Code"
+        },
+        "productDesignation": {
+          "id": "f39b64f3-0e34-4869-adeb-459e85e7a8f7",
+          "code": "C54121",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Investigational Product",
+          "instanceType": "Code"
+        },
+        "instanceType": "AdministrableProduct"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "prod_15",
+      "entity_type": "administrable_product",
+      "data": {
+        "id": "prod_15",
+        "name": "Avasimibe",
+        "administrableDoseForm": {
+          "id": "8e2df544-14cc-4509-acbf-8df525bb2db2",
+          "code": "C17998",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Unknown",
+          "standardCode": {
+            "id": "64c26af6-3acb-445f-8e2f-106c42e205a6",
+            "code": "C17998",
+            "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "codeSystemVersion": "25.01d",
+            "decode": "Unknown",
+            "instanceType": "Code"
+          },
+          "instanceType": "Code"
+        },
+        "productDesignation": {
+          "id": "a2922db6-08ac-4e88-b5d9-e84a11e42512",
+          "code": "C54121",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Investigational Product",
+          "instanceType": "Code"
+        },
+        "instanceType": "AdministrableProduct"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "prod_16",
+      "entity_type": "administrable_product",
+      "data": {
+        "id": "prod_16",
+        "name": "Carbamazepine",
+        "administrableDoseForm": {
+          "id": "e57b04db-c6e2-4383-886c-9ae911338ddf",
+          "code": "C17998",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Unknown",
+          "standardCode": {
+            "id": "2368fe17-0727-4bb5-bc04-846ec4d28113",
+            "code": "C17998",
+            "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "codeSystemVersion": "25.01d",
+            "decode": "Unknown",
+            "instanceType": "Code"
+          },
+          "instanceType": "Code"
+        },
+        "productDesignation": {
+          "id": "5b8cb7e4-bb4b-4ccf-97b6-b368019d5d6e",
+          "code": "C54121",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Investigational Product",
+          "instanceType": "Code"
+        },
+        "instanceType": "AdministrableProduct"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "prod_17",
+      "entity_type": "administrable_product",
+      "data": {
+        "id": "prod_17",
+        "name": "Phenytoin",
+        "administrableDoseForm": {
+          "id": "5fd35dc3-3ba2-44fe-8488-ea3f38182500",
+          "code": "C17998",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Unknown",
+          "standardCode": {
+            "id": "30bb5d94-e721-4f2e-a985-121c77e57a8b",
+            "code": "C17998",
+            "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "codeSystemVersion": "25.01d",
+            "decode": "Unknown",
+            "instanceType": "Code"
+          },
+          "instanceType": "Code"
+        },
+        "productDesignation": {
+          "id": "644495bd-9a25-4746-b98b-db317a59001e",
+          "code": "C54121",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Investigational Product",
+          "instanceType": "Code"
+        },
+        "instanceType": "AdministrableProduct"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "prod_18",
+      "entity_type": "administrable_product",
+      "data": {
+        "id": "prod_18",
+        "name": "Rifampin",
+        "administrableDoseForm": {
+          "id": "23bab2ce-bba7-431e-bb57-afe462b5ff1c",
+          "code": "C17998",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Unknown",
+          "standardCode": {
+            "id": "e55fa12b-d18f-4e25-bdad-4e104c92b3ce",
+            "code": "C17998",
+            "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "codeSystemVersion": "25.01d",
+            "decode": "Unknown",
+            "instanceType": "Code"
+          },
+          "instanceType": "Code"
+        },
+        "productDesignation": {
+          "id": "531f7b00-325e-4bea-bcc6-d8ceee19f24d",
+          "code": "C54121",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Investigational Product",
+          "instanceType": "Code"
+        },
+        "instanceType": "AdministrableProduct"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "prod_19",
+      "entity_type": "administrable_product",
+      "data": {
+        "id": "prod_19",
+        "name": "Saint John’s wort",
+        "administrableDoseForm": {
+          "id": "6e80fbef-28af-4776-a3a5-760cfda161c8",
+          "code": "C17998",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Unknown",
+          "standardCode": {
+            "id": "e1a8dbc9-d87f-43b5-90c2-e49503cb6a96",
+            "code": "C17998",
+            "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "codeSystemVersion": "25.01d",
+            "decode": "Unknown",
+            "instanceType": "Code"
+          },
+          "instanceType": "Code"
+        },
+        "productDesignation": {
+          "id": "a0e9bf80-fc86-4cd6-924c-bc9dc004c7e6",
+          "code": "C54121",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Investigational Product",
+          "instanceType": "Code"
+        },
+        "instanceType": "AdministrableProduct"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "prod_20",
+      "entity_type": "administrable_product",
+      "data": {
+        "id": "prod_20",
+        "name": "Lamotrigine",
+        "administrableDoseForm": {
+          "id": "adef0df3-c51a-491a-bc0a-81dd35c0cffd",
+          "code": "C17998",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Unknown",
+          "standardCode": {
+            "id": "2677aed5-93dc-48c8-89b9-0753a7505a97",
+            "code": "C17998",
+            "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "codeSystemVersion": "25.01d",
+            "decode": "Unknown",
+            "instanceType": "Code"
+          },
+          "instanceType": "Code"
+        },
+        "productDesignation": {
+          "id": "acf23797-3bd2-411f-8627-60274244c1b6",
+          "code": "C54121",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Investigational Product",
+          "instanceType": "Code"
+        },
+        "instanceType": "AdministrableProduct"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "prod_21",
+      "entity_type": "administrable_product",
+      "data": {
+        "id": "prod_21",
+        "name": "Levetiracetam",
+        "administrableDoseForm": {
+          "id": "466c02c5-c288-4dd3-b8ed-d9f7cf246ebd",
+          "code": "C17998",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Unknown",
+          "standardCode": {
+            "id": "d584ae57-d4a8-4bc5-9435-c0183b75c712",
+            "code": "C17998",
+            "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "codeSystemVersion": "25.01d",
+            "decode": "Unknown",
+            "instanceType": "Code"
+          },
+          "instanceType": "Code"
+        },
+        "productDesignation": {
+          "id": "f4e13580-6753-4bce-b151-5b87bfb28e39",
+          "code": "C54121",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Investigational Product",
+          "instanceType": "Code"
+        },
+        "instanceType": "AdministrableProduct"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "prod_22",
+      "entity_type": "administrable_product",
+      "data": {
+        "id": "prod_22",
+        "name": "Pregabalin",
+        "administrableDoseForm": {
+          "id": "daba51d6-6b6e-41e6-b1bb-a3f480549611",
+          "code": "C17998",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Unknown",
+          "standardCode": {
+            "id": "daac9ce6-42dd-4c52-ad9f-a6d3850dc151",
+            "code": "C17998",
+            "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "codeSystemVersion": "25.01d",
+            "decode": "Unknown",
+            "instanceType": "Code"
+          },
+          "instanceType": "Code"
+        },
+        "productDesignation": {
+          "id": "67e591ca-572c-411c-975b-a7d179006a83",
+          "code": "C54121",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Investigational Product",
+          "instanceType": "Code"
+        },
+        "instanceType": "AdministrableProduct"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "prod_23",
+      "entity_type": "administrable_product",
+      "data": {
+        "id": "prod_23",
+        "name": "Valproic acid",
+        "administrableDoseForm": {
+          "id": "c4f8b6c5-e2db-4d1f-bfe7-8f6cbdbaa50d",
+          "code": "C17998",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Unknown",
+          "standardCode": {
+            "id": "df3a8f78-c624-4a4a-a20e-facb540b3cb4",
+            "code": "C17998",
+            "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "codeSystemVersion": "25.01d",
+            "decode": "Unknown",
+            "instanceType": "Code"
+          },
+          "instanceType": "Code"
+        },
+        "productDesignation": {
+          "id": "4755b611-3559-4437-8a71-99622f792b80",
+          "code": "C54121",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Investigational Product",
+          "instanceType": "Code"
+        },
+        "instanceType": "AdministrableProduct"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "admin_1",
+      "entity_type": "administration",
+      "data": {
+        "id": "admin_1",
+        "name": "Tepotinib 500 mg once daily",
+        "instanceType": "Administration",
+        "dose": "500 mg",
+        "doseFrequency": "once daily",
+        "route": {
+          "code": "Oral",
+          "codeSystem": "USDM",
+          "decode": "Oral"
+        },
+        "duration": "Until disease progression, withdrawal of consent, or AE leading to discontinuation"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "admin_2",
+      "entity_type": "administration",
+      "data": {
+        "id": "admin_2",
+        "name": "Tepotinib 300 mg once daily (dose reduction)",
+        "instanceType": "Administration",
+        "dose": "300 mg",
+        "doseFrequency": "once daily",
+        "route": {
+          "code": "Oral",
+          "codeSystem": "USDM",
+          "decode": "Oral"
+        },
+        "duration": "As a dose reduction (prior to protocol Version 8.0)"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "admin_3",
+      "entity_type": "administration",
+      "data": {
+        "id": "admin_3",
+        "name": "Tepotinib 250 mg once daily (dose reduction)",
+        "instanceType": "Administration",
+        "dose": "250 mg",
+        "doseFrequency": "once daily",
+        "route": {
+          "code": "Oral",
+          "codeSystem": "USDM",
+          "decode": "Oral"
+        },
+        "duration": "As a dose reduction (standard after protocol Version 8.0)"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "admin_4",
+      "entity_type": "administration",
+      "data": {
+        "id": "admin_4",
+        "name": "Corticosteroids for ILD",
+        "instanceType": "Administration",
+        "dose": "Not specified",
+        "doseFrequency": "Not specified",
+        "route": {
+          "code": "Other",
+          "codeSystem": "USDM",
+          "decode": "Other"
+        },
+        "duration": "Not specified"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "admin_5",
+      "entity_type": "administration",
+      "data": {
+        "id": "admin_5",
+        "name": "Localized radiation therapy",
+        "instanceType": "Administration",
+        "dose": "Palliative range",
+        "doseFrequency": "Not specified",
+        "route": {
+          "code": "Other",
+          "codeSystem": "USDM",
+          "decode": "Other"
+        },
+        "duration": "Not specified"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "sub_1",
+      "entity_type": "substance",
+      "data": {
+        "id": "sub_1",
+        "name": "Tepotinib",
+        "instanceType": "Substance",
+        "description": "Active pharmaceutical ingredient of investigational product."
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "sub_2",
+      "entity_type": "substance",
+      "data": {
+        "id": "sub_2",
+        "name": "3-(1-(3-(5-(1-Methylpiperidin-4-ylmethoxy)-pyrimidin-2-yl)-benzyl)-1,6-dihydro-6-oxo-pyridazin-3-yl)-benzonitrile hydrochloride hydrate",
+        "instanceType": "Substance",
+        "description": "Chemical name for Tepotinib."
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    }
+  ],
+  "interventions_summary": {
+    "intervention_count": 10,
+    "product_count": 23,
+    "administration_count": 5
+  }
+}

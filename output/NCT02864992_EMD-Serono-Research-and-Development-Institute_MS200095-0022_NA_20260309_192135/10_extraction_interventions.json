@@ -1,0 +1,1080 @@
+{
+  "agent_id": "interventions_agent",
+  "timestamp": "2026-03-09T19:25:49.605783",
+  "confidence": 0.85,
+  "entity_count": 25,
+  "entities": [
+    {
+      "id": "int_1",
+      "entity_type": "study_intervention",
+      "data": {
+        "id": "int_1",
+        "name": "Tepotinib",
+        "type": {
+          "id": "bed8248b-1a64-4b33-9ca7-92553da524fd",
+          "code": "C54121",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Investigational Product",
+          "instanceType": "Code"
+        },
+        "role": {
+          "id": "0ab0d1f9-345f-4911-ad3e-31002be5fa95",
+          "code": "C54121",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Investigational Product",
+          "instanceType": "Code"
+        },
+        "instanceType": "StudyIntervention",
+        "description": "Investigational product for advanced (locally advanced or metastatic) non-small cell lung cancer with MET exon 14 (METex14) skipping alterations or MET amplification.",
+        "productIds": [
+          "prod_1"
+        ],
+        "administrationIds": [
+          "admin_1"
+        ]
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "int_2",
+      "entity_type": "study_intervention",
+      "data": {
+        "id": "int_2",
+        "name": "Prior Chemotherapy",
+        "type": {
+          "id": "d5ce765a-90a1-4489-89b6-aa7d88c89b09",
+          "code": "C54121",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Investigational Product",
+          "instanceType": "Code"
+        },
+        "role": {
+          "id": "34f12f05-c23b-45cc-a913-c2abe2ef071e",
+          "code": "C54121",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Investigational Product",
+          "instanceType": "Code"
+        },
+        "instanceType": "StudyIntervention",
+        "description": "Prior chemotherapy for anti-cancer purposes, requiring a 21-day washout period before the first dose of trial treatment.",
+        "productIds": [
+          "prod_2"
+        ],
+        "administrationIds": [
+          "admin_2"
+        ]
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "int_3",
+      "entity_type": "study_intervention",
+      "data": {
+        "id": "int_3",
+        "name": "Prior Biological Therapy",
+        "type": {
+          "id": "c068e940-5fc5-4500-9c53-7923cb2af07a",
+          "code": "C54121",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Investigational Product",
+          "instanceType": "Code"
+        },
+        "role": {
+          "id": "499a292e-7652-4dac-a1e5-d3906901c14f",
+          "code": "C54121",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Investigational Product",
+          "instanceType": "Code"
+        },
+        "instanceType": "StudyIntervention",
+        "description": "Prior biological therapy for anti-cancer purposes, requiring a 21-day washout period before the first dose of trial treatment.",
+        "productIds": [
+          "prod_3"
+        ],
+        "administrationIds": [
+          "admin_3"
+        ]
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "int_4",
+      "entity_type": "study_intervention",
+      "data": {
+        "id": "int_4",
+        "name": "Prior Radiation Therapy",
+        "type": {
+          "id": "c9343446-e26e-4444-8906-e553868b9115",
+          "code": "C54121",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Investigational Product",
+          "instanceType": "Code"
+        },
+        "role": {
+          "id": "8d8269db-0d94-4c7e-a103-8179298e5122",
+          "code": "C54121",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Investigational Product",
+          "instanceType": "Code"
+        },
+        "instanceType": "StudyIntervention",
+        "description": "Prior radiation therapy for anti-cancer purposes (excluding palliative radiotherapy at focal sites), requiring a 21-day washout period before the first dose of trial treatment.",
+        "productIds": [
+          "prod_4"
+        ]
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "int_5",
+      "entity_type": "study_intervention",
+      "data": {
+        "id": "int_5",
+        "name": "Prior Hormonal Therapy",
+        "type": {
+          "id": "faba1389-d490-4411-9918-ecee0303e262",
+          "code": "C54121",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Investigational Product",
+          "instanceType": "Code"
+        },
+        "role": {
+          "id": "4e901beb-a389-4b31-9360-4fb5347b94c2",
+          "code": "C54121",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Investigational Product",
+          "instanceType": "Code"
+        },
+        "instanceType": "StudyIntervention",
+        "description": "Prior hormonal therapy for anti-cancer purposes, requiring a 21-day washout period before the first dose of trial treatment."
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "int_6",
+      "entity_type": "study_intervention",
+      "data": {
+        "id": "int_6",
+        "name": "Prior Targeted Therapy",
+        "type": {
+          "id": "18c61cfa-fbcd-41e0-8a29-fb1ca35619fd",
+          "code": "C54121",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Investigational Product",
+          "instanceType": "Code"
+        },
+        "role": {
+          "id": "32c3cc62-dd41-4f2f-bf78-791d7ac90938",
+          "code": "C54121",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Investigational Product",
+          "instanceType": "Code"
+        },
+        "instanceType": "StudyIntervention",
+        "description": "Prior targeted therapy for anti-cancer purposes, requiring a 21-day washout period before the first dose of trial treatment."
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "int_7",
+      "entity_type": "study_intervention",
+      "data": {
+        "id": "int_7",
+        "name": "Other Investigational Anticancer Therapy",
+        "type": {
+          "id": "bdc93383-64b6-4e9a-be66-2a3218aad9a1",
+          "code": "C54121",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Investigational Product",
+          "instanceType": "Code"
+        },
+        "role": {
+          "id": "4dc5597c-38d3-4ded-a5ad-c404d2e97748",
+          "code": "C54121",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Investigational Product",
+          "instanceType": "Code"
+        },
+        "instanceType": "StudyIntervention",
+        "description": "Other investigational anticancer therapy, requiring a 21-day washout period before the first dose of trial treatment."
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "int_8",
+      "entity_type": "study_intervention",
+      "data": {
+        "id": "int_8",
+        "name": "Any other cancer therapy",
+        "type": {
+          "id": "0135bc7a-e7e4-44e8-b415-23dea4f31710",
+          "code": "C54126",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Concomitant Medication",
+          "instanceType": "Code"
+        },
+        "role": {
+          "id": "c7a58580-3b34-4923-9af4-8d52e13901ae",
+          "code": "C54126",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Concomitant Medication",
+          "instanceType": "Code"
+        },
+        "instanceType": "StudyIntervention",
+        "description": "Prohibited concomitant therapy including chemotherapy, biological therapy, hormonal therapy for anticancer purposes, targeted therapy, or any investigational product other than tepotinib."
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "int_9",
+      "entity_type": "study_intervention",
+      "data": {
+        "id": "int_9",
+        "name": "P-gp, BCRP, OCT1, OCT2, MATE1, MATE2 inhibiting drugs",
+        "type": {
+          "id": "401986cd-1869-4a15-b39d-f48a2def8a58",
+          "code": "C54126",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Concomitant Medication",
+          "instanceType": "Code"
+        },
+        "role": {
+          "id": "ce3aaa6d-cbcf-487c-88a6-d4a72921137b",
+          "code": "C54126",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Concomitant Medication",
+          "instanceType": "Code"
+        },
+        "instanceType": "StudyIntervention",
+        "description": "Prohibited concomitant drugs that inhibit P-gp, BCRP, OCT1, OCT2, MATE1, and MATE2."
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "int_10",
+      "entity_type": "study_intervention",
+      "data": {
+        "id": "int_10",
+        "name": "P-gp inducing drugs",
+        "type": {
+          "id": "59500b69-16ac-49e1-a869-da8d24b062c8",
+          "code": "C54126",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Concomitant Medication",
+          "instanceType": "Code"
+        },
+        "role": {
+          "id": "1ad7daf3-3da1-4bfa-b5ea-094df2927f82",
+          "code": "C54126",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Concomitant Medication",
+          "instanceType": "Code"
+        },
+        "instanceType": "StudyIntervention",
+        "description": "Prohibited concomitant drugs known to induce P-gp (e.g., avasimibe, carbamazepine, phenytoin, rifampin, Saint John’s wort)."
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "int_11",
+      "entity_type": "study_intervention",
+      "data": {
+        "id": "int_11",
+        "name": "P-gp transported drugs",
+        "type": {
+          "id": "7d1102d5-f256-4c78-80ec-0338318a3616",
+          "code": "C54126",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Concomitant Medication",
+          "instanceType": "Code"
+        },
+        "role": {
+          "id": "ffc376c7-9c41-4ed6-9b69-faab5958f270",
+          "code": "C54126",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Concomitant Medication",
+          "instanceType": "Code"
+        },
+        "instanceType": "StudyIntervention",
+        "description": "Permitted concomitant medications known to be transported by P-gp (e.g., rivaroxaban, apixaban, ranolazine, talinolol, digoxin), to be used with caution and close safety monitoring if they have a narrow therapeutic range."
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "int_12",
+      "entity_type": "study_intervention",
+      "data": {
+        "id": "int_12",
+        "name": "BCRP transported drugs",
+        "type": {
+          "id": "91b0d79b-b044-4a38-9651-2721f7b3838e",
+          "code": "C54126",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Concomitant Medication",
+          "instanceType": "Code"
+        },
+        "role": {
+          "id": "05a84104-b5a4-4a5a-9a7a-6908599fb1da",
+          "code": "C54126",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Concomitant Medication",
+          "instanceType": "Code"
+        },
+        "instanceType": "StudyIntervention",
+        "description": "Permitted concomitant medications known to be transported by BCRP (e.g., rosuvastatin), to be used with caution and close safety monitoring if they have a narrow therapeutic range."
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "int_13",
+      "entity_type": "study_intervention",
+      "data": {
+        "id": "int_13",
+        "name": "OCT2, MATE1, MATE2 transported drugs",
+        "type": {
+          "id": "26739e5b-dbd3-460b-a9ba-71bceeec3619",
+          "code": "C54126",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Concomitant Medication",
+          "instanceType": "Code"
+        },
+        "role": {
+          "id": "6730e98e-1066-4802-8a78-1912846650a7",
+          "code": "C54126",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Concomitant Medication",
+          "instanceType": "Code"
+        },
+        "instanceType": "StudyIntervention",
+        "description": "Permitted concomitant medications known to be transported by OCT2, MATE1, and MATE2 (e.g., dofetilide, metformin), to be used with caution and close safety monitoring if they have a narrow therapeutic range."
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "int_14",
+      "entity_type": "study_intervention",
+      "data": {
+        "id": "int_14",
+        "name": "OCT1 transported drugs",
+        "type": {
+          "id": "06a2fff4-609b-47ef-816b-d6fca34da8c2",
+          "code": "C54126",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Concomitant Medication",
+          "instanceType": "Code"
+        },
+        "role": {
+          "id": "b272a5bc-11c5-4c9f-8d70-4dcb94262dca",
+          "code": "C54126",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Concomitant Medication",
+          "instanceType": "Code"
+        },
+        "instanceType": "StudyIntervention",
+        "description": "Permitted concomitant medications known to be transported by OCT1, to be used with caution and close safety monitoring if they have a narrow therapeutic range."
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "int_15",
+      "entity_type": "study_intervention",
+      "data": {
+        "id": "int_15",
+        "name": "Highly effective contraception",
+        "type": {
+          "id": "6118aca7-2efe-4ff2-b83d-593a22d0d538",
+          "code": "C54126",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Concomitant Medication",
+          "instanceType": "Code"
+        },
+        "role": {
+          "id": "09282f19-49e9-454a-9d5d-221a1adbc427",
+          "code": "C54126",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Concomitant Medication",
+          "instanceType": "Code"
+        },
+        "instanceType": "StudyIntervention",
+        "description": "Required for male and female subjects of childbearing potential during and for a specified period after the treatment period."
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "int_16",
+      "entity_type": "study_intervention",
+      "data": {
+        "id": "int_16",
+        "name": "Supportive treatment",
+        "type": {
+          "id": "af6170b7-3f44-451c-a508-3c619b0ee807",
+          "code": "C54126",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Concomitant Medication",
+          "instanceType": "Code"
+        },
+        "role": {
+          "id": "543766b3-ad67-49cf-81dc-2c19c9d84d49",
+          "code": "C54126",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Concomitant Medication",
+          "instanceType": "Code"
+        },
+        "instanceType": "StudyIntervention",
+        "description": "Permitted supportive treatment (e.g., bisphosphonates, agents for improving appetite) if initiated prior to trial entry. Prophylactic bisphosphonates during trial should be avoided."
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "int_17",
+      "entity_type": "study_intervention",
+      "data": {
+        "id": "int_17",
+        "name": "Anticonvulsants",
+        "type": {
+          "id": "217fc3d1-2667-42b1-9dcc-708a46c40486",
+          "code": "C54126",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Concomitant Medication",
+          "instanceType": "Code"
+        },
+        "role": {
+          "id": "7bf87afd-3911-456b-abed-951b2b974c04",
+          "code": "C54126",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Concomitant Medication",
+          "instanceType": "Code"
+        },
+        "instanceType": "StudyIntervention",
+        "description": "Permitted anticonvulsants (lamotrigine, levetiracetam, pregabalin, valproic acid) for symptomatic treatment of brain metastasis with reduced risk for drug interactions."
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "prod_1",
+      "entity_type": "administrable_product",
+      "data": {
+        "id": "prod_1",
+        "name": "Tepotinib TF2 100 mg film-coated tablets",
+        "administrableDoseForm": {
+          "id": "a74b57cb-ab19-4084-ac89-da3406d7506b",
+          "code": "C42998",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Tablet",
+          "standardCode": {
+            "id": "95dbbe8e-f689-40a7-a860-a2e9f017d083",
+            "code": "C42998",
+            "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "codeSystemVersion": "25.01d",
+            "decode": "Tablet",
+            "instanceType": "Code"
+          },
+          "instanceType": "Code"
+        },
+        "productDesignation": {
+          "id": "2b813df8-8270-45dc-bc24-63a5d051eb07",
+          "code": "C54121",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Investigational Product",
+          "instanceType": "Code"
+        },
+        "instanceType": "AdministrableProduct",
+        "strength": "100 mg",
+        "substanceIds": [
+          "sub_1"
+        ],
+        "manufacturer": "Merck KGaA / EMD Serono Research & Development Institute, Inc. / Merck Serono Co., Ltd."
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "prod_2",
+      "entity_type": "administrable_product",
+      "data": {
+        "id": "prod_2",
+        "name": "Tepotinib TF2 500 mg film-coated tablets",
+        "administrableDoseForm": {
+          "id": "f1682bb7-ad0d-4d75-8cf8-e08fd84d2c82",
+          "code": "C42998",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Tablet",
+          "standardCode": {
+            "id": "a5598d27-beb1-4364-b38f-1bbb9604cf19",
+            "code": "C42998",
+            "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "codeSystemVersion": "25.01d",
+            "decode": "Tablet",
+            "instanceType": "Code"
+          },
+          "instanceType": "Code"
+        },
+        "productDesignation": {
+          "id": "11273d1d-65ea-4138-93a4-6a298367a941",
+          "code": "C54121",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Investigational Product",
+          "instanceType": "Code"
+        },
+        "instanceType": "AdministrableProduct",
+        "strength": "500 mg",
+        "manufacturer": "Merck KGaA / EMD Serono Research & Development Institute, Inc. / Merck Serono Co., Ltd."
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "prod_3",
+      "entity_type": "administrable_product",
+      "data": {
+        "id": "prod_3",
+        "name": "Tepotinib TF3 100 mg film-coated tablets",
+        "administrableDoseForm": {
+          "id": "b08f36e6-2d21-4d85-b875-54d9fbaf9e24",
+          "code": "C42998",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Tablet",
+          "standardCode": {
+            "id": "52e682c3-4b2f-4636-9ca5-17af28da5169",
+            "code": "C42998",
+            "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "codeSystemVersion": "25.01d",
+            "decode": "Tablet",
+            "instanceType": "Code"
+          },
+          "instanceType": "Code"
+        },
+        "productDesignation": {
+          "id": "c15a6f08-75ac-419d-a663-a01cef522025",
+          "code": "C54121",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Investigational Product",
+          "instanceType": "Code"
+        },
+        "instanceType": "AdministrableProduct",
+        "strength": "100 mg",
+        "manufacturer": "Merck KGaA / EMD Serono Research & Development Institute, Inc. / Merck Serono Co., Ltd."
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "prod_4",
+      "entity_type": "administrable_product",
+      "data": {
+        "id": "prod_4",
+        "name": "Tepotinib TF3 250 mg film-coated tablets",
+        "administrableDoseForm": {
+          "id": "2ec37500-c794-4058-b349-df201dfb447c",
+          "code": "C42998",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Tablet",
+          "standardCode": {
+            "id": "3a389577-1130-4689-9451-983d6cb0d2d6",
+            "code": "C42998",
+            "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "codeSystemVersion": "25.01d",
+            "decode": "Tablet",
+            "instanceType": "Code"
+          },
+          "instanceType": "Code"
+        },
+        "productDesignation": {
+          "id": "3aad36b9-db31-46cb-b6da-364d9027412b",
+          "code": "C54121",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Investigational Product",
+          "instanceType": "Code"
+        },
+        "instanceType": "AdministrableProduct",
+        "strength": "250 mg",
+        "manufacturer": "Merck KGaA / EMD Serono Research & Development Institute, Inc. / Merck Serono Co., Ltd."
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "admin_1",
+      "entity_type": "administration",
+      "data": {
+        "id": "admin_1",
+        "name": "Tepotinib 500 mg once daily",
+        "instanceType": "Administration",
+        "dose": "500 mg",
+        "doseFrequency": "once daily",
+        "route": {
+          "code": "Oral",
+          "codeSystem": "USDM",
+          "decode": "Oral"
+        },
+        "duration": "Until progression of disease, withdrawal of consent, or AE leading to discontinuation."
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "admin_2",
+      "entity_type": "administration",
+      "data": {
+        "id": "admin_2",
+        "name": "Tepotinib 300 mg once daily",
+        "instanceType": "Administration",
+        "dose": "300 mg",
+        "doseFrequency": "once daily",
+        "route": {
+          "code": "Oral",
+          "codeSystem": "USDM",
+          "decode": "Oral"
+        },
+        "duration": "As a dose reduction (prior to protocol Version 8.0)."
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "admin_3",
+      "entity_type": "administration",
+      "data": {
+        "id": "admin_3",
+        "name": "Tepotinib 250 mg once daily",
+        "instanceType": "Administration",
+        "dose": "250 mg",
+        "doseFrequency": "once daily",
+        "route": {
+          "code": "Oral",
+          "codeSystem": "USDM",
+          "decode": "Oral"
+        },
+        "duration": "As a dose reduction (after protocol Version 8.0)."
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "sub_1",
+      "entity_type": "substance",
+      "data": {
+        "id": "sub_1",
+        "name": "Tepotinib",
+        "instanceType": "Substance",
+        "description": "Active pharmaceutical ingredient of the investigational product."
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        8,
+        9,
+        10,
+        39,
+        40,
+        41,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    }
+  ],
+  "interventions_summary": {
+    "intervention_count": 17,
+    "product_count": 4,
+    "administration_count": 3
+  }
+}

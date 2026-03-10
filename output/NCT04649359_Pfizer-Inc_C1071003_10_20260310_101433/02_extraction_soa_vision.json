@@ -1,0 +1,740 @@
+{
+  "agent_id": "soa_vision_agent",
+  "timestamp": "2026-03-10T10:15:11.423301",
+  "confidence": 0.8,
+  "entity_count": 15,
+  "entities": [
+    {
+      "id": "soa_header_structure",
+      "entity_type": "header_structure",
+      "data": {
+        "source": "vision",
+        "page_numbers": [
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ],
+        "image_count": 10,
+        "structure": {
+          "columnHierarchy": {
+            "epochs": [
+              {
+                "id": "epoch_1",
+                "name": "Screening",
+                "instanceType": "StudyEpoch",
+                "type": {
+                  "id": "89b3b696-43f9-4e53-beb7-38c85607a4bb",
+                  "code": "C98779",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Screening Epoch",
+                  "instanceType": "Code"
+                }
+              },
+              {
+                "id": "epoch_2",
+                "name": "Treatment Period (Each 28 Day Cycle)",
+                "instanceType": "StudyEpoch",
+                "type": {
+                  "id": "7150033e-9db4-4aaf-af18-3f2196fd157f",
+                  "code": "C98780",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Treatment Epoch",
+                  "instanceType": "Code"
+                }
+              },
+              {
+                "id": "epoch_3",
+                "name": "EOT Visit",
+                "instanceType": "StudyEpoch",
+                "type": {
+                  "id": "519ca714-29c1-4d48-89b2-57879af9bc25",
+                  "code": "C98780",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Treatment Epoch",
+                  "instanceType": "Code"
+                }
+              },
+              {
+                "id": "epoch_4",
+                "name": "FU Visit",
+                "instanceType": "StudyEpoch",
+                "type": {
+                  "id": "a0b0644c-0a02-4981-b127-f7b3f51adb4d",
+                  "code": "C98780",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Treatment Epoch",
+                  "instanceType": "Code"
+                }
+              },
+              {
+                "id": "epoch_5",
+                "name": "LTFU",
+                "instanceType": "StudyEpoch",
+                "type": {
+                  "id": "edb86751-6613-4637-8eb4-e0cce6ee285e",
+                  "code": "C98780",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Treatment Epoch",
+                  "instanceType": "Code"
+                }
+              }
+            ],
+            "encounters": [
+              {
+                "id": "enc_1",
+                "name": "Screening (Day -28 to Day -1)",
+                "instanceType": "Encounter",
+                "type": {
+                  "id": "8486e20f-fea9-4ae8-90e3-592bdc987902",
+                  "code": "C48262",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Screening",
+                  "instanceType": "Code"
+                },
+                "epochId": "epoch_1"
+              },
+              {
+                "id": "enc_2",
+                "name": "Treatment Period (Day 1)",
+                "instanceType": "Encounter",
+                "type": {
+                  "id": "04b2e2c5-d407-4c43-8781-d1ca4ae10e1b",
+                  "code": "C82517",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Baseline",
+                  "instanceType": "Code"
+                },
+                "epochId": "epoch_2"
+              },
+              {
+                "id": "enc_3",
+                "name": "Treatment Period (Day 4)",
+                "instanceType": "Encounter",
+                "type": {
+                  "id": "19b280dd-a0e3-483e-bb8b-ad353ea95f94",
+                  "code": "C99156",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Scheduled Visit",
+                  "instanceType": "Code"
+                },
+                "epochId": "epoch_2"
+              },
+              {
+                "id": "enc_4",
+                "name": "Treatment Period (Day 8)",
+                "instanceType": "Encounter",
+                "type": {
+                  "id": "5633bc73-165d-4e6a-9eb7-23bb25307918",
+                  "code": "C99156",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Scheduled Visit",
+                  "instanceType": "Code"
+                },
+                "epochId": "epoch_2"
+              },
+              {
+                "id": "enc_5",
+                "name": "Treatment Period (Day 15)",
+                "instanceType": "Encounter",
+                "type": {
+                  "id": "c5d113fc-67cf-4934-8d2b-b58b06eeff1a",
+                  "code": "C82517",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Baseline",
+                  "instanceType": "Code"
+                },
+                "epochId": "epoch_2"
+              },
+              {
+                "id": "enc_6",
+                "name": "Treatment Period (Day 22)",
+                "instanceType": "Encounter",
+                "type": {
+                  "id": "8ebf5f1a-3363-4218-87fd-fc0d0a0964a1",
+                  "code": "C99156",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Scheduled Visit",
+                  "instanceType": "Code"
+                },
+                "epochId": "epoch_2"
+              },
+              {
+                "id": "enc_7",
+                "name": "EOT Visit",
+                "instanceType": "Encounter",
+                "type": {
+                  "id": "344143a5-9c5a-4f06-8b2f-f940f4921691",
+                  "code": "C99156",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Scheduled Visit",
+                  "instanceType": "Code"
+                },
+                "epochId": "epoch_3"
+              },
+              {
+                "id": "enc_8",
+                "name": "FU Visit",
+                "instanceType": "Encounter",
+                "type": {
+                  "id": "bf4237b6-4a64-4c30-92f1-8a2f3c5ee8e6",
+                  "code": "C99156",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Scheduled Visit",
+                  "instanceType": "Code"
+                },
+                "epochId": "epoch_4"
+              },
+              {
+                "id": "enc_9",
+                "name": "LTFU",
+                "instanceType": "Encounter",
+                "type": {
+                  "id": "830f4781-aa9a-4b7d-b038-7138ffb318df",
+                  "code": "C99156",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Scheduled Visit",
+                  "instanceType": "Code"
+                },
+                "epochId": "epoch_5"
+              }
+            ],
+            "plannedTimepoints": [
+              {
+                "id": "pt_1",
+                "visit": "Day -28 to Day -1",
+                "epoch": "",
+                "epochId": "",
+                "day": "",
+                "window": "± 3D",
+                "encounterId": "enc_1",
+                "instanceType": "Timing"
+              },
+              {
+                "id": "pt_2",
+                "visit": "Day 1",
+                "epoch": "",
+                "epochId": "",
+                "day": "",
+                "window": "Cycles 2 -1/+3D and later ± 3D",
+                "encounterId": "enc_2",
+                "instanceType": "Timing"
+              },
+              {
+                "id": "pt_3",
+                "visit": "Day 4",
+                "epoch": "",
+                "epochId": "",
+                "day": "",
+                "window": "± 3D",
+                "encounterId": "enc_3",
+                "instanceType": "Timing"
+              },
+              {
+                "id": "pt_4",
+                "visit": "Day 8",
+                "epoch": "",
+                "epochId": "",
+                "day": "",
+                "window": "Cycle 1 -1/+3D Cycles 2 and later ± 3D",
+                "encounterId": "enc_4",
+                "instanceType": "Timing"
+              },
+              {
+                "id": "pt_5",
+                "visit": "Day 15",
+                "epoch": "",
+                "epochId": "",
+                "day": "",
+                "window": "± 3D",
+                "encounterId": "enc_5",
+                "instanceType": "Timing"
+              },
+              {
+                "id": "pt_6",
+                "visit": "Day 22",
+                "epoch": "",
+                "epochId": "",
+                "day": "",
+                "window": "± 3D",
+                "encounterId": "enc_6",
+                "instanceType": "Timing"
+              },
+              {
+                "id": "pt_7",
+                "visit": "EOT Visit",
+                "epoch": "",
+                "epochId": "",
+                "day": "",
+                "window": "± 14D post-final dose",
+                "encounterId": "enc_7",
+                "instanceType": "Timing"
+              },
+              {
+                "id": "pt_8",
+                "visit": "FU Visit",
+                "epoch": "",
+                "epochId": "",
+                "day": "",
+                "window": "28 to 35 days post-final dose",
+                "encounterId": "enc_8",
+                "instanceType": "Timing"
+              },
+              {
+                "id": "pt_9",
+                "visit": "LTFU",
+                "epoch": "",
+                "epochId": "",
+                "day": "",
+                "window": "Q12W ± 14D",
+                "encounterId": "enc_9",
+                "instanceType": "Timing"
+              }
+            ]
+          },
+          "rowGroups": [
+            {
+              "id": "grp_1",
+              "name": "General Activities",
+              "description": null,
+              "childIds": [],
+              "instanceType": "Activity",
+              "activityNames": [
+                "Informed consent",
+                "Eligibility criteria",
+                "Register with IRT",
+                "Demography/medical history",
+                "Disease characteristics/ treatment history",
+                "PROs",
+                "Healthcare resource use"
+              ]
+            },
+            {
+              "id": "grp_2",
+              "name": "Clinical Procedures/Assessments - Note: During the treatment period, all assessments must done within 72 hours prior to dosing (see notes for exceptions)",
+              "description": null,
+              "childIds": [],
+              "instanceType": "Activity",
+              "activityNames": [
+                "Physical exam",
+                "Neurologic exam",
+                "ICE score",
+                "Height/weight",
+                "Vital signs (temperature, HR, BP and O2 saturation)",
+                "ECOG PS",
+                "Triplicate 12-Lead ECG",
+                "ECHO/MUGA",
+                "Elranatamab (PF-06863135) administration",
+                "Premedication for CRS",
+                "Hospitalization",
+                "AE monitoring",
+                "Concomitant therapy",
+                "Subsequent anticancer therapies/date of progression",
+                "Survival status",
+                "Disease response assessment (per IMWG criteria)",
+                "SPEP, SIFE, serum FLC",
+                "UPEP, UIFE (24-hour urine collection required)",
+                "Imaging (PET/CT, CT or MRI)",
+                "BMA",
+                "BMA for cytogenetics (FISH/karyotyping)",
+                "BMB/BMA",
+                "Contraception check",
+                "Pregnancy test",
+                "Hematology/chemistry",
+                "Serum quantitative immunoglobulins (IgG, IgM, IgA, IgD, IgE)",
+                "CMV testing (quantitative PCR)",
+                "PT/INR"
+              ]
+            },
+            {
+              "id": "grp_3",
+              "name": "Genetics and Biomarker Assessments (Central Laboratory)",
+              "description": null,
+              "childIds": [],
+              "instanceType": "Activity",
+              "activityNames": [
+                "BMA for MRD",
+                "BMA for molecular profiling",
+                "BMB for BCMA levels and/or immune cell biomarkers",
+                "Blood sample for sBCMA levels",
+                "Blood sample for circulating proteins and metabolite analysis",
+                "Blood sample for TCR sequencing",
+                "Blood sample for immune cell profiling",
+                "Pfizer Prep D1 banked biospecimen(s)",
+                "Saliva sample for germline comparator"
+              ]
+            }
+          ],
+          "footnotes": []
+        }
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "epoch_v_1",
+      "entity_type": "epoch",
+      "data": {
+        "name": "Screening",
+        "source": "vision",
+        "order": 0
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "epoch_v_2",
+      "entity_type": "epoch",
+      "data": {
+        "name": "Treatment Period (Each 28 Day Cycle)",
+        "source": "vision",
+        "order": 1
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "epoch_v_3",
+      "entity_type": "epoch",
+      "data": {
+        "name": "EOT Visit",
+        "source": "vision",
+        "order": 2
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "epoch_v_4",
+      "entity_type": "epoch",
+      "data": {
+        "name": "FU Visit",
+        "source": "vision",
+        "order": 3
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "epoch_v_5",
+      "entity_type": "epoch",
+      "data": {
+        "name": "LTFU",
+        "source": "vision",
+        "order": 4
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "encounter_v_1",
+      "entity_type": "encounter",
+      "data": {
+        "name": "Screening (Day -28 to Day -1)",
+        "epochId": "epoch_1",
+        "source": "vision",
+        "order": 0
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "encounter_v_2",
+      "entity_type": "encounter",
+      "data": {
+        "name": "Treatment Period (Day 1)",
+        "epochId": "epoch_2",
+        "source": "vision",
+        "order": 1
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "encounter_v_3",
+      "entity_type": "encounter",
+      "data": {
+        "name": "Treatment Period (Day 4)",
+        "epochId": "epoch_2",
+        "source": "vision",
+        "order": 2
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "encounter_v_4",
+      "entity_type": "encounter",
+      "data": {
+        "name": "Treatment Period (Day 8)",
+        "epochId": "epoch_2",
+        "source": "vision",
+        "order": 3
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "encounter_v_5",
+      "entity_type": "encounter",
+      "data": {
+        "name": "Treatment Period (Day 15)",
+        "epochId": "epoch_2",
+        "source": "vision",
+        "order": 4
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "encounter_v_6",
+      "entity_type": "encounter",
+      "data": {
+        "name": "Treatment Period (Day 22)",
+        "epochId": "epoch_2",
+        "source": "vision",
+        "order": 5
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "encounter_v_7",
+      "entity_type": "encounter",
+      "data": {
+        "name": "EOT Visit",
+        "epochId": "epoch_3",
+        "source": "vision",
+        "order": 6
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "encounter_v_8",
+      "entity_type": "encounter",
+      "data": {
+        "name": "FU Visit",
+        "epochId": "epoch_4",
+        "source": "vision",
+        "order": 7
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "encounter_v_9",
+      "entity_type": "encounter",
+      "data": {
+        "name": "LTFU",
+        "epochId": "epoch_5",
+        "source": "vision",
+        "order": 8
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    }
+  ],
+  "vision_summary": {
+    "soa_pages": [
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ],
+    "image_count": 10,
+    "epoch_count": 5,
+    "encounter_count": 9
+  }
+}

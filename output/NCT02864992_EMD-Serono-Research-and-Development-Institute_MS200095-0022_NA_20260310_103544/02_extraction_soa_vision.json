@@ -1,0 +1,833 @@
+{
+  "agent_id": "soa_vision_agent",
+  "timestamp": "2026-03-10T10:36:48.266070",
+  "confidence": 0.8,
+  "entity_count": 17,
+  "entities": [
+    {
+      "id": "soa_header_structure",
+      "entity_type": "header_structure",
+      "data": {
+        "source": "vision",
+        "page_numbers": [
+          5,
+          6,
+          21,
+          22,
+          23,
+          24,
+          25,
+          54,
+          55,
+          56
+        ],
+        "image_count": 10,
+        "structure": {
+          "columnHierarchy": {
+            "epochs": [
+              {
+                "id": "epoch_1",
+                "name": "Prescreening",
+                "instanceType": "StudyEpoch",
+                "type": {
+                  "id": "9977d7fb-8cd3-4cf6-878b-6beb168dcbbc",
+                  "code": "C98779",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Screening Epoch",
+                  "instanceType": "Code"
+                }
+              },
+              {
+                "id": "epoch_2",
+                "name": "Screening/Baseline",
+                "instanceType": "StudyEpoch",
+                "type": {
+                  "id": "6d2ee4bd-d1ec-4fd5-8e9a-0c9ad8596afc",
+                  "code": "C98779",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Screening Epoch",
+                  "instanceType": "Code"
+                }
+              },
+              {
+                "id": "epoch_3",
+                "name": "Treatment Period",
+                "instanceType": "StudyEpoch",
+                "type": {
+                  "id": "7903c037-a4ee-4597-9580-35e9f71f8bb4",
+                  "code": "C98780",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Treatment Epoch",
+                  "instanceType": "Code"
+                }
+              },
+              {
+                "id": "epoch_4",
+                "name": "30-Day Safety Follow-up Visit",
+                "instanceType": "StudyEpoch",
+                "type": {
+                  "id": "c1537c70-1e93-4b2c-be93-37bd30a397a4",
+                  "code": "C98781",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Follow-up Epoch",
+                  "instanceType": "Code"
+                }
+              },
+              {
+                "id": "epoch_5",
+                "name": "Additional Follow-up",
+                "instanceType": "StudyEpoch",
+                "type": {
+                  "id": "0483297f-a7a0-47ed-82e8-48a04068e1d2",
+                  "code": "C98781",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Follow-up Epoch",
+                  "instanceType": "Code"
+                }
+              },
+              {
+                "id": "epoch_6",
+                "name": "Survival Follow-up",
+                "instanceType": "StudyEpoch",
+                "type": {
+                  "id": "2c83f6f5-39fb-42ed-a8cc-0e76f9b8e2e7",
+                  "code": "C98781",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Follow-up Epoch",
+                  "instanceType": "Code"
+                }
+              }
+            ],
+            "encounters": [
+              {
+                "id": "enc_1",
+                "name": "Prescreening",
+                "instanceType": "Encounter",
+                "type": {
+                  "id": "b0ceadea-9d2f-437b-a0aa-c453e3d6c3a5",
+                  "code": "C48262",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Screening",
+                  "instanceType": "Code"
+                },
+                "epochId": "epoch_1"
+              },
+              {
+                "id": "enc_2",
+                "name": "Screening/Baseline (-28 to -1)",
+                "instanceType": "Encounter",
+                "type": {
+                  "id": "fe89cc8d-2c79-4183-9035-8fee62bc6d5a",
+                  "code": "C48262",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Screening",
+                  "instanceType": "Code"
+                },
+                "epochId": "epoch_2"
+              },
+              {
+                "id": "enc_3",
+                "name": "Treatment Period (Cycle 1 Day)",
+                "instanceType": "Encounter",
+                "type": {
+                  "id": "4e815b15-fa44-4f44-b5b4-8fb475df9766",
+                  "code": "C99156",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Scheduled Visit",
+                  "instanceType": "Code"
+                },
+                "epochId": "epoch_3"
+              },
+              {
+                "id": "enc_4",
+                "name": "Treatment Period (Cycle 2 Day)",
+                "instanceType": "Encounter",
+                "type": {
+                  "id": "5dde47a9-a67d-4cbb-97fc-62dc019f5cd1",
+                  "code": "C99156",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Scheduled Visit",
+                  "instanceType": "Code"
+                },
+                "epochId": "epoch_3"
+              },
+              {
+                "id": "enc_5",
+                "name": "Treatment Period (Cycle 3, 5, 7, 9, 11, 13, etc.)",
+                "instanceType": "Encounter",
+                "type": {
+                  "id": "d243a0e6-1a38-4764-a4b2-dff75428e263",
+                  "code": "C99156",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Scheduled Visit",
+                  "instanceType": "Code"
+                },
+                "epochId": "epoch_3"
+              },
+              {
+                "id": "enc_6",
+                "name": "Treatment Period (Cycle 4, 6, 8, 10 and 12)",
+                "instanceType": "Encounter",
+                "type": {
+                  "id": "ac556fd3-8982-43ca-9f70-bf2852f14ff9",
+                  "code": "C99156",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Scheduled Visit",
+                  "instanceType": "Code"
+                },
+                "epochId": "epoch_3"
+              },
+              {
+                "id": "enc_7",
+                "name": "Treatment Period (EoT)",
+                "instanceType": "Encounter",
+                "type": {
+                  "id": "49575b0b-cf4f-4ad5-b39e-2cd692788a52",
+                  "code": "C99156",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Scheduled Visit",
+                  "instanceType": "Code"
+                },
+                "epochId": "epoch_3"
+              },
+              {
+                "id": "enc_8",
+                "name": "30-Day Safety Follow-up Visit",
+                "instanceType": "Encounter",
+                "type": {
+                  "id": "ead6ce84-985c-446d-8710-f4cc15ec046e",
+                  "code": "C99158",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Follow-up",
+                  "instanceType": "Code"
+                },
+                "epochId": "epoch_4"
+              },
+              {
+                "id": "enc_9",
+                "name": "Additional Follow-up",
+                "instanceType": "Encounter",
+                "type": {
+                  "id": "b8aa16a8-1639-4a28-8be5-33ab043dca68",
+                  "code": "C99158",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Follow-up",
+                  "instanceType": "Code"
+                },
+                "epochId": "epoch_5"
+              },
+              {
+                "id": "enc_10",
+                "name": "Survival Follow-up",
+                "instanceType": "Encounter",
+                "type": {
+                  "id": "a104f101-7103-4bfe-ba90-8fdfbc67f5a5",
+                  "code": "C99158",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Follow-up",
+                  "instanceType": "Code"
+                },
+                "epochId": "epoch_6"
+              }
+            ],
+            "plannedTimepoints": [
+              {
+                "id": "pt_1",
+                "visit": "Prescreening",
+                "epoch": "",
+                "epochId": "",
+                "day": "",
+                "window": null,
+                "encounterId": "enc_1",
+                "instanceType": "Timing"
+              },
+              {
+                "id": "pt_2",
+                "visit": "-28 to -1",
+                "epoch": "",
+                "epochId": "",
+                "day": "",
+                "window": null,
+                "encounterId": "enc_2",
+                "instanceType": "Timing"
+              },
+              {
+                "id": "pt_3",
+                "visit": "Cycle 1 Day",
+                "epoch": "",
+                "epochId": "",
+                "day": "",
+                "window": null,
+                "encounterId": "enc_3",
+                "instanceType": "Timing"
+              },
+              {
+                "id": "pt_4",
+                "visit": "Cycle 2 Day",
+                "epoch": "",
+                "epochId": "",
+                "day": "",
+                "window": "± 3D",
+                "encounterId": "enc_4",
+                "instanceType": "Timing"
+              },
+              {
+                "id": "pt_5",
+                "visit": "Cycle 3, 5, 7, 9, 11, 13, etc.",
+                "epoch": "",
+                "epochId": "",
+                "day": "",
+                "window": "± 3D",
+                "encounterId": "enc_5",
+                "instanceType": "Timing"
+              },
+              {
+                "id": "pt_6",
+                "visit": "Cycle 4, 6, 8, 10 and 12",
+                "epoch": "",
+                "epochId": "",
+                "day": "",
+                "window": "± 3D",
+                "encounterId": "enc_6",
+                "instanceType": "Timing"
+              },
+              {
+                "id": "pt_7",
+                "visit": "EoT",
+                "epoch": "",
+                "epochId": "",
+                "day": "",
+                "window": "≤ 14d of the Last Dose",
+                "encounterId": "enc_7",
+                "instanceType": "Timing"
+              },
+              {
+                "id": "pt_8",
+                "visit": "30-Day Safety Follow-up Visit",
+                "epoch": "",
+                "epochId": "",
+                "day": "",
+                "window": "± 3d",
+                "encounterId": "enc_8",
+                "instanceType": "Timing"
+              },
+              {
+                "id": "pt_9",
+                "visit": "Additional Follow-up",
+                "epoch": "",
+                "epochId": "",
+                "day": "",
+                "window": "± 7d/± 14d",
+                "encounterId": "enc_9",
+                "instanceType": "Timing"
+              },
+              {
+                "id": "pt_10",
+                "visit": "Survival Follow-up",
+                "epoch": "",
+                "epochId": "",
+                "day": "",
+                "window": null,
+                "encounterId": "enc_10",
+                "instanceType": "Timing"
+              }
+            ]
+          },
+          "rowGroups": [
+            {
+              "id": "grp_1",
+              "name": "All Activities",
+              "description": null,
+              "childIds": [],
+              "instanceType": "Activity",
+              "activityNames": [
+                "Mandatory Written Informed Consent",
+                "Tepotinib (IMP)",
+                "Drug Dispensation",
+                "Demography, Height",
+                "Medical and Disease History",
+                "Tumor Tissue Collection and Determination of MET status",
+                "Blood Sample Collection and Determination of MET status in plasma",
+                "ctDNA exploratory analysis blood samples (only on Cycle 3, Day 1; Cycle 4, Day 1; and EoT)",
+                "Serum Pregnancy Test (if applicable)",
+                "Urine Pregnancy Test (if applicable)",
+                "Chest X-ray",
+                "Physical Examination (including Neurological Assessment)",
+                "Weight",
+                "ECOG PS",
+                "Vital Signs",
+                "Adverse Events Assessment",
+                "Concomitant Medication/Procedure",
+                "12-lead ECG",
+                "Echocardiography",
+                "Hematology and Coagulation",
+                "Biochemistry",
+                "Urinalysis",
+                "Tumor Assessment (RECIST Version 1.1)",
+                "Brain imaging",
+                "Independent confirmation of measurable disease",
+                "PK Blood Samples",
+                "Exploratory Biomarker Blood Sample",
+                "PGx Blood Sample",
+                "Subject survival and anticancer therapies",
+                "PRO questionnaires"
+              ]
+            }
+          ],
+          "footnotes": [
+            "a. Subject eligibility (review of inclusion/exclusion criteria) will be checked. Subjects may have a prescreening more than 28 days prior to first administration of trial treatment.",
+            "b. All visits and assessments from Cycle 2 onwards are to be performed ± 3 days to accommodate unforeseen delays, holidays, or vacations.",
+            "c. Performed within 14 days of the last dose of trial treatment, reason for treatment discontinuation should be recorded. If the subject discontinues from the trial at a scheduled visit, the End of Treatment assessment can be performed on that day.",
+            "d. 30-Day Safety Follow-up visit, performed at 30 ± 3 days after the last trial treatment for all subjects who discontinue trial treatment permanently, including subjects who have completed an End of Treatment visit.",
+            "e. Subjects who withdraw from the treatment for reasons other than PD have additional visits for tumor assessments. A ± 7 day time window is permitted for additional follow-up visits until 9 months, then ± 14 days thereafter. Reasons for study termination should be recorded if this visit is the last visit for the subject. Recording of any new anticancer therapy will be made (a tumor assessment is mandatory before initiating the new therapy).",
+            "f. Survival follow-up, to be performed every 3 months ± 2 weeks at clinic visit or by telephone contact. Subjects’ survival information will be collected. Any new anticancer therapy given to the subject until death should be recorded.",
+            "g. For subjects who have a prescreening ICF, this information will be recorded in prescreening.",
+            "h. Full medical/disease history will be recorded at Screening/Baseline.",
+            "i. Provision of a fresh or archived pretreatment tumor biopsy (excluding fine needle aspiration); please refer to the laboratory manual for details.",
+            "j. Optional tumor biopsy. Subjects need to sign a separate consent.",
+            "k. Only for women of childbearing potential, including those who have had a tubal ligation.",
+            "l. Assessments can be repeated at the Investigator’s discretion at unscheduled visits. To assess the safety and tolerability of the IMP. Serum pregnancy test is permitted if urine pregnancy test is not available at the site.",
+            "m. Not necessary if thoracic CT is performed as part of the screening RECIST Version 1.1 tumor assessment.",
+            "n. Only if last assessments were performed > 7 days prior to End of Treatment visit.",
+            "o. Vital signs (pulse rate, systolic and diastolic blood pressure, body temperature and respiratory rate) are to be taken at least 5 minutes rest in seated position. If vital signs and ECGs are taken at the same time, vital signs should be taken prior to each ECG recording.",
+            "p. On Cycle 1, Day 1 and on Cycle 2, Day 1, an ECG will be recorded predose (within 60 minutes prior to dose) and at 4 hours ± 12 minutes postdose. ECG recordings must be performed before PK sampling time points on days where both assessments are performed. The ECGs must be taken as triplicate 12-lead resting ECGs within 2 minutes after minimum of 10 minutes rest in supine position. Start of resting time, ECG and PK sampling time must be recorded in the eCRF. Support Form.",
+            "q. Single ECGs will be performed on Cycle 3, Day 1 (within 30 minutes prior to dose), after 5 minutes rest in supine position. After Cycle 3, single ECGs will be performed after 5 minutes rest in supine position every third cycle through Cycle 15 (i.e., Cycle 3, 6, 9, 12, and 15) or as clinically indicated. Beginning at Cycle 15, single ECGs will be performed after 5 minutes rest in supine position every odd cycle thereafter (Cycles 15, 17, 19, 21, etc.) or as clinically indicated. Single ECGs will be performed after 5 minutes rest in supine position.",
+            "r. Hemoglobin, hematocrit, red blood cell count, white blood cell count, differential white blood cell, platelets, and coagulation (prothrombin time, activated thromboplastin time, and international normalized ratio).",
+            "s. Laboratory tests for screening should be within 7 days prior to Cycle 1 Day 1. Laboratory assessments will be performed by the local laboratory.",
+            "t. Blood urea nitrogen, urea, creatinine, alanine aminotransferase, aspartate aminotransferase, gamma-glutamyl transpeptidase, total bilirubin (including direct fraction), total bilirubin, albumin, total protein, potassium, sodium, chloride, alkaline phosphatase, creatinine clearance, sodium, potassium, calcium, magnesium, glucose, and serum cystatin (for sites where the test is available).",
+            "u. Complete tumor assessment of all lesions by radiographic modality (using RECIST Version 1.1). CT or MRI of the chest, abdomen, and pelvis to evaluate disease in these locations. At Screening/Baseline, brain imaging by MRI with IV contrast enhancement; MRI may be performed without contrast enhancement, if contrast is contraindicated. If MRI is not clinically feasible, CT of the brain with IV contrast enhancement may be used. For subjects with brain metastases detected at Screening/Baseline only, brain imaging by MRI with IV contrast enhancement; MRI may be performed without contrast enhancement, if contrast is contraindicated. If MRI is not clinically feasible, CT of the brain with IV contrast enhancement may be performed; CT may be performed without contrast enhancement if contrast is contraindicated. Additional assessments should be investigated in case of suspicion of presence of metastases based on signs and symptoms of individual subjects.",
+            "v. Subjects will be assessed every 6 weeks following the Cycle 1, Day 1 visit until 9 months and every 12 weeks thereafter according to RECIST Version 1.1 until disease progression, death or withdrawal of consent (Investigator and independent read).",
+            "w. Only if last tumor assessment was performed ≥ 6 weeks within the first 9 months, or ≥ 12 weeks after 9 months prior to End of Treatment visit.",
+            "x. Sparse PK sampling (total of 6 samples) will be performed predose, at 1.5 hours postdose and at 4 hours postdose on Cycle 1, Day 1 and on Cycle 2, Day 1. The actual time of PK sample collection must be recorded. On days when PK samples are to be drawn, subjects should be instructed to attend the trial visit in a fasted state, with no breakfast and prior to taking their dose of tepotinib.",
+            "y. Predose only; collection will only be performed after signed consent for PGx testing has been obtained and only if local regulations allow.",
+            "z. Pre-treatment ctDNA sampling will be taken at predose, at Cycle 3, Cycle 4 and EoT only.",
+            "aa. PROs (EQ-5D-5L, EORTC QLQ-C30 and QLQ-LC13) will be completed questionnaires will be completed every 6 weeks from Cycle 1, Day 1 until 9 months and every 12 weeks thereafter until disease progression, death or withdrawal of consent. At all visits indicated including EoT and Safety Follow-up, every effort should be made to have the questionnaires completed by the subject prior to the initiation of any other trial activities (including RECIST Version 1.1 assessments) or active treatment and prior to any contact with the Investigator.",
+            "bb. Consider provision of a FFPE tumor sample (a fresh or archived pretreatment tumor biopsy (excluding fine needle aspiration)) in case the subject is enrolled based on an appropriate regulatory laboratory manual. Please refer to the respective laboratory manual for details.",
+            "cc. To be taken at predose. Blood sample collection for exploratory biomarker research only if local regulations allow.",
+            "dd. The blood sample is to be taken at screening if the subject is enrolled based on an appropriate regulatory laboratory status and no blood sample was provided during prescreening for determination of MET status in plasma.",
+            "ee. To be performed only for subjects with a history of congestive heart failure or if clinically indicated.",
+            "ff. If the assessments were not performed at the End of Treatment visit, they will be performed at this visit.",
+            "gg. If the assessments were not performed at the End of Treatment visit, they will be performed at this visit.",
+            "hh. MET status related to METex14 skipping alterations or MET amplification. MET status will be obtained from archival or fresh tissue samples and/or a freshly collected blood sample. If tumor tissue biopsy samples are collected then it is recommended that liquid biopsy samples should also be collected, if local regulations allow. Recollection of tissue and blood samples for the determination of MET alteration status is allowed if the original sample is not evaluable at the testing laboratory due to administrative or logistical errors/delays or technical challenges and inadequate sample quality.",
+            "ii. For the first 9 months of treatment, a visit will be conducted on Day 1 of every 21-day cycle (Cycles 1 to 13). Afterwards, visits will take place on Day 1 of every second 21-day cycle (Cycles 15, 17, etc).",
+            "jj. If height assessment was done at prescreening then it does not need to be repeated at screening.",
+            "kk. Please carefully evaluate for signs and symptoms of interstitial lung disease such as worsening of respiratory symptoms including cough or hemoptysis, chest pain, wheezing and fever. Please consider Section 6.5.5 for the management of interstitial lung disease.",
+            "ll. Blood sample collection for exploratory ctDNA analysis only if local regulations allow; ctDNA data collected at prescreening will be used as a reference.",
+            "mm. When a pleural effusion occurs and is punctured, cytology should be evaluated for malignancy and the results communicated to the IRC for consideration of their assessment, as outlined in the IRC charter.",
+            "nn. Subjects with brain metastases at Screening/Baseline will be assessed every 6 weeks following the Cycle 1, Day 1 visit until 9 months and every 12 weeks thereafter until disease progression, death or withdrawal of consent.",
+            "oo. Brain imaging by MRI with IV contrast enhancement; MRI may be performed without contrast enhancement, if contrast is contraindicated. If MRI is not clinically feasible, CT of the brain with IV contrast enhancement may be used.",
+            "pp. For subjects with brain metastases detected at Screening/Baseline only. Brain imaging by MRI with IV contrast enhancement; MRI may be performed without contrast enhancement, if contrast is contraindicated. If MRI is not clinically feasible, CT of the brain with IV contrast enhancement may be performed; CT may be performed without contrast enhancement, if contrast is contraindicated."
+          ]
+        }
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        5,
+        6,
+        21,
+        22,
+        23,
+        24,
+        25,
+        54,
+        55,
+        56
+      ]
+    },
+    {
+      "id": "epoch_v_1",
+      "entity_type": "epoch",
+      "data": {
+        "name": "Prescreening",
+        "source": "vision",
+        "order": 0
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        5,
+        6,
+        21,
+        22,
+        23,
+        24,
+        25,
+        54,
+        55,
+        56
+      ]
+    },
+    {
+      "id": "epoch_v_2",
+      "entity_type": "epoch",
+      "data": {
+        "name": "Screening/Baseline",
+        "source": "vision",
+        "order": 1
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        5,
+        6,
+        21,
+        22,
+        23,
+        24,
+        25,
+        54,
+        55,
+        56
+      ]
+    },
+    {
+      "id": "epoch_v_3",
+      "entity_type": "epoch",
+      "data": {
+        "name": "Treatment Period",
+        "source": "vision",
+        "order": 2
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        5,
+        6,
+        21,
+        22,
+        23,
+        24,
+        25,
+        54,
+        55,
+        56
+      ]
+    },
+    {
+      "id": "epoch_v_4",
+      "entity_type": "epoch",
+      "data": {
+        "name": "30-Day Safety Follow-up Visit",
+        "source": "vision",
+        "order": 3
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        5,
+        6,
+        21,
+        22,
+        23,
+        24,
+        25,
+        54,
+        55,
+        56
+      ]
+    },
+    {
+      "id": "epoch_v_5",
+      "entity_type": "epoch",
+      "data": {
+        "name": "Additional Follow-up",
+        "source": "vision",
+        "order": 4
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        5,
+        6,
+        21,
+        22,
+        23,
+        24,
+        25,
+        54,
+        55,
+        56
+      ]
+    },
+    {
+      "id": "epoch_v_6",
+      "entity_type": "epoch",
+      "data": {
+        "name": "Survival Follow-up",
+        "source": "vision",
+        "order": 5
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        5,
+        6,
+        21,
+        22,
+        23,
+        24,
+        25,
+        54,
+        55,
+        56
+      ]
+    },
+    {
+      "id": "encounter_v_1",
+      "entity_type": "encounter",
+      "data": {
+        "name": "Prescreening",
+        "epochId": "epoch_1",
+        "source": "vision",
+        "order": 0
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        5,
+        6,
+        21,
+        22,
+        23,
+        24,
+        25,
+        54,
+        55,
+        56
+      ]
+    },
+    {
+      "id": "encounter_v_2",
+      "entity_type": "encounter",
+      "data": {
+        "name": "Screening/Baseline (-28 to -1)",
+        "epochId": "epoch_2",
+        "source": "vision",
+        "order": 1
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        5,
+        6,
+        21,
+        22,
+        23,
+        24,
+        25,
+        54,
+        55,
+        56
+      ]
+    },
+    {
+      "id": "encounter_v_3",
+      "entity_type": "encounter",
+      "data": {
+        "name": "Treatment Period (Cycle 1 Day)",
+        "epochId": "epoch_3",
+        "source": "vision",
+        "order": 2
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        5,
+        6,
+        21,
+        22,
+        23,
+        24,
+        25,
+        54,
+        55,
+        56
+      ]
+    },
+    {
+      "id": "encounter_v_4",
+      "entity_type": "encounter",
+      "data": {
+        "name": "Treatment Period (Cycle 2 Day)",
+        "epochId": "epoch_3",
+        "source": "vision",
+        "order": 3
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        5,
+        6,
+        21,
+        22,
+        23,
+        24,
+        25,
+        54,
+        55,
+        56
+      ]
+    },
+    {
+      "id": "encounter_v_5",
+      "entity_type": "encounter",
+      "data": {
+        "name": "Treatment Period (Cycle 3, 5, 7, 9, 11, 13, etc.)",
+        "epochId": "epoch_3",
+        "source": "vision",
+        "order": 4
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        5,
+        6,
+        21,
+        22,
+        23,
+        24,
+        25,
+        54,
+        55,
+        56
+      ]
+    },
+    {
+      "id": "encounter_v_6",
+      "entity_type": "encounter",
+      "data": {
+        "name": "Treatment Period (Cycle 4, 6, 8, 10 and 12)",
+        "epochId": "epoch_3",
+        "source": "vision",
+        "order": 5
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        5,
+        6,
+        21,
+        22,
+        23,
+        24,
+        25,
+        54,
+        55,
+        56
+      ]
+    },
+    {
+      "id": "encounter_v_7",
+      "entity_type": "encounter",
+      "data": {
+        "name": "Treatment Period (EoT)",
+        "epochId": "epoch_3",
+        "source": "vision",
+        "order": 6
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        5,
+        6,
+        21,
+        22,
+        23,
+        24,
+        25,
+        54,
+        55,
+        56
+      ]
+    },
+    {
+      "id": "encounter_v_8",
+      "entity_type": "encounter",
+      "data": {
+        "name": "30-Day Safety Follow-up Visit",
+        "epochId": "epoch_4",
+        "source": "vision",
+        "order": 7
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        5,
+        6,
+        21,
+        22,
+        23,
+        24,
+        25,
+        54,
+        55,
+        56
+      ]
+    },
+    {
+      "id": "encounter_v_9",
+      "entity_type": "encounter",
+      "data": {
+        "name": "Additional Follow-up",
+        "epochId": "epoch_5",
+        "source": "vision",
+        "order": 8
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        5,
+        6,
+        21,
+        22,
+        23,
+        24,
+        25,
+        54,
+        55,
+        56
+      ]
+    },
+    {
+      "id": "encounter_v_10",
+      "entity_type": "encounter",
+      "data": {
+        "name": "Survival Follow-up",
+        "epochId": "epoch_6",
+        "source": "vision",
+        "order": 9
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        5,
+        6,
+        21,
+        22,
+        23,
+        24,
+        25,
+        54,
+        55,
+        56
+      ]
+    }
+  ],
+  "vision_summary": {
+    "soa_pages": [
+      5,
+      6,
+      21,
+      22,
+      23,
+      24,
+      25,
+      54,
+      55,
+      56
+    ],
+    "image_count": 10,
+    "epoch_count": 6,
+    "encounter_count": 10
+  }
+}

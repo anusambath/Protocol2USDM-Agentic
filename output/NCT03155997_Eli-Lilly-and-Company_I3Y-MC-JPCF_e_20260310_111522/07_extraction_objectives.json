@@ -1,0 +1,620 @@
+{
+  "agent_id": "objectives_agent",
+  "timestamp": "2026-03-10T11:17:07.429507",
+  "confidence": 0.85,
+  "entity_count": 19,
+  "entities": [
+    {
+      "id": "obj_1",
+      "entity_type": "objective",
+      "data": {
+        "id": "obj_1",
+        "name": "Primary Efficacy Objective (IDFS)",
+        "text": "To evaluate the efficacy, in terms of IDFS, for patients with HR+, HER2- early stage breast cancer for abemaciclib plus adjuvant endocrine therapy versus adjuvant endocrine therapy alone.",
+        "level": {
+          "code": "C85826",
+          "codeSystem": "http://www.cdisc.org",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Trial Primary Objective",
+          "instanceType": "Code"
+        },
+        "endpointIds": [
+          "ep_1"
+        ],
+        "instanceType": "Objective"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        7,
+        8,
+        9,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    {
+      "id": "obj_2",
+      "entity_type": "objective",
+      "data": {
+        "id": "obj_2",
+        "name": "Secondary Efficacy Objective (IDFS in Ki-67 ≥20%)",
+        "text": "To evaluate the efficacy, in terms of IDFS, for patients with HR+, HER2- early stage breast cancer with pretreatment Ki-67 index ≥20% by central lab",
+        "level": {
+          "code": "C85827",
+          "codeSystem": "http://www.cdisc.org",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Trial Secondary Objective",
+          "instanceType": "Code"
+        },
+        "endpointIds": [
+          "ep_2"
+        ],
+        "instanceType": "Objective"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        7,
+        8,
+        9,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    {
+      "id": "obj_3",
+      "entity_type": "objective",
+      "data": {
+        "id": "obj_3",
+        "name": "Secondary Efficacy Objective (DRFS and OS)",
+        "text": "To evaluate the efficacy of abemaciclib plus adjuvant endocrine therapy versus adjuvant endocrine therapy alone in terms of DRFS and OS",
+        "level": {
+          "code": "C85827",
+          "codeSystem": "http://www.cdisc.org",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Trial Secondary Objective",
+          "instanceType": "Code"
+        },
+        "endpointIds": [
+          "ep_3",
+          "ep_4"
+        ],
+        "instanceType": "Objective"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        7,
+        8,
+        9,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    {
+      "id": "obj_4",
+      "entity_type": "objective",
+      "data": {
+        "id": "obj_4",
+        "name": "Secondary Safety Objective",
+        "text": "To assess the safety profile of abemaciclib plus adjuvant endocrine therapy compared to adjuvant endocrine therapy alone",
+        "level": {
+          "code": "C85827",
+          "codeSystem": "http://www.cdisc.org",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Trial Secondary Objective",
+          "instanceType": "Code"
+        },
+        "endpointIds": [
+          "ep_5",
+          "ep_6"
+        ],
+        "instanceType": "Objective"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        7,
+        8,
+        9,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    {
+      "id": "obj_5",
+      "entity_type": "objective",
+      "data": {
+        "id": "obj_5",
+        "name": "Secondary PK and Clinical Outcomes Objective",
+        "text": "To evaluate the relationship between abemaciclib, exposure and clinical (efficacy and safety) outcomes",
+        "level": {
+          "code": "C85827",
+          "codeSystem": "http://www.cdisc.org",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Trial Secondary Objective",
+          "instanceType": "Code"
+        },
+        "endpointIds": [
+          "ep_7",
+          "ep_8"
+        ],
+        "instanceType": "Objective"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        7,
+        8,
+        9,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    {
+      "id": "obj_6",
+      "entity_type": "objective",
+      "data": {
+        "id": "obj_6",
+        "name": "Secondary Quality of Life and Symptoms Objective",
+        "text": "To evaluate abemaciclib plus adjuvant endocrine therapy, versus adjuvant endocrine therapy alone, in terms of general oncology and breast cancer self-reported health-related quality of life (FACT-B 37-item questionnaire), endocrine therapy-specific symptoms (the FACT-ES 19-item subscale and 2 FACIT-sourced items of cognitive symptoms and 3 FACIT-sourced items for bladder symptoms), and fatigue experienced during abemaciclib and/or endocrine therapy (the FACIT-F 13-item subscale).",
+        "level": {
+          "code": "C85827",
+          "codeSystem": "http://www.cdisc.org",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Trial Secondary Objective",
+          "instanceType": "Code"
+        },
+        "endpointIds": [
+          "ep_9"
+        ],
+        "instanceType": "Objective"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        7,
+        8,
+        9,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    {
+      "id": "obj_7",
+      "entity_type": "objective",
+      "data": {
+        "id": "obj_7",
+        "name": "Secondary Health Economic Evaluation Objective",
+        "text": "To evaluate health status to inform decision modeling for health economic evaluation using the EQ-5D-5L.",
+        "level": {
+          "code": "C85827",
+          "codeSystem": "http://www.cdisc.org",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Trial Secondary Objective",
+          "instanceType": "Code"
+        },
+        "endpointIds": [
+          "ep_10"
+        ],
+        "instanceType": "Objective"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        7,
+        8,
+        9,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    {
+      "id": "ep_1",
+      "entity_type": "endpoint",
+      "data": {
+        "id": "ep_1",
+        "name": "Primary Invasive Disease-Free Survival (IDFS) Endpoint",
+        "text": "IDFS, as defined by the STEEP System (Hudis et al. 2007) (Section 10.3.1.1)",
+        "level": {
+          "code": "C98772",
+          "codeSystem": "http://www.cdisc.org",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Primary Outcome Measure",
+          "instanceType": "Code"
+        },
+        "instanceType": "Endpoint",
+        "purpose": "Efficacy"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        7,
+        8,
+        9,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    {
+      "id": "ep_2",
+      "entity_type": "endpoint",
+      "data": {
+        "id": "ep_2",
+        "name": "Secondary IDFS Endpoint (Ki-67 ≥20%)",
+        "text": "IDFS, as defined by the STEEP System",
+        "level": {
+          "code": "C98781",
+          "codeSystem": "http://www.cdisc.org",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Secondary Outcome Measure",
+          "instanceType": "Code"
+        },
+        "instanceType": "Endpoint",
+        "purpose": "Efficacy"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        7,
+        8,
+        9,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    {
+      "id": "ep_3",
+      "entity_type": "endpoint",
+      "data": {
+        "id": "ep_3",
+        "name": "Secondary Distant Relapse-Free Survival (DRFS) Endpoint",
+        "text": "DRFS",
+        "level": {
+          "code": "C98781",
+          "codeSystem": "http://www.cdisc.org",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Secondary Outcome Measure",
+          "instanceType": "Code"
+        },
+        "instanceType": "Endpoint",
+        "purpose": "Efficacy"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        7,
+        8,
+        9,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    {
+      "id": "ep_4",
+      "entity_type": "endpoint",
+      "data": {
+        "id": "ep_4",
+        "name": "Secondary Overall Survival (OS) Endpoint",
+        "text": "OS",
+        "level": {
+          "code": "C98781",
+          "codeSystem": "http://www.cdisc.org",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Secondary Outcome Measure",
+          "instanceType": "Code"
+        },
+        "instanceType": "Endpoint",
+        "purpose": "Efficacy"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        7,
+        8,
+        9,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    {
+      "id": "ep_5",
+      "entity_type": "endpoint",
+      "data": {
+        "id": "ep_5",
+        "name": "Secondary Safety Events Endpoint",
+        "text": "TEAEs, SAEs, and hospitalizations",
+        "level": {
+          "code": "C98781",
+          "codeSystem": "http://www.cdisc.org",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Secondary Outcome Measure",
+          "instanceType": "Code"
+        },
+        "instanceType": "Endpoint",
+        "purpose": "Safety"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        7,
+        8,
+        9,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    {
+      "id": "ep_6",
+      "entity_type": "endpoint",
+      "data": {
+        "id": "ep_6",
+        "name": "Secondary Safety Measures Endpoint",
+        "text": "Clinical laboratory tests, vital signs, and physical examinations",
+        "level": {
+          "code": "C98781",
+          "codeSystem": "http://www.cdisc.org",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Secondary Outcome Measure",
+          "instanceType": "Code"
+        },
+        "instanceType": "Endpoint",
+        "purpose": "Safety"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        7,
+        8,
+        9,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    {
+      "id": "ep_7",
+      "entity_type": "endpoint",
+      "data": {
+        "id": "ep_7",
+        "name": "Secondary Pharmacokinetic Endpoint (Cmin,ss)",
+        "text": "Steady-state trough abemaciclib concentration (Cmin,ss)",
+        "level": {
+          "code": "C98781",
+          "codeSystem": "http://www.cdisc.org",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Secondary Outcome Measure",
+          "instanceType": "Code"
+        },
+        "instanceType": "Endpoint",
+        "purpose": "Pharmacokinetic"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        7,
+        8,
+        9,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    {
+      "id": "ep_8",
+      "entity_type": "endpoint",
+      "data": {
+        "id": "ep_8",
+        "name": "Secondary Efficacy and Safety Hazard Ratio Endpoint",
+        "text": "Hazard ratio for IDFS, DRFS, OS, other efficacy and safety endpoints",
+        "level": {
+          "code": "C98781",
+          "codeSystem": "http://www.cdisc.org",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Secondary Outcome Measure",
+          "instanceType": "Code"
+        },
+        "instanceType": "Endpoint",
+        "purpose": "Efficacy"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        7,
+        8,
+        9,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    {
+      "id": "ep_9",
+      "entity_type": "endpoint",
+      "data": {
+        "id": "ep_9",
+        "name": "Secondary Quality of Life and Symptoms Endpoint",
+        "text": "Composite and single-item endpoints will be evaluated to examine differentiating effects of abemaciclib across study arms. Measurement will be undertaken using the FACT-B questionnaire for general oncology and breast cancer health-related quality of life; the FACT-ES subscale and additional FACIT-sourced items for cognitive and bladder endocrine therapy symptoms; and the FACIT-F subscale to characterize this symptom know to be associated with oncology, endocrine therapy, and abemaciclib treatment.",
+        "level": {
+          "code": "C98781",
+          "codeSystem": "http://www.cdisc.org",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Secondary Outcome Measure",
+          "instanceType": "Code"
+        },
+        "instanceType": "Endpoint",
+        "purpose": "QualityOfLife"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        7,
+        8,
+        9,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    {
+      "id": "ep_10",
+      "entity_type": "endpoint",
+      "data": {
+        "id": "ep_10",
+        "name": "Secondary Health Status for Economic Evaluation Endpoint",
+        "text": "The EQ-5D-5L health state profile (the index score and the single-item health status measure) will be used to inform decision modeling for economic evaluations and this questionnaire will be coadministered with and after first completing the FACT/FACIT questionnaire, subscales, and additional items.",
+        "level": {
+          "code": "C98781",
+          "codeSystem": "http://www.cdisc.org",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Secondary Outcome Measure",
+          "instanceType": "Code"
+        },
+        "instanceType": "Endpoint",
+        "purpose": "QualityOfLife"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        7,
+        8,
+        9,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    {
+      "id": "est_1",
+      "entity_type": "estimand",
+      "data": {
+        "id": "est_1",
+        "name": "Primary Efficacy Estimand (IDFS)",
+        "populationSummary": "Adult patients with high-risk, node-positive, early stage, HR+, HER2- breast cancer (Intent-to-Treat (ITT) Population) Summary measure: Hazard ratio.",
+        "analysisPopulationId": "ap_1",
+        "variableOfInterestId": "ep_1",
+        "interventionIds": [
+          "int_1",
+          "int_2"
+        ],
+        "intercurrentEvents": [
+          {
+            "id": "ice_1",
+            "name": "Discontinuation of study treatment",
+            "text": "Subject discontinues study treatment (abemaciclib and/or endocrine therapy) before the planned duration",
+            "strategy": "Treatment Policy",
+            "instanceType": "IntercurrentEvent"
+          },
+          {
+            "id": "ice_2",
+            "name": "Use of prohibited concomitant medication",
+            "text": "Subject uses a prohibited concomitant medication (e.g., fulvestrant)",
+            "strategy": "Treatment Policy",
+            "instanceType": "IntercurrentEvent"
+          },
+          {
+            "id": "ice_3",
+            "name": "Lost to follow-up",
+            "text": "Subject is lost to follow-up and vital status or disease status cannot be ascertained",
+            "strategy": "Treatment Policy",
+            "instanceType": "IntercurrentEvent"
+          }
+        ],
+        "instanceType": "Estimand",
+        "treatment": "Abemaciclib 150 mg twice daily plus standard adjuvant endocrine therapy versus standard adjuvant endocrine therapy alone",
+        "analysisPopulation": "Intent-to-Treat (ITT) Population",
+        "variableOfInterest": "IDFS, as defined by the STEEP System (Hudis et al. 2007)",
+        "summaryMeasure": "Hazard ratio"
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        7,
+        8,
+        9,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    {
+      "id": "ap_1",
+      "entity_type": "analysis_population",
+      "data": {
+        "id": "ap_1",
+        "name": "Intent-to-Treat (ITT) Population",
+        "instanceType": "AnalysisPopulation",
+        "description": "Analysis population referenced by estimand: Primary Efficacy Estimand (IDFS)",
+        "level": "ITT"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        7,
+        8,
+        9,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ]
+    }
+  ],
+  "objectives_summary": {
+    "primary_count": 1,
+    "secondary_count": 6,
+    "exploratory_count": 0,
+    "endpoint_count": 10,
+    "estimand_count": 1
+  }
+}

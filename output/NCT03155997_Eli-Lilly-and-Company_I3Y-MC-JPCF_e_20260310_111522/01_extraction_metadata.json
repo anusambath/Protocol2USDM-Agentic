@@ -1,0 +1,273 @@
+{
+  "agent_id": "metadata_agent",
+  "timestamp": "2026-03-10T11:15:36.968009",
+  "confidence": 0.85,
+  "entity_count": 12,
+  "entities": [
+    {
+      "id": "title_1",
+      "entity_type": "study_title",
+      "data": {
+        "id": "title_1",
+        "text": "A Randomized, Open-Label, Phase 3 Study of Abemaciclib Combined with Standard Adjuvant Endocrine Therapy versus Standard Adjuvant Endocrine Therapy Alone in Patients with High Risk, Node Positive, Early Stage, Hormone Receptor Positive, Human Epidermal Receptor 2 Negative, Breast Cancer",
+        "type": {
+          "id": "4a32fba8-f5da-4af1-8872-af85504433d4",
+          "code": "C207616",
+          "codeSystem": "http://www.cdisc.org",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Official Study Title",
+          "instanceType": "Code"
+        },
+        "instanceType": "StudyTitle"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "title_2",
+      "entity_type": "study_title",
+      "data": {
+        "id": "title_2",
+        "text": "monarchE",
+        "type": {
+          "id": "a1d3407d-bc3c-495e-b15b-acdfe2e8d5ce",
+          "code": "C207620",
+          "codeSystem": "http://www.cdisc.org",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Study Acronym",
+          "instanceType": "Code"
+        },
+        "instanceType": "StudyTitle"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "sid_1",
+      "entity_type": "study_identifier",
+      "data": {
+        "id": "sid_1",
+        "text": "NCT03155997",
+        "scopeId": "org_2",
+        "instanceType": "StudyIdentifier",
+        "identifierType": {
+          "code": "NCT",
+          "codeSystem": "USDM",
+          "decode": "ClinicalTrials.gov Identifier"
+        }
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "sid_2",
+      "entity_type": "study_identifier",
+      "data": {
+        "id": "sid_2",
+        "text": "I3Y-MC-JPCF(e)",
+        "scopeId": "org_1",
+        "instanceType": "StudyIdentifier",
+        "identifierType": {
+          "code": "SponsorProtocolNumber",
+          "codeSystem": "USDM",
+          "decode": "Sponsor Protocol Number"
+        }
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "sid_3",
+      "entity_type": "study_identifier",
+      "data": {
+        "id": "sid_3",
+        "text": "LY2835219",
+        "scopeId": "org_1",
+        "instanceType": "StudyIdentifier",
+        "identifierType": {
+          "code": "SponsorProtocolNumber",
+          "codeSystem": "USDM",
+          "decode": "Sponsor Protocol Number"
+        }
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "org_1",
+      "entity_type": "organization",
+      "data": {
+        "id": "org_1",
+        "name": "Eli Lilly and Company",
+        "type": {
+          "id": "ad6c215b-2a18-4fa6-afd1-8ae6a32637da",
+          "code": "C54086",
+          "codeSystem": "http://www.cdisc.org",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Pharmaceutical Company",
+          "instanceType": "Code"
+        },
+        "identifier": "Eli Lilly and Company",
+        "identifierScheme": "DUNS",
+        "instanceType": "Organization"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "org_2",
+      "entity_type": "organization",
+      "data": {
+        "id": "org_2",
+        "name": "ClinicalTrials.gov",
+        "type": {
+          "id": "af17e51c-4b4c-4bcc-ac97-346f9f29680b",
+          "code": "C19326",
+          "codeSystem": "http://www.cdisc.org",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Healthcare Facility",
+          "instanceType": "Code"
+        },
+        "identifier": "ClinicalTrials.gov",
+        "identifierScheme": "DUNS",
+        "instanceType": "Organization"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "role_1",
+      "entity_type": "study_role",
+      "data": {
+        "id": "role_1",
+        "name": "Sponsor",
+        "code": {
+          "id": "6458f669-9994-4872-98f3-6aeeba79da67",
+          "code": "C70793",
+          "codeSystem": "http://www.cdisc.org",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Sponsor",
+          "instanceType": "Code"
+        },
+        "organizationIds": [
+          "org_1"
+        ],
+        "instanceType": "StudyRole"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "role_2",
+      "entity_type": "study_role",
+      "data": {
+        "id": "role_2",
+        "name": "Registry",
+        "code": {
+          "id": "2f9ad4ec-984d-46d8-a8f0-cb6b816f7d42",
+          "code": "C70793",
+          "codeSystem": "http://www.cdisc.org",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Sponsor",
+          "instanceType": "Code"
+        },
+        "organizationIds": [
+          "org_2"
+        ],
+        "instanceType": "StudyRole"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "ind_1",
+      "entity_type": "indication",
+      "data": {
+        "id": "ind_1",
+        "name": "Breast Cancer",
+        "isRareDisease": false,
+        "instanceType": "Indication",
+        "description": "High Risk, Node Positive, Early Stage, Hormone Receptor Positive, Human Epidermal Receptor 2 Negative, Breast Cancer"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "study_phase_1",
+      "entity_type": "study_phase",
+      "data": {
+        "code": "Phase3",
+        "codeSystem": "USDM",
+        "decode": "Phase3"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "study_metadata_1",
+      "entity_type": "metadata",
+      "data": {
+        "name": "I3Y-MC-JPCF(e)",
+        "description": "",
+        "label": "",
+        "versionIdentifier": "1"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        0,
+        1,
+        2
+      ]
+    }
+  ],
+  "metadata_summary": {
+    "study_name": "I3Y-MC-JPCF(e)",
+    "title_count": 2,
+    "identifier_count": 3,
+    "organization_count": 2
+  }
+}

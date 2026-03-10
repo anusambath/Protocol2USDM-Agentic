@@ -1,0 +1,4281 @@
+{
+  "agent_id": "soa_text_agent",
+  "timestamp": "2026-03-10T10:21:43.715406",
+  "confidence": 0.75,
+  "entity_count": 163,
+  "entities": [
+    {
+      "id": "soa_text_result",
+      "entity_type": "soa_text_extraction",
+      "data": {
+        "source": "text",
+        "page_numbers": [
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ],
+        "result": "TextExtractionResult(activities=[Activity(id='act_1', name='Informed consent', label=None, description='See Section 10.1.3', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_2', name='Eligibility criteria', label=None, description='See Section 5.1 and Section 5.2', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_3', name='Register with IRT', label=None, description='See Section 6.3.1', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_4', name='Demography/medical history', label=None, description='See Section 8.2.1', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_5', name='Disease characteristics/ treatment history', label=None, description='See Section 8.1.5', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_6', name='PROs', label=None, description='No PGI-C at screening or C1D1. After Year 1, the PROs will be administered once every 3 cycles (C12D1, C15D1, etc). The PGIC will not be administered after Year 1. See Section 8.1.4', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_7', name='Healthcare resource use', label=None, description='See Section 8.10', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_8', name='Physical exam', label=None, description='See Section 8.2.2', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_9', name='Neurologic exam', label=None, description='See Section 8.2.2', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_10', name='ICE score', label=None, description='See Section 8.2.2', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_11', name='Height/weight', label=None, description='See Section 8.2.2', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_12', name='Vital signs (temperature, HR, BP and O2 saturation)', label=None, description='Pre-dose vital signs collected on C1D1, C1D4, C1D8, C1D15, and C1D22 should be reported on the CRF. Monitored at least every 4 hours (±15 during the first 48 hours after first dose of study intervention (C1D1) and during first 24 hours after second dose (C1D4). See Section 8.2.3', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_13', name='ECOG PS', label=None, description='See Section 8.2.8', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_14', name='Triplicate 12-Lead ECG', label=None, description='Perform ECG prior to PK sample collection and prior to elranatamab administration (and premedication). ECG assessments should be skipped if CRS symptoms are ongoing. See Section 8.2.4', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_15', name='ECHO/MUGA', label=None, description='See Section 8.2.5', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_16', name='Elranatamab (PF-06863135) administration', label=None, description='Two step-up priming doses of 12 mg on C1D1 then 32 mg on C1D4, followed by 76 mg starting on C1D8 QW. Minimum of 2 days should be maintained between the C1D1 and C1D4 doses, minimum of 3 days between C1D4 dose and the first full dose (C1D8); a minimum of 6 days should be maintained between doses thereafter. If participant has received QW dosing for at least 6 cycles and has achieved a PR or better persisting for ≥2 months, the dose interval will be changed from QW to Q2W (eg, beginning C7D1). See Section 6 (including Section 6.6 dose modifications).', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_17', name='Premedication for CRS', label=None, description='Must be administered 60 minutes (±15 minutes) prior to elranatamab dose, See Section 6.5.1.', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_18', name='Hospitalization', label=None, description='Hospitalization required for at least 2 days (~48 hr) for C1D1 and 1 day (~24 hr) for C1D4. Hospitalization from C1D1 to C1D5 may be considered. See Section 6.1.', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_19', name='AE monitoring', label=None, description='Assess Continuously See Section 8.3', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_20', name='Concomitant therapy', label=None, description='Assess Continuously See Section 6.5', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_21', name='Subsequent anticancer therapies/date of progression', label=None, description='Assess continuously See Section 7.1', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_22', name='Survival status', label=None, description='See Section 7.1 May be collected by telephone.', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_23', name='Disease response assessment (per IMWG criteria)', label=None, description='To be conducted on a 28-day (±1 wk) interval whether dose given or not (ie, the 28-day interval (±1 wk) between assessments should be maintained regardless of dose delays/interruptions). Participants with measurable disease by SPEP or UPEP cannot have response assessed by serum FLC. Except for sCR, serum FLC levels should only be used for response assessment when both the serum and urine M component levels are deemed not measurable or uninterpretable. Serum FLC cannot replace UPEP/UIFE in any situation where urine M component is measurable at baseline. *For participants who discontinue study intervention without confirmed PD: perform at EOT visit, then at least Q4W (±1 wk) until confirmed PD, withdrawal of consent, initiation of subsequent anticancer therapy, participant lost to follow-up, death or defined end of study. See Section 8.1 for complete details (including requirements for repeat testing for confirmation of PD).', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_24', name='SPEP, SIFE, serum FLC', label=None, description='Screening and C1D1 (if not done within 72 hours prior to dosing). Then, to be conducted on a 28-day (±1 wk) interval whether dose given or not (ie, the 28-day interval (±1 wk) between assessments should be maintained regardless of dose delays/interruptions). *For participants who discontinue study intervention without confirmed PD: perform at EOT visit, then at least Q4W (±1 wk) until confirmed PD, withdrawal of consent, initiation of subsequent anticancer therapy, participant lost to follow-up, death or defined end of study. See Section 8.1.1 for complete details (including requirements for repeat testing for confirmation of PD).', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_25', name='UPEP, UIFE (24-hour urine collection required)', label=None, description='Screening and C1D1 (if not done within 72 hours prior to dosing). Then, to be conducted on a 28-day (±1 wk) interval whether dose given or not (ie, the 28-day interval (±1 wk) between assessments should be maintained regardless of dose delays/interruptions). *For participants who discontinue study intervention without confirmed PD: perform at EOT visit, then at least Q4W (±1 wk) until confirmed PD, withdrawal of consent, initiation of subsequent anticancer therapy, participant lost to follow-up, death or defined end of study. For participants without measurable disease in the urine at baseline, UPEP/UIFE is required (minimum) at suspected VGPR or CR/sCR, or at suspected PD. If an evaluable 24-hour urine collection is missed, another attempt for collection should be made within 7 days of the missed assessment. See Section 8.1.1 for complete details (including requirements for repeat testing for confirmation of PD).', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_26', name='Imaging (PET/CT, CT or MRI)', label=None, description='Time points for disease assessments described in notes At screening, at suspected CR/sCR (if not performed within the prior 6 weeks), at suspected PD from EMD, and annually if not done within past 12 months. In addition, for participants with EMD at screening, every 12 wks (± 1 wk), and also at suspected MR or PR. Once all EMD has resolved/disappeared, imaging can be conducted every 24 weeks (or earlier if clinically indicated) and at suspected PD. For participants with only skin involvement, skin lesions should be measured with a ruler every 4 wks (±1 wk). Perform until confirmed PD, WOC, initiation of subsequent anticancer therapy, participant lost to FU, death, or defined EOS. See Section 8.1.3', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_27', name='BMA', label=None, description='Time points for disease assessments described in notes At screening, suspected CR and then after 6 months, 12 months, and yearly (± 1 month) after achieving CR (provided CR is maintained clinically) until WOC, initiation of subsequent anticancer therapy, participant lost to FU, death, or defined EOS. Optional (investigator discretion) at suspected PD. If all criteria for CR are met except percent plasma cells in BM, then additional BMA should be performed every 3 months until CR is achieved, as long as other CR criteria are maintained. See Section 8.1.2', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_28', name='BMA for cytogenetics (FISH/karyotyping)', label=None, description='See Section 8.1.2', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_29', name='BMB/BMA', label=None, description='Time points for disease assessments described in notes At screening and to confirm sCR. Either BMA or BMB can be used; however, the same method should be used for a participant throughout the study. Optional (investigator discretion) at suspected PD. See Section 8.1.2', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_30', name='Contraception check', label=None, description='Only required for WOCBP. Through 5 months post last dose of study intervention. See Section 5.3.1', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_31', name='Pregnancy test', label=None, description='Only required in WOCBP. Also to be done whenever 1 menstrual cycle is missed during the active treatment period and up to 90 days post last dose of study intervention (or when potential pregnancy is otherwise suspected). Serum required at screening. See Section 8.2.7 and Table 8.', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_32', name='Hematology/chemistry', label=None, description='See Section 8.2.6 and Table 8. For Cycle 1 Day 4, hematology only.', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_33', name='Serum quantitative immunoglobulins (IgG, IgM, IgA, IgD, IgE)', label=None, description='See Section 8.2.6 and Table 8.', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_34', name='CMV testing (quantitative PCR)', label=None, description='*Every 1 to 3 months depending on risk factors See Section 8.2.6, Table 8, and Appendix 14.', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_35', name='PT/INR', label=None, description='See Section 8.2.6 and Table 8', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_36', name='BMA for MRD', label=None, description='Samples to be collected each time there is a BMA assessment At screening a freshy collected frozen BMA sample is preferred. If this sample is not available, an alternative sample collected at screening () can be submitted. Sample types permitted include A) Cell pellet/suspension, or B) Frozen BMMC dry cell pellet, or C) BMA smear slides and/or touch prep slides, or D) Re-cut slides from BM clot tissue block, or E) Re-cut scrolls from a BM clot tissue block, or F) gDNA isolated from BMA. A freshly collected frozen BMA sample is preferred for all on-treatment samples. Alternative on-treatment samples are A) Cell pellet/suspension from BMA, or B) frozen BMMC dry cell pellet, or C) gDNA isolated from BMA. See Section 8.8.1', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_37', name='BMA for molecular profiling', label=None, description='Samples to be collected each time there is a BMA assessment See Section 8.8.2', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_38', name='BMB for BCMA levels and/or immune cell biomarkers', label=None, description='Samples to be collected each time there is a BMB assessment Collection of this sample is optional; however, if a participant has a BMB collected for disease assessment,collection of this sample for biomarker analysis is encouraged. See Section 8.8.3', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_39', name='Blood sample for sBCMA levels', label=None, description='Predose, 6 and 24 h postdose on C1D1. Predose and 24 h postdose on C1D4. Predose, 6 h postdose on C1D8. Collect predose only at C1D15, C2D1, C2D15, C3D1, then Day 1 of every third cycle starting Cycle 7 (ie, C7D1, C10D1, C13D1, etc). Additional sample to be collected at EOT and time of PD. See Section 8.8.4', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_40', name='Blood sample for circulating proteins and metabolite analysis', label=None, description='Collect predose and 24h postdose on C1D1. Collect predose and 24 hr post dose on C1D4. Collect predose at all other times. If CRS is suspected, additional blood samples should also be collected if not already scheduled. See Section 8.8.5', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_41', name='Blood sample for TCR sequencing', label=None, description='Collect predose. See Section 8.8.6', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_42', name='Blood sample for immune cell profiling', label=None, description='Collect predose. See Section 8.8.7', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_43', name='Pfizer Prep D1 banked biospecimen(s)', label=None, description='Collect predose. If not collected on the designated collection day, collect at the next available time point when biospecimens are being collected in conjunction with a participant visit. See Section 8.7.2', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_44', name='Saliva sample for germline comparator', label=None, description='Collect predose. See Section 8.8.8', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity')], activity_timepoints=[ActivityTimepoint(activity_id='act_1', timepoint_id='enc_1', is_performed=True, condition=None, activityId='', encounterId='enc_1', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_2', timepoint_id='enc_1', is_performed=True, condition=None, activityId='', encounterId='enc_1', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_3', timepoint_id='enc_1', is_performed=True, condition=None, activityId='', encounterId='enc_1', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_4', timepoint_id='enc_1', is_performed=True, condition=None, activityId='', encounterId='enc_1', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_5', timepoint_id='enc_1', is_performed=True, condition=None, activityId='', encounterId='enc_1', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_6', timepoint_id='enc_1', is_performed=True, condition=None, activityId='', encounterId='enc_1', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_6', timepoint_id='enc_2', is_performed=True, condition=None, activityId='', encounterId='enc_2', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_6', timepoint_id='enc_7', is_performed=True, condition=None, activityId='', encounterId='enc_7', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_6', timepoint_id='enc_8', is_performed=True, condition=None, activityId='', encounterId='enc_8', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_7', timepoint_id='enc_1', is_performed=True, condition=None, activityId='', encounterId='enc_1', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_7', timepoint_id='enc_7', is_performed=True, condition=None, activityId='', encounterId='enc_7', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_7', timepoint_id='enc_8', is_performed=True, condition=None, activityId='', encounterId='enc_8', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_8', timepoint_id='enc_1', is_performed=True, condition=None, activityId='', encounterId='enc_1', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_8', timepoint_id='enc_2', is_performed=True, condition=None, activityId='', encounterId='enc_2', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_8', timepoint_id='enc_4', is_performed=True, condition=None, activityId='', encounterId='enc_4', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_8', timepoint_id='enc_5', is_performed=True, condition=None, activityId='', encounterId='enc_5', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_8', timepoint_id='enc_7', is_performed=True, condition=None, activityId='', encounterId='enc_7', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_9', timepoint_id='enc_1', is_performed=True, condition=None, activityId='', encounterId='enc_1', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_9', timepoint_id='enc_2', is_performed=True, condition=None, activityId='', encounterId='enc_2', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_9', timepoint_id='enc_7', is_performed=True, condition=None, activityId='', encounterId='enc_7', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_9', timepoint_id='enc_8', is_performed=True, condition=None, activityId='', encounterId='enc_8', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_10', timepoint_id='enc_2', is_performed=True, condition=None, activityId='', encounterId='enc_2', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_11', timepoint_id='enc_1', is_performed=True, condition=None, activityId='', encounterId='enc_1', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_11', timepoint_id='enc_2', is_performed=True, condition=None, activityId='', encounterId='enc_2', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_11', timepoint_id='enc_4', is_performed=True, condition=None, activityId='', encounterId='enc_4', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_11', timepoint_id='enc_5', is_performed=True, condition=None, activityId='', encounterId='enc_5', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_11', timepoint_id='enc_7', is_performed=True, condition=None, activityId='', encounterId='enc_7', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_12', timepoint_id='enc_1', is_performed=True, condition=None, activityId='', encounterId='enc_1', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_12', timepoint_id='enc_2', is_performed=True, condition=None, activityId='', encounterId='enc_2', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_12', timepoint_id='enc_3', is_performed=True, condition=None, activityId='', encounterId='enc_3', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_12', timepoint_id='enc_4', is_performed=True, condition=None, activityId='', encounterId='enc_4', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_12', timepoint_id='enc_5', is_performed=True, condition=None, activityId='', encounterId='enc_5', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_12', timepoint_id='enc_6', is_performed=True, condition=None, activityId='', encounterId='enc_6', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_12', timepoint_id='enc_7', is_performed=True, condition=None, activityId='', encounterId='enc_7', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_12', timepoint_id='enc_8', is_performed=True, condition=None, activityId='', encounterId='enc_8', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_13', timepoint_id='enc_1', is_performed=True, condition=None, activityId='', encounterId='enc_1', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_13', timepoint_id='enc_2', is_performed=True, condition=None, activityId='', encounterId='enc_2', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_13', timepoint_id='enc_4', is_performed=True, condition=None, activityId='', encounterId='enc_4', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_13', timepoint_id='enc_5', is_performed=True, condition=None, activityId='', encounterId='enc_5', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_13', timepoint_id='enc_7', is_performed=True, condition=None, activityId='', encounterId='enc_7', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_13', timepoint_id='enc_8', is_performed=True, condition=None, activityId='', encounterId='enc_8', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_14', timepoint_id='enc_1', is_performed=True, condition=None, activityId='', encounterId='enc_1', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_14', timepoint_id='enc_2', is_performed=True, condition=None, activityId='', encounterId='enc_2', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_14', timepoint_id='enc_7', is_performed=True, condition=None, activityId='', encounterId='enc_7', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_15', timepoint_id='enc_1', is_performed=True, condition=None, activityId='', encounterId='enc_1', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_16', timepoint_id='enc_2', is_performed=True, condition=None, activityId='', encounterId='enc_2', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_16', timepoint_id='enc_3', is_performed=True, condition=None, activityId='', encounterId='enc_3', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_16', timepoint_id='enc_4', is_performed=True, condition=None, activityId='', encounterId='enc_4', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_16', timepoint_id='enc_5', is_performed=True, condition=None, activityId='', encounterId='enc_5', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_16', timepoint_id='enc_6', is_performed=True, condition=None, activityId='', encounterId='enc_6', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_17', timepoint_id='enc_2', is_performed=True, condition=None, activityId='', encounterId='enc_2', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_17', timepoint_id='enc_3', is_performed=True, condition=None, activityId='', encounterId='enc_3', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_17', timepoint_id='enc_4', is_performed=True, condition=None, activityId='', encounterId='enc_4', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_18', timepoint_id='enc_2', is_performed=True, condition=None, activityId='', encounterId='enc_2', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_18', timepoint_id='enc_3', is_performed=True, condition=None, activityId='', encounterId='enc_3', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_22', timepoint_id='enc_8', is_performed=True, condition=None, activityId='', encounterId='enc_8', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_22', timepoint_id='enc_9', is_performed=True, condition=None, activityId='', encounterId='enc_9', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_23', timepoint_id='enc_2', is_performed=True, condition=None, activityId='', encounterId='enc_2', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_23', timepoint_id='enc_7', is_performed=True, condition=None, activityId='', encounterId='enc_7', plannedTimepointId='', footnoteRefs=['*']), ActivityTimepoint(activity_id='act_23', timepoint_id='enc_8', is_performed=True, condition=None, activityId='', encounterId='enc_8', plannedTimepointId='', footnoteRefs=['*']), ActivityTimepoint(activity_id='act_24', timepoint_id='enc_1', is_performed=True, condition=None, activityId='', encounterId='enc_1', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_24', timepoint_id='enc_2', is_performed=True, condition=None, activityId='', encounterId='enc_2', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_24', timepoint_id='enc_7', is_performed=True, condition=None, activityId='', encounterId='enc_7', plannedTimepointId='', footnoteRefs=['*']), ActivityTimepoint(activity_id='act_24', timepoint_id='enc_8', is_performed=True, condition=None, activityId='', encounterId='enc_8', plannedTimepointId='', footnoteRefs=['*']), ActivityTimepoint(activity_id='act_25', timepoint_id='enc_1', is_performed=True, condition=None, activityId='', encounterId='enc_1', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_25', timepoint_id='enc_2', is_performed=True, condition=None, activityId='', encounterId='enc_2', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_25', timepoint_id='enc_7', is_performed=True, condition=None, activityId='', encounterId='enc_7', plannedTimepointId='', footnoteRefs=['*']), ActivityTimepoint(activity_id='act_25', timepoint_id='enc_8', is_performed=True, condition=None, activityId='', encounterId='enc_8', plannedTimepointId='', footnoteRefs=['*']), ActivityTimepoint(activity_id='act_26', timepoint_id='enc_1', is_performed=True, condition=None, activityId='', encounterId='enc_1', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_27', timepoint_id='enc_1', is_performed=True, condition=None, activityId='', encounterId='enc_1', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_28', timepoint_id='enc_1', is_performed=True, condition=None, activityId='', encounterId='enc_1', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_29', timepoint_id='enc_1', is_performed=True, condition=None, activityId='', encounterId='enc_1', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_30', timepoint_id='enc_1', is_performed=True, condition=None, activityId='', encounterId='enc_1', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_30', timepoint_id='enc_2', is_performed=True, condition=None, activityId='', encounterId='enc_2', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_30', timepoint_id='enc_4', is_performed=True, condition=None, activityId='', encounterId='enc_4', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_30', timepoint_id='enc_5', is_performed=True, condition=None, activityId='', encounterId='enc_5', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_30', timepoint_id='enc_7', is_performed=True, condition=None, activityId='', encounterId='enc_7', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_31', timepoint_id='enc_1', is_performed=True, condition=None, activityId='', encounterId='enc_1', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_31', timepoint_id='enc_2', is_performed=True, condition=None, activityId='', encounterId='enc_2', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_31', timepoint_id='enc_4', is_performed=True, condition=None, activityId='', encounterId='enc_4', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_31', timepoint_id='enc_5', is_performed=True, condition=None, activityId='', encounterId='enc_5', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_32', timepoint_id='enc_1', is_performed=True, condition=None, activityId='', encounterId='enc_1', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_32', timepoint_id='enc_2', is_performed=True, condition=None, activityId='', encounterId='enc_2', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_32', timepoint_id='enc_3', is_performed=True, condition=None, activityId='', encounterId='enc_3', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_32', timepoint_id='enc_4', is_performed=True, condition=None, activityId='', encounterId='enc_4', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_32', timepoint_id='enc_5', is_performed=True, condition=None, activityId='', encounterId='enc_5', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_32', timepoint_id='enc_6', is_performed=True, condition=None, activityId='', encounterId='enc_6', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_32', timepoint_id='enc_7', is_performed=True, condition=None, activityId='', encounterId='enc_7', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_32', timepoint_id='enc_8', is_performed=True, condition=None, activityId='', encounterId='enc_8', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_33', timepoint_id='enc_1', is_performed=True, condition=None, activityId='', encounterId='enc_1', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_33', timepoint_id='enc_2', is_performed=True, condition=None, activityId='', encounterId='enc_2', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_33', timepoint_id='enc_7', is_performed=True, condition=None, activityId='', encounterId='enc_7', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_33', timepoint_id='enc_8', is_performed=True, condition=None, activityId='', encounterId='enc_8', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_34', timepoint_id='enc_1', is_performed=True, condition=None, activityId='', encounterId='enc_1', plannedTimepointId='', footnoteRefs=['*']), ActivityTimepoint(activity_id='act_35', timepoint_id='enc_1', is_performed=True, condition=None, activityId='', encounterId='enc_1', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_36', timepoint_id='enc_1', is_performed=True, condition=None, activityId='', encounterId='enc_1', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_37', timepoint_id='enc_1', is_performed=True, condition=None, activityId='', encounterId='enc_1', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_38', timepoint_id='enc_1', is_performed=True, condition=None, activityId='', encounterId='enc_1', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_39', timepoint_id='enc_1', is_performed=True, condition=None, activityId='', encounterId='enc_1', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_39', timepoint_id='enc_2', is_performed=True, condition=None, activityId='', encounterId='enc_2', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_39', timepoint_id='enc_3', is_performed=True, condition=None, activityId='', encounterId='enc_3', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_39', timepoint_id='enc_4', is_performed=True, condition=None, activityId='', encounterId='enc_4', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_39', timepoint_id='enc_5', is_performed=True, condition=None, activityId='', encounterId='enc_5', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_39', timepoint_id='enc_7', is_performed=True, condition=None, activityId='', encounterId='enc_7', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_40', timepoint_id='enc_2', is_performed=True, condition=None, activityId='', encounterId='enc_2', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_40', timepoint_id='enc_3', is_performed=True, condition=None, activityId='', encounterId='enc_3', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_40', timepoint_id='enc_4', is_performed=True, condition=None, activityId='', encounterId='enc_4', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_40', timepoint_id='enc_5', is_performed=True, condition=None, activityId='', encounterId='enc_5', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_40', timepoint_id='enc_6', is_performed=True, condition=None, activityId='', encounterId='enc_6', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_41', timepoint_id='enc_1', is_performed=True, condition=None, activityId='', encounterId='enc_1', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_41', timepoint_id='enc_2', is_performed=True, condition=None, activityId='', encounterId='enc_2', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_42', timepoint_id='enc_2', is_performed=True, condition=None, activityId='', encounterId='enc_2', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_42', timepoint_id='enc_3', is_performed=True, condition=None, activityId='', encounterId='enc_3', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_42', timepoint_id='enc_4', is_performed=True, condition=None, activityId='', encounterId='enc_4', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_42', timepoint_id='enc_5', is_performed=True, condition=None, activityId='', encounterId='enc_5', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_42', timepoint_id='enc_6', is_performed=True, condition=None, activityId='', encounterId='enc_6', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_43', timepoint_id='enc_2', is_performed=True, condition=None, activityId='', encounterId='enc_2', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_44', timepoint_id='enc_2', is_performed=True, condition=None, activityId='', encounterId='enc_2', plannedTimepointId='', footnoteRefs=[])], raw_response='{\\n  \"activities\": [\\n    {\\n      \"id\": \"act_1\",\\n      \"name\": \"Informed consent\",\\n      \"description\": \"See Section 10.1.3\",\\n      \"activityGroupId\": \"grp_1\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_2\",\\n      \"name\": \"Eligibility criteria\",\\n      \"description\": \"See Section 5.1 and Section 5.2\",\\n      \"activityGroupId\": \"grp_1\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_3\",\\n      \"name\": \"Register with IRT\",\\n      \"description\": \"See Section 6.3.1\",\\n      \"activityGroupId\": \"grp_1\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_4\",\\n      \"name\": \"Demography/medical history\",\\n      \"description\": \"See Section 8.2.1\",\\n      \"activityGroupId\": \"grp_1\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_5\",\\n      \"name\": \"Disease characteristics/ treatment history\",\\n      \"description\": \"See Section 8.1.5\",\\n      \"activityGroupId\": \"grp_1\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_6\",\\n      \"name\": \"PROs\",\\n      \"description\": \"No PGI-C at screening or C1D1. After Year 1, the PROs will be administered once every 3 cycles (C12D1, C15D1, etc). The PGIC will not be administered after Year 1. See Section 8.1.4\",\\n      \"activityGroupId\": \"grp_1\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_7\",\\n      \"name\": \"Healthcare resource use\",\\n      \"description\": \"See Section 8.10\",\\n      \"activityGroupId\": \"grp_1\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_8\",\\n      \"name\": \"Physical exam\",\\n      \"description\": \"See Section 8.2.2\",\\n      \"activityGroupId\": \"grp_2\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_9\",\\n      \"name\": \"Neurologic exam\",\\n      \"description\": \"See Section 8.2.2\",\\n      \"activityGroupId\": \"grp_2\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_10\",\\n      \"name\": \"ICE score\",\\n      \"description\": \"See Section 8.2.2\",\\n      \"activityGroupId\": \"grp_2\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_11\",\\n      \"name\": \"Height/weight\",\\n      \"description\": \"See Section 8.2.2\",\\n      \"activityGroupId\": \"grp_2\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_12\",\\n      \"name\": \"Vital signs (temperature, HR, BP and O2 saturation)\",\\n      \"description\": \"Pre-dose vital signs collected on C1D1, C1D4, C1D8, C1D15, and C1D22 should be reported on the CRF. Monitored at least every 4 hours (±15 during the first 48 hours after first dose of study intervention (C1D1) and during first 24 hours after second dose (C1D4). See Section 8.2.3\",\\n      \"activityGroupId\": \"grp_2\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_13\",\\n      \"name\": \"ECOG PS\",\\n      \"description\": \"See Section 8.2.8\",\\n      \"activityGroupId\": \"grp_2\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_14\",\\n      \"name\": \"Triplicate 12-Lead ECG\",\\n      \"description\": \"Perform ECG prior to PK sample collection and prior to elranatamab administration (and premedication). ECG assessments should be skipped if CRS symptoms are ongoing. See Section 8.2.4\",\\n      \"activityGroupId\": \"grp_2\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_15\",\\n      \"name\": \"ECHO/MUGA\",\\n      \"description\": \"See Section 8.2.5\",\\n      \"activityGroupId\": \"grp_2\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_16\",\\n      \"name\": \"Elranatamab (PF-06863135) administration\",\\n      \"description\": \"Two step-up priming doses of 12 mg on C1D1 then 32 mg on C1D4, followed by 76 mg starting on C1D8 QW. Minimum of 2 days should be maintained between the C1D1 and C1D4 doses, minimum of 3 days between C1D4 dose and the first full dose (C1D8); a minimum of 6 days should be maintained between doses thereafter. If participant has received QW dosing for at least 6 cycles and has achieved a PR or better persisting for ≥2 months, the dose interval will be changed from QW to Q2W (eg, beginning C7D1). See Section 6 (including Section 6.6 dose modifications).\",\\n      \"activityGroupId\": \"grp_2\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_17\",\\n      \"name\": \"Premedication for CRS\",\\n      \"description\": \"Must be administered 60 minutes (±15 minutes) prior to elranatamab dose, See Section 6.5.1.\",\\n      \"activityGroupId\": \"grp_2\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_18\",\\n      \"name\": \"Hospitalization\",\\n      \"description\": \"Hospitalization required for at least 2 days (~48 hr) for C1D1 and 1 day (~24 hr) for C1D4. Hospitalization from C1D1 to C1D5 may be considered. See Section 6.1.\",\\n      \"activityGroupId\": \"grp_2\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_19\",\\n      \"name\": \"AE monitoring\",\\n      \"description\": \"Assess Continuously See Section 8.3\",\\n      \"activityGroupId\": \"grp_2\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_20\",\\n      \"name\": \"Concomitant therapy\",\\n      \"description\": \"Assess Continuously See Section 6.5\",\\n      \"activityGroupId\": \"grp_2\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_21\",\\n      \"name\": \"Subsequent anticancer therapies/date of progression\",\\n      \"description\": \"Assess continuously See Section 7.1\",\\n      \"activityGroupId\": \"grp_2\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_22\",\\n      \"name\": \"Survival status\",\\n      \"description\": \"See Section 7.1 May be collected by telephone.\",\\n      \"activityGroupId\": \"grp_2\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_23\",\\n      \"name\": \"Disease response assessment (per IMWG criteria)\",\\n      \"description\": \"To be conducted on a 28-day (±1 wk) interval whether dose given or not (ie, the 28-day interval (±1 wk) between assessments should be maintained regardless of dose delays/interruptions). Participants with measurable disease by SPEP or UPEP cannot have response assessed by serum FLC. Except for sCR, serum FLC levels should only be used for response assessment when both the serum and urine M component levels are deemed not measurable or uninterpretable. Serum FLC cannot replace UPEP/UIFE in any situation where urine M component is measurable at baseline. *For participants who discontinue study intervention without confirmed PD: perform at EOT visit, then at least Q4W (±1 wk) until confirmed PD, withdrawal of consent, initiation of subsequent anticancer therapy, participant lost to follow-up, death or defined end of study. See Section 8.1 for complete details (including requirements for repeat testing for confirmation of PD).\",\\n      \"activityGroupId\": \"grp_2\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_24\",\\n      \"name\": \"SPEP, SIFE, serum FLC\",\\n      \"description\": \"Screening and C1D1 (if not done within 72 hours prior to dosing). Then, to be conducted on a 28-day (±1 wk) interval whether dose given or not (ie, the 28-day interval (±1 wk) between assessments should be maintained regardless of dose delays/interruptions). *For participants who discontinue study intervention without confirmed PD: perform at EOT visit, then at least Q4W (±1 wk) until confirmed PD, withdrawal of consent, initiation of subsequent anticancer therapy, participant lost to follow-up, death or defined end of study. See Section 8.1.1 for complete details (including requirements for repeat testing for confirmation of PD).\",\\n      \"activityGroupId\": \"grp_2\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_25\",\\n      \"name\": \"UPEP, UIFE (24-hour urine collection required)\",\\n      \"description\": \"Screening and C1D1 (if not done within 72 hours prior to dosing). Then, to be conducted on a 28-day (±1 wk) interval whether dose given or not (ie, the 28-day interval (±1 wk) between assessments should be maintained regardless of dose delays/interruptions). *For participants who discontinue study intervention without confirmed PD: perform at EOT visit, then at least Q4W (±1 wk) until confirmed PD, withdrawal of consent, initiation of subsequent anticancer therapy, participant lost to follow-up, death or defined end of study. For participants without measurable disease in the urine at baseline, UPEP/UIFE is required (minimum) at suspected VGPR or CR/sCR, or at suspected PD. If an evaluable 24-hour urine collection is missed, another attempt for collection should be made within 7 days of the missed assessment. See Section 8.1.1 for complete details (including requirements for repeat testing for confirmation of PD).\",\\n      \"activityGroupId\": \"grp_2\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_26\",\\n      \"name\": \"Imaging (PET/CT, CT or MRI)\",\\n      \"description\": \"Time points for disease assessments described in notes At screening, at suspected CR/sCR (if not performed within the prior 6 weeks), at suspected PD from EMD, and annually if not done within past 12 months. In addition, for participants with EMD at screening, every 12 wks (± 1 wk), and also at suspected MR or PR. Once all EMD has resolved/disappeared, imaging can be conducted every 24 weeks (or earlier if clinically indicated) and at suspected PD. For participants with only skin involvement, skin lesions should be measured with a ruler every 4 wks (±1 wk). Perform until confirmed PD, WOC, initiation of subsequent anticancer therapy, participant lost to FU, death, or defined EOS. See Section 8.1.3\",\\n      \"activityGroupId\": \"grp_2\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_27\",\\n      \"name\": \"BMA\",\\n      \"description\": \"Time points for disease assessments described in notes At screening, suspected CR and then after 6 months, 12 months, and yearly (± 1 month) after achieving CR (provided CR is maintained clinically) until WOC, initiation of subsequent anticancer therapy, participant lost to FU, death, or defined EOS. Optional (investigator discretion) at suspected PD. If all criteria for CR are met except percent plasma cells in BM, then additional BMA should be performed every 3 months until CR is achieved, as long as other CR criteria are maintained. See Section 8.1.2\",\\n      \"activityGroupId\": \"grp_2\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_28\",\\n      \"name\": \"BMA for cytogenetics (FISH/karyotyping)\",\\n      \"description\": \"See Section 8.1.2\",\\n      \"activityGroupId\": \"grp_2\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_29\",\\n      \"name\": \"BMB/BMA\",\\n      \"description\": \"Time points for disease assessments described in notes At screening and to confirm sCR. Either BMA or BMB can be used; however, the same method should be used for a participant throughout the study. Optional (investigator discretion) at suspected PD. See Section 8.1.2\",\\n      \"activityGroupId\": \"grp_2\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_30\",\\n      \"name\": \"Contraception check\",\\n      \"description\": \"Only required for WOCBP. Through 5 months post last dose of study intervention. See Section 5.3.1\",\\n      \"activityGroupId\": \"grp_2\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_31\",\\n      \"name\": \"Pregnancy test\",\\n      \"description\": \"Only required in WOCBP. Also to be done whenever 1 menstrual cycle is missed during the active treatment period and up to 90 days post last dose of study intervention (or when potential pregnancy is otherwise suspected). Serum required at screening. See Section 8.2.7 and Table 8.\",\\n      \"activityGroupId\": \"grp_2\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_32\",\\n      \"name\": \"Hematology/chemistry\",\\n      \"description\": \"See Section 8.2.6 and Table 8. For Cycle 1 Day 4, hematology only.\",\\n      \"activityGroupId\": \"grp_2\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_33\",\\n      \"name\": \"Serum quantitative immunoglobulins (IgG, IgM, IgA, IgD, IgE)\",\\n      \"description\": \"See Section 8.2.6 and Table 8.\",\\n      \"activityGroupId\": \"grp_2\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_34\",\\n      \"name\": \"CMV testing (quantitative PCR)\",\\n      \"description\": \"*Every 1 to 3 months depending on risk factors See Section 8.2.6, Table 8, and Appendix 14.\",\\n      \"activityGroupId\": \"grp_2\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_35\",\\n      \"name\": \"PT/INR\",\\n      \"description\": \"See Section 8.2.6 and Table 8\",\\n      \"activityGroupId\": \"grp_2\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_36\",\\n      \"name\": \"BMA for MRD\",\\n      \"description\": \"Samples to be collected each time there is a BMA assessment At screening a freshy collected frozen BMA sample is preferred. If this sample is not available, an alternative sample collected at screening () can be submitted. Sample types permitted include A) Cell pellet/suspension, or B) Frozen BMMC dry cell pellet, or C) BMA smear slides and/or touch prep slides, or D) Re-cut slides from BM clot tissue block, or E) Re-cut scrolls from a BM clot tissue block, or F) gDNA isolated from BMA. A freshly collected frozen BMA sample is preferred for all on-treatment samples. Alternative on-treatment samples are A) Cell pellet/suspension from BMA, or B) frozen BMMC dry cell pellet, or C) gDNA isolated from BMA. See Section 8.8.1\",\\n      \"activityGroupId\": \"grp_3\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_37\",\\n      \"name\": \"BMA for molecular profiling\",\\n      \"description\": \"Samples to be collected each time there is a BMA assessment See Section 8.8.2\",\\n      \"activityGroupId\": \"grp_3\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_38\",\\n      \"name\": \"BMB for BCMA levels and/or immune cell biomarkers\",\\n      \"description\": \"Samples to be collected each time there is a BMB assessment Collection of this sample is optional; however, if a participant has a BMB collected for disease assessment,collection of this sample for biomarker analysis is encouraged. See Section 8.8.3\",\\n      \"activityGroupId\": \"grp_3\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_39\",\\n      \"name\": \"Blood sample for sBCMA levels\",\\n      \"description\": \"Predose, 6 and 24 h postdose on C1D1. Predose and 24 h postdose on C1D4. Predose, 6 h postdose on C1D8. Collect predose only at C1D15, C2D1, C2D15, C3D1, then Day 1 of every third cycle starting Cycle 7 (ie, C7D1, C10D1, C13D1, etc). Additional sample to be collected at EOT and time of PD. See Section 8.8.4\",\\n      \"activityGroupId\": \"grp_3\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_40\",\\n      \"name\": \"Blood sample for circulating proteins and metabolite analysis\",\\n      \"description\": \"Collect predose and 24h postdose on C1D1. Collect predose and 24 hr post dose on C1D4. Collect predose at all other times. If CRS is suspected, additional blood samples should also be collected if not already scheduled. See Section 8.8.5\",\\n      \"activityGroupId\": \"grp_3\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_41\",\\n      \"name\": \"Blood sample for TCR sequencing\",\\n      \"description\": \"Collect predose. See Section 8.8.6\",\\n      \"activityGroupId\": \"grp_3\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_42\",\\n      \"name\": \"Blood sample for immune cell profiling\",\\n      \"description\": \"Collect predose. See Section 8.8.7\",\\n      \"activityGroupId\": \"grp_3\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_43\",\\n      \"name\": \"Pfizer Prep D1 banked biospecimen(s)\",\\n      \"description\": \"Collect predose. If not collected on the designated collection day, collect at the next available time point when biospecimens are being collected in conjunction with a participant visit. See Section 8.7.2\",\\n      \"activityGroupId\": \"grp_3\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_44\",\\n      \"name\": \"Saliva sample for germline comparator\",\\n      \"description\": \"Collect predose. See Section 8.8.8\",\\n      \"activityGroupId\": \"grp_3\",\\n      \"instanceType\": \"Activity\"\\n    }\\n  ],\\n  \"activityTimepoints\": [\\n    {\\n      \"id\": \"at_1\",\\n      \"activityId\": \"act_1\",\\n      \"encounterId\": \"enc_1\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_2\",\\n      \"activityId\": \"act_2\",\\n      \"encounterId\": \"enc_1\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_3\",\\n      \"activityId\": \"act_3\",\\n      \"encounterId\": \"enc_1\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_4\",\\n      \"activityId\": \"act_4\",\\n      \"encounterId\": \"enc_1\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_5\",\\n      \"activityId\": \"act_5\",\\n      \"encounterId\": \"enc_1\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_6\",\\n      \"activityId\": \"act_6\",\\n      \"encounterId\": \"enc_1\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_7\",\\n      \"activityId\": \"act_6\",\\n      \"encounterId\": \"enc_2\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_8\",\\n      \"activityId\": \"act_6\",\\n      \"encounterId\": \"enc_7\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_9\",\\n      \"activityId\": \"act_6\",\\n      \"encounterId\": \"enc_8\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_10\",\\n      \"activityId\": \"act_7\",\\n      \"encounterId\": \"enc_1\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_11\",\\n      \"activityId\": \"act_7\",\\n      \"encounterId\": \"enc_7\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_12\",\\n      \"activityId\": \"act_7\",\\n      \"encounterId\": \"enc_8\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_13\",\\n      \"activityId\": \"act_8\",\\n      \"encounterId\": \"enc_1\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_14\",\\n      \"activityId\": \"act_8\",\\n      \"encounterId\": \"enc_2\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_15\",\\n      \"activityId\": \"act_8\",\\n      \"encounterId\": \"enc_4\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_16\",\\n      \"activityId\": \"act_8\",\\n      \"encounterId\": \"enc_5\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_17\",\\n      \"activityId\": \"act_8\",\\n      \"encounterId\": \"enc_7\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_18\",\\n      \"activityId\": \"act_9\",\\n      \"encounterId\": \"enc_1\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_19\",\\n      \"activityId\": \"act_9\",\\n      \"encounterId\": \"enc_2\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_20\",\\n      \"activityId\": \"act_9\",\\n      \"encounterId\": \"enc_7\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_21\",\\n      \"activityId\": \"act_9\",\\n      \"encounterId\": \"enc_8\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_22\",\\n      \"activityId\": \"act_10\",\\n      \"encounterId\": \"enc_2\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_23\",\\n      \"activityId\": \"act_11\",\\n      \"encounterId\": \"enc_1\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_24\",\\n      \"activityId\": \"act_11\",\\n      \"encounterId\": \"enc_2\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_25\",\\n      \"activityId\": \"act_11\",\\n      \"encounterId\": \"enc_4\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_26\",\\n      \"activityId\": \"act_11\",\\n      \"encounterId\": \"enc_5\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_27\",\\n      \"activityId\": \"act_11\",\\n      \"encounterId\": \"enc_7\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_28\",\\n      \"activityId\": \"act_12\",\\n      \"encounterId\": \"enc_1\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_29\",\\n      \"activityId\": \"act_12\",\\n      \"encounterId\": \"enc_2\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_30\",\\n      \"activityId\": \"act_12\",\\n      \"encounterId\": \"enc_3\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_31\",\\n      \"activityId\": \"act_12\",\\n      \"encounterId\": \"enc_4\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_32\",\\n      \"activityId\": \"act_12\",\\n      \"encounterId\": \"enc_5\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_33\",\\n      \"activityId\": \"act_12\",\\n      \"encounterId\": \"enc_6\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_34\",\\n      \"activityId\": \"act_12\",\\n      \"encounterId\": \"enc_7\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_35\",\\n      \"activityId\": \"act_12\",\\n      \"encounterId\": \"enc_8\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_36\",\\n      \"activityId\": \"act_13\",\\n      \"encounterId\": \"enc_1\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_37\",\\n      \"activityId\": \"act_13\",\\n      \"encounterId\": \"enc_2\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_38\",\\n      \"activityId\": \"act_13\",\\n      \"encounterId\": \"enc_4\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_39\",\\n      \"activityId\": \"act_13\",\\n      \"encounterId\": \"enc_5\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_40\",\\n      \"activityId\": \"act_13\",\\n      \"encounterId\": \"enc_7\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_41\",\\n      \"activityId\": \"act_13\",\\n      \"encounterId\": \"enc_8\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_42\",\\n      \"activityId\": \"act_14\",\\n      \"encounterId\": \"enc_1\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_43\",\\n      \"activityId\": \"act_14\",\\n      \"encounterId\": \"enc_2\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_44\",\\n      \"activityId\": \"act_14\",\\n      \"encounterId\": \"enc_7\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_45\",\\n      \"activityId\": \"act_15\",\\n      \"encounterId\": \"enc_1\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_46\",\\n      \"activityId\": \"act_16\",\\n      \"encounterId\": \"enc_2\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_47\",\\n      \"activityId\": \"act_16\",\\n      \"encounterId\": \"enc_3\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_48\",\\n      \"activityId\": \"act_16\",\\n      \"encounterId\": \"enc_4\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_49\",\\n      \"activityId\": \"act_16\",\\n      \"encounterId\": \"enc_5\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_50\",\\n      \"activityId\": \"act_16\",\\n      \"encounterId\": \"enc_6\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_51\",\\n      \"activityId\": \"act_17\",\\n      \"encounterId\": \"enc_2\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_52\",\\n      \"activityId\": \"act_17\",\\n      \"encounterId\": \"enc_3\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_53\",\\n      \"activityId\": \"act_17\",\\n      \"encounterId\": \"enc_4\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_54\",\\n      \"activityId\": \"act_18\",\\n      \"encounterId\": \"enc_2\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_55\",\\n      \"activityId\": \"act_18\",\\n      \"encounterId\": \"enc_3\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_56\",\\n      \"activityId\": \"act_22\",\\n      \"encounterId\": \"enc_8\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_57\",\\n      \"activityId\": \"act_22\",\\n      \"encounterId\": \"enc_9\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_58\",\\n      \"activityId\": \"act_23\",\\n      \"encounterId\": \"enc_2\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_59\",\\n      \"activityId\": \"act_23\",\\n      \"encounterId\": \"enc_7\",\\n      \"footnoteRefs\": [\\n        \"*\"\\n      ],\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_60\",\\n      \"activityId\": \"act_23\",\\n      \"encounterId\": \"enc_8\",\\n      \"footnoteRefs\": [\\n        \"*\"\\n      ],\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_61\",\\n      \"activityId\": \"act_24\",\\n      \"encounterId\": \"enc_1\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_62\",\\n      \"activityId\": \"act_24\",\\n      \"encounterId\": \"enc_2\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_63\",\\n      \"activityId\": \"act_24\",\\n      \"encounterId\": \"enc_7\",\\n      \"footnoteRefs\": [\\n        \"*\"\\n      ],\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_64\",\\n      \"activityId\": \"act_24\",\\n      \"encounterId\": \"enc_8\",\\n      \"footnoteRefs\": [\\n        \"*\"\\n      ],\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_65\",\\n      \"activityId\": \"act_25\",\\n      \"encounterId\": \"enc_1\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_66\",\\n      \"activityId\": \"act_25\",\\n      \"encounterId\": \"enc_2\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_67\",\\n      \"activityId\": \"act_25\",\\n      \"encounterId\": \"enc_7\",\\n      \"footnoteRefs\": [\\n        \"*\"\\n      ],\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_68\",\\n      \"activityId\": \"act_25\",\\n      \"encounterId\": \"enc_8\",\\n      \"footnoteRefs\": [\\n        \"*\"\\n      ],\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_69\",\\n      \"activityId\": \"act_26\",\\n      \"encounterId\": \"enc_1\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_70\",\\n      \"activityId\": \"act_27\",\\n      \"encounterId\": \"enc_1\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_71\",\\n      \"activityId\": \"act_28\",\\n      \"encounterId\": \"enc_1\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_72\",\\n      \"activityId\": \"act_29\",\\n      \"encounterId\": \"enc_1\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_73\",\\n      \"activityId\": \"act_30\",\\n      \"encounterId\": \"enc_1\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_74\",\\n      \"activityId\": \"act_30\",\\n      \"encounterId\": \"enc_2\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_75\",\\n      \"activityId\": \"act_30\",\\n      \"encounterId\": \"enc_4\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_76\",\\n      \"activityId\": \"act_30\",\\n      \"encounterId\": \"enc_5\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_77\",\\n      \"activityId\": \"act_30\",\\n      \"encounterId\": \"enc_7\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_78\",\\n      \"activityId\": \"act_31\",\\n      \"encounterId\": \"enc_1\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_79\",\\n      \"activityId\": \"act_31\",\\n      \"encounterId\": \"enc_2\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_80\",\\n      \"activityId\": \"act_31\",\\n      \"encounterId\": \"enc_4\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_81\",\\n      \"activityId\": \"act_31\",\\n      \"encounterId\": \"enc_5\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_82\",\\n      \"activityId\": \"act_32\",\\n      \"encounterId\": \"enc_1\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_83\",\\n      \"activityId\": \"act_32\",\\n      \"encounterId\": \"enc_2\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_84\",\\n      \"activityId\": \"act_32\",\\n      \"encounterId\": \"enc_3\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_85\",\\n      \"activityId\": \"act_32\",\\n      \"encounterId\": \"enc_4\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_86\",\\n      \"activityId\": \"act_32\",\\n      \"encounterId\": \"enc_5\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_87\",\\n      \"activityId\": \"act_32\",\\n      \"encounterId\": \"enc_6\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_88\",\\n      \"activityId\": \"act_32\",\\n      \"encounterId\": \"enc_7\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_89\",\\n      \"activityId\": \"act_32\",\\n      \"encounterId\": \"enc_8\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_90\",\\n      \"activityId\": \"act_33\",\\n      \"encounterId\": \"enc_1\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_91\",\\n      \"activityId\": \"act_33\",\\n      \"encounterId\": \"enc_2\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_92\",\\n      \"activityId\": \"act_33\",\\n      \"encounterId\": \"enc_7\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_93\",\\n      \"activityId\": \"act_33\",\\n      \"encounterId\": \"enc_8\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_94\",\\n      \"activityId\": \"act_34\",\\n      \"encounterId\": \"enc_1\",\\n      \"footnoteRefs\": [\\n        \"*\"\\n      ],\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_95\",\\n      \"activityId\": \"act_35\",\\n      \"encounterId\": \"enc_1\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_96\",\\n      \"activityId\": \"act_36\",\\n      \"encounterId\": \"enc_1\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_97\",\\n      \"activityId\": \"act_37\",\\n      \"encounterId\": \"enc_1\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_98\",\\n      \"activityId\": \"act_38\",\\n      \"encounterId\": \"enc_1\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_99\",\\n      \"activityId\": \"act_39\",\\n      \"encounterId\": \"enc_1\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_100\",\\n      \"activityId\": \"act_39\",\\n      \"encounterId\": \"enc_2\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_101\",\\n      \"activityId\": \"act_39\",\\n      \"encounterId\": \"enc_3\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_102\",\\n      \"activityId\": \"act_39\",\\n      \"encounterId\": \"enc_4\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_103\",\\n      \"activityId\": \"act_39\",\\n      \"encounterId\": \"enc_5\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_104\",\\n      \"activityId\": \"act_39\",\\n      \"encounterId\": \"enc_7\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_105\",\\n      \"activityId\": \"act_40\",\\n      \"encounterId\": \"enc_2\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_106\",\\n      \"activityId\": \"act_40\",\\n      \"encounterId\": \"enc_3\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_107\",\\n      \"activityId\": \"act_40\",\\n      \"encounterId\": \"enc_4\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_108\",\\n      \"activityId\": \"act_40\",\\n      \"encounterId\": \"enc_5\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_109\",\\n      \"activityId\": \"act_40\",\\n      \"encounterId\": \"enc_6\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_110\",\\n      \"activityId\": \"act_41\",\\n      \"encounterId\": \"enc_1\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_111\",\\n      \"activityId\": \"act_41\",\\n      \"encounterId\": \"enc_2\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_112\",\\n      \"activityId\": \"act_42\",\\n      \"encounterId\": \"enc_2\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_113\",\\n      \"activityId\": \"act_42\",\\n      \"encounterId\": \"enc_3\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_114\",\\n      \"activityId\": \"act_42\",\\n      \"encounterId\": \"enc_4\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_115\",\\n      \"activityId\": \"act_42\",\\n      \"encounterId\": \"enc_5\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_116\",\\n      \"activityId\": \"act_42\",\\n      \"encounterId\": \"enc_6\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_117\",\\n      \"activityId\": \"act_43\",\\n      \"encounterId\": \"enc_2\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_118\",\\n      \"activityId\": \"act_44\",\\n      \"encounterId\": \"enc_2\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    }\\n  ]\\n}', model_used='gemini-2.5-flash', success=True, provenance=ProvenanceTracker(entities={'activities': {'act_1': 'text', 'act_2': 'text', 'act_3': 'text', 'act_4': 'text', 'act_5': 'text', 'act_6': 'text', 'act_7': 'text', 'act_8': 'text', 'act_9': 'text', 'act_10': 'text', 'act_11': 'text', 'act_12': 'text', 'act_13': 'text', 'act_14': 'text', 'act_15': 'text', 'act_16': 'text', 'act_17': 'text', 'act_18': 'text', 'act_19': 'text', 'act_20': 'text', 'act_21': 'text', 'act_22': 'text', 'act_23': 'text', 'act_24': 'text', 'act_25': 'text', 'act_26': 'text', 'act_27': 'text', 'act_28': 'text', 'act_29': 'text', 'act_30': 'text', 'act_31': 'text', 'act_32': 'text', 'act_33': 'text', 'act_34': 'text', 'act_35': 'text', 'act_36': 'text', 'act_37': 'text', 'act_38': 'text', 'act_39': 'text', 'act_40': 'text', 'act_41': 'text', 'act_42': 'text', 'act_43': 'text', 'act_44': 'text'}, 'plannedTimepoints': {}, 'encounters': {}, 'epochs': {}, 'activityGroups': {}}, cells={'activity_t_1|encounter_v_1': 'both', 'activity_t_2|encounter_v_1': 'both', 'activity_t_3|encounter_v_1': 'both', 'activity_t_4|encounter_v_1': 'both', 'activity_t_5|encounter_v_1': 'both', 'activity_t_6|encounter_v_1': 'both', 'activity_t_6|encounter_v_2': 'both', 'activity_t_6|encounter_v_7': 'both', 'activity_t_6|encounter_v_8': 'both', 'activity_t_7|encounter_v_1': 'both', 'activity_t_7|encounter_v_7': 'both', 'activity_t_7|encounter_v_8': 'both', 'activity_t_8|encounter_v_1': 'both', 'activity_t_8|encounter_v_2': 'both', 'activity_t_8|encounter_v_4': 'both', 'activity_t_8|encounter_v_5': 'both', 'activity_t_8|encounter_v_7': 'both', 'activity_t_9|encounter_v_1': 'both', 'activity_t_9|encounter_v_2': 'both', 'activity_t_9|encounter_v_7': 'both', 'activity_t_9|encounter_v_8': 'both', 'activity_t_10|encounter_v_2': 'both', 'activity_t_11|encounter_v_1': 'both', 'activity_t_11|encounter_v_2': 'both', 'activity_t_11|encounter_v_4': 'both', 'activity_t_11|encounter_v_5': 'both', 'activity_t_11|encounter_v_7': 'both', 'activity_t_12|encounter_v_1': 'both', 'activity_t_12|encounter_v_2': 'both', 'activity_t_12|encounter_v_3': 'both', 'activity_t_12|encounter_v_4': 'both', 'activity_t_12|encounter_v_5': 'both', 'activity_t_12|encounter_v_6': 'both', 'activity_t_12|encounter_v_7': 'both', 'activity_t_12|encounter_v_8': 'both', 'activity_t_13|encounter_v_1': 'both', 'activity_t_13|encounter_v_2': 'both', 'activity_t_13|encounter_v_4': 'both', 'activity_t_13|encounter_v_5': 'both', 'activity_t_13|encounter_v_7': 'both', 'activity_t_13|encounter_v_8': 'both', 'activity_t_14|encounter_v_1': 'both', 'activity_t_14|encounter_v_2': 'both', 'activity_t_14|encounter_v_7': 'both', 'activity_t_15|encounter_v_1': 'both', 'activity_t_16|encounter_v_2': 'both', 'activity_t_16|encounter_v_3': 'both', 'activity_t_16|encounter_v_4': 'both', 'activity_t_16|encounter_v_5': 'both', 'activity_t_16|encounter_v_6': 'both', 'activity_t_17|encounter_v_2': 'both', 'activity_t_17|encounter_v_3': 'both', 'activity_t_17|encounter_v_4': 'both', 'activity_t_18|encounter_v_2': 'both', 'activity_t_18|encounter_v_3': 'both', 'activity_t_22|encounter_v_8': 'both', 'activity_t_22|encounter_v_9': 'both', 'activity_t_23|encounter_v_2': 'both', 'activity_t_23|encounter_v_7': 'both', 'activity_t_23|encounter_v_8': 'both', 'activity_t_24|encounter_v_1': 'both', 'activity_t_24|encounter_v_2': 'both', 'activity_t_24|encounter_v_7': 'both', 'activity_t_24|encounter_v_8': 'both', 'activity_t_25|encounter_v_1': 'both', 'activity_t_25|encounter_v_2': 'both', 'activity_t_25|encounter_v_7': 'both', 'activity_t_25|encounter_v_8': 'both', 'activity_t_26|encounter_v_1': 'both', 'activity_t_27|encounter_v_1': 'both', 'activity_t_28|encounter_v_1': 'both', 'activity_t_29|encounter_v_1': 'both', 'activity_t_30|encounter_v_1': 'both', 'activity_t_30|encounter_v_2': 'both', 'activity_t_30|encounter_v_4': 'both', 'activity_t_30|encounter_v_5': 'both', 'activity_t_30|encounter_v_7': 'both', 'activity_t_31|encounter_v_1': 'both', 'activity_t_31|encounter_v_2': 'both', 'activity_t_31|encounter_v_4': 'both', 'activity_t_31|encounter_v_5': 'both', 'activity_t_32|encounter_v_1': 'both', 'activity_t_32|encounter_v_2': 'both', 'activity_t_32|encounter_v_3': 'both', 'activity_t_32|encounter_v_4': 'both', 'activity_t_32|encounter_v_5': 'both', 'activity_t_32|encounter_v_6': 'both', 'activity_t_32|encounter_v_7': 'both', 'activity_t_32|encounter_v_8': 'both', 'activity_t_33|encounter_v_1': 'both', 'activity_t_33|encounter_v_2': 'both', 'activity_t_33|encounter_v_7': 'both', 'activity_t_33|encounter_v_8': 'both', 'activity_t_34|encounter_v_1': 'both', 'activity_t_35|encounter_v_1': 'both', 'activity_t_36|encounter_v_1': 'both', 'activity_t_37|encounter_v_1': 'both', 'activity_t_38|encounter_v_1': 'both', 'activity_t_39|encounter_v_1': 'both', 'activity_t_39|encounter_v_2': 'both', 'activity_t_39|encounter_v_3': 'both', 'activity_t_39|encounter_v_4': 'both', 'activity_t_39|encounter_v_5': 'both', 'activity_t_39|encounter_v_7': 'both', 'activity_t_40|encounter_v_2': 'both', 'activity_t_40|encounter_v_3': 'both', 'activity_t_40|encounter_v_4': 'both', 'activity_t_40|encounter_v_5': 'both', 'activity_t_40|encounter_v_6': 'both', 'activity_t_41|encounter_v_1': 'both', 'activity_t_41|encounter_v_2': 'both', 'activity_t_42|encounter_v_2': 'both', 'activity_t_42|encounter_v_3': 'both', 'activity_t_42|encounter_v_4': 'both', 'activity_t_42|encounter_v_5': 'both', 'activity_t_42|encounter_v_6': 'both', 'activity_t_43|encounter_v_2': 'both', 'activity_t_44|encounter_v_2': 'both'}, cellFootnotes={'activity_t_23|encounter_v_7': ['*'], 'activity_t_23|encounter_v_8': ['*'], 'activity_t_24|encounter_v_7': ['*'], 'activity_t_24|encounter_v_8': ['*'], 'activity_t_25|encounter_v_7': ['*'], 'activity_t_25|encounter_v_8': ['*'], 'activity_t_34|encounter_v_1': ['*']}, metadata={'model': 'gemini-2.5-flash', 'extraction_type': 'text'}), error=None)"
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "activity_t_1",
+      "entity_type": "activity",
+      "data": {
+        "name": "Informed consent",
+        "source": "text",
+        "raw": {
+          "id": "act_1",
+          "name": "Informed consent",
+          "label": null,
+          "description": "See Section 10.1.3",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "activity_t_2",
+      "entity_type": "activity",
+      "data": {
+        "name": "Eligibility criteria",
+        "source": "text",
+        "raw": {
+          "id": "act_2",
+          "name": "Eligibility criteria",
+          "label": null,
+          "description": "See Section 5.1 and Section 5.2",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "activity_t_3",
+      "entity_type": "activity",
+      "data": {
+        "name": "Register with IRT",
+        "source": "text",
+        "raw": {
+          "id": "act_3",
+          "name": "Register with IRT",
+          "label": null,
+          "description": "See Section 6.3.1",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "activity_t_4",
+      "entity_type": "activity",
+      "data": {
+        "name": "Demography/medical history",
+        "source": "text",
+        "raw": {
+          "id": "act_4",
+          "name": "Demography/medical history",
+          "label": null,
+          "description": "See Section 8.2.1",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "activity_t_5",
+      "entity_type": "activity",
+      "data": {
+        "name": "Disease characteristics/ treatment history",
+        "source": "text",
+        "raw": {
+          "id": "act_5",
+          "name": "Disease characteristics/ treatment history",
+          "label": null,
+          "description": "See Section 8.1.5",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "activity_t_6",
+      "entity_type": "activity",
+      "data": {
+        "name": "PROs",
+        "source": "text",
+        "raw": {
+          "id": "act_6",
+          "name": "PROs",
+          "label": null,
+          "description": "No PGI-C at screening or C1D1. After Year 1, the PROs will be administered once every 3 cycles (C12D1, C15D1, etc). The PGIC will not be administered after Year 1. See Section 8.1.4",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "activity_t_7",
+      "entity_type": "activity",
+      "data": {
+        "name": "Healthcare resource use",
+        "source": "text",
+        "raw": {
+          "id": "act_7",
+          "name": "Healthcare resource use",
+          "label": null,
+          "description": "See Section 8.10",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "activity_t_8",
+      "entity_type": "activity",
+      "data": {
+        "name": "Physical exam",
+        "source": "text",
+        "raw": {
+          "id": "act_8",
+          "name": "Physical exam",
+          "label": null,
+          "description": "See Section 8.2.2",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "activity_t_9",
+      "entity_type": "activity",
+      "data": {
+        "name": "Neurologic exam",
+        "source": "text",
+        "raw": {
+          "id": "act_9",
+          "name": "Neurologic exam",
+          "label": null,
+          "description": "See Section 8.2.2",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "activity_t_10",
+      "entity_type": "activity",
+      "data": {
+        "name": "ICE score",
+        "source": "text",
+        "raw": {
+          "id": "act_10",
+          "name": "ICE score",
+          "label": null,
+          "description": "See Section 8.2.2",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "activity_t_11",
+      "entity_type": "activity",
+      "data": {
+        "name": "Height/weight",
+        "source": "text",
+        "raw": {
+          "id": "act_11",
+          "name": "Height/weight",
+          "label": null,
+          "description": "See Section 8.2.2",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "activity_t_12",
+      "entity_type": "activity",
+      "data": {
+        "name": "Vital signs (temperature, HR, BP and O2 saturation)",
+        "source": "text",
+        "raw": {
+          "id": "act_12",
+          "name": "Vital signs (temperature, HR, BP and O2 saturation)",
+          "label": null,
+          "description": "Pre-dose vital signs collected on C1D1, C1D4, C1D8, C1D15, and C1D22 should be reported on the CRF. Monitored at least every 4 hours (±15 during the first 48 hours after first dose of study intervention (C1D1) and during first 24 hours after second dose (C1D4). See Section 8.2.3",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "activity_t_13",
+      "entity_type": "activity",
+      "data": {
+        "name": "ECOG PS",
+        "source": "text",
+        "raw": {
+          "id": "act_13",
+          "name": "ECOG PS",
+          "label": null,
+          "description": "See Section 8.2.8",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "activity_t_14",
+      "entity_type": "activity",
+      "data": {
+        "name": "Triplicate 12-Lead ECG",
+        "source": "text",
+        "raw": {
+          "id": "act_14",
+          "name": "Triplicate 12-Lead ECG",
+          "label": null,
+          "description": "Perform ECG prior to PK sample collection and prior to elranatamab administration (and premedication). ECG assessments should be skipped if CRS symptoms are ongoing. See Section 8.2.4",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "activity_t_15",
+      "entity_type": "activity",
+      "data": {
+        "name": "ECHO/MUGA",
+        "source": "text",
+        "raw": {
+          "id": "act_15",
+          "name": "ECHO/MUGA",
+          "label": null,
+          "description": "See Section 8.2.5",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "activity_t_16",
+      "entity_type": "activity",
+      "data": {
+        "name": "Elranatamab (PF-06863135) administration",
+        "source": "text",
+        "raw": {
+          "id": "act_16",
+          "name": "Elranatamab (PF-06863135) administration",
+          "label": null,
+          "description": "Two step-up priming doses of 12 mg on C1D1 then 32 mg on C1D4, followed by 76 mg starting on C1D8 QW. Minimum of 2 days should be maintained between the C1D1 and C1D4 doses, minimum of 3 days between C1D4 dose and the first full dose (C1D8); a minimum of 6 days should be maintained between doses thereafter. If participant has received QW dosing for at least 6 cycles and has achieved a PR or better persisting for ≥2 months, the dose interval will be changed from QW to Q2W (eg, beginning C7D1). See Section 6 (including Section 6.6 dose modifications).",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "activity_t_17",
+      "entity_type": "activity",
+      "data": {
+        "name": "Premedication for CRS",
+        "source": "text",
+        "raw": {
+          "id": "act_17",
+          "name": "Premedication for CRS",
+          "label": null,
+          "description": "Must be administered 60 minutes (±15 minutes) prior to elranatamab dose, See Section 6.5.1.",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "activity_t_18",
+      "entity_type": "activity",
+      "data": {
+        "name": "Hospitalization",
+        "source": "text",
+        "raw": {
+          "id": "act_18",
+          "name": "Hospitalization",
+          "label": null,
+          "description": "Hospitalization required for at least 2 days (~48 hr) for C1D1 and 1 day (~24 hr) for C1D4. Hospitalization from C1D1 to C1D5 may be considered. See Section 6.1.",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "activity_t_19",
+      "entity_type": "activity",
+      "data": {
+        "name": "AE monitoring",
+        "source": "text",
+        "raw": {
+          "id": "act_19",
+          "name": "AE monitoring",
+          "label": null,
+          "description": "Assess Continuously See Section 8.3",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "activity_t_20",
+      "entity_type": "activity",
+      "data": {
+        "name": "Concomitant therapy",
+        "source": "text",
+        "raw": {
+          "id": "act_20",
+          "name": "Concomitant therapy",
+          "label": null,
+          "description": "Assess Continuously See Section 6.5",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "activity_t_21",
+      "entity_type": "activity",
+      "data": {
+        "name": "Subsequent anticancer therapies/date of progression",
+        "source": "text",
+        "raw": {
+          "id": "act_21",
+          "name": "Subsequent anticancer therapies/date of progression",
+          "label": null,
+          "description": "Assess continuously See Section 7.1",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "activity_t_22",
+      "entity_type": "activity",
+      "data": {
+        "name": "Survival status",
+        "source": "text",
+        "raw": {
+          "id": "act_22",
+          "name": "Survival status",
+          "label": null,
+          "description": "See Section 7.1 May be collected by telephone.",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "activity_t_23",
+      "entity_type": "activity",
+      "data": {
+        "name": "Disease response assessment (per IMWG criteria)",
+        "source": "text",
+        "raw": {
+          "id": "act_23",
+          "name": "Disease response assessment (per IMWG criteria)",
+          "label": null,
+          "description": "To be conducted on a 28-day (±1 wk) interval whether dose given or not (ie, the 28-day interval (±1 wk) between assessments should be maintained regardless of dose delays/interruptions). Participants with measurable disease by SPEP or UPEP cannot have response assessed by serum FLC. Except for sCR, serum FLC levels should only be used for response assessment when both the serum and urine M component levels are deemed not measurable or uninterpretable. Serum FLC cannot replace UPEP/UIFE in any situation where urine M component is measurable at baseline. *For participants who discontinue study intervention without confirmed PD: perform at EOT visit, then at least Q4W (±1 wk) until confirmed PD, withdrawal of consent, initiation of subsequent anticancer therapy, participant lost to follow-up, death or defined end of study. See Section 8.1 for complete details (including requirements for repeat testing for confirmation of PD).",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "activity_t_24",
+      "entity_type": "activity",
+      "data": {
+        "name": "SPEP, SIFE, serum FLC",
+        "source": "text",
+        "raw": {
+          "id": "act_24",
+          "name": "SPEP, SIFE, serum FLC",
+          "label": null,
+          "description": "Screening and C1D1 (if not done within 72 hours prior to dosing). Then, to be conducted on a 28-day (±1 wk) interval whether dose given or not (ie, the 28-day interval (±1 wk) between assessments should be maintained regardless of dose delays/interruptions). *For participants who discontinue study intervention without confirmed PD: perform at EOT visit, then at least Q4W (±1 wk) until confirmed PD, withdrawal of consent, initiation of subsequent anticancer therapy, participant lost to follow-up, death or defined end of study. See Section 8.1.1 for complete details (including requirements for repeat testing for confirmation of PD).",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "activity_t_25",
+      "entity_type": "activity",
+      "data": {
+        "name": "UPEP, UIFE (24-hour urine collection required)",
+        "source": "text",
+        "raw": {
+          "id": "act_25",
+          "name": "UPEP, UIFE (24-hour urine collection required)",
+          "label": null,
+          "description": "Screening and C1D1 (if not done within 72 hours prior to dosing). Then, to be conducted on a 28-day (±1 wk) interval whether dose given or not (ie, the 28-day interval (±1 wk) between assessments should be maintained regardless of dose delays/interruptions). *For participants who discontinue study intervention without confirmed PD: perform at EOT visit, then at least Q4W (±1 wk) until confirmed PD, withdrawal of consent, initiation of subsequent anticancer therapy, participant lost to follow-up, death or defined end of study. For participants without measurable disease in the urine at baseline, UPEP/UIFE is required (minimum) at suspected VGPR or CR/sCR, or at suspected PD. If an evaluable 24-hour urine collection is missed, another attempt for collection should be made within 7 days of the missed assessment. See Section 8.1.1 for complete details (including requirements for repeat testing for confirmation of PD).",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "activity_t_26",
+      "entity_type": "activity",
+      "data": {
+        "name": "Imaging (PET/CT, CT or MRI)",
+        "source": "text",
+        "raw": {
+          "id": "act_26",
+          "name": "Imaging (PET/CT, CT or MRI)",
+          "label": null,
+          "description": "Time points for disease assessments described in notes At screening, at suspected CR/sCR (if not performed within the prior 6 weeks), at suspected PD from EMD, and annually if not done within past 12 months. In addition, for participants with EMD at screening, every 12 wks (± 1 wk), and also at suspected MR or PR. Once all EMD has resolved/disappeared, imaging can be conducted every 24 weeks (or earlier if clinically indicated) and at suspected PD. For participants with only skin involvement, skin lesions should be measured with a ruler every 4 wks (±1 wk). Perform until confirmed PD, WOC, initiation of subsequent anticancer therapy, participant lost to FU, death, or defined EOS. See Section 8.1.3",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "activity_t_27",
+      "entity_type": "activity",
+      "data": {
+        "name": "BMA",
+        "source": "text",
+        "raw": {
+          "id": "act_27",
+          "name": "BMA",
+          "label": null,
+          "description": "Time points for disease assessments described in notes At screening, suspected CR and then after 6 months, 12 months, and yearly (± 1 month) after achieving CR (provided CR is maintained clinically) until WOC, initiation of subsequent anticancer therapy, participant lost to FU, death, or defined EOS. Optional (investigator discretion) at suspected PD. If all criteria for CR are met except percent plasma cells in BM, then additional BMA should be performed every 3 months until CR is achieved, as long as other CR criteria are maintained. See Section 8.1.2",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "activity_t_28",
+      "entity_type": "activity",
+      "data": {
+        "name": "BMA for cytogenetics (FISH/karyotyping)",
+        "source": "text",
+        "raw": {
+          "id": "act_28",
+          "name": "BMA for cytogenetics (FISH/karyotyping)",
+          "label": null,
+          "description": "See Section 8.1.2",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "activity_t_29",
+      "entity_type": "activity",
+      "data": {
+        "name": "BMB/BMA",
+        "source": "text",
+        "raw": {
+          "id": "act_29",
+          "name": "BMB/BMA",
+          "label": null,
+          "description": "Time points for disease assessments described in notes At screening and to confirm sCR. Either BMA or BMB can be used; however, the same method should be used for a participant throughout the study. Optional (investigator discretion) at suspected PD. See Section 8.1.2",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "activity_t_30",
+      "entity_type": "activity",
+      "data": {
+        "name": "Contraception check",
+        "source": "text",
+        "raw": {
+          "id": "act_30",
+          "name": "Contraception check",
+          "label": null,
+          "description": "Only required for WOCBP. Through 5 months post last dose of study intervention. See Section 5.3.1",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "activity_t_31",
+      "entity_type": "activity",
+      "data": {
+        "name": "Pregnancy test",
+        "source": "text",
+        "raw": {
+          "id": "act_31",
+          "name": "Pregnancy test",
+          "label": null,
+          "description": "Only required in WOCBP. Also to be done whenever 1 menstrual cycle is missed during the active treatment period and up to 90 days post last dose of study intervention (or when potential pregnancy is otherwise suspected). Serum required at screening. See Section 8.2.7 and Table 8.",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "activity_t_32",
+      "entity_type": "activity",
+      "data": {
+        "name": "Hematology/chemistry",
+        "source": "text",
+        "raw": {
+          "id": "act_32",
+          "name": "Hematology/chemistry",
+          "label": null,
+          "description": "See Section 8.2.6 and Table 8. For Cycle 1 Day 4, hematology only.",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "activity_t_33",
+      "entity_type": "activity",
+      "data": {
+        "name": "Serum quantitative immunoglobulins (IgG, IgM, IgA, IgD, IgE)",
+        "source": "text",
+        "raw": {
+          "id": "act_33",
+          "name": "Serum quantitative immunoglobulins (IgG, IgM, IgA, IgD, IgE)",
+          "label": null,
+          "description": "See Section 8.2.6 and Table 8.",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "activity_t_34",
+      "entity_type": "activity",
+      "data": {
+        "name": "CMV testing (quantitative PCR)",
+        "source": "text",
+        "raw": {
+          "id": "act_34",
+          "name": "CMV testing (quantitative PCR)",
+          "label": null,
+          "description": "*Every 1 to 3 months depending on risk factors See Section 8.2.6, Table 8, and Appendix 14.",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "activity_t_35",
+      "entity_type": "activity",
+      "data": {
+        "name": "PT/INR",
+        "source": "text",
+        "raw": {
+          "id": "act_35",
+          "name": "PT/INR",
+          "label": null,
+          "description": "See Section 8.2.6 and Table 8",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "activity_t_36",
+      "entity_type": "activity",
+      "data": {
+        "name": "BMA for MRD",
+        "source": "text",
+        "raw": {
+          "id": "act_36",
+          "name": "BMA for MRD",
+          "label": null,
+          "description": "Samples to be collected each time there is a BMA assessment At screening a freshy collected frozen BMA sample is preferred. If this sample is not available, an alternative sample collected at screening () can be submitted. Sample types permitted include A) Cell pellet/suspension, or B) Frozen BMMC dry cell pellet, or C) BMA smear slides and/or touch prep slides, or D) Re-cut slides from BM clot tissue block, or E) Re-cut scrolls from a BM clot tissue block, or F) gDNA isolated from BMA. A freshly collected frozen BMA sample is preferred for all on-treatment samples. Alternative on-treatment samples are A) Cell pellet/suspension from BMA, or B) frozen BMMC dry cell pellet, or C) gDNA isolated from BMA. See Section 8.8.1",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "activity_t_37",
+      "entity_type": "activity",
+      "data": {
+        "name": "BMA for molecular profiling",
+        "source": "text",
+        "raw": {
+          "id": "act_37",
+          "name": "BMA for molecular profiling",
+          "label": null,
+          "description": "Samples to be collected each time there is a BMA assessment See Section 8.8.2",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "activity_t_38",
+      "entity_type": "activity",
+      "data": {
+        "name": "BMB for BCMA levels and/or immune cell biomarkers",
+        "source": "text",
+        "raw": {
+          "id": "act_38",
+          "name": "BMB for BCMA levels and/or immune cell biomarkers",
+          "label": null,
+          "description": "Samples to be collected each time there is a BMB assessment Collection of this sample is optional; however, if a participant has a BMB collected for disease assessment,collection of this sample for biomarker analysis is encouraged. See Section 8.8.3",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "activity_t_39",
+      "entity_type": "activity",
+      "data": {
+        "name": "Blood sample for sBCMA levels",
+        "source": "text",
+        "raw": {
+          "id": "act_39",
+          "name": "Blood sample for sBCMA levels",
+          "label": null,
+          "description": "Predose, 6 and 24 h postdose on C1D1. Predose and 24 h postdose on C1D4. Predose, 6 h postdose on C1D8. Collect predose only at C1D15, C2D1, C2D15, C3D1, then Day 1 of every third cycle starting Cycle 7 (ie, C7D1, C10D1, C13D1, etc). Additional sample to be collected at EOT and time of PD. See Section 8.8.4",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "activity_t_40",
+      "entity_type": "activity",
+      "data": {
+        "name": "Blood sample for circulating proteins and metabolite analysis",
+        "source": "text",
+        "raw": {
+          "id": "act_40",
+          "name": "Blood sample for circulating proteins and metabolite analysis",
+          "label": null,
+          "description": "Collect predose and 24h postdose on C1D1. Collect predose and 24 hr post dose on C1D4. Collect predose at all other times. If CRS is suspected, additional blood samples should also be collected if not already scheduled. See Section 8.8.5",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "activity_t_41",
+      "entity_type": "activity",
+      "data": {
+        "name": "Blood sample for TCR sequencing",
+        "source": "text",
+        "raw": {
+          "id": "act_41",
+          "name": "Blood sample for TCR sequencing",
+          "label": null,
+          "description": "Collect predose. See Section 8.8.6",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "activity_t_42",
+      "entity_type": "activity",
+      "data": {
+        "name": "Blood sample for immune cell profiling",
+        "source": "text",
+        "raw": {
+          "id": "act_42",
+          "name": "Blood sample for immune cell profiling",
+          "label": null,
+          "description": "Collect predose. See Section 8.8.7",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "activity_t_43",
+      "entity_type": "activity",
+      "data": {
+        "name": "Pfizer Prep D1 banked biospecimen(s)",
+        "source": "text",
+        "raw": {
+          "id": "act_43",
+          "name": "Pfizer Prep D1 banked biospecimen(s)",
+          "label": null,
+          "description": "Collect predose. If not collected on the designated collection day, collect at the next available time point when biospecimens are being collected in conjunction with a participant visit. See Section 8.7.2",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "activity_t_44",
+      "entity_type": "activity",
+      "data": {
+        "name": "Saliva sample for germline comparator",
+        "source": "text",
+        "raw": {
+          "id": "act_44",
+          "name": "Saliva sample for germline comparator",
+          "label": null,
+          "description": "Collect predose. See Section 8.8.8",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "aa236ef6_5855_41d1_af64_07c9f1c55dd5",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_1",
+        "encounterId": "encounter_v_1",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "dd5124d4_911a_4dd6_a03d_77d350e46b17",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_2",
+        "encounterId": "encounter_v_1",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "93106aa1_6f9a_4f18_89be_7054a8425ed9",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_3",
+        "encounterId": "encounter_v_1",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "6f9e9bc2_7796_42f1_ba82_54cb2ec8797e",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_4",
+        "encounterId": "encounter_v_1",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "0dec77e4_a15a_447f_8ce2_de8a1d8c5d4c",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_5",
+        "encounterId": "encounter_v_1",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "f95a7092_8c44_41dc_b254_bd50b8fc314e",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_6",
+        "encounterId": "encounter_v_1",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "8d624526_816a_49a6_b764_2f817359701d",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_6",
+        "encounterId": "encounter_v_2",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "002dbb09_63bb_468a_b721_953d34f99425",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_6",
+        "encounterId": "encounter_v_7",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "31ca08d7_6c9e_47a6_a8f0_a2616ea7749b",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_6",
+        "encounterId": "encounter_v_8",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "07a2d1bd_897c_44e4_9adc_92ea0d0ea2bb",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_7",
+        "encounterId": "encounter_v_1",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "aefb46e4_076f_45d5_809a_a2a6214c971f",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_7",
+        "encounterId": "encounter_v_7",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "22a4de9c_d717_4506_bdfd_d6d358174864",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_7",
+        "encounterId": "encounter_v_8",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "c3a9531a_e13e_4fd9_b62a_5a0e731056a9",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_8",
+        "encounterId": "encounter_v_1",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "cde88cb7_e9a8_4d01_81a4_1dc68f133151",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_8",
+        "encounterId": "encounter_v_2",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "3f326344_c9fe_48af_9775_bbf989a36f8d",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_8",
+        "encounterId": "encounter_v_4",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "539d91bf_a5e9_4490_bf36_e2290f7e1610",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_8",
+        "encounterId": "encounter_v_5",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "b9b1e59b_ec1a_472e_baa0_b7128ea38c4c",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_8",
+        "encounterId": "encounter_v_7",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "fcff45aa_93a4_4e9c_a7de_5f6f5a5476e2",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_9",
+        "encounterId": "encounter_v_1",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "509682db_edd0_47be_82ba_5238ac8393a4",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_9",
+        "encounterId": "encounter_v_2",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "6ff013a3_a7da_43d1_8d68_5a4a0c915ed9",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_9",
+        "encounterId": "encounter_v_7",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "a775faa9_bece_44ca_8d94_1bb36825bbdd",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_9",
+        "encounterId": "encounter_v_8",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "de483223_c35d_4b83_85a1_7fe370b7e398",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_10",
+        "encounterId": "encounter_v_2",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "1d1bc274_f631_4954_a127_5bc9a444b82b",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_11",
+        "encounterId": "encounter_v_1",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "a06177ec_9dc3_45cc_875e_d609b80091da",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_11",
+        "encounterId": "encounter_v_2",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "60a2567f_330c_412c_b938_5f7e419c60b8",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_11",
+        "encounterId": "encounter_v_4",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "0f6480ec_3bf9_48a3_8ad1_83f0de9960b0",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_11",
+        "encounterId": "encounter_v_5",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "741c6a5d_df4d_4cb2_8c51_fcd2d07515cc",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_11",
+        "encounterId": "encounter_v_7",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "77371c79_0563_492d_9fd9_1e622b99575a",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_12",
+        "encounterId": "encounter_v_1",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "37cb6f4c_70fe_4a4a_b994_72d92ec73a8d",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_12",
+        "encounterId": "encounter_v_2",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "91d7cfc8_1145_4dcb_bd07_ec916710139c",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_12",
+        "encounterId": "encounter_v_3",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "0af298bf_802c_43b9_87e3_70ed479eb99b",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_12",
+        "encounterId": "encounter_v_4",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "5aba81a8_5a86_4e43_827a_0ca304ea2285",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_12",
+        "encounterId": "encounter_v_5",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "5dac8ae8_b4ab_4ca8_aee1_6c5079391120",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_12",
+        "encounterId": "encounter_v_6",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "a6c3b65c_7d88_47be_bada_f747101360c2",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_12",
+        "encounterId": "encounter_v_7",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "9761adea_671f_4a29_8cf4_103cd78668d7",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_12",
+        "encounterId": "encounter_v_8",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "ae6e0fe9_f76f_4f47_ad20_a2f338d8e993",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_13",
+        "encounterId": "encounter_v_1",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "6bafecfa_0539_48ab_8ebd_e4e0647b1cf1",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_13",
+        "encounterId": "encounter_v_2",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "11f0971e_f4fa_4b9b_ab6c_f4f46dd2b009",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_13",
+        "encounterId": "encounter_v_4",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "cb16a5df_7099_4381_a048_bf69d5fe3564",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_13",
+        "encounterId": "encounter_v_5",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "76aab395_94e6_4b41_8814_8c228b5bb66c",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_13",
+        "encounterId": "encounter_v_7",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "97c827ea_f623_4597_a03f_783e7cdb0036",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_13",
+        "encounterId": "encounter_v_8",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "0f9b89f3_90aa_4941_ab83_b930c41413a8",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_14",
+        "encounterId": "encounter_v_1",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "6c1de6bf_f65b_4460_b2b1_366ae2afdae0",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_14",
+        "encounterId": "encounter_v_2",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "46a04b81_1e4d_4cad_ba8e_51b391102712",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_14",
+        "encounterId": "encounter_v_7",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "b6e26499_b50c_4ef7_a363_9978a0f629df",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_15",
+        "encounterId": "encounter_v_1",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "20718b23_5b65_48a2_97cc_1208bd80b1b0",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_16",
+        "encounterId": "encounter_v_2",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "d8470b57_430a_4d80_b531_9df589411476",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_16",
+        "encounterId": "encounter_v_3",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "7c22b680_464e_46e7_81e4_e04c8ca3f376",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_16",
+        "encounterId": "encounter_v_4",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "5baea1de_b1eb_4609_9650_2e3792decb2e",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_16",
+        "encounterId": "encounter_v_5",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "c7e9fece_7e88_46d8_8683_f98448231a4a",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_16",
+        "encounterId": "encounter_v_6",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "a6d7f0bf_5ad5_4196_ab62_9c893a46cc19",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_17",
+        "encounterId": "encounter_v_2",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "1ce74d9d_2a3b_466b_9d57_94ba377a2d33",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_17",
+        "encounterId": "encounter_v_3",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "cab02057_fdd6_418a_864f_cf27c5d8a7f8",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_17",
+        "encounterId": "encounter_v_4",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "2ca1bc2b_8f09_4ba8_85ef_b54730eedcbc",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_18",
+        "encounterId": "encounter_v_2",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "36a9a921_ec60_41b9_963d_842df8ef7cb1",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_18",
+        "encounterId": "encounter_v_3",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "719303d8_7349_498b_9c52_f7bb5b32de16",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_22",
+        "encounterId": "encounter_v_8",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "1fffa068_bc0c_4d29_bf4e_436e4809a7c7",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_22",
+        "encounterId": "encounter_v_9",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "4e733a2e_c93d_4973_aca8_bf25aa440bdc",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_23",
+        "encounterId": "encounter_v_2",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "593c6e72_5af0_42ed_85bb_7e957bd545e3",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_23",
+        "encounterId": "encounter_v_7",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": [
+          "*"
+        ]
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "d8f66a14_46eb_481e_9311_a9a6bf68c0f0",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_23",
+        "encounterId": "encounter_v_8",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": [
+          "*"
+        ]
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "9a9f7128_58d3_448b_82c2_0b777ee6c7c1",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_24",
+        "encounterId": "encounter_v_1",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "6764ef5b_9c75_4d68_b666_eba260ff6795",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_24",
+        "encounterId": "encounter_v_2",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "88c3b03b_8d10_4dbe_9556_82b54edfc08e",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_24",
+        "encounterId": "encounter_v_7",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": [
+          "*"
+        ]
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "ab5c31e3_12cd_4db9_a5f9_0f7a9a901a1a",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_24",
+        "encounterId": "encounter_v_8",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": [
+          "*"
+        ]
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "e52f420c_c4f5_4ab6_923f_1b96757a60a4",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_25",
+        "encounterId": "encounter_v_1",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "72ead2cf_3bca_407f_92b1_14182f034b31",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_25",
+        "encounterId": "encounter_v_2",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "369e7b0e_6a79_4224_a81a_c4112430ea60",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_25",
+        "encounterId": "encounter_v_7",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": [
+          "*"
+        ]
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "9dd61bba_7f44_4f17_8f25_8147aa1dd63d",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_25",
+        "encounterId": "encounter_v_8",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": [
+          "*"
+        ]
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "04c840da_e325_4964_a863_c249fe28d181",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_26",
+        "encounterId": "encounter_v_1",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "26499b25_5d8e_4bed_9e6f_59226f49ed63",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_27",
+        "encounterId": "encounter_v_1",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "0d5af71d_7a19_4179_b128_2c42dc4110d7",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_28",
+        "encounterId": "encounter_v_1",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "0a7ce39a_a744_49f0_9576_d64421c9315f",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_29",
+        "encounterId": "encounter_v_1",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "4971abc2_4441_478e_b88a_efa23276f777",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_30",
+        "encounterId": "encounter_v_1",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "4c65df7b_c178_4c2e_86e1_8e3f67527a72",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_30",
+        "encounterId": "encounter_v_2",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "bda85f4d_7475_4ee2_98ec_b1959ac1177f",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_30",
+        "encounterId": "encounter_v_4",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "5ca5d86e_0298_4876_85ff_3d83fabc72b9",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_30",
+        "encounterId": "encounter_v_5",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "ba4781b4_8a45_4f9c_b360_a26ebe3947bb",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_30",
+        "encounterId": "encounter_v_7",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "01d4259f_bf02_4cf3_b367_d42bb5b6bf55",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_31",
+        "encounterId": "encounter_v_1",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "db23d2fa_4459_46f9_afd0_fca4ab943d46",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_31",
+        "encounterId": "encounter_v_2",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "66f75fe5_d695_4ed6_bdca_25473046bf38",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_31",
+        "encounterId": "encounter_v_4",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "be2b85f1_21ec_4d22_84be_683ff570ee43",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_31",
+        "encounterId": "encounter_v_5",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "68e21729_bf5a_49a6_a169_437841887ef6",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_32",
+        "encounterId": "encounter_v_1",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "7a1ab85b_64b7_49b2_87ae_4e6d4e6937e0",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_32",
+        "encounterId": "encounter_v_2",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "6a3d0a29_14f6_43e5_ab14_9fe188e3c979",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_32",
+        "encounterId": "encounter_v_3",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "ddb7db24_54a8_4f42_8366_c552cf0477f6",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_32",
+        "encounterId": "encounter_v_4",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "1bf0df30_061d_43f8_9515_6fe19cb89b12",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_32",
+        "encounterId": "encounter_v_5",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "65abc00f_d2dd_4037_a0b2_0c54b33799fe",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_32",
+        "encounterId": "encounter_v_6",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "ae33cc15_f6cd_4290_84be_c29363803833",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_32",
+        "encounterId": "encounter_v_7",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "783a52c0_9c50_4c65_9793_f11988f89dd5",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_32",
+        "encounterId": "encounter_v_8",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "b1f3d476_8ec4_407f_a29e_69b5f6e6ceb8",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_33",
+        "encounterId": "encounter_v_1",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "29206c4c_a265_4eb7_8ed2_9f988c4ef645",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_33",
+        "encounterId": "encounter_v_2",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "81096843_8a1a_444e_877a_5402436bebce",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_33",
+        "encounterId": "encounter_v_7",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "c33a8b11_3a09_4f7e_8290_685efa0f6910",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_33",
+        "encounterId": "encounter_v_8",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "15750381_de1f_47d3_8d02_7cd1dd4e405a",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_34",
+        "encounterId": "encounter_v_1",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": [
+          "*"
+        ]
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "8eecb317_a78a_4046_8a1c_762889a59493",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_35",
+        "encounterId": "encounter_v_1",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "2f8e77fe_e211_4e5b_ae9f_5e23237a1aab",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_36",
+        "encounterId": "encounter_v_1",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "caa34c4c_58f4_42c1_b91d_9611027cff9e",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_37",
+        "encounterId": "encounter_v_1",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "ffc22ce6_4868_40ce_9fcb_a032af0321ba",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_38",
+        "encounterId": "encounter_v_1",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "057d0aaf_0169_4d19_94b4_ed76823402ca",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_39",
+        "encounterId": "encounter_v_1",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "19bc1273_82c5_4588_bb32_688102269654",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_39",
+        "encounterId": "encounter_v_2",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "f486cf37_21ff_48b3_ac05_1b785f2b4035",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_39",
+        "encounterId": "encounter_v_3",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "a11997e8_c916_4a78_8e9a_a904cf8f53a7",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_39",
+        "encounterId": "encounter_v_4",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "cb13087f_9a66_4bc6_95f3_a81de926a5e2",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_39",
+        "encounterId": "encounter_v_5",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "567c0113_97a6_4098_99db_0ecda48339df",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_39",
+        "encounterId": "encounter_v_7",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "d3ce9692_4d11_4d8a_bd12_0f7dfb9c94f6",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_40",
+        "encounterId": "encounter_v_2",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "913ec738_04cd_4fce_a818_80bd5a4cffcb",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_40",
+        "encounterId": "encounter_v_3",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "6365f032_b497_46eb_b710_d22612401316",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_40",
+        "encounterId": "encounter_v_4",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "878eddd9_b9b3_4d96_a915_4fd3ab7fedf2",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_40",
+        "encounterId": "encounter_v_5",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "94e0fcfd_f581_4cfa_a22b_e498f9c407d5",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_40",
+        "encounterId": "encounter_v_6",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "683e0a88_f4cb_43bf_b27c_d8c0dbb62d85",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_41",
+        "encounterId": "encounter_v_1",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "fce6fcc9_2b1b_47ea_aed8_a6200b2c0ce3",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_41",
+        "encounterId": "encounter_v_2",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "80955e79_b0b4_4243_857d_261d732efad1",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_42",
+        "encounterId": "encounter_v_2",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "d3d1bb0a_e05e_4b13_837e_cbe53c128b29",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_42",
+        "encounterId": "encounter_v_3",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "bd845c77_3b04_47fa_86d4_3eb0d2f59b3d",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_42",
+        "encounterId": "encounter_v_4",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "9b5f692d_bed8_4756_bfc9_32bb8752dab3",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_42",
+        "encounterId": "encounter_v_5",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "bdf54f84_fff5_4bc6_80bf_579811d653f9",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_42",
+        "encounterId": "encounter_v_6",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "1b43febe_b4b9_42fb_a542_fae444f2a022",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_43",
+        "encounterId": "encounter_v_2",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "id": "042eb864_3e28_452c_b89d_325f13e86f0e",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_44",
+        "encounterId": "encounter_v_2",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    }
+  ],
+  "text_summary": {
+    "soa_pages": [
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ],
+    "activity_count": 44,
+    "scheduled_instance_count": 118
+  }
+}

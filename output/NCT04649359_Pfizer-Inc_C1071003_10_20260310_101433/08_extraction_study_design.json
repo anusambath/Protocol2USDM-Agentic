@@ -1,0 +1,429 @@
+{
+  "agent_id": "studydesign_agent",
+  "timestamp": "2026-03-10T10:19:15.584448",
+  "confidence": 0.85,
+  "entity_count": 16,
+  "entities": [
+    {
+      "id": "sd_1",
+      "entity_type": "study_design",
+      "data": {
+        "id": "sd_1",
+        "name": "Study Design",
+        "instanceType": "InterventionalStudyDesign",
+        "trialIntentTypes": [
+          {
+            "code": "Treatment",
+            "codeSystem": "USDM",
+            "decode": "Treatment"
+          }
+        ],
+        "trialType": {
+          "code": "Interventional",
+          "codeSystem": "USDM",
+          "decode": "Interventional"
+        },
+        "blindingSchema": {
+          "code": "Open Label",
+          "codeSystem": "USDM",
+          "decode": "Open Label"
+        },
+        "randomizationType": {
+          "code": "Non-Randomized",
+          "codeSystem": "USDM",
+          "decode": "Non-Randomized"
+        },
+        "armIds": [
+          "arm_1"
+        ],
+        "cohortIds": [
+          "cohort_1",
+          "cohort_2"
+        ],
+        "therapeuticAreas": [
+          "Oncology"
+        ]
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        0,
+        1,
+        9,
+        10,
+        11,
+        12,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "id": "arm_1",
+      "entity_type": "study_arm",
+      "data": {
+        "id": "arm_1",
+        "name": "Elranatamab Monotherapy",
+        "type": {
+          "code": "Experimental Arm",
+          "codeSystem": "USDM",
+          "decode": "Experimental Arm"
+        },
+        "instanceType": "StudyArm",
+        "description": "All participants receive Elranatamab via subcutaneous administration with a step-up priming regimen (12 mg on Cycle 1 Day 1, 32 mg on Cycle 1 Day 4) followed by a maintenance dose of 76 mg on Cycle 1 Day 8 and thereafter. The frequency of the 76 mg dose changes from weekly (QW) for at least 6 cycles to every two weeks (Q2W) from Cycle 7 Day 1 if response criteria are met.",
+        "extensionAttributes": [
+          {
+            "url": "x-titration",
+            "valueString": "true"
+          },
+          {
+            "url": "x-doseEpochs",
+            "valueString": "[{'dose': '12 mg', 'startDay': 1, 'endDay': 3, 'description': 'Priming dose 1 (Cycle 1 Day 1)'}, {'dose': '32 mg', 'startDay': 4, 'endDay': 7, 'description': 'Priming dose 2 (Cycle 1 Day 4)'}, {'dose': '76 mg', 'startDay': 8, 'description': 'Maintenance dose (Cycle 1 Day 8 onwards)'}]"
+          }
+        ]
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        0,
+        1,
+        9,
+        10,
+        11,
+        12,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "id": "cohort_1",
+      "entity_type": "study_cohort",
+      "data": {
+        "id": "cohort_1",
+        "name": "Cohort A",
+        "instanceType": "StudyCohort",
+        "characteristic": "Participants who have not previously received a BCMA-directed therapy"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        0,
+        1,
+        9,
+        10,
+        11,
+        12,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "id": "cohort_2",
+      "entity_type": "study_cohort",
+      "data": {
+        "id": "cohort_2",
+        "name": "Cohort B",
+        "instanceType": "StudyCohort",
+        "characteristic": "Participants who have been previously exposed to BCMA-directed therapy"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        0,
+        1,
+        9,
+        10,
+        11,
+        12,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "id": "cell_1",
+      "entity_type": "study_cell",
+      "data": {
+        "id": "cell_1",
+        "armId": "arm_1",
+        "epochId": "epoch_1",
+        "elementIds": [
+          "elem_1"
+        ],
+        "instanceType": "StudyCell"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        0,
+        1,
+        9,
+        10,
+        11,
+        12,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "id": "cell_2",
+      "entity_type": "study_cell",
+      "data": {
+        "id": "cell_2",
+        "armId": "arm_1",
+        "epochId": "epoch_2",
+        "elementIds": [
+          "elem_2"
+        ],
+        "instanceType": "StudyCell"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        0,
+        1,
+        9,
+        10,
+        11,
+        12,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "id": "cell_3",
+      "entity_type": "study_cell",
+      "data": {
+        "id": "cell_3",
+        "armId": "arm_1",
+        "epochId": "epoch_3",
+        "elementIds": [
+          "elem_3"
+        ],
+        "instanceType": "StudyCell"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        0,
+        1,
+        9,
+        10,
+        11,
+        12,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "id": "cell_4",
+      "entity_type": "study_cell",
+      "data": {
+        "id": "cell_4",
+        "armId": "arm_1",
+        "epochId": "epoch_4",
+        "elementIds": [
+          "elem_4"
+        ],
+        "instanceType": "StudyCell"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        0,
+        1,
+        9,
+        10,
+        11,
+        12,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "id": "cell_5",
+      "entity_type": "study_cell",
+      "data": {
+        "id": "cell_5",
+        "armId": "arm_1",
+        "epochId": "epoch_5",
+        "elementIds": [
+          "elem_5"
+        ],
+        "instanceType": "StudyCell"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        0,
+        1,
+        9,
+        10,
+        11,
+        12,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "id": "cell_6",
+      "entity_type": "study_cell",
+      "data": {
+        "id": "cell_6",
+        "armId": "arm_1",
+        "epochId": "epoch_6",
+        "elementIds": [
+          "elem_6"
+        ],
+        "instanceType": "StudyCell"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        0,
+        1,
+        9,
+        10,
+        11,
+        12,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "id": "elem_1",
+      "entity_type": "study_element",
+      "data": {
+        "id": "elem_1",
+        "name": "Elranatamab Monotherapy - Screening",
+        "instanceType": "StudyElement",
+        "description": "Treatment period for Elranatamab Monotherapy during Screening"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        0,
+        1,
+        9,
+        10,
+        11,
+        12,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "id": "elem_2",
+      "entity_type": "study_element",
+      "data": {
+        "id": "elem_2",
+        "name": "Elranatamab Monotherapy - Priming Period",
+        "instanceType": "StudyElement",
+        "description": "Treatment period for Elranatamab Monotherapy during Priming Period"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        0,
+        1,
+        9,
+        10,
+        11,
+        12,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "id": "elem_3",
+      "entity_type": "study_element",
+      "data": {
+        "id": "elem_3",
+        "name": "Elranatamab Monotherapy - 76 mg Treatment Period",
+        "instanceType": "StudyElement",
+        "description": "Treatment period for Elranatamab Monotherapy during 76 mg Treatment Period"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        0,
+        1,
+        9,
+        10,
+        11,
+        12,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "id": "elem_4",
+      "entity_type": "study_element",
+      "data": {
+        "id": "elem_4",
+        "name": "Elranatamab Monotherapy - End of Treatment Visit",
+        "instanceType": "StudyElement",
+        "description": "Treatment period for Elranatamab Monotherapy during End of Treatment Visit"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        0,
+        1,
+        9,
+        10,
+        11,
+        12,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "id": "elem_5",
+      "entity_type": "study_element",
+      "data": {
+        "id": "elem_5",
+        "name": "Elranatamab Monotherapy - Follow-up Visit",
+        "instanceType": "StudyElement",
+        "description": "Treatment period for Elranatamab Monotherapy during Follow-up Visit"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        0,
+        1,
+        9,
+        10,
+        11,
+        12,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "id": "elem_6",
+      "entity_type": "study_element",
+      "data": {
+        "id": "elem_6",
+        "name": "Elranatamab Monotherapy - Long-Term Follow-up",
+        "instanceType": "StudyElement",
+        "description": "Treatment period for Elranatamab Monotherapy during Long-Term Follow-up"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        0,
+        1,
+        9,
+        10,
+        11,
+        12,
+        17,
+        18,
+        19
+      ]
+    }
+  ],
+  "design_summary": {
+    "arm_count": 1,
+    "cohort_count": 2,
+    "cell_count": 6
+  }
+}

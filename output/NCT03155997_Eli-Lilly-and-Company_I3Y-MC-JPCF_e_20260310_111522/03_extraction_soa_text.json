@@ -1,0 +1,2127 @@
+{
+  "agent_id": "soa_text_agent",
+  "timestamp": "2026-03-10T11:18:59.385278",
+  "confidence": 0.75,
+  "entity_count": 80,
+  "entities": [
+    {
+      "id": "soa_text_result",
+      "entity_type": "soa_text_extraction",
+      "data": {
+        "source": "text",
+        "page_numbers": [
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
+        "result": "TextExtractionResult(activities=[Activity(id='act_1', name='Informed consent (Cohort 2 and/or main consent)', label=None, description='Main ICF may be signed up to 3 months prior to randomization and must be signed prior to any study-specific assessments are performed. Cohort 2 ICF may be signed up to 6 months prior to randomization and must be signed prior to sending tissue to the central lab for Ki-67 testing.', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_2', name='Blood pregnancy test', label=None, description='See inclusion criteria [12], Appendix 4. Women of reproductive potential only. Local regulations and/or institutional guidelines may require additional testing.', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_3', name='Physical exam (clinic visits only)', label=None, description='Height, weight, and appropriate body examination. Height at baseline only and weight until STFU. Does not need to be repeated on Day 1 if assessed \\uf0a37 days prior to randomization.', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_4', name='Vital signs (clinic visits only)', label=None, description='Blood pressure, pulse, respiratory rate, temperature. Do not need to be repeated on Day 1 if assessed \\uf0a37 days prior to randomization.', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_5', name='ECOG PS (clinic visits only)', label=None, description='See Appendix 11. Does not need to be repeated on Day 1 if assessed \\uf0a37 days prior to randomization.', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_6', name='Medical history', label=None, description='Includes alcohol and tobacco intake.', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_7', name='Concomitant medications', label=None, description='In LTFU, collection of regimen changes and associated start and stop dates for endocrine therapy, and post-discontinuation therapy.', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_8', name='ECG (local)', label=None, description='As clinically indicated Patient must be supine or near supine for approximately 5-10 minutes prior to collection and remain supine, but awake, during collection.', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_9', name='Adverse event assessment', label=None, description='See Section 9.2. Assessments will be in clinic and over the phone between clinic visits. In LTFU, all SAEs in both arms regardless of causality will be collected through Year 5. For the entire duration of LTFU, only AEs related to study treatment and/or study procedure will be collected.', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_10', name='Central hematology, chemistry, and cystatin C (clinic visits only)', label=None, description='See Appendix 3. Do not need to be repeated on Day 1 if assessed \\uf0a37 days prior to randomization (blood draw is required at Day 1 for pharmacogenetic and biomarker sample collection – see Appendix 6). Eligibility must be based on the last available screening laboratory results prior to randomization. Enrollment and treatment decisions may be based on local laboratory results, but a specimen must also be sent to central laboratory. Discrepancies between local and central laboratory results will not be considered protocol deviations.', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_11', name='PRO questionnaires', label=None, description='See Section 9.9.', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_12', name='Bilateral breast imaging (such as mammogram or MRI)', label=None, description='Prior to randomization: Patients must have bilateral breast imaging performed locally as part of routine standard of care prior to surgery or prior to randomization for the current breast cancer. This is not required for patients who have had bilateral mastectomy. Post randomization: Either at yearly intervals, as recommended per international standard guidelines, or according to local standards as part of routine medical care. Patients who have had a mastectomy should be followed per local practice. See Appendix 10 for additional guidelines for the assessment of recurrence.', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_13', name='Abdominal + pelvic imaging (such as CT, PET/CT, MRI, ultrasound)', label=None, description='Prior to randomization: Abdominal ± pelvic imaging MUST be performed prior to randomization. Abdominal ± pelvic imaging performed previously as part of routine care, any time in the process of or after diagnosing the patient with the current breast cancer diagnosis, may be used as the baseline assessment. Post randomization: Performed locally ONLY if clinically indicated per investigator’s judgment (eg, if liver function tests deteriorate significantly). If PET/CT is performed, additional imaging modalities are not required. See Appendix 10 for additional guidelines for the assessment of recurrence.', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_14', name='Chest imaging (such as PET/CT, CT, or X-ray (should include lateral and postero-anterior views))', label=None, description='Prior to randomization: Chest imaging MUST be performed prior to randomization. Chest imaging performed previously as part of routine care, any time in the process of or after diagnosing the patient with the current breast cancer diagnosis, may be used as the baseline assessment. Post randomization: Performed locally ONLY if clinically indicated per the investigator’s judgment. If PET/CT is performed, additional imaging modalities are not required. See Appendix 10 for additional guidelines for the assessment of recurrence.', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_15', name='Bone nuclear imaging (such as bone scan, PET scan or PET/CT)', label=None, description='Prior to randomization: Full body bone imaging per standard clinical practice MUST be performed prior to randomization to discard or confirm potential distant disease. Bone imaging performed previously as part of routine care, any time in the process of or after diagnosing the patient with the current breast cancer diagnosis, may be used as the baseline assessment. Post randomization: Performed locally and ONLY if clinically indicated per investigator’s judgment (for example, if patient is symptomatic for bone pain and/or if alkaline phosphatase is significantly elevated ≥3×ULN). If PET/CT is performed, additional imaging modalities are not required. See Appendix 10 for additional guidelines for the assessment of recurrence.', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_16', name='Administer abemaciclib (Arm A)', label=None, description='See Sections 7.1 and 7.7.1.1. Orally twice-daily (with minimum 6-hour separating doses) for up to 2 years or until discontinuation criteria met.', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_17', name='Administer endocrine therapy', label=None, description='See inclusion criterion [7] In STFU and LTFU, as applicable. Administered as per physician’s choice.', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_18', name='Disease recurrence assessment', label=None, description='See Section 9.1 and Appendix 10. Disease recurrence information will be collected at any time point (clinic or phone visit). Assessment for changes in symptoms and suggestive of disease recurrence.', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_19', name='Ki-67 tissue (untreated breast tissue)', label=None, description='See Section 9.8.1 and Appendix 6. As assessed by central laboratory when kit is available for both cohorts. Screening for potential Cohort 2 patients is permitted after signing the Cohort 2 ICF ((tissue should be submitted within 1 month from consent date).', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_20', name='Ki-67 and exploratory biomarker tissue (post-neoadjuvant therapy)', label=None, description='See Section 9.8.1 and Appendix 6. In addition to pretreatment sample, if available, send to central laboratory only for patients who received neoadjuvant therapy. Not applicable for patients who had a pCR following neoadjuvant therapy.', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_21', name='Tumor tissue for biomarkers', label=None, description='See Section 9.8 and Appendix 6. Confirm sample availability prior to randomization. Breast tissue preferred; lymph node tissue is acceptable. For patients who received neoadjuvant therapy, send both a pre- and a post–neoadjuvant treatment tissue sample to the central laboratory (unless the patient had a pCR).', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_22', name='Plasma for biomarker', label=None, description='See Section 9.8 and Appendix 6. At Day 1, must be taken before first dose. V802 sample may be taken after V802 if missed at V802. Y5 sample for patients on study without IDFS event', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity'), Activity(id='act_23', name='Pharmacokinetics', label=None, description='Only for patients in Arm A assigned to PK in IWRS. See Section 9.5 and Appendix 6. Ask the patient and record date and time of last abemaciclib dose prior to PK sample. V1 sample, 2 hours after abemaciclib dosing. Other visits, any time after abemaciclib dosing.', notes=[], definedProcedures=[], biomedicalConceptIds=[], nextId=None, timelineId=None, childIds=[], instanceType='Activity')], activity_timepoints=[ActivityTimepoint(activity_id='act_1', timepoint_id='enc_1', is_performed=True, condition=None, activityId='', encounterId='enc_1', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_1', timepoint_id='enc_4', is_performed=True, condition=None, activityId='', encounterId='enc_4', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_2', timepoint_id='enc_4', is_performed=True, condition=None, activityId='', encounterId='enc_4', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_3', timepoint_id='enc_4', is_performed=True, condition=None, activityId='', encounterId='enc_4', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_3', timepoint_id='enc_5', is_performed=True, condition=None, activityId='', encounterId='enc_5', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_3', timepoint_id='enc_6', is_performed=True, condition=None, activityId='', encounterId='enc_6', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_3', timepoint_id='enc_7', is_performed=True, condition=None, activityId='', encounterId='enc_7', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_3', timepoint_id='enc_8', is_performed=True, condition=None, activityId='', encounterId='enc_8', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_3', timepoint_id='enc_9', is_performed=True, condition=None, activityId='', encounterId='enc_9', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_3', timepoint_id='enc_10', is_performed=True, condition=None, activityId='', encounterId='enc_10', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_4', timepoint_id='enc_4', is_performed=True, condition=None, activityId='', encounterId='enc_4', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_4', timepoint_id='enc_5', is_performed=True, condition=None, activityId='', encounterId='enc_5', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_4', timepoint_id='enc_6', is_performed=True, condition=None, activityId='', encounterId='enc_6', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_4', timepoint_id='enc_7', is_performed=True, condition=None, activityId='', encounterId='enc_7', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_4', timepoint_id='enc_8', is_performed=True, condition=None, activityId='', encounterId='enc_8', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_4', timepoint_id='enc_9', is_performed=True, condition=None, activityId='', encounterId='enc_9', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_4', timepoint_id='enc_10', is_performed=True, condition=None, activityId='', encounterId='enc_10', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_5', timepoint_id='enc_4', is_performed=True, condition=None, activityId='', encounterId='enc_4', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_5', timepoint_id='enc_5', is_performed=True, condition=None, activityId='', encounterId='enc_5', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_5', timepoint_id='enc_6', is_performed=True, condition=None, activityId='', encounterId='enc_6', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_5', timepoint_id='enc_7', is_performed=True, condition=None, activityId='', encounterId='enc_7', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_5', timepoint_id='enc_8', is_performed=True, condition=None, activityId='', encounterId='enc_8', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_5', timepoint_id='enc_9', is_performed=True, condition=None, activityId='', encounterId='enc_9', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_5', timepoint_id='enc_10', is_performed=True, condition=None, activityId='', encounterId='enc_10', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_6', timepoint_id='enc_4', is_performed=True, condition=None, activityId='', encounterId='enc_4', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_7', timepoint_id='enc_4', is_performed=True, condition=None, activityId='', encounterId='enc_4', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_7', timepoint_id='enc_5', is_performed=True, condition=None, activityId='', encounterId='enc_5', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_7', timepoint_id='enc_6', is_performed=True, condition=None, activityId='', encounterId='enc_6', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_7', timepoint_id='enc_7', is_performed=True, condition=None, activityId='', encounterId='enc_7', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_7', timepoint_id='enc_8', is_performed=True, condition=None, activityId='', encounterId='enc_8', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_7', timepoint_id='enc_9', is_performed=True, condition=None, activityId='', encounterId='enc_9', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_7', timepoint_id='enc_10', is_performed=True, condition=None, activityId='', encounterId='enc_10', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_8', timepoint_id='enc_4', is_performed=True, condition=None, activityId='', encounterId='enc_4', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_9', timepoint_id='enc_4', is_performed=True, condition=None, activityId='', encounterId='enc_4', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_9', timepoint_id='enc_5', is_performed=True, condition=None, activityId='', encounterId='enc_5', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_9', timepoint_id='enc_6', is_performed=True, condition=None, activityId='', encounterId='enc_6', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_9', timepoint_id='enc_7', is_performed=True, condition=None, activityId='', encounterId='enc_7', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_9', timepoint_id='enc_8', is_performed=True, condition=None, activityId='', encounterId='enc_8', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_9', timepoint_id='enc_9', is_performed=True, condition=None, activityId='', encounterId='enc_9', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_9', timepoint_id='enc_10', is_performed=True, condition=None, activityId='', encounterId='enc_10', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_10', timepoint_id='enc_4', is_performed=True, condition=None, activityId='', encounterId='enc_4', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_10', timepoint_id='enc_5', is_performed=True, condition=None, activityId='', encounterId='enc_5', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_10', timepoint_id='enc_6', is_performed=True, condition=None, activityId='', encounterId='enc_6', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_10', timepoint_id='enc_7', is_performed=True, condition=None, activityId='', encounterId='enc_7', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_10', timepoint_id='enc_8', is_performed=True, condition=None, activityId='', encounterId='enc_8', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_10', timepoint_id='enc_9', is_performed=True, condition=None, activityId='', encounterId='enc_9', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_10', timepoint_id='enc_10', is_performed=True, condition=None, activityId='', encounterId='enc_10', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_11', timepoint_id='enc_4', is_performed=True, condition=None, activityId='', encounterId='enc_4', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_11', timepoint_id='enc_9', is_performed=True, condition=None, activityId='', encounterId='enc_9', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_17', timepoint_id='enc_9', is_performed=True, condition=None, activityId='', encounterId='enc_9', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_17', timepoint_id='enc_10', is_performed=True, condition=None, activityId='', encounterId='enc_10', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_19', timepoint_id='enc_1', is_performed=True, condition=None, activityId='', encounterId='enc_1', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_20', timepoint_id='enc_4', is_performed=True, condition=None, activityId='', encounterId='enc_4', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_21', timepoint_id='enc_4', is_performed=True, condition=None, activityId='', encounterId='enc_4', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_22', timepoint_id='enc_4', is_performed=True, condition=None, activityId='', encounterId='enc_4', plannedTimepointId='', footnoteRefs=[]), ActivityTimepoint(activity_id='act_23', timepoint_id='enc_5', is_performed=True, condition=None, activityId='', encounterId='enc_5', plannedTimepointId='', footnoteRefs=[])], raw_response='{\\n  \"activities\": [\\n    {\\n      \"id\": \"act_1\",\\n      \"name\": \"Informed consent (Cohort 2 and/or main consent)\",\\n      \"description\": \"Main ICF may be signed up to 3 months prior to randomization and must be signed prior to any study-specific assessments are performed. Cohort 2 ICF may be signed up to 6 months prior to randomization and must be signed prior to sending tissue to the central lab for Ki-67 testing.\",\\n      \"activityGroupId\": \"grp_1\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_2\",\\n      \"name\": \"Blood pregnancy test\",\\n      \"description\": \"See inclusion criteria [12], Appendix 4. Women of reproductive potential only. Local regulations and/or institutional guidelines may require additional testing.\",\\n      \"activityGroupId\": \"grp_1\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_3\",\\n      \"name\": \"Physical exam (clinic visits only)\",\\n      \"description\": \"Height, weight, and appropriate body examination. Height at baseline only and weight until STFU. Does not need to be repeated on Day 1 if assessed \\uf0a37 days prior to randomization.\",\\n      \"activityGroupId\": \"grp_1\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_4\",\\n      \"name\": \"Vital signs (clinic visits only)\",\\n      \"description\": \"Blood pressure, pulse, respiratory rate, temperature. Do not need to be repeated on Day 1 if assessed \\uf0a37 days prior to randomization.\",\\n      \"activityGroupId\": \"grp_1\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_5\",\\n      \"name\": \"ECOG PS (clinic visits only)\",\\n      \"description\": \"See Appendix 11. Does not need to be repeated on Day 1 if assessed \\uf0a37 days prior to randomization.\",\\n      \"activityGroupId\": \"grp_1\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_6\",\\n      \"name\": \"Medical history\",\\n      \"description\": \"Includes alcohol and tobacco intake.\",\\n      \"activityGroupId\": \"grp_1\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_7\",\\n      \"name\": \"Concomitant medications\",\\n      \"description\": \"In LTFU, collection of regimen changes and associated start and stop dates for endocrine therapy, and post-discontinuation therapy.\",\\n      \"activityGroupId\": \"grp_1\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_8\",\\n      \"name\": \"ECG (local)\",\\n      \"description\": \"As clinically indicated Patient must be supine or near supine for approximately 5-10 minutes prior to collection and remain supine, but awake, during collection.\",\\n      \"activityGroupId\": \"grp_1\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_9\",\\n      \"name\": \"Adverse event assessment\",\\n      \"description\": \"See Section 9.2. Assessments will be in clinic and over the phone between clinic visits. In LTFU, all SAEs in both arms regardless of causality will be collected through Year 5. For the entire duration of LTFU, only AEs related to study treatment and/or study procedure will be collected.\",\\n      \"activityGroupId\": \"grp_1\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_10\",\\n      \"name\": \"Central hematology, chemistry, and cystatin C (clinic visits only)\",\\n      \"description\": \"See Appendix 3. Do not need to be repeated on Day 1 if assessed \\uf0a37 days prior to randomization (blood draw is required at Day 1 for pharmacogenetic and biomarker sample collection – see Appendix 6). Eligibility must be based on the last available screening laboratory results prior to randomization. Enrollment and treatment decisions may be based on local laboratory results, but a specimen must also be sent to central laboratory. Discrepancies between local and central laboratory results will not be considered protocol deviations.\",\\n      \"activityGroupId\": \"grp_1\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_11\",\\n      \"name\": \"PRO questionnaires\",\\n      \"description\": \"See Section 9.9.\",\\n      \"activityGroupId\": \"grp_1\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_12\",\\n      \"name\": \"Bilateral breast imaging (such as mammogram or MRI)\",\\n      \"description\": \"Prior to randomization: Patients must have bilateral breast imaging performed locally as part of routine standard of care prior to surgery or prior to randomization for the current breast cancer. This is not required for patients who have had bilateral mastectomy. Post randomization: Either at yearly intervals, as recommended per international standard guidelines, or according to local standards as part of routine medical care. Patients who have had a mastectomy should be followed per local practice. See Appendix 10 for additional guidelines for the assessment of recurrence.\",\\n      \"activityGroupId\": \"grp_1\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_13\",\\n      \"name\": \"Abdominal + pelvic imaging (such as CT, PET/CT, MRI, ultrasound)\",\\n      \"description\": \"Prior to randomization: Abdominal ± pelvic imaging MUST be performed prior to randomization. Abdominal ± pelvic imaging performed previously as part of routine care, any time in the process of or after diagnosing the patient with the current breast cancer diagnosis, may be used as the baseline assessment. Post randomization: Performed locally ONLY if clinically indicated per investigator’s judgment (eg, if liver function tests deteriorate significantly). If PET/CT is performed, additional imaging modalities are not required. See Appendix 10 for additional guidelines for the assessment of recurrence.\",\\n      \"activityGroupId\": \"grp_1\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_14\",\\n      \"name\": \"Chest imaging (such as PET/CT, CT, or X-ray (should include lateral and postero-anterior views))\",\\n      \"description\": \"Prior to randomization: Chest imaging MUST be performed prior to randomization. Chest imaging performed previously as part of routine care, any time in the process of or after diagnosing the patient with the current breast cancer diagnosis, may be used as the baseline assessment. Post randomization: Performed locally ONLY if clinically indicated per the investigator’s judgment. If PET/CT is performed, additional imaging modalities are not required. See Appendix 10 for additional guidelines for the assessment of recurrence.\",\\n      \"activityGroupId\": \"grp_1\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_15\",\\n      \"name\": \"Bone nuclear imaging (such as bone scan, PET scan or PET/CT)\",\\n      \"description\": \"Prior to randomization: Full body bone imaging per standard clinical practice MUST be performed prior to randomization to discard or confirm potential distant disease. Bone imaging performed previously as part of routine care, any time in the process of or after diagnosing the patient with the current breast cancer diagnosis, may be used as the baseline assessment. Post randomization: Performed locally and ONLY if clinically indicated per investigator’s judgment (for example, if patient is symptomatic for bone pain and/or if alkaline phosphatase is significantly elevated ≥3×ULN). If PET/CT is performed, additional imaging modalities are not required. See Appendix 10 for additional guidelines for the assessment of recurrence.\",\\n      \"activityGroupId\": \"grp_1\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_16\",\\n      \"name\": \"Administer abemaciclib (Arm A)\",\\n      \"description\": \"See Sections 7.1 and 7.7.1.1. Orally twice-daily (with minimum 6-hour separating doses) for up to 2 years or until discontinuation criteria met.\",\\n      \"activityGroupId\": \"grp_1\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_17\",\\n      \"name\": \"Administer endocrine therapy\",\\n      \"description\": \"See inclusion criterion [7] In STFU and LTFU, as applicable. Administered as per physician’s choice.\",\\n      \"activityGroupId\": \"grp_1\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_18\",\\n      \"name\": \"Disease recurrence assessment\",\\n      \"description\": \"See Section 9.1 and Appendix 10. Disease recurrence information will be collected at any time point (clinic or phone visit). Assessment for changes in symptoms and suggestive of disease recurrence.\",\\n      \"activityGroupId\": \"grp_1\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_19\",\\n      \"name\": \"Ki-67 tissue (untreated breast tissue)\",\\n      \"description\": \"See Section 9.8.1 and Appendix 6. As assessed by central laboratory when kit is available for both cohorts. Screening for potential Cohort 2 patients is permitted after signing the Cohort 2 ICF ((tissue should be submitted within 1 month from consent date).\",\\n      \"activityGroupId\": \"grp_1\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_20\",\\n      \"name\": \"Ki-67 and exploratory biomarker tissue (post-neoadjuvant therapy)\",\\n      \"description\": \"See Section 9.8.1 and Appendix 6. In addition to pretreatment sample, if available, send to central laboratory only for patients who received neoadjuvant therapy. Not applicable for patients who had a pCR following neoadjuvant therapy.\",\\n      \"activityGroupId\": \"grp_1\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_21\",\\n      \"name\": \"Tumor tissue for biomarkers\",\\n      \"description\": \"See Section 9.8 and Appendix 6. Confirm sample availability prior to randomization. Breast tissue preferred; lymph node tissue is acceptable. For patients who received neoadjuvant therapy, send both a pre- and a post–neoadjuvant treatment tissue sample to the central laboratory (unless the patient had a pCR).\",\\n      \"activityGroupId\": \"grp_1\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_22\",\\n      \"name\": \"Plasma for biomarker\",\\n      \"description\": \"See Section 9.8 and Appendix 6. At Day 1, must be taken before first dose. V802 sample may be taken after V802 if missed at V802. Y5 sample for patients on study without IDFS event\",\\n      \"activityGroupId\": \"grp_1\",\\n      \"instanceType\": \"Activity\"\\n    },\\n    {\\n      \"id\": \"act_23\",\\n      \"name\": \"Pharmacokinetics\",\\n      \"description\": \"Only for patients in Arm A assigned to PK in IWRS. See Section 9.5 and Appendix 6. Ask the patient and record date and time of last abemaciclib dose prior to PK sample. V1 sample, 2 hours after abemaciclib dosing. Other visits, any time after abemaciclib dosing.\",\\n      \"activityGroupId\": \"grp_1\",\\n      \"instanceType\": \"Activity\"\\n    }\\n  ],\\n  \"activityTimepoints\": [\\n    {\\n      \"id\": \"at_1\",\\n      \"activityId\": \"act_1\",\\n      \"encounterId\": \"enc_1\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_2\",\\n      \"activityId\": \"act_1\",\\n      \"encounterId\": \"enc_4\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_3\",\\n      \"activityId\": \"act_2\",\\n      \"encounterId\": \"enc_4\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_4\",\\n      \"activityId\": \"act_3\",\\n      \"encounterId\": \"enc_4\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_5\",\\n      \"activityId\": \"act_3\",\\n      \"encounterId\": \"enc_5\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_6\",\\n      \"activityId\": \"act_3\",\\n      \"encounterId\": \"enc_6\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_7\",\\n      \"activityId\": \"act_3\",\\n      \"encounterId\": \"enc_7\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_8\",\\n      \"activityId\": \"act_3\",\\n      \"encounterId\": \"enc_8\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_9\",\\n      \"activityId\": \"act_3\",\\n      \"encounterId\": \"enc_9\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_10\",\\n      \"activityId\": \"act_3\",\\n      \"encounterId\": \"enc_10\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_11\",\\n      \"activityId\": \"act_4\",\\n      \"encounterId\": \"enc_4\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_12\",\\n      \"activityId\": \"act_4\",\\n      \"encounterId\": \"enc_5\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_13\",\\n      \"activityId\": \"act_4\",\\n      \"encounterId\": \"enc_6\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_14\",\\n      \"activityId\": \"act_4\",\\n      \"encounterId\": \"enc_7\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_15\",\\n      \"activityId\": \"act_4\",\\n      \"encounterId\": \"enc_8\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_16\",\\n      \"activityId\": \"act_4\",\\n      \"encounterId\": \"enc_9\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_17\",\\n      \"activityId\": \"act_4\",\\n      \"encounterId\": \"enc_10\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_18\",\\n      \"activityId\": \"act_5\",\\n      \"encounterId\": \"enc_4\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_19\",\\n      \"activityId\": \"act_5\",\\n      \"encounterId\": \"enc_5\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_20\",\\n      \"activityId\": \"act_5\",\\n      \"encounterId\": \"enc_6\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_21\",\\n      \"activityId\": \"act_5\",\\n      \"encounterId\": \"enc_7\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_22\",\\n      \"activityId\": \"act_5\",\\n      \"encounterId\": \"enc_8\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_23\",\\n      \"activityId\": \"act_5\",\\n      \"encounterId\": \"enc_9\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_24\",\\n      \"activityId\": \"act_5\",\\n      \"encounterId\": \"enc_10\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_25\",\\n      \"activityId\": \"act_6\",\\n      \"encounterId\": \"enc_4\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_26\",\\n      \"activityId\": \"act_7\",\\n      \"encounterId\": \"enc_4\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_27\",\\n      \"activityId\": \"act_7\",\\n      \"encounterId\": \"enc_5\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_28\",\\n      \"activityId\": \"act_7\",\\n      \"encounterId\": \"enc_6\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_29\",\\n      \"activityId\": \"act_7\",\\n      \"encounterId\": \"enc_7\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_30\",\\n      \"activityId\": \"act_7\",\\n      \"encounterId\": \"enc_8\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_31\",\\n      \"activityId\": \"act_7\",\\n      \"encounterId\": \"enc_9\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_32\",\\n      \"activityId\": \"act_7\",\\n      \"encounterId\": \"enc_10\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_33\",\\n      \"activityId\": \"act_8\",\\n      \"encounterId\": \"enc_4\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_34\",\\n      \"activityId\": \"act_9\",\\n      \"encounterId\": \"enc_4\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_35\",\\n      \"activityId\": \"act_9\",\\n      \"encounterId\": \"enc_5\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_36\",\\n      \"activityId\": \"act_9\",\\n      \"encounterId\": \"enc_6\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_37\",\\n      \"activityId\": \"act_9\",\\n      \"encounterId\": \"enc_7\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_38\",\\n      \"activityId\": \"act_9\",\\n      \"encounterId\": \"enc_8\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_39\",\\n      \"activityId\": \"act_9\",\\n      \"encounterId\": \"enc_9\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_40\",\\n      \"activityId\": \"act_9\",\\n      \"encounterId\": \"enc_10\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_41\",\\n      \"activityId\": \"act_10\",\\n      \"encounterId\": \"enc_4\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_42\",\\n      \"activityId\": \"act_10\",\\n      \"encounterId\": \"enc_5\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_43\",\\n      \"activityId\": \"act_10\",\\n      \"encounterId\": \"enc_6\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_44\",\\n      \"activityId\": \"act_10\",\\n      \"encounterId\": \"enc_7\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_45\",\\n      \"activityId\": \"act_10\",\\n      \"encounterId\": \"enc_8\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_46\",\\n      \"activityId\": \"act_10\",\\n      \"encounterId\": \"enc_9\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_47\",\\n      \"activityId\": \"act_10\",\\n      \"encounterId\": \"enc_10\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_48\",\\n      \"activityId\": \"act_11\",\\n      \"encounterId\": \"enc_4\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_49\",\\n      \"activityId\": \"act_11\",\\n      \"encounterId\": \"enc_9\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_50\",\\n      \"activityId\": \"act_17\",\\n      \"encounterId\": \"enc_9\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_51\",\\n      \"activityId\": \"act_17\",\\n      \"encounterId\": \"enc_10\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_52\",\\n      \"activityId\": \"act_19\",\\n      \"encounterId\": \"enc_1\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_53\",\\n      \"activityId\": \"act_20\",\\n      \"encounterId\": \"enc_4\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_54\",\\n      \"activityId\": \"act_21\",\\n      \"encounterId\": \"enc_4\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_55\",\\n      \"activityId\": \"act_22\",\\n      \"encounterId\": \"enc_4\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    },\\n    {\\n      \"id\": \"at_56\",\\n      \"activityId\": \"act_23\",\\n      \"encounterId\": \"enc_5\",\\n      \"instanceType\": \"ActivityTimepoint\"\\n    }\\n  ]\\n}', model_used='gemini-2.5-flash', success=True, provenance=ProvenanceTracker(entities={'activities': {'act_1': 'text', 'act_2': 'text', 'act_3': 'text', 'act_4': 'text', 'act_5': 'text', 'act_6': 'text', 'act_7': 'text', 'act_8': 'text', 'act_9': 'text', 'act_10': 'text', 'act_11': 'text', 'act_12': 'text', 'act_13': 'text', 'act_14': 'text', 'act_15': 'text', 'act_16': 'text', 'act_17': 'text', 'act_18': 'text', 'act_19': 'text', 'act_20': 'text', 'act_21': 'text', 'act_22': 'text', 'act_23': 'text'}, 'plannedTimepoints': {}, 'encounters': {}, 'epochs': {}, 'activityGroups': {}}, cells={'activity_t_1|encounter_v_1': 'both', 'activity_t_1|encounter_v_4': 'both', 'activity_t_2|encounter_v_4': 'both', 'activity_t_3|encounter_v_4': 'both', 'activity_t_3|encounter_v_5': 'both', 'activity_t_3|encounter_v_6': 'both', 'activity_t_3|encounter_v_7': 'both', 'activity_t_3|encounter_v_8': 'both', 'activity_t_3|encounter_v_9': 'both', 'activity_t_3|encounter_v_10': 'both', 'activity_t_4|encounter_v_4': 'both', 'activity_t_4|encounter_v_5': 'both', 'activity_t_4|encounter_v_6': 'both', 'activity_t_4|encounter_v_7': 'both', 'activity_t_4|encounter_v_8': 'both', 'activity_t_4|encounter_v_9': 'both', 'activity_t_4|encounter_v_10': 'both', 'activity_t_5|encounter_v_4': 'both', 'activity_t_5|encounter_v_5': 'both', 'activity_t_5|encounter_v_6': 'both', 'activity_t_5|encounter_v_7': 'both', 'activity_t_5|encounter_v_8': 'both', 'activity_t_5|encounter_v_9': 'both', 'activity_t_5|encounter_v_10': 'both', 'activity_t_6|encounter_v_4': 'both', 'activity_t_7|encounter_v_4': 'both', 'activity_t_7|encounter_v_5': 'both', 'activity_t_7|encounter_v_6': 'both', 'activity_t_7|encounter_v_7': 'both', 'activity_t_7|encounter_v_8': 'both', 'activity_t_7|encounter_v_9': 'both', 'activity_t_7|encounter_v_10': 'both', 'activity_t_8|encounter_v_4': 'both', 'activity_t_9|encounter_v_4': 'both', 'activity_t_9|encounter_v_5': 'both', 'activity_t_9|encounter_v_6': 'both', 'activity_t_9|encounter_v_7': 'both', 'activity_t_9|encounter_v_8': 'both', 'activity_t_9|encounter_v_9': 'both', 'activity_t_9|encounter_v_10': 'both', 'activity_t_10|encounter_v_4': 'both', 'activity_t_10|encounter_v_5': 'both', 'activity_t_10|encounter_v_6': 'both', 'activity_t_10|encounter_v_7': 'both', 'activity_t_10|encounter_v_8': 'both', 'activity_t_10|encounter_v_9': 'both', 'activity_t_10|encounter_v_10': 'both', 'activity_t_11|encounter_v_4': 'both', 'activity_t_11|encounter_v_9': 'both', 'activity_t_17|encounter_v_9': 'both', 'activity_t_17|encounter_v_10': 'both', 'activity_t_19|encounter_v_1': 'both', 'activity_t_20|encounter_v_4': 'both', 'activity_t_21|encounter_v_4': 'both', 'activity_t_22|encounter_v_4': 'both', 'activity_t_23|encounter_v_5': 'both'}, cellFootnotes={}, metadata={'model': 'gemini-2.5-flash', 'extraction_type': 'text'}), error=None)"
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "activity_t_1",
+      "entity_type": "activity",
+      "data": {
+        "name": "Informed consent (Cohort 2 and/or main consent)",
+        "source": "text",
+        "raw": {
+          "id": "act_1",
+          "name": "Informed consent (Cohort 2 and/or main consent)",
+          "label": null,
+          "description": "Main ICF may be signed up to 3 months prior to randomization and must be signed prior to any study-specific assessments are performed. Cohort 2 ICF may be signed up to 6 months prior to randomization and must be signed prior to sending tissue to the central lab for Ki-67 testing.",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "activity_t_2",
+      "entity_type": "activity",
+      "data": {
+        "name": "Blood pregnancy test",
+        "source": "text",
+        "raw": {
+          "id": "act_2",
+          "name": "Blood pregnancy test",
+          "label": null,
+          "description": "See inclusion criteria [12], Appendix 4. Women of reproductive potential only. Local regulations and/or institutional guidelines may require additional testing.",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "activity_t_3",
+      "entity_type": "activity",
+      "data": {
+        "name": "Physical exam (clinic visits only)",
+        "source": "text",
+        "raw": {
+          "id": "act_3",
+          "name": "Physical exam (clinic visits only)",
+          "label": null,
+          "description": "Height, weight, and appropriate body examination. Height at baseline only and weight until STFU. Does not need to be repeated on Day 1 if assessed 7 days prior to randomization.",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "activity_t_4",
+      "entity_type": "activity",
+      "data": {
+        "name": "Vital signs (clinic visits only)",
+        "source": "text",
+        "raw": {
+          "id": "act_4",
+          "name": "Vital signs (clinic visits only)",
+          "label": null,
+          "description": "Blood pressure, pulse, respiratory rate, temperature. Do not need to be repeated on Day 1 if assessed 7 days prior to randomization.",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "activity_t_5",
+      "entity_type": "activity",
+      "data": {
+        "name": "ECOG PS (clinic visits only)",
+        "source": "text",
+        "raw": {
+          "id": "act_5",
+          "name": "ECOG PS (clinic visits only)",
+          "label": null,
+          "description": "See Appendix 11. Does not need to be repeated on Day 1 if assessed 7 days prior to randomization.",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "activity_t_6",
+      "entity_type": "activity",
+      "data": {
+        "name": "Medical history",
+        "source": "text",
+        "raw": {
+          "id": "act_6",
+          "name": "Medical history",
+          "label": null,
+          "description": "Includes alcohol and tobacco intake.",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "activity_t_7",
+      "entity_type": "activity",
+      "data": {
+        "name": "Concomitant medications",
+        "source": "text",
+        "raw": {
+          "id": "act_7",
+          "name": "Concomitant medications",
+          "label": null,
+          "description": "In LTFU, collection of regimen changes and associated start and stop dates for endocrine therapy, and post-discontinuation therapy.",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "activity_t_8",
+      "entity_type": "activity",
+      "data": {
+        "name": "ECG (local)",
+        "source": "text",
+        "raw": {
+          "id": "act_8",
+          "name": "ECG (local)",
+          "label": null,
+          "description": "As clinically indicated Patient must be supine or near supine for approximately 5-10 minutes prior to collection and remain supine, but awake, during collection.",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "activity_t_9",
+      "entity_type": "activity",
+      "data": {
+        "name": "Adverse event assessment",
+        "source": "text",
+        "raw": {
+          "id": "act_9",
+          "name": "Adverse event assessment",
+          "label": null,
+          "description": "See Section 9.2. Assessments will be in clinic and over the phone between clinic visits. In LTFU, all SAEs in both arms regardless of causality will be collected through Year 5. For the entire duration of LTFU, only AEs related to study treatment and/or study procedure will be collected.",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "activity_t_10",
+      "entity_type": "activity",
+      "data": {
+        "name": "Central hematology, chemistry, and cystatin C (clinic visits only)",
+        "source": "text",
+        "raw": {
+          "id": "act_10",
+          "name": "Central hematology, chemistry, and cystatin C (clinic visits only)",
+          "label": null,
+          "description": "See Appendix 3. Do not need to be repeated on Day 1 if assessed 7 days prior to randomization (blood draw is required at Day 1 for pharmacogenetic and biomarker sample collection – see Appendix 6). Eligibility must be based on the last available screening laboratory results prior to randomization. Enrollment and treatment decisions may be based on local laboratory results, but a specimen must also be sent to central laboratory. Discrepancies between local and central laboratory results will not be considered protocol deviations.",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "activity_t_11",
+      "entity_type": "activity",
+      "data": {
+        "name": "PRO questionnaires",
+        "source": "text",
+        "raw": {
+          "id": "act_11",
+          "name": "PRO questionnaires",
+          "label": null,
+          "description": "See Section 9.9.",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "activity_t_12",
+      "entity_type": "activity",
+      "data": {
+        "name": "Bilateral breast imaging (such as mammogram or MRI)",
+        "source": "text",
+        "raw": {
+          "id": "act_12",
+          "name": "Bilateral breast imaging (such as mammogram or MRI)",
+          "label": null,
+          "description": "Prior to randomization: Patients must have bilateral breast imaging performed locally as part of routine standard of care prior to surgery or prior to randomization for the current breast cancer. This is not required for patients who have had bilateral mastectomy. Post randomization: Either at yearly intervals, as recommended per international standard guidelines, or according to local standards as part of routine medical care. Patients who have had a mastectomy should be followed per local practice. See Appendix 10 for additional guidelines for the assessment of recurrence.",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "activity_t_13",
+      "entity_type": "activity",
+      "data": {
+        "name": "Abdominal + pelvic imaging (such as CT, PET/CT, MRI, ultrasound)",
+        "source": "text",
+        "raw": {
+          "id": "act_13",
+          "name": "Abdominal + pelvic imaging (such as CT, PET/CT, MRI, ultrasound)",
+          "label": null,
+          "description": "Prior to randomization: Abdominal ± pelvic imaging MUST be performed prior to randomization. Abdominal ± pelvic imaging performed previously as part of routine care, any time in the process of or after diagnosing the patient with the current breast cancer diagnosis, may be used as the baseline assessment. Post randomization: Performed locally ONLY if clinically indicated per investigator’s judgment (eg, if liver function tests deteriorate significantly). If PET/CT is performed, additional imaging modalities are not required. See Appendix 10 for additional guidelines for the assessment of recurrence.",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "activity_t_14",
+      "entity_type": "activity",
+      "data": {
+        "name": "Chest imaging (such as PET/CT, CT, or X-ray (should include lateral and postero-anterior views))",
+        "source": "text",
+        "raw": {
+          "id": "act_14",
+          "name": "Chest imaging (such as PET/CT, CT, or X-ray (should include lateral and postero-anterior views))",
+          "label": null,
+          "description": "Prior to randomization: Chest imaging MUST be performed prior to randomization. Chest imaging performed previously as part of routine care, any time in the process of or after diagnosing the patient with the current breast cancer diagnosis, may be used as the baseline assessment. Post randomization: Performed locally ONLY if clinically indicated per the investigator’s judgment. If PET/CT is performed, additional imaging modalities are not required. See Appendix 10 for additional guidelines for the assessment of recurrence.",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "activity_t_15",
+      "entity_type": "activity",
+      "data": {
+        "name": "Bone nuclear imaging (such as bone scan, PET scan or PET/CT)",
+        "source": "text",
+        "raw": {
+          "id": "act_15",
+          "name": "Bone nuclear imaging (such as bone scan, PET scan or PET/CT)",
+          "label": null,
+          "description": "Prior to randomization: Full body bone imaging per standard clinical practice MUST be performed prior to randomization to discard or confirm potential distant disease. Bone imaging performed previously as part of routine care, any time in the process of or after diagnosing the patient with the current breast cancer diagnosis, may be used as the baseline assessment. Post randomization: Performed locally and ONLY if clinically indicated per investigator’s judgment (for example, if patient is symptomatic for bone pain and/or if alkaline phosphatase is significantly elevated ≥3×ULN). If PET/CT is performed, additional imaging modalities are not required. See Appendix 10 for additional guidelines for the assessment of recurrence.",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "activity_t_16",
+      "entity_type": "activity",
+      "data": {
+        "name": "Administer abemaciclib (Arm A)",
+        "source": "text",
+        "raw": {
+          "id": "act_16",
+          "name": "Administer abemaciclib (Arm A)",
+          "label": null,
+          "description": "See Sections 7.1 and 7.7.1.1. Orally twice-daily (with minimum 6-hour separating doses) for up to 2 years or until discontinuation criteria met.",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "activity_t_17",
+      "entity_type": "activity",
+      "data": {
+        "name": "Administer endocrine therapy",
+        "source": "text",
+        "raw": {
+          "id": "act_17",
+          "name": "Administer endocrine therapy",
+          "label": null,
+          "description": "See inclusion criterion [7] In STFU and LTFU, as applicable. Administered as per physician’s choice.",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "activity_t_18",
+      "entity_type": "activity",
+      "data": {
+        "name": "Disease recurrence assessment",
+        "source": "text",
+        "raw": {
+          "id": "act_18",
+          "name": "Disease recurrence assessment",
+          "label": null,
+          "description": "See Section 9.1 and Appendix 10. Disease recurrence information will be collected at any time point (clinic or phone visit). Assessment for changes in symptoms and suggestive of disease recurrence.",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "activity_t_19",
+      "entity_type": "activity",
+      "data": {
+        "name": "Ki-67 tissue (untreated breast tissue)",
+        "source": "text",
+        "raw": {
+          "id": "act_19",
+          "name": "Ki-67 tissue (untreated breast tissue)",
+          "label": null,
+          "description": "See Section 9.8.1 and Appendix 6. As assessed by central laboratory when kit is available for both cohorts. Screening for potential Cohort 2 patients is permitted after signing the Cohort 2 ICF ((tissue should be submitted within 1 month from consent date).",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "activity_t_20",
+      "entity_type": "activity",
+      "data": {
+        "name": "Ki-67 and exploratory biomarker tissue (post-neoadjuvant therapy)",
+        "source": "text",
+        "raw": {
+          "id": "act_20",
+          "name": "Ki-67 and exploratory biomarker tissue (post-neoadjuvant therapy)",
+          "label": null,
+          "description": "See Section 9.8.1 and Appendix 6. In addition to pretreatment sample, if available, send to central laboratory only for patients who received neoadjuvant therapy. Not applicable for patients who had a pCR following neoadjuvant therapy.",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "activity_t_21",
+      "entity_type": "activity",
+      "data": {
+        "name": "Tumor tissue for biomarkers",
+        "source": "text",
+        "raw": {
+          "id": "act_21",
+          "name": "Tumor tissue for biomarkers",
+          "label": null,
+          "description": "See Section 9.8 and Appendix 6. Confirm sample availability prior to randomization. Breast tissue preferred; lymph node tissue is acceptable. For patients who received neoadjuvant therapy, send both a pre- and a post–neoadjuvant treatment tissue sample to the central laboratory (unless the patient had a pCR).",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "activity_t_22",
+      "entity_type": "activity",
+      "data": {
+        "name": "Plasma for biomarker",
+        "source": "text",
+        "raw": {
+          "id": "act_22",
+          "name": "Plasma for biomarker",
+          "label": null,
+          "description": "See Section 9.8 and Appendix 6. At Day 1, must be taken before first dose. V802 sample may be taken after V802 if missed at V802. Y5 sample for patients on study without IDFS event",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "activity_t_23",
+      "entity_type": "activity",
+      "data": {
+        "name": "Pharmacokinetics",
+        "source": "text",
+        "raw": {
+          "id": "act_23",
+          "name": "Pharmacokinetics",
+          "label": null,
+          "description": "Only for patients in Arm A assigned to PK in IWRS. See Section 9.5 and Appendix 6. Ask the patient and record date and time of last abemaciclib dose prior to PK sample. V1 sample, 2 hours after abemaciclib dosing. Other visits, any time after abemaciclib dosing.",
+          "notes": [],
+          "definedProcedures": [],
+          "biomedicalConceptIds": [],
+          "nextId": null,
+          "timelineId": null,
+          "childIds": [],
+          "instanceType": "Activity"
+        }
+      },
+      "confidence": 0.75,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "ce0a9c4f_3541_4da1_94f2_97c6886200d4",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_1",
+        "encounterId": "encounter_v_1",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "d95e0b7a_cdf5_4e97_afe9_686af65dc958",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_1",
+        "encounterId": "encounter_v_4",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "a94701ca_e08e_457d_9588_53d19cb0b925",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_2",
+        "encounterId": "encounter_v_4",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "144c9609_7a93_4f6a_816c_9cfb2d1626e7",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_3",
+        "encounterId": "encounter_v_4",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "d117f794_3d30_45f9_b978_59360b017717",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_3",
+        "encounterId": "encounter_v_5",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "d276c29b_0838_43e8_8b76_8d055a874a82",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_3",
+        "encounterId": "encounter_v_6",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "491ba7cc_05d3_4357_a509_fd1282294224",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_3",
+        "encounterId": "encounter_v_7",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "2ff219aa_20ef_4a8a_8520_6f3af4d241b7",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_3",
+        "encounterId": "encounter_v_8",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "268c3bb0_25bb_484c_8367_a4d7133c1f76",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_3",
+        "encounterId": "encounter_v_9",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "ac6577ac_09a5_48d1_b81b_bebe0fc1d1c5",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_3",
+        "encounterId": "encounter_v_10",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "613d3b2f_a8f1_4555_aa1a_d90e2d0b1761",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_4",
+        "encounterId": "encounter_v_4",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "2adee6a0_ebdf_4f8e_b3d5_6f7f12b19347",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_4",
+        "encounterId": "encounter_v_5",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "880acead_35eb_4175_acca_5c9bfe7dde24",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_4",
+        "encounterId": "encounter_v_6",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "c78d7330_b15a_42c4_806f_371e3be277e9",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_4",
+        "encounterId": "encounter_v_7",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "07893cf0_a48a_4f2b_96b0_ddcab89443bd",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_4",
+        "encounterId": "encounter_v_8",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "8c190289_4ab6_4491_a70e_f99ca69b1ad1",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_4",
+        "encounterId": "encounter_v_9",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "18a58fae_68fb_4523_8f71_a777a08fa17c",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_4",
+        "encounterId": "encounter_v_10",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "75c60863_eeb0_49d5_9724_28764898d6eb",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_5",
+        "encounterId": "encounter_v_4",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "9caf8316_9b1c_490d_ae9c_21065aef3d71",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_5",
+        "encounterId": "encounter_v_5",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "f1565a91_a37e_4a66_843d_ac5c3e5b4aa3",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_5",
+        "encounterId": "encounter_v_6",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "8a1d6409_237c_45a7_bfbd_0f4990ee3414",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_5",
+        "encounterId": "encounter_v_7",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "b44eb71b_2916_4f81_979e_c253ace16c2f",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_5",
+        "encounterId": "encounter_v_8",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "8ac4138c_74dd_49eb_bbb1_449b0f63657b",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_5",
+        "encounterId": "encounter_v_9",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "39c7273a_3c30_4f49_9c58_98e0d284665b",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_5",
+        "encounterId": "encounter_v_10",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "b8a82fdf_735f_425c_864c_d90fe0bb5510",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_6",
+        "encounterId": "encounter_v_4",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "8d656a27_ecad_4aa1_8edc_c01b93401e00",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_7",
+        "encounterId": "encounter_v_4",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "07631377_7f1a_4659_ba80_3214e52cb59f",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_7",
+        "encounterId": "encounter_v_5",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "d83662b2_c886_4a64_8a4d_13804815b327",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_7",
+        "encounterId": "encounter_v_6",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "3080ad4c_396f_4c0d_b3cd_217ac3aab7ea",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_7",
+        "encounterId": "encounter_v_7",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "537186dc_db8e_486e_98b7_09d8e257a25a",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_7",
+        "encounterId": "encounter_v_8",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "d389e254_7be1_4f0c_b8a7_492e14e7acc0",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_7",
+        "encounterId": "encounter_v_9",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "271a406a_6e92_423c_ad06_ef77498de6f1",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_7",
+        "encounterId": "encounter_v_10",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "c60e2806_a5a0_4028_a81b_e51156d3eb0e",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_8",
+        "encounterId": "encounter_v_4",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "b06f287e_e37a_4c35_9e2e_08d87119269d",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_9",
+        "encounterId": "encounter_v_4",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "bf2e64d6_fde8_4409_a63c_02ca5f4d4466",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_9",
+        "encounterId": "encounter_v_5",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "88cd9e98_81bd_4f28_b76f_dc8248699308",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_9",
+        "encounterId": "encounter_v_6",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "906a8e58_2616_422d_a370_2e6c73354936",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_9",
+        "encounterId": "encounter_v_7",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "d9507848_f4d1_45e3_8c9a_20648b1c6f1e",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_9",
+        "encounterId": "encounter_v_8",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "84d3c8de_3a7f_47ed_9aef_9a8f57793b42",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_9",
+        "encounterId": "encounter_v_9",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "c28e4455_7ffa_45b8_9646_1f4be1cd5450",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_9",
+        "encounterId": "encounter_v_10",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "dfc80c2e_46ea_4e1b_91c3_63223aaaef46",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_10",
+        "encounterId": "encounter_v_4",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "d9a9ba81_cfc1_4731_8e2e_4977ca8bc2f2",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_10",
+        "encounterId": "encounter_v_5",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "f9a7adf7_ee8e_4a5c_a3e9_d7f5d5fb6a0c",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_10",
+        "encounterId": "encounter_v_6",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "7943299a_6ad6_426e_88e2_70df9dafd5b1",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_10",
+        "encounterId": "encounter_v_7",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "f5c05ed4_5e92_4ff5_b4c3_aeff32f07056",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_10",
+        "encounterId": "encounter_v_8",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "17f89e8d_bf19_400e_a7eb_79d5088451d0",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_10",
+        "encounterId": "encounter_v_9",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "c32c397f_ca45_4860_8a4a_56fe99a996f9",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_10",
+        "encounterId": "encounter_v_10",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "c2051cba_4029_4464_88ad_24d86911874d",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_11",
+        "encounterId": "encounter_v_4",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "e0e0121c_fa9f_4abb_8b4e_0bf7cc1eb227",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_11",
+        "encounterId": "encounter_v_9",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "b0f21df1_b89d_499c_a37c_3817f62b06cd",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_17",
+        "encounterId": "encounter_v_9",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "d248e24f_ca0a_4dac_9628_9b654854d6fe",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_17",
+        "encounterId": "encounter_v_10",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "8617e04b_86b9_4beb_8d8d_dc85b3cf8af8",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_19",
+        "encounterId": "encounter_v_1",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "f7de853a_275b_47f1_9e7b_515837c6f3dc",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_20",
+        "encounterId": "encounter_v_4",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "c48cc81e_0292_4ea8_8bf9_441688bfa07d",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_21",
+        "encounterId": "encounter_v_4",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "bd9845ee_b057_4b8f_8719_619f1571837a",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_22",
+        "encounterId": "encounter_v_4",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "cfa6a51f_9b35_495d_bc92_edcb62d207fc",
+      "entity_type": "scheduled_instance",
+      "data": {
+        "activityId": "activity_t_23",
+        "encounterId": "encounter_v_5",
+        "instanceType": "ScheduledActivityInstance",
+        "footnoteRefs": []
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    }
+  ],
+  "text_summary": {
+    "soa_pages": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "activity_count": 23,
+    "scheduled_instance_count": 56
+  }
+}

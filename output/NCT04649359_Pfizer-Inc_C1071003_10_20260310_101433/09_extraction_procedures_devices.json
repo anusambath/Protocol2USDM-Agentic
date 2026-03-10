@@ -1,0 +1,2213 @@
+{
+  "agent_id": "procedures_agent",
+  "timestamp": "2026-03-10T10:20:50.610022",
+  "confidence": 1.0,
+  "entity_count": 60,
+  "entities": [
+    {
+      "id": "proc_1",
+      "entity_type": "procedure",
+      "data": {
+        "id": "proc_1",
+        "name": "Informed Consent Process",
+        "procedureType": "Assessment",
+        "code": {
+          "id": "dc492158-7bd5-4577-8277-f69edec26af5",
+          "code": "C25218",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Assessment",
+          "instanceType": "Code"
+        },
+        "instanceType": "Procedure",
+        "label": "Informed Consent",
+        "description": "Process of obtaining voluntary agreement from participants to participate in the study"
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "proc_2",
+      "entity_type": "procedure",
+      "data": {
+        "id": "proc_2",
+        "name": "Eligibility Criteria Assessment",
+        "procedureType": "Assessment",
+        "code": {
+          "id": "0ba170f2-0747-48d8-9848-d3246c05a163",
+          "code": "C25218",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Assessment",
+          "instanceType": "Code"
+        },
+        "instanceType": "Procedure",
+        "label": "Eligibility Assessment",
+        "description": "Evaluation of participant against study inclusion and exclusion criteria"
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "proc_3",
+      "entity_type": "procedure",
+      "data": {
+        "id": "proc_3",
+        "name": "Demography and Medical History Collection",
+        "procedureType": "Assessment",
+        "code": {
+          "id": "b09af4a8-45c5-46e9-9e00-9000c618e7bd",
+          "code": "C25218",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Assessment",
+          "instanceType": "Code"
+        },
+        "instanceType": "Procedure",
+        "label": "Demographics/Medical History",
+        "description": "Collection of participant demographic data and past medical history"
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "proc_4",
+      "entity_type": "procedure",
+      "data": {
+        "id": "proc_4",
+        "name": "Disease Characteristics and Treatment History Collection",
+        "procedureType": "Assessment",
+        "code": {
+          "id": "78e77302-ab64-4442-a8ed-11ca4fcac15f",
+          "code": "C25218",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Assessment",
+          "instanceType": "Code"
+        },
+        "instanceType": "Procedure",
+        "label": "Disease/Treatment History",
+        "description": "Collection of information regarding the participant's disease characteristics and prior treatments"
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "proc_5",
+      "entity_type": "procedure",
+      "data": {
+        "id": "proc_5",
+        "name": "Patient-Reported Outcomes Assessment",
+        "procedureType": "Assessment",
+        "code": {
+          "id": "54f4c55f-ead9-496b-8845-10df70422441",
+          "code": "C25218",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Assessment",
+          "instanceType": "Code"
+        },
+        "instanceType": "Procedure",
+        "label": "PRO Assessment",
+        "description": "Collection of participant-reported health and quality of life information (e.g., EORTC QLQ CIPN20)"
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "proc_6",
+      "entity_type": "procedure",
+      "data": {
+        "id": "proc_6",
+        "name": "Healthcare Resource Use Collection",
+        "procedureType": "Assessment",
+        "code": {
+          "id": "2a910ac5-33ff-4140-bd31-fd2af40968a8",
+          "code": "C25218",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Assessment",
+          "instanceType": "Code"
+        },
+        "instanceType": "Procedure",
+        "label": "Healthcare Resource Use",
+        "description": "Collection of data on healthcare services utilized by the participant"
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "proc_7",
+      "entity_type": "procedure",
+      "data": {
+        "id": "proc_7",
+        "name": "Physical Examination",
+        "procedureType": "Assessment",
+        "code": {
+          "id": "1dd4e5c1-1e77-4d35-b580-aa594ce34b1f",
+          "code": "99203",
+          "codeSystem": "CPT",
+          "codeSystemVersion": "",
+          "decode": "Office or other outpatient visit for the evaluation and management of a new patient, comprehensive",
+          "instanceType": "Code"
+        },
+        "instanceType": "Procedure",
+        "label": "Physical Exam",
+        "description": "General physical assessment of the participant"
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "proc_8",
+      "entity_type": "procedure",
+      "data": {
+        "id": "proc_8",
+        "name": "Neurologic Examination",
+        "procedureType": "Assessment",
+        "code": {
+          "id": "775f9200-9a8b-455a-84ef-3c41ec895c2e",
+          "code": "C25218",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Assessment",
+          "instanceType": "Code"
+        },
+        "instanceType": "Procedure",
+        "label": "Neurologic Exam",
+        "description": "Assessment of the participant's neurological function"
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "proc_9",
+      "entity_type": "procedure",
+      "data": {
+        "id": "proc_9",
+        "name": "Immune Effector Cell-Associated Neurotoxicity Syndrome (ICANS) Score Assessment",
+        "procedureType": "Assessment",
+        "code": {
+          "id": "66d0b1c8-fa56-4d66-9c66-0f6179f81377",
+          "code": "C25218",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Assessment",
+          "instanceType": "Code"
+        },
+        "instanceType": "Procedure",
+        "label": "ICE Score",
+        "description": "Assessment of the ICE score for neurotoxicity"
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "proc_10",
+      "entity_type": "procedure",
+      "data": {
+        "id": "proc_10",
+        "name": "Height and Weight Measurement",
+        "procedureType": "Assessment",
+        "code": {
+          "id": "97dd0173-4d18-4115-bf41-fc89f1933976",
+          "code": "C25218",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Assessment",
+          "instanceType": "Code"
+        },
+        "instanceType": "Procedure",
+        "label": "Height/Weight",
+        "description": "Measurement of participant's height and weight"
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "proc_11",
+      "entity_type": "procedure",
+      "data": {
+        "id": "proc_11",
+        "name": "Vital Signs Measurement",
+        "procedureType": "Monitoring",
+        "code": {
+          "id": "2c2df8a3-80d6-44f6-b613-41a45ae90dca",
+          "code": "C25548",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Monitoring",
+          "instanceType": "Code"
+        },
+        "instanceType": "Procedure",
+        "label": "Vital Signs",
+        "description": "Measurement of temperature, heart rate, blood pressure, and oxygen saturation"
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "proc_12",
+      "entity_type": "procedure",
+      "data": {
+        "id": "proc_12",
+        "name": "ECOG Performance Status Assessment",
+        "procedureType": "Assessment",
+        "code": {
+          "id": "ef858a2a-257a-4ab7-b29b-2a04ced6e7c8",
+          "code": "C25218",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Assessment",
+          "instanceType": "Code"
+        },
+        "instanceType": "Procedure",
+        "label": "ECOG PS",
+        "description": "Assessment of Eastern Cooperative Oncology Group (ECOG) performance status"
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "proc_13",
+      "entity_type": "procedure",
+      "data": {
+        "id": "proc_13",
+        "name": "Triplicate 12-Lead Electrocardiogram",
+        "procedureType": "Diagnostic Procedure",
+        "code": {
+          "id": "abb1cad4-5722-42aa-bcfb-51c6a387199c",
+          "code": "93000",
+          "codeSystem": "CPT",
+          "codeSystemVersion": "",
+          "decode": "Electrocardiogram, routine ECG with at least 12 leads; with interpretation and report",
+          "instanceType": "Code"
+        },
+        "instanceType": "Procedure",
+        "label": "Triplicate 12-Lead ECG",
+        "description": "Recording of the electrical activity of the heart using 12 leads, performed in triplicate"
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "proc_14",
+      "entity_type": "procedure",
+      "data": {
+        "id": "proc_14",
+        "name": "Echocardiogram",
+        "procedureType": "Diagnostic Procedure",
+        "code": {
+          "id": "2ec515cd-5702-4eba-b44e-29c899e2b5f7",
+          "code": "C25391",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Diagnostic Procedure",
+          "instanceType": "Code"
+        },
+        "instanceType": "Procedure",
+        "label": "ECHO",
+        "description": "Ultrasound imaging of the heart"
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "proc_15",
+      "entity_type": "procedure",
+      "data": {
+        "id": "proc_15",
+        "name": "Multigated Acquisition Scan",
+        "procedureType": "Diagnostic Procedure",
+        "code": {
+          "id": "617693fc-c4c2-4380-8e58-3573cd642781",
+          "code": "C25391",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Diagnostic Procedure",
+          "instanceType": "Code"
+        },
+        "instanceType": "Procedure",
+        "label": "MUGA Scan",
+        "description": "Nuclear medicine test to evaluate heart function"
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "proc_16",
+      "entity_type": "procedure",
+      "data": {
+        "id": "proc_16",
+        "name": "Elranatamab Administration",
+        "procedureType": "Therapeutic Procedure",
+        "code": {
+          "id": "7ef44c71-c4f4-4d9b-8411-2d5498e845a0",
+          "code": "C49236",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Therapeutic Procedure",
+          "instanceType": "Code"
+        },
+        "instanceType": "Procedure",
+        "label": "Drug Administration",
+        "description": "Administration of the study drug Elranatamab, including step-up priming doses, likely via subcutaneous injection"
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "proc_17",
+      "entity_type": "procedure",
+      "data": {
+        "id": "proc_17",
+        "name": "Premedication Administration",
+        "procedureType": "Therapeutic Procedure",
+        "code": {
+          "id": "ab5d97f1-8aef-4dc3-826b-cc7082d25bab",
+          "code": "C49236",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Therapeutic Procedure",
+          "instanceType": "Code"
+        },
+        "instanceType": "Procedure",
+        "label": "Premedication",
+        "description": "Administration of medications prior to study drug to prevent adverse reactions (e.g., for CRS prophylaxis)"
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "proc_18",
+      "entity_type": "procedure",
+      "data": {
+        "id": "proc_18",
+        "name": "Imaging Assessment",
+        "procedureType": "Imaging Technique",
+        "code": {
+          "id": "f6d19ce3-deae-4c7a-ba92-df5980f9a5bf",
+          "code": "C17369",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Imaging Technique",
+          "instanceType": "Code"
+        },
+        "instanceType": "Procedure",
+        "label": "Imaging",
+        "description": "Diagnostic imaging procedures including Positron Emission Tomography/Computed Tomography (PET/CT), Computed Tomography (CT), and Magnetic Resonance Imaging (MRI)"
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "proc_19",
+      "entity_type": "procedure",
+      "data": {
+        "id": "proc_19",
+        "name": "Skin Lesion Measurement",
+        "procedureType": "Diagnostic Procedure",
+        "code": {
+          "id": "3e45d391-9762-482a-ac6e-d771f4975527",
+          "code": "C25391",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Diagnostic Procedure",
+          "instanceType": "Code"
+        },
+        "instanceType": "Procedure",
+        "label": "Skin Lesion Measurement",
+        "description": "Measurement of skin lesions using a ruler"
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "proc_20",
+      "entity_type": "procedure",
+      "data": {
+        "id": "proc_20",
+        "name": "Bone Marrow Aspirate Sampling",
+        "procedureType": "Biospecimen Collection",
+        "code": {
+          "id": "e63db977-d0cd-487d-832b-601fd9a548c7",
+          "code": "38220",
+          "codeSystem": "CPT",
+          "codeSystemVersion": "",
+          "decode": "Bone marrow aspiration; superficial (e.g., sternum, ilium, tibial crest)",
+          "instanceType": "Code"
+        },
+        "instanceType": "Procedure",
+        "label": "BMA Sampling",
+        "description": "Collection of bone marrow aspirate samples"
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "proc_21",
+      "entity_type": "procedure",
+      "data": {
+        "id": "proc_21",
+        "name": "Bone Marrow Aspirate for Cytogenetics",
+        "procedureType": "Biospecimen Collection",
+        "code": {
+          "id": "6bb9152f-4679-4fbd-a6fd-e39ea66fbeb7",
+          "code": "38220",
+          "codeSystem": "CPT",
+          "codeSystemVersion": "",
+          "decode": "Bone marrow aspiration; superficial (e.g., sternum, ilium, tibial crest)",
+          "instanceType": "Code"
+        },
+        "instanceType": "Procedure",
+        "label": "BMA for Cytogenetics",
+        "description": "Collection of bone marrow aspirate for Fluorescence In Situ Hybridization (FISH) and karyotyping"
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "proc_22",
+      "entity_type": "procedure",
+      "data": {
+        "id": "proc_22",
+        "name": "Bone Marrow Aspirate for Minimal Residual Disease",
+        "procedureType": "Biospecimen Collection",
+        "code": {
+          "id": "7ef46920-9ada-4f61-8485-4c1d1c70a0d0",
+          "code": "38220",
+          "codeSystem": "CPT",
+          "codeSystemVersion": "",
+          "decode": "Bone marrow aspiration; superficial (e.g., sternum, ilium, tibial crest)",
+          "instanceType": "Code"
+        },
+        "instanceType": "Procedure",
+        "label": "BMA for MRD",
+        "description": "Collection of bone marrow aspirate for minimal residual disease evaluation"
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "proc_23",
+      "entity_type": "procedure",
+      "data": {
+        "id": "proc_23",
+        "name": "Bone Marrow Aspirate for Molecular Profiling",
+        "procedureType": "Biospecimen Collection",
+        "code": {
+          "id": "9faa531d-f4a5-47ce-88c7-18dbc0caf7f2",
+          "code": "38220",
+          "codeSystem": "CPT",
+          "codeSystemVersion": "",
+          "decode": "Bone marrow aspiration; superficial (e.g., sternum, ilium, tibial crest)",
+          "instanceType": "Code"
+        },
+        "instanceType": "Procedure",
+        "label": "BMA for Molecular Profiling",
+        "description": "Collection of bone marrow aspirate for molecular profiling"
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "proc_24",
+      "entity_type": "procedure",
+      "data": {
+        "id": "proc_24",
+        "name": "Bone Marrow Biopsy Sampling",
+        "procedureType": "Biospecimen Collection",
+        "code": {
+          "id": "baa0e9dc-9080-4132-83a9-279ebe1c96f9",
+          "code": "38221",
+          "codeSystem": "CPT",
+          "codeSystemVersion": "",
+          "decode": "Bone marrow biopsy, needle or trocar",
+          "instanceType": "Code"
+        },
+        "instanceType": "Procedure",
+        "label": "BMB Sampling",
+        "description": "Collection of bone marrow biopsy samples"
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "proc_25",
+      "entity_type": "procedure",
+      "data": {
+        "id": "proc_25",
+        "name": "Bone Marrow Biopsy for BCMA/Immune Cell Protein Biomarkers",
+        "procedureType": "Biospecimen Collection",
+        "code": {
+          "id": "8b70d6ad-6c45-4b15-acf6-bd3130e31a21",
+          "code": "38221",
+          "codeSystem": "CPT",
+          "codeSystemVersion": "",
+          "decode": "Bone marrow biopsy, needle or trocar",
+          "instanceType": "Code"
+        },
+        "instanceType": "Procedure",
+        "label": "BMB for Biomarkers",
+        "description": "Collection of bone marrow biopsy for B-cell Maturation Antigen (BCMA) and/or immune cell protein biomarker assessment"
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "proc_26",
+      "entity_type": "procedure",
+      "data": {
+        "id": "proc_26",
+        "name": "Blood Sample Collection",
+        "procedureType": "Biospecimen Collection",
+        "code": {
+          "id": "d8d07ec2-11a8-4657-97eb-bb0222314ac6",
+          "code": "36415",
+          "codeSystem": "CPT",
+          "codeSystemVersion": "",
+          "decode": "Collection of venous blood by venipuncture",
+          "instanceType": "Code"
+        },
+        "instanceType": "Procedure",
+        "label": "Blood Draw",
+        "description": "Collection of blood samples for various analyses (e.g., sBCMA, circulating proteins, metabolites, TCR sequencing, immune cell profiling, PK, PD, lab assessments)"
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "proc_27",
+      "entity_type": "procedure",
+      "data": {
+        "id": "proc_27",
+        "name": "Serum Sample Collection",
+        "procedureType": "Biospecimen Collection",
+        "code": {
+          "id": "ad4e7376-40a0-4dcc-9a7e-0b29c53f9198",
+          "code": "36415",
+          "codeSystem": "CPT",
+          "codeSystemVersion": "",
+          "decode": "Collection of venous blood by venipuncture",
+          "instanceType": "Code"
+        },
+        "instanceType": "Procedure",
+        "label": "Serum Draw",
+        "description": "Collection of serum samples for various analyses (e.g., FLC, general serum tests, quantitative immunoglobulins, circulating proteins, metabolites)"
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "proc_28",
+      "entity_type": "procedure",
+      "data": {
+        "id": "proc_28",
+        "name": "Urine Protein Electrophoresis",
+        "procedureType": "Diagnostic Procedure",
+        "code": {
+          "id": "c4756e15-3679-4403-be58-8291ebce55cb",
+          "code": "C25391",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Diagnostic Procedure",
+          "instanceType": "Code"
+        },
+        "instanceType": "Procedure",
+        "label": "UPEP",
+        "description": "Laboratory analysis of proteins in urine via electrophoresis"
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "proc_29",
+      "entity_type": "procedure",
+      "data": {
+        "id": "proc_29",
+        "name": "Urine Immunofixation Electrophoresis",
+        "procedureType": "Diagnostic Procedure",
+        "code": {
+          "id": "deffbc5f-f6c4-44de-b244-d9b72b42aecb",
+          "code": "C25391",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Diagnostic Procedure",
+          "instanceType": "Code"
+        },
+        "instanceType": "Procedure",
+        "label": "UIFE",
+        "description": "Laboratory analysis of specific proteins in urine via immunofixation electrophoresis"
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "proc_30",
+      "entity_type": "procedure",
+      "data": {
+        "id": "proc_30",
+        "name": "Minimal Residual Disease Evaluation",
+        "procedureType": "Diagnostic Procedure",
+        "code": {
+          "id": "b8553dbe-b221-4315-b85f-de29f3b692c4",
+          "code": "C25391",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Diagnostic Procedure",
+          "instanceType": "Code"
+        },
+        "instanceType": "Procedure",
+        "label": "MRD Evaluation",
+        "description": "Assessment and analysis of minimal residual disease"
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "proc_31",
+      "entity_type": "procedure",
+      "data": {
+        "id": "proc_31",
+        "name": "Biomarker Sample Collection",
+        "procedureType": "Biospecimen Collection",
+        "code": {
+          "id": "688d032b-d9d2-45d2-bca8-a49e3f622436",
+          "code": "C70793",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Biospecimen Collection",
+          "instanceType": "Code"
+        },
+        "instanceType": "Procedure",
+        "label": "Biomarker Sample",
+        "description": "Collection of samples for biomarker analysis"
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "proc_32",
+      "entity_type": "procedure",
+      "data": {
+        "id": "proc_32",
+        "name": "Immunofluorescence",
+        "procedureType": "Diagnostic Procedure",
+        "code": {
+          "id": "12c4421c-b3a3-4fb9-a969-38c09804c21e",
+          "code": "C25391",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Diagnostic Procedure",
+          "instanceType": "Code"
+        },
+        "instanceType": "Procedure",
+        "label": "Immunofluorescence",
+        "description": "Diagnostic technique using fluorescent antibodies to detect specific antigens"
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "proc_33",
+      "entity_type": "procedure",
+      "data": {
+        "id": "proc_33",
+        "name": "Flow Cytometry",
+        "procedureType": "Diagnostic Procedure",
+        "code": {
+          "id": "d45dae9d-a51b-4536-a93c-0b8990106f4b",
+          "code": "C25391",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Diagnostic Procedure",
+          "instanceType": "Code"
+        },
+        "instanceType": "Procedure",
+        "label": "Flow Cytometry",
+        "description": "Diagnostic technique used to analyze the physical and chemical characteristics of cells or particles"
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "proc_34",
+      "entity_type": "procedure",
+      "data": {
+        "id": "proc_34",
+        "name": "Pregnancy Testing",
+        "procedureType": "Diagnostic Procedure",
+        "code": {
+          "id": "500c1e0a-e035-4fd9-9d2f-3417f775235a",
+          "code": "81025",
+          "codeSystem": "CPT",
+          "codeSystemVersion": "",
+          "decode": "Urine pregnancy test, visual color comparison methods",
+          "instanceType": "Code"
+        },
+        "instanceType": "Procedure",
+        "label": "Pregnancy Test",
+        "description": "Test to determine pregnancy status"
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "proc_35",
+      "entity_type": "procedure",
+      "data": {
+        "id": "proc_35",
+        "name": "Clinical Safety Laboratory Assessments",
+        "procedureType": "Biospecimen Collection",
+        "code": {
+          "id": "7ea235ee-bc95-4027-8219-9cd455f71b32",
+          "code": "C70793",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Biospecimen Collection",
+          "instanceType": "Code"
+        },
+        "instanceType": "Procedure",
+        "label": "Safety Labs",
+        "description": "Collection and analysis of laboratory samples for safety monitoring"
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "proc_36",
+      "entity_type": "procedure",
+      "data": {
+        "id": "proc_36",
+        "name": "Adverse Event and Serious Adverse Event Information Collection",
+        "procedureType": "Assessment",
+        "code": {
+          "id": "c1d3a53f-bc9a-4d18-a124-3337bb7be09a",
+          "code": "C25218",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Assessment",
+          "instanceType": "Code"
+        },
+        "instanceType": "Procedure",
+        "label": "AE/SAE Collection",
+        "description": "Collection of information regarding adverse events and serious adverse events"
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "proc_37",
+      "entity_type": "procedure",
+      "data": {
+        "id": "proc_37",
+        "name": "Adverse Event and Serious Adverse Event Follow-up",
+        "procedureType": "Assessment",
+        "code": {
+          "id": "885112ae-d3a8-4007-a858-1330c5557bbc",
+          "code": "C25218",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Assessment",
+          "instanceType": "Code"
+        },
+        "instanceType": "Procedure",
+        "label": "AE/SAE Follow-up",
+        "description": "Monitoring and follow-up of reported adverse events and serious adverse events"
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "proc_38",
+      "entity_type": "procedure",
+      "data": {
+        "id": "proc_38",
+        "name": "Peripheral Neuropathy Assessment",
+        "procedureType": "Assessment",
+        "code": {
+          "id": "792ab0eb-f5bc-4e8d-ae3f-bbfdc8c55d4a",
+          "code": "C25218",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Assessment",
+          "instanceType": "Code"
+        },
+        "instanceType": "Procedure",
+        "label": "Peripheral Neuropathy Assessment",
+        "description": "Assessment of symptoms and signs of peripheral neuropathy"
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "proc_39",
+      "entity_type": "procedure",
+      "data": {
+        "id": "proc_39",
+        "name": "Neurological Adverse Event Assessment",
+        "procedureType": "Assessment",
+        "code": {
+          "id": "4786e059-f362-4a81-926b-0eeb9aebf845",
+          "code": "C25218",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Assessment",
+          "instanceType": "Code"
+        },
+        "instanceType": "Procedure",
+        "label": "Neurologic AE Assessment",
+        "description": "Assessment of neurological adverse events"
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "proc_40",
+      "entity_type": "procedure",
+      "data": {
+        "id": "proc_40",
+        "name": "Pregnancy Exposure Monitoring",
+        "procedureType": "Monitoring",
+        "code": {
+          "id": "bb9d729a-1127-4a9e-92bc-8007debbd055",
+          "code": "C25548",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Monitoring",
+          "instanceType": "Code"
+        },
+        "instanceType": "Procedure",
+        "label": "Pregnancy Monitoring",
+        "description": "Monitoring for drug exposure during pregnancy"
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "proc_41",
+      "entity_type": "procedure",
+      "data": {
+        "id": "proc_41",
+        "name": "Breastfeeding Exposure Monitoring",
+        "procedureType": "Monitoring",
+        "code": {
+          "id": "a917013a-ff02-40a9-b2b7-e62d938912b0",
+          "code": "C25548",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Monitoring",
+          "instanceType": "Code"
+        },
+        "instanceType": "Procedure",
+        "label": "Breastfeeding Monitoring",
+        "description": "Monitoring for drug exposure during breastfeeding"
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "proc_42",
+      "entity_type": "procedure",
+      "data": {
+        "id": "proc_42",
+        "name": "Genetic Assessment",
+        "procedureType": "Diagnostic Procedure",
+        "code": {
+          "id": "abd1184f-49ba-4a17-b9d5-928cc257a8c8",
+          "code": "C25391",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Diagnostic Procedure",
+          "instanceType": "Code"
+        },
+        "instanceType": "Procedure",
+        "label": "Genetic Assessment",
+        "description": "Assessment of genetic information"
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "proc_43",
+      "entity_type": "procedure",
+      "data": {
+        "id": "proc_43",
+        "name": "Biospecimen Banking",
+        "procedureType": "Biospecimen Collection",
+        "code": {
+          "id": "08159bda-e3fb-4afc-b3d6-e17b0e76d996",
+          "code": "C70793",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Biospecimen Collection",
+          "instanceType": "Code"
+        },
+        "instanceType": "Procedure",
+        "label": "Biospecimen Banking",
+        "description": "Collection and storage of biological samples (e.g., Pfizer Prep D1 biospecimens)"
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "proc_44",
+      "entity_type": "procedure",
+      "data": {
+        "id": "proc_44",
+        "name": "Saliva Sample for Germline Comparator",
+        "procedureType": "Biospecimen Collection",
+        "code": {
+          "id": "786847e7-77a8-420f-bf8f-e3dd3cad572b",
+          "code": "C70793",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Biospecimen Collection",
+          "instanceType": "Code"
+        },
+        "instanceType": "Procedure",
+        "label": "Saliva Sample",
+        "description": "Collection of saliva samples for germline comparator analysis"
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "proc_45",
+      "entity_type": "procedure",
+      "data": {
+        "id": "proc_45",
+        "name": "Immunogenicity Assessment",
+        "procedureType": "Diagnostic Procedure",
+        "code": {
+          "id": "676d1ed9-fe92-43f9-a585-ce1d2b93bc86",
+          "code": "C25391",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Diagnostic Procedure",
+          "instanceType": "Code"
+        },
+        "instanceType": "Procedure",
+        "label": "Immunogenicity Assessment",
+        "description": "Assessment of immune response to the study drug"
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "proc_46",
+      "entity_type": "procedure",
+      "data": {
+        "id": "proc_46",
+        "name": "Anti-infectious Prophylaxis Administration",
+        "procedureType": "Therapeutic Procedure",
+        "code": {
+          "id": "34fafa91-deab-42d8-b3d7-af76b768f652",
+          "code": "C49236",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Therapeutic Procedure",
+          "instanceType": "Code"
+        },
+        "instanceType": "Procedure",
+        "label": "Anti-infectious Prophylaxis",
+        "description": "Administration of medication to prevent infections"
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "proc_47",
+      "entity_type": "procedure",
+      "data": {
+        "id": "proc_47",
+        "name": "24-hour Monitoring",
+        "procedureType": "Monitoring",
+        "code": {
+          "id": "ba74f4db-6473-456f-83e5-a1ccefbbc243",
+          "code": "C25548",
+          "codeSystem": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "codeSystemVersion": "25.01d",
+          "decode": "Monitoring",
+          "instanceType": "Code"
+        },
+        "instanceType": "Procedure",
+        "label": "24-hour Monitoring",
+        "description": "Continuous monitoring of participant's health status over a 24-hour period"
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "dev_1",
+      "entity_type": "medical_device",
+      "data": {
+        "id": "dev_1",
+        "name": "Ruler",
+        "instanceType": "MedicalDevice",
+        "label": "Ruler",
+        "description": "Measuring instrument used for skin lesion measurement",
+        "deviceType": {
+          "code": "Diagnostic Device",
+          "codeSystem": "USDM",
+          "decode": "Diagnostic Device"
+        }
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "dev_2",
+      "entity_type": "medical_device",
+      "data": {
+        "id": "dev_2",
+        "name": "PET/CT Scanner",
+        "instanceType": "MedicalDevice",
+        "label": "PET/CT",
+        "description": "Medical imaging device combining Positron Emission Tomography and Computed Tomography",
+        "deviceType": {
+          "code": "Diagnostic Device",
+          "codeSystem": "USDM",
+          "decode": "Diagnostic Device"
+        }
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "dev_3",
+      "entity_type": "medical_device",
+      "data": {
+        "id": "dev_3",
+        "name": "CT Scanner",
+        "instanceType": "MedicalDevice",
+        "label": "CT Scanner",
+        "description": "Medical imaging device using X-rays to create cross-sectional images",
+        "deviceType": {
+          "code": "Diagnostic Device",
+          "codeSystem": "USDM",
+          "decode": "Diagnostic Device"
+        }
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "dev_4",
+      "entity_type": "medical_device",
+      "data": {
+        "id": "dev_4",
+        "name": "MRI Scanner",
+        "instanceType": "MedicalDevice",
+        "label": "MRI Scanner",
+        "description": "Medical imaging device using strong magnetic fields and radio waves to create detailed images of organs and soft tissues",
+        "deviceType": {
+          "code": "Diagnostic Device",
+          "codeSystem": "USDM",
+          "decode": "Diagnostic Device"
+        }
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "dev_5",
+      "entity_type": "medical_device",
+      "data": {
+        "id": "dev_5",
+        "name": "Electrocardiogram Device",
+        "instanceType": "MedicalDevice",
+        "label": "ECG Device",
+        "description": "Device used to record the electrical activity of the heart",
+        "deviceType": {
+          "code": "Diagnostic Device",
+          "codeSystem": "USDM",
+          "decode": "Diagnostic Device"
+        }
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "dev_6",
+      "entity_type": "medical_device",
+      "data": {
+        "id": "dev_6",
+        "name": "Syringe",
+        "instanceType": "MedicalDevice",
+        "label": "Syringe",
+        "description": "Device used for injecting fluids, implied by subcutaneous administration",
+        "deviceType": {
+          "code": "Drug Delivery Device",
+          "codeSystem": "USDM",
+          "decode": "Drug Delivery Device"
+        }
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "ing_1",
+      "entity_type": "ingredient",
+      "data": {
+        "id": "ing_1",
+        "name": "Elranatamab",
+        "role": "Active",
+        "instanceType": "Ingredient",
+        "substanceId": "PF-06863135"
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "ing_2",
+      "entity_type": "ingredient",
+      "data": {
+        "id": "ing_2",
+        "name": "COVID-19 Vaccine",
+        "role": "Active",
+        "instanceType": "Ingredient"
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "ing_3",
+      "entity_type": "ingredient",
+      "data": {
+        "id": "ing_3",
+        "name": "IV Immunoglobulins",
+        "role": "Active",
+        "instanceType": "Ingredient"
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "ing_4",
+      "entity_type": "ingredient",
+      "data": {
+        "id": "ing_4",
+        "name": "Oral Contraceptives",
+        "role": "Active",
+        "instanceType": "Ingredient"
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "str_1",
+      "entity_type": "strength",
+      "data": {
+        "id": "str_1",
+        "instanceType": "Strength",
+        "value": 12,
+        "unit": "mg",
+        "numerator": {
+          "value": 12,
+          "unit": "mg"
+        }
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "str_2",
+      "entity_type": "strength",
+      "data": {
+        "id": "str_2",
+        "instanceType": "Strength",
+        "value": 32,
+        "unit": "mg",
+        "numerator": {
+          "value": 32,
+          "unit": "mg"
+        }
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    },
+    {
+      "id": "str_3",
+      "entity_type": "strength",
+      "data": {
+        "id": "str_3",
+        "instanceType": "Strength",
+        "value": 76,
+        "unit": "mg",
+        "numerator": {
+          "value": 76,
+          "unit": "mg"
+        }
+      },
+      "confidence": 1.0,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        22,
+        26,
+        29
+      ]
+    }
+  ],
+  "procedures_summary": {
+    "procedure_count": 47,
+    "device_count": 6,
+    "ingredient_count": 4,
+    "strength_count": 3
+  }
+}

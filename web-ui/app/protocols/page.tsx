@@ -1,7 +1,8 @@
 import Link from 'next/link';
-import { FileText, Calendar, Tag, ArrowRight } from 'lucide-react';
+import { FileText, Calendar, Tag, ArrowRight, Clock, Coins, AlertTriangle, Cpu } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { Badge } from '@/components/ui/badge';
 import fs from 'fs/promises';
 import path from 'path';
 
@@ -10,6 +11,24 @@ const OUTPUT_DIR =
 
 const FILE_READ_TIMEOUT_MS = 5000;
 
+interface ResultJson {
+  status: string;
+  duration_seconds: number;
+  total_tokens: number;
+  total_api_calls: number;
+  total_agents: number;
+  succeeded_agents: number;
+  failed_agents: { id: string; error: string }[];
+  entity_count: number;
+  models: {
+    model: string;
+    fast_model: string | null;
+    vision_model: string | null;
+  };
+  started: string;
+  finished: string;
+}
+
 interface ProtocolSummary {
   id: string;
   name: string;
@@ -17,6 +36,17 @@ interface ProtocolSummary {
   generatedAt: string;
   activityCount: number;
   encounterCount: number;
+  epochCount: number;
+  // Enhanced fields from result.json
+  duration?: number;
+  totalTokens?: number;
+  failedAgents?: { id: string; error: string }[];
+  models?: {
+    model: string;
+    fastModel: string | null;
+    visionModel: string | null;
+  };
+  status?: string;
 }
 
 async function readWithTimeout(filePath: string, timeoutMs: number): Promise<string> {
@@ -57,7 +87,6 @@ async function processDirectory(dirName: string): Promise<ProtocolSummary | null
     let generatedAt: string;
     if (timestampMatch) {
       const [, dateStr, timeStr] = timestampMatch;
-      // Parse YYYYMMDD_HHMMSS to ISO format
       const year = dateStr.substring(0, 4);
       const month = dateStr.substring(4, 6);
       const day = dateStr.substring(6, 8);
@@ -66,7 +95,6 @@ async function processDirectory(dirName: string): Promise<ProtocolSummary | null
       const second = timeStr.substring(4, 6);
       generatedAt = `${year}-${month}-${day}T${hour}:${minute}:${second}`;
     } else {
-      // Fallback to USDM generatedAt or file modification time
       if (usdm.generatedAt) {
         generatedAt = usdm.generatedAt;
       } else {
@@ -75,14 +103,69 @@ async function processDirectory(dirName: string): Promise<ProtocolSummary | null
       }
     }
 
-    return {
+    // Derive a readable protocol name from the folder name
+    // Folder format: NCT12345_Sponsor_StudyId_Ver_YYYYMMDD_HHMMSS
+    // Strip the trailing timestamp and replace underscores
+    const cleanName = dirName
+      .replace(/_\d{8}_\d{6}$/, '')  // remove timestamp suffix
+      .replace(/_/g, ' ');           // underscores to spaces
+
+    const summary: ProtocolSummary = {
       id: dirName,
-      name: dirName,
+      name: cleanName,
       usdmVersion: usdm.usdmVersion || '4.0',
       generatedAt,
       activityCount: studyDesign?.activities?.length || 0,
       encounterCount: studyDesign?.encounters?.length || 0,
+      epochCount: studyDesign?.epochs?.length || 0,
     };
+
+    // Read result.json for enhanced data
+    const resultJsonPath = path.join(protocolDir, 'result.json');
+    try {
+      const resultContent = await readWithTimeout(resultJsonPath, FILE_READ_TIMEOUT_MS);
+      const resultData: ResultJson = JSON.parse(resultContent);
+      summary.duration = resultData.duration_seconds;
+      summary.totalTokens = resultData.total_tokens;
+      summary.failedAgents = resultData.failed_agents;
+      summary.status = resultData.status;
+      summary.models = {
+        model: resultData.models.model,
+        fastModel: resultData.models.fast_model,
+        visionModel: resultData.models.vision_model,
+      };
+    } catch {
+      // result.json not available — fall back to parsing result.md
+      try {
+        const mdPath = path.join(protocolDir, 'result.md');
+        const mdContent = await readWithTimeout(mdPath, FILE_READ_TIMEOUT_MS);
+        const durationMatch = mdContent.match(/\*\*Duration:\*\*\s*([\d.]+)s/);
+        const tokensMatch = mdContent.match(/\| Total Tokens \| ([\d,]+) \|/);
+        const modelMatch = mdContent.match(/\*\*Model:\*\*\s*(.+)/);
+        const statusMatch = mdContent.match(/\*\*Status:\*\*\s*(\w+)/);
+        if (durationMatch) summary.duration = parseFloat(durationMatch[1]);
+        if (tokensMatch) summary.totalTokens = parseInt(tokensMatch[1].replace(/,/g, ''), 10);
+        if (statusMatch) summary.status = statusMatch[1];
+        if (modelMatch) {
+          summary.models = { model: modelMatch[1].trim(), fastModel: null, visionModel: null };
+        }
+        // Parse failed agents from result.md
+        const failedSection = mdContent.match(/## Failed Agents\n\n([\s\S]*?)(?=\n##|\n*$)/);
+        if (failedSection) {
+          const failedLines = failedSection[1].match(/- \*\*(.+?)\*\*: (.+)/g);
+          if (failedLines) {
+            summary.failedAgents = failedLines.map((line) => {
+              const m = line.match(/- \*\*(.+?)\*\*: (.+)/);
+              return { id: m?.[1] || 'unknown', error: m?.[2] || 'unknown' };
+            });
+          }
+        }
+      } catch {
+        // No result data available at all
+      }
+    }
+
+    return summary;
   } catch {
     return null;
   }
@@ -114,6 +197,28 @@ async function loadProtocols(): Promise<{ protocols: ProtocolSummary[]; error?: 
       error: err instanceof Error ? err.message : 'Failed to load protocols',
     };
   }
+}
+
+function formatDuration(seconds: number): string {
+  if (seconds < 60) return `${seconds.toFixed(0)}s`;
+  const mins = Math.floor(seconds / 60);
+  const secs = Math.round(seconds % 60);
+  return `${mins}m ${secs}s`;
+}
+
+function formatTokens(tokens: number): string {
+  if (tokens >= 1_000_000) return `${(tokens / 1_000_000).toFixed(1)}M`;
+  if (tokens >= 1_000) return `${(tokens / 1_000).toFixed(0)}K`;
+  return tokens.toLocaleString();
+}
+
+function shortenModelName(name: string): string {
+  // Shorten common model names for display
+  return name
+    .replace('gemini-2.5-pro', 'gemini-2.5-pro')
+    .replace('gemini-2.0-flash', 'gemini-2.0-flash')
+    .replace('claude-opus-4-6', 'claude-opus-4.6')
+    .replace('claude-sonnet-4-5', 'claude-sonnet-4.5');
 }
 
 export default async function ProtocolsPage() {
@@ -186,23 +291,31 @@ export default async function ProtocolsPage() {
 }
 
 function ProtocolCard({ protocol }: { protocol: ProtocolSummary }) {
-  // Format the date and time for display
   const formattedDateTime = new Date(protocol.generatedAt).toLocaleString('en-US', {
     year: 'numeric',
     month: 'short',
     day: 'numeric',
     hour: '2-digit',
     minute: '2-digit',
-    hour12: true
+    hour12: true,
   });
+
+  const hasFailures = protocol.failedAgents && protocol.failedAgents.length > 0;
 
   return (
     <Card className="hover:shadow-lg transition-shadow">
-      <CardHeader>
-        <CardTitle className="flex items-center gap-2">
-          <FileText className="h-5 w-5 text-primary" />
-          <span className="truncate">{protocol.name}</span>
-        </CardTitle>
+      <CardHeader className="pb-3">
+        <div className="flex items-start justify-between gap-2">
+          <CardTitle className="flex items-center gap-2 text-base">
+            <FileText className="h-5 w-5 text-primary shrink-0" />
+            <span className="break-words line-clamp-2" title={protocol.name}>{protocol.name}</span>
+          </CardTitle>
+          {protocol.status && (
+            <Badge variant={protocol.status === 'SUCCESS' ? 'default' : 'destructive'} className="shrink-0 text-xs">
+              {protocol.status}
+            </Badge>
+          )}
+        </div>
         <CardDescription className="flex items-center gap-4 text-xs">
           <span className="flex items-center gap-1">
             <Tag className="h-3 w-3" />
@@ -214,11 +327,64 @@ function ProtocolCard({ protocol }: { protocol: ProtocolSummary }) {
           </span>
         </CardDescription>
       </CardHeader>
-      <CardContent>
-        <div className="flex items-center gap-4 text-sm text-muted-foreground mb-4">
-          <span>{protocol.activityCount} activities</span>
+      <CardContent className="pt-0">
+        {/* Stats row */}
+        <div className="grid grid-cols-3 gap-x-4 gap-y-1.5 text-sm text-muted-foreground mb-3">
+          <span>{protocol.epochCount} epochs</span>
           <span>{protocol.encounterCount} encounters</span>
+          <span>{protocol.activityCount} activities</span>
+          {protocol.duration != null && (
+            <span className="flex items-center gap-1">
+              <Clock className="h-3 w-3" />
+              {formatDuration(protocol.duration)}
+            </span>
+          )}
+          {protocol.totalTokens != null && (
+            <span className="flex items-center gap-1">
+              <Coins className="h-3 w-3" />
+              {formatTokens(protocol.totalTokens)} tokens
+            </span>
+          )}
         </div>
+
+        {/* Models */}
+        {protocol.models && (
+          <div className="mb-3">
+            <div className="flex items-center gap-1 text-xs text-muted-foreground mb-1">
+              <Cpu className="h-3 w-3" />
+              <span>Models</span>
+            </div>
+            <div className="flex flex-wrap gap-1">
+              <Badge variant="outline" className="text-xs font-normal">
+                {shortenModelName(protocol.models.model)}
+              </Badge>
+              {protocol.models.fastModel && protocol.models.fastModel !== protocol.models.model && (
+                <Badge variant="outline" className="text-xs font-normal">
+                  fast: {shortenModelName(protocol.models.fastModel)}
+                </Badge>
+              )}
+              {protocol.models.visionModel && protocol.models.visionModel !== protocol.models.model && (
+                <Badge variant="outline" className="text-xs font-normal">
+                  vision: {shortenModelName(protocol.models.visionModel)}
+                </Badge>
+              )}
+            </div>
+          </div>
+        )}
+
+        {/* Failed agents warning */}
+        {hasFailures && (
+          <div className="mb-3 p-2 bg-destructive/10 rounded-md">
+            <div className="flex items-center gap-1 text-xs text-destructive font-medium mb-1">
+              <AlertTriangle className="h-3 w-3" />
+              {protocol.failedAgents!.length} failed agent{protocol.failedAgents!.length > 1 ? 's' : ''}
+            </div>
+            <div className="text-xs text-destructive/80">
+              {protocol.failedAgents!.map((a) => a.id).join(', ')}
+            </div>
+          </div>
+        )}
+
         <Link href={`/protocols/${protocol.id}`}>
           <Button className="w-full">
             View Protocol

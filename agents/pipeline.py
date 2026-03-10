@@ -372,6 +372,9 @@ class ExtractionPipeline:
         # Generate result.md summary
         self._generate_result_md(result, status, plan, output_dir, pdf_path, start_time)
 
+        # Generate result.json for UI consumption
+        self._generate_result_json(result, status, output_dir, start_time)
+
         logger.info(
             f"Pipeline complete: {protocol_id} - "
             f"{'SUCCESS' if result.success else 'FAILED'} - "
@@ -674,4 +677,51 @@ class ExtractionPipeline:
             logger.info(f"Result summary: {result_path}")
         except Exception as e:
             logger.warning(f"Failed to write result.md: {e}")
+
+    def _generate_result_json(
+        self,
+        result: PipelineResult,
+        status: ExecutionStatus,
+        output_dir: str,
+        start_time: datetime,
+    ) -> None:
+        """Generate a result.json summary for UI consumption."""
+        end_time = datetime.now()
+        total_tokens = sum(r.tokens_used for r in status.results.values())
+        total_api_calls = sum(r.api_calls for r in status.results.values())
+        total_agents = len(status.results)
+        succeeded = sum(1 for r in status.results.values() if r.success)
+
+        failed_agents = []
+        for aid in (result.failed_agents or []):
+            ar = status.results.get(aid)
+            failed_agents.append({
+                "id": aid,
+                "error": ar.error if ar else "unknown",
+            })
+
+        data = {
+            "status": "SUCCESS" if result.success else "FAILED",
+            "duration_seconds": round(result.execution_time_ms / 1000, 1),
+            "total_tokens": total_tokens,
+            "total_api_calls": total_api_calls,
+            "total_agents": total_agents,
+            "succeeded_agents": succeeded,
+            "failed_agents": failed_agents,
+            "entity_count": result.entity_count,
+            "models": {
+                "model": self.config.model,
+                "fast_model": self.config.fast_model,
+                "vision_model": self.config.vision_model,
+            },
+            "started": start_time.strftime("%Y-%m-%dT%H:%M:%S"),
+            "finished": end_time.strftime("%Y-%m-%dT%H:%M:%S"),
+        }
+
+        result_path = os.path.join(output_dir, "result.json")
+        try:
+            with open(result_path, "w", encoding="utf-8") as f:
+                json.dump(data, f, indent=2)
+        except Exception as e:
+            logger.warning(f"Failed to write result.json: {e}")
 
