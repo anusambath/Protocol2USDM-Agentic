@@ -4,15 +4,18 @@ An agentic pipeline that extracts structured clinical trial data from protocol P
 
 The system uses a wave-based multi-agent architecture where specialized extraction agents run in parallel, writing entities into a shared context store. A USDM generator then assembles the final JSON, followed by terminology enrichment, schema validation, and optional CDISC CORE conformance checking.
 
+This is my fourth attempt at extracting clinical protocol files into standardized format. 
+
 ## What It Does
 
 - Parses clinical trial protocol PDFs (text + vision)
 - Extracts 40+ USDM entity types: metadata, eligibility criteria, objectives, endpoints, study design, interventions, Schedule of Assessments, and more
 - Produces USDM v4.0 JSON aligned with the official CDISC schema
 - Enriches entities with NCI EVS terminology codes
-- Tracks provenance (which PDF pages each entity came from)
+- Tracks provenance (which PDF pages each entity came from, which agent extracted it)
 - Validates output against USDM schema and CDISC CORE rules
 - Provides a web UI for reviewing results with color-coded provenance
+- Creates a result.md file that documents the results of the run
 
 ## Quick Start
 
