@@ -364,19 +364,22 @@ def _find_soa_title_pages(pdf_path: str) -> List[int]:
 def _expand_adjacent_pages(pages: List[int], pdf_path: str) -> List[int]:
     """
     Expand page list to include adjacent pages and fill gaps.
-    
+
     SoA tables often span multiple pages, so if we find page N,
     we should also check page N+1 (and potentially N-1) for table continuation.
     Also fills in any gaps between detected pages (e.g., if 13 and 15 are detected, include 14).
+
+    Adds ±1 around each contiguous group of pages (not just overall min/max)
+    so that footnote continuation pages after a table group are captured.
     """
     if not pages:
         return pages
-    
+
     doc = fitz.open(pdf_path)
     total_pages = len(doc)
-    
+
     expanded = set(pages)
-    
+
     # Step 1: Fill in gaps between detected pages
     # If pages 13 and 15 are detected, page 14 is definitely part of the table
     if len(pages) >= 2:
@@ -389,21 +392,35 @@ def _expand_adjacent_pages(pages: List[int], pdf_path: str) -> List[int]:
                     if gap_page not in expanded:
                         expanded.add(gap_page)
                         logger.info(f"Filled gap: added page {gap_page + 1} (1-indexed) between pages {start + 1} and {end + 1}")
-    
-    # Step 2: Add ±1 page on each end (non-iterative, conservative)
-    # SoA tables typically span 2-4 pages, so ±1 is sufficient
+
+    # Step 2: Add ±1 page around each contiguous group of pages
+    # This ensures footnote continuation pages after each SoA table group
+    # are captured (e.g., pages 9-14 form a group, page 15 has footnotes)
     sorted_pages = sorted(expanded)
-    min_page, max_page = sorted_pages[0], sorted_pages[-1]
-    
-    if min_page - 1 >= 0:
-        expanded.add(min_page - 1)
-        logger.debug(f"Added page {min_page} (1-indexed) before SoA")
-    if max_page + 1 < total_pages:
-        expanded.add(max_page + 1)
-        logger.debug(f"Added page {max_page + 2} (1-indexed) after SoA")
-    
+    groups: List[List[int]] = []
+    current_group: List[int] = [sorted_pages[0]]
+    for i in range(1, len(sorted_pages)):
+        if sorted_pages[i] - sorted_pages[i - 1] <= 1:
+            current_group.append(sorted_pages[i])
+        else:
+            groups.append(current_group)
+            current_group = [sorted_pages[i]]
+    groups.append(current_group)
+
+    for group in groups:
+        group_min, group_max = group[0], group[-1]
+        if group_min - 1 >= 0:
+            if group_min - 1 not in expanded:
+                expanded.add(group_min - 1)
+                logger.debug(f"Added page {group_min} (1-indexed) before SoA group [{group_min + 1}-{group_max + 1}]")
+        if group_max + 1 < total_pages:
+            if group_max + 1 not in expanded:
+                expanded.add(group_max + 1)
+                logger.debug(f"Added page {group_max + 2} (1-indexed) after SoA group [{group_min + 1}-{group_max + 1}]")
+
     doc.close()
     return list(expanded)
+
 
 
 def extract_soa_text(pdf_path: str, page_numbers: List[int]) -> str:
