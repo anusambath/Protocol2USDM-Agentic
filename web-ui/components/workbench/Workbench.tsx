@@ -223,6 +223,9 @@ export function Workbench({
   // Responsive layout behavior
   useResponsiveLayout();
 
+  // Derive active center tab's viewType for right panel visibility
+  const activeViewType = openTabs.find(t => t.id === activeTabId)?.viewType ?? null;
+
   return (
     <div className="h-screen w-screen flex flex-col overflow-hidden bg-background">
       {/* Main content area: ActivityBar | Sidebar | Splitter | CenterPanel | Splitter | RightPanel */}
@@ -270,7 +273,7 @@ export function Workbench({
         />
 
         {/* Right Panel Splitter */}
-        {!rightPanelCollapsed && (
+        {!rightPanelCollapsed && activeViewType === 'soa' && (
           <PanelSplitter
             position="right"
             onResize={handleRightSplitterResize}
@@ -284,6 +287,7 @@ export function Workbench({
           width={rightPanelWidth}
           activeTab={rightPanelActiveTab}
           onTabChange={setRightPanelActiveTab}
+          activeViewType={activeViewType}
           selectedCellId={selectedCellId}
           selectedNodeId={selectedNodeId}
           usdm={usdm}

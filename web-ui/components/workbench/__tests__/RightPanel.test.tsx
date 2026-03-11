@@ -10,6 +10,7 @@ describe('RightPanel', () => {
     width: 320,
     activeTab: 'properties' as RightPanelTab,
     onTabChange: vi.fn(),
+    activeViewType: 'soa' as string | null,
     selectedCellId: null,
     selectedNodeId: null,
     usdm: {},
@@ -171,45 +172,21 @@ describe('RightPanel', () => {
   });
 
   describe('Footnotes Tab', () => {
-    it('displays empty state when no selection is active', () => {
+    it('displays empty state when no cell is selected and no footnotes', () => {
       render(<RightPanel {...defaultProps} activeTab="footnotes" />);
-      expect(screen.getByText('No selection')).toBeInTheDocument();
-      expect(
-        screen.getByText(/select a cell or node to view related footnotes/i)
-      ).toBeInTheDocument();
+      expect(screen.getByText('No cell selected')).toBeInTheDocument();
     });
 
-    it('displays cell ID when selectedCellId is provided', () => {
+    it('displays no footnotes message when cell selected but no USDM footnotes', () => {
       render(
         <RightPanel
           {...defaultProps}
           activeTab="footnotes"
-          selectedCellId="cell-row-1-col-1"
+          selectedCellId="cell-row-1|col-1"
         />
       );
-      expect(screen.getByText(/cell: cell-row-1-col-1/i)).toBeInTheDocument();
-    });
-
-    it('displays node ID when selectedNodeId is provided', () => {
-      render(
-        <RightPanel
-          {...defaultProps}
-          activeTab="footnotes"
-          selectedNodeId="node-visit-3"
-        />
-      );
-      expect(screen.getByText(/node: node-visit-3/i)).toBeInTheDocument();
-    });
-
-    it('displays placeholder message', () => {
-      render(
-        <RightPanel
-          {...defaultProps}
-          activeTab="footnotes"
-          selectedCellId="cell-1"
-        />
-      );
-      expect(screen.getByText(/footnotes panel coming soon/i)).toBeInTheDocument();
+      // With no soaFootnotes in USDM and a cell selected, shows protocol-level empty state
+      expect(screen.getByText('No footnotes')).toBeInTheDocument();
     });
   });
 

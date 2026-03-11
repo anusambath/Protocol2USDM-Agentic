@@ -13,6 +13,8 @@ interface RightPanelProps {
   width: number;
   activeTab: RightPanelTab;
   onTabChange: (tab: RightPanelTab) => void;
+  // Active center panel view type (e.g. 'soa', 'overview')
+  activeViewType: string | null;
   // Contextual data
   selectedCellId: string | null;
   selectedNodeId: string | null;
@@ -25,11 +27,15 @@ export function RightPanel({
   width,
   activeTab,
   onTabChange,
+  activeViewType,
   selectedCellId,
   selectedNodeId,
   usdm,
   provenance,
 }: RightPanelProps) {
+  // Only show the right panel content when the SoA table tab is active
+  const isSoAActive = activeViewType === 'soa';
+  const effectiveCollapsed = collapsed || !isSoAActive;
   // Tab configuration for PanelTabBar
   const tabs = useMemo(
     () => [
@@ -41,13 +47,13 @@ export function RightPanel({
   );
 
   // Determine animation width (0 when collapsed, width when expanded)
-  const animatedWidth = collapsed ? 0 : width;
+  const animatedWidth = effectiveCollapsed ? 0 : width;
 
   return (
     <motion.aside
       role="complementary"
       aria-label="Right panel"
-      aria-hidden={collapsed}
+      aria-hidden={effectiveCollapsed}
       className="flex flex-col h-full bg-background border-l border-border overflow-hidden"
       initial={false}
       animate={{ width: animatedWidth }}
@@ -55,9 +61,9 @@ export function RightPanel({
         duration: 0.2,
         ease: 'easeInOut',
       }}
-      style={{ minWidth: collapsed ? 0 : width }}
+      style={{ minWidth: effectiveCollapsed ? 0 : width }}
     >
-      {!collapsed && (
+      {!effectiveCollapsed && (
         <>
           {/* Tab bar at top */}
           <PanelTabBar
