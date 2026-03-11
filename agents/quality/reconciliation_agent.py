@@ -266,6 +266,16 @@ def _extract_timepoint(encounter_name: str) -> Optional[str]:
         day = match.group(1).replace('_', '-')
         return f"day_{day}"
     
+    # Pattern 8: Parenthetical relative timepoint with unit or reference
+    # Matches: "(-6 M to R)", "(_28 to R)", "(_14 to R)", "(±3D)", "(Day 0)", etc.
+    # These are visit windows / relative timepoints that should be treated as distinct
+    match = re.search(r'\(([^)]{2,})\)', encounter_name)
+    if match:
+        inner = match.group(1).strip().replace('_', '-')
+        # Normalize whitespace
+        inner = re.sub(r'\s+', '_', inner)
+        return f"rel_{inner}"
+    
     return None
 def _are_encounters_duplicates(
     name_a: str,
