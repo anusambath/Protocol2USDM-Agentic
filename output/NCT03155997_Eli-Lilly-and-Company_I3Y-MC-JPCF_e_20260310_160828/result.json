@@ -1,0 +1,17 @@
+{
+  "status": "SUCCESS",
+  "duration_seconds": 693.6,
+  "total_tokens": 216076,
+  "total_api_calls": 120,
+  "total_agents": 21,
+  "succeeded_agents": 21,
+  "failed_agents": [],
+  "entity_count": 723,
+  "models": {
+    "model": "claude-opus-4-6",
+    "fast_model": "gemini-2.5-flash",
+    "vision_model": "gemini-2.5-flash"
+  },
+  "started": "2026-03-10T16:08:28",
+  "finished": "2026-03-10T16:20:02"
+}

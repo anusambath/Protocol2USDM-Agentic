@@ -84,6 +84,26 @@ def _is_code_object(d: Dict[str, Any]) -> bool:
     return "code" in d and ("codeSystem" in d or "decode" in d)
 
 
+def _normalize_epoch_name(name: str) -> str:
+    """Normalize an epoch name for comparison.
+
+    Strips Unicode superscript/subscript digits and common footnote markers
+    (e.g. ``UNS¹ EOS or ET²`` → ``uns eos or et``), collapses whitespace,
+    and normalises hyphens/underscores so header-structure names match the
+    cleaned USDM epoch names.
+    """
+    # Strip Unicode superscript digits (U+00B9, U+00B2, U+00B3, U+2070-U+2079)
+    # and subscript digits (U+2080-U+2089), plus common footnote chars like * † ‡ §
+    cleaned = re.sub(r'[\u00B9\u00B2\u00B3\u2070-\u2079\u2080-\u2089*†‡§¶]', '', name)
+    # Also strip letter superscripts (ᵃ-ᵛ range U+1D43-U+1D5B)
+    cleaned = re.sub(r'[\u1D43-\u1D5B]', '', cleaned)
+    # Normalise hyphens and underscores to a single space
+    cleaned = re.sub(r'[-_]', ' ', cleaned)
+    # Collapse whitespace
+    cleaned = re.sub(r'\s+', ' ', cleaned).strip().lower()
+    return cleaned
+
+
 def _ensure_code_id(d: Dict[str, Any]) -> Dict[str, Any]:
     """Ensure a USDM Code object has all required fields.
 
@@ -837,11 +857,11 @@ def _normalize_codelists(usdm: Dict[str, Any]) -> None:
         header_id_to_name = {ep["id"]: ep.get("name", "") for ep in header_epochs}
         usdm_name_to_id: Dict[str, str] = {}
         for ep in epochs:
-            usdm_name_to_id[ep.get("name", "").lower().strip()] = ep["id"]
+            usdm_name_to_id[_normalize_epoch_name(ep.get("name", ""))] = ep["id"]
 
         stale_to_usdm: Dict[str, str] = {}
         for hdr_id, hdr_name in header_id_to_name.items():
-            resolved = usdm_name_to_id.get(hdr_name.lower().strip())
+            resolved = usdm_name_to_id.get(_normalize_epoch_name(hdr_name))
             if resolved:
                 stale_to_usdm[hdr_id] = resolved
 
@@ -1396,9 +1416,9 @@ def _ensure_sponsor_identifier(usdm: Dict[str, Any]) -> None:
                 hdr_id_to_name = {ep["id"]: ep.get("name", "") for ep in header_epochs}
                 usdm_name_to_id: Dict[str, str] = {}
                 for ep in epochs:
-                    usdm_name_to_id[ep.get("name", "").lower().strip()] = ep["id"]
+                    usdm_name_to_id[_normalize_epoch_name(ep.get("name", ""))] = ep["id"]
                 for hdr_id, hdr_name in hdr_id_to_name.items():
-                    resolved = usdm_name_to_id.get(hdr_name.lower().strip())
+                    resolved = usdm_name_to_id.get(_normalize_epoch_name(hdr_name))
                     if resolved:
                         _stale_to_usdm[hdr_id] = resolved
 
@@ -1411,6 +1431,10 @@ def _ensure_sponsor_identifier(usdm: Dict[str, Any]) -> None:
                     resolved = _stale_to_usdm.get(stale_epoch_id)
                     if resolved:
                         _enc_epoch_map[enc_id] = resolved
+
+            # Restore the resolved map so _normalize_codelists can set
+            # epochId on encounter objects for UI column grouping.
+            design["_encounterEpochMap"] = _enc_epoch_map
 
             def _match_epoch(enc_name: str) -> Optional[str]:
                 """Match an encounter name to the best epoch by keyword."""

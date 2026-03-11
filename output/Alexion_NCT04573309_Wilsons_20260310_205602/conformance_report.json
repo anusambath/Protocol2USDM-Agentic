@@ -1,0 +1,652 @@
+{
+  "success": true,
+  "engine": "CDISC CORE v0.14.1",
+  "issues": 3,
+  "warnings": 36,
+  "issues_list": [
+    {
+      "rule_id": "/study/versions/0/organizations/2/type",
+      "severity": "Warning",
+      "message": "CDISC CORE [CORE-000427/DDF00035]: There is not a one-to-one relationship between code and decode within a codeSytem and corresponding codeSystemVersion",
+      "dataset": "Code",
+      "variable": "cc7d7a41-6377-4660-a007-04b1940ee368"
+    },
+    {
+      "rule_id": "/study/versions/0/roles/2/code",
+      "severity": "Warning",
+      "message": "CDISC CORE [CORE-000427/DDF00035]: There is not a one-to-one relationship between code and decode within a codeSytem and corresponding codeSystemVersion",
+      "dataset": "Code",
+      "variable": "b6e80778-e8c1-4516-9f94-c1de918bf746"
+    },
+    {
+      "rule_id": "/study/versions/0/studyDesigns/0/elements/0",
+      "severity": "Info",
+      "message": "CDISC CORE [CORE-000449/DDF00040]: The study element is not referenced by any study cell.",
+      "dataset": "StudyElement",
+      "variable": "fcff4090-5110-4d17-8c31-f64fc4fba036"
+    },
+    {
+      "rule_id": "/study/versions/0/studyDesigns/0/elements/1",
+      "severity": "Info",
+      "message": "CDISC CORE [CORE-000449/DDF00040]: The study element is not referenced by any study cell.",
+      "dataset": "StudyElement",
+      "variable": "04494271-c5bc-4189-b631-12364e1a2ffd"
+    },
+    {
+      "rule_id": "/study/versions/0/studyDesigns/0/elements/2",
+      "severity": "Info",
+      "message": "CDISC CORE [CORE-000449/DDF00040]: The study element is not referenced by any study cell.",
+      "dataset": "StudyElement",
+      "variable": "04bed83a-02f9-4d59-97bf-6d78f112ced1"
+    },
+    {
+      "rule_id": "/study/versions/0/biomedicalConcepts/2/properties/1/code/standardCode",
+      "severity": "Info",
+      "message": "CDISC CORE [CORE-000808/DDF00073]: More than one code system version is used for the code system.",
+      "dataset": "Code",
+      "variable": "0107cb68-6a1d-4844-a65c-124acf4229f9"
+    },
+    {
+      "rule_id": "/study/versions/0/studyInterventions/9/role",
+      "severity": "Info",
+      "message": "CDISC CORE [CORE-000808/DDF00073]: More than one code system version is used for the code system.",
+      "dataset": "Code",
+      "variable": "06823f62-4cda-4cad-aacb-488180df75a3"
+    },
+    {
+      "rule_id": "/study/versions/0/studyInterventions/0",
+      "severity": "Info",
+      "message": "CDISC CORE [CORE-000855/DDF00128]: The study intervention's type is not specified using the Intervention Type Response (C99078) SDTM codelist - codeSystem is not \"http://www.cdisc.org\", codeSystemVersion is not a valid terminology package date, the code or decode (either as preferred term or as submission value) is found in the codelist (case insensitive) but the corresponding decode or code does not match the codelist value (case sensitive), and/or neither code nor decode is found in the codelist.",
+      "dataset": "StudyIntervention",
+      "variable": "a43d36e9-9dc8-4def-a72f-298d0b8ce44f"
+    },
+    {
+      "rule_id": "/study/versions/0/studyInterventions/1",
+      "severity": "Info",
+      "message": "CDISC CORE [CORE-000855/DDF00128]: The study intervention's type is not specified using the Intervention Type Response (C99078) SDTM codelist - codeSystem is not \"http://www.cdisc.org\", codeSystemVersion is not a valid terminology package date, the code or decode (either as preferred term or as submission value) is found in the codelist (case insensitive) but the corresponding decode or code does not match the codelist value (case sensitive), and/or neither code nor decode is found in the codelist.",
+      "dataset": "StudyIntervention",
+      "variable": "3d8bcf56-c83d-457d-94bc-bc9b63076349"
+    },
+    {
+      "rule_id": "/study/versions/0/studyInterventions/2",
+      "severity": "Info",
+      "message": "CDISC CORE [CORE-000855/DDF00128]: The study intervention's type is not specified using the Intervention Type Response (C99078) SDTM codelist - codeSystem is not \"http://www.cdisc.org\", codeSystemVersion is not a valid terminology package date, the code or decode (either as preferred term or as submission value) is found in the codelist (case insensitive) but the corresponding decode or code does not match the codelist value (case sensitive), and/or neither code nor decode is found in the codelist.",
+      "dataset": "StudyIntervention",
+      "variable": "179dc08a-854e-44f6-9249-52df8b902e87"
+    },
+    {
+      "rule_id": "/study/versions/0/studyInterventions/3",
+      "severity": "Info",
+      "message": "CDISC CORE [CORE-000855/DDF00128]: The study intervention's type is not specified using the Intervention Type Response (C99078) SDTM codelist - codeSystem is not \"http://www.cdisc.org\", codeSystemVersion is not a valid terminology package date, the code or decode (either as preferred term or as submission value) is found in the codelist (case insensitive) but the corresponding decode or code does not match the codelist value (case sensitive), and/or neither code nor decode is found in the codelist.",
+      "dataset": "StudyIntervention",
+      "variable": "026dba0f-1a77-4fad-8f5c-b86db31abdbc"
+    },
+    {
+      "rule_id": "/study/versions/0/studyInterventions/4",
+      "severity": "Info",
+      "message": "CDISC CORE [CORE-000855/DDF00128]: The study intervention's type is not specified using the Intervention Type Response (C99078) SDTM codelist - codeSystem is not \"http://www.cdisc.org\", codeSystemVersion is not a valid terminology package date, the code or decode (either as preferred term or as submission value) is found in the codelist (case insensitive) but the corresponding decode or code does not match the codelist value (case sensitive), and/or neither code nor decode is found in the codelist.",
+      "dataset": "StudyIntervention",
+      "variable": "c8cf9a7f-e5b3-401c-9ae7-330d7171149d"
+    },
+    {
+      "rule_id": "/study/versions/0/studyInterventions/5",
+      "severity": "Info",
+      "message": "CDISC CORE [CORE-000855/DDF00128]: The study intervention's type is not specified using the Intervention Type Response (C99078) SDTM codelist - codeSystem is not \"http://www.cdisc.org\", codeSystemVersion is not a valid terminology package date, the code or decode (either as preferred term or as submission value) is found in the codelist (case insensitive) but the corresponding decode or code does not match the codelist value (case sensitive), and/or neither code nor decode is found in the codelist.",
+      "dataset": "StudyIntervention",
+      "variable": "5bed11e8-e65b-44d2-94f7-5a006a991106"
+    },
+    {
+      "rule_id": "/study/versions/0/studyInterventions/6",
+      "severity": "Info",
+      "message": "CDISC CORE [CORE-000855/DDF00128]: The study intervention's type is not specified using the Intervention Type Response (C99078) SDTM codelist - codeSystem is not \"http://www.cdisc.org\", codeSystemVersion is not a valid terminology package date, the code or decode (either as preferred term or as submission value) is found in the codelist (case insensitive) but the corresponding decode or code does not match the codelist value (case sensitive), and/or neither code nor decode is found in the codelist.",
+      "dataset": "StudyIntervention",
+      "variable": "1922c6e4-2cba-416f-9196-74d0aadbe99a"
+    },
+    {
+      "rule_id": "/study/versions/0/studyInterventions/7",
+      "severity": "Info",
+      "message": "CDISC CORE [CORE-000855/DDF00128]: The study intervention's type is not specified using the Intervention Type Response (C99078) SDTM codelist - codeSystem is not \"http://www.cdisc.org\", codeSystemVersion is not a valid terminology package date, the code or decode (either as preferred term or as submission value) is found in the codelist (case insensitive) but the corresponding decode or code does not match the codelist value (case sensitive), and/or neither code nor decode is found in the codelist.",
+      "dataset": "StudyIntervention",
+      "variable": "d033319b-12cc-4e3a-b46f-35dbc0641ee2"
+    },
+    {
+      "rule_id": "/study/versions/0/studyInterventions/8",
+      "severity": "Info",
+      "message": "CDISC CORE [CORE-000855/DDF00128]: The study intervention's type is not specified using the Intervention Type Response (C99078) SDTM codelist - codeSystem is not \"http://www.cdisc.org\", codeSystemVersion is not a valid terminology package date, the code or decode (either as preferred term or as submission value) is found in the codelist (case insensitive) but the corresponding decode or code does not match the codelist value (case sensitive), and/or neither code nor decode is found in the codelist.",
+      "dataset": "StudyIntervention",
+      "variable": "3b8626fc-c06a-4cf5-882b-c1c0164e7e5e"
+    },
+    {
+      "rule_id": "/study/versions/0/studyInterventions/9",
+      "severity": "Info",
+      "message": "CDISC CORE [CORE-000855/DDF00128]: The study intervention's type is not specified using the Intervention Type Response (C99078) SDTM codelist - codeSystem is not \"http://www.cdisc.org\", codeSystemVersion is not a valid terminology package date, the code or decode (either as preferred term or as submission value) is found in the codelist (case insensitive) but the corresponding decode or code does not match the codelist value (case sensitive), and/or neither code nor decode is found in the codelist.",
+      "dataset": "StudyIntervention",
+      "variable": "258e87dd-02da-4c10-ab22-d06ac676686c"
+    },
+    {
+      "rule_id": "/study/versions/0/studyInterventions/10",
+      "severity": "Info",
+      "message": "CDISC CORE [CORE-000855/DDF00128]: The study intervention's type is not specified using the Intervention Type Response (C99078) SDTM codelist - codeSystem is not \"http://www.cdisc.org\", codeSystemVersion is not a valid terminology package date, the code or decode (either as preferred term or as submission value) is found in the codelist (case insensitive) but the corresponding decode or code does not match the codelist value (case sensitive), and/or neither code nor decode is found in the codelist.",
+      "dataset": "StudyIntervention",
+      "variable": "f2bf3f50-d659-4b19-9772-c7ad4e8df645"
+    },
+    {
+      "rule_id": "/study/versions/0/studyInterventions/11",
+      "severity": "Info",
+      "message": "CDISC CORE [CORE-000855/DDF00128]: The study intervention's type is not specified using the Intervention Type Response (C99078) SDTM codelist - codeSystem is not \"http://www.cdisc.org\", codeSystemVersion is not a valid terminology package date, the code or decode (either as preferred term or as submission value) is found in the codelist (case insensitive) but the corresponding decode or code does not match the codelist value (case sensitive), and/or neither code nor decode is found in the codelist.",
+      "dataset": "StudyIntervention",
+      "variable": "e062f0e4-3830-48bf-868b-17ca5779aa7f"
+    },
+    {
+      "rule_id": "/study/versions/0/studyInterventions/12",
+      "severity": "Info",
+      "message": "CDISC CORE [CORE-000855/DDF00128]: The study intervention's type is not specified using the Intervention Type Response (C99078) SDTM codelist - codeSystem is not \"http://www.cdisc.org\", codeSystemVersion is not a valid terminology package date, the code or decode (either as preferred term or as submission value) is found in the codelist (case insensitive) but the corresponding decode or code does not match the codelist value (case sensitive), and/or neither code nor decode is found in the codelist.",
+      "dataset": "StudyIntervention",
+      "variable": "a6a7b250-eccd-429e-b877-be43ff205c28"
+    },
+    {
+      "rule_id": "/study/versions/0/administrableProducts/0",
+      "severity": "Info",
+      "message": "CDISC CORE [CORE-000861/DDF00179]: The administrable dose form is not specified according to the extensible Pharmaceutical Dosage Form (C66726) SDTM codelist - codeSystem is not \"http://www.cdisc.org\", codeSystemVersion is not a valid terminology package date, and/or the code or decode (either as preferred term or as submission value) is found in the codelist (case insensitive) but the corresponding decode or code does not match the codelist value (case sensitive).",
+      "dataset": "AdministrableProduct",
+      "variable": "4bcffaa2-692d-49de-a8a1-87e56aa9cf88"
+    },
+    {
+      "rule_id": "/study/versions/0/studyInterventions/0",
+      "severity": "Info",
+      "message": "CDISC CORE [CORE-000907/DDF00112]: The study intervention's role is not specified using the study intervention role (C207417) DDF codelist - codeSystem is not \"http://www.cdisc.org\", codeSystemVersion is not a valid terminology package date, the code or decode (either as preferred term or as submission value) is found in the codelist (case insensitive) but the corresponding decode or code does not match the codelist value (case sensitive), and/or neither code nor decode is found in the codelist.",
+      "dataset": "StudyIntervention",
+      "variable": "a43d36e9-9dc8-4def-a72f-298d0b8ce44f"
+    },
+    {
+      "rule_id": "/study/versions/0/studyInterventions/1",
+      "severity": "Info",
+      "message": "CDISC CORE [CORE-000907/DDF00112]: The study intervention's role is not specified using the study intervention role (C207417) DDF codelist - codeSystem is not \"http://www.cdisc.org\", codeSystemVersion is not a valid terminology package date, the code or decode (either as preferred term or as submission value) is found in the codelist (case insensitive) but the corresponding decode or code does not match the codelist value (case sensitive), and/or neither code nor decode is found in the codelist.",
+      "dataset": "StudyIntervention",
+      "variable": "3d8bcf56-c83d-457d-94bc-bc9b63076349"
+    },
+    {
+      "rule_id": "/study/versions/0/studyInterventions/2",
+      "severity": "Info",
+      "message": "CDISC CORE [CORE-000907/DDF00112]: The study intervention's role is not specified using the study intervention role (C207417) DDF codelist - codeSystem is not \"http://www.cdisc.org\", codeSystemVersion is not a valid terminology package date, the code or decode (either as preferred term or as submission value) is found in the codelist (case insensitive) but the corresponding decode or code does not match the codelist value (case sensitive), and/or neither code nor decode is found in the codelist.",
+      "dataset": "StudyIntervention",
+      "variable": "179dc08a-854e-44f6-9249-52df8b902e87"
+    },
+    {
+      "rule_id": "/study/versions/0/studyInterventions/3",
+      "severity": "Info",
+      "message": "CDISC CORE [CORE-000907/DDF00112]: The study intervention's role is not specified using the study intervention role (C207417) DDF codelist - codeSystem is not \"http://www.cdisc.org\", codeSystemVersion is not a valid terminology package date, the code or decode (either as preferred term or as submission value) is found in the codelist (case insensitive) but the corresponding decode or code does not match the codelist value (case sensitive), and/or neither code nor decode is found in the codelist.",
+      "dataset": "StudyIntervention",
+      "variable": "026dba0f-1a77-4fad-8f5c-b86db31abdbc"
+    },
+    {
+      "rule_id": "/study/versions/0/studyInterventions/4",
+      "severity": "Info",
+      "message": "CDISC CORE [CORE-000907/DDF00112]: The study intervention's role is not specified using the study intervention role (C207417) DDF codelist - codeSystem is not \"http://www.cdisc.org\", codeSystemVersion is not a valid terminology package date, the code or decode (either as preferred term or as submission value) is found in the codelist (case insensitive) but the corresponding decode or code does not match the codelist value (case sensitive), and/or neither code nor decode is found in the codelist.",
+      "dataset": "StudyIntervention",
+      "variable": "c8cf9a7f-e5b3-401c-9ae7-330d7171149d"
+    },
+    {
+      "rule_id": "/study/versions/0/studyInterventions/5",
+      "severity": "Info",
+      "message": "CDISC CORE [CORE-000907/DDF00112]: The study intervention's role is not specified using the study intervention role (C207417) DDF codelist - codeSystem is not \"http://www.cdisc.org\", codeSystemVersion is not a valid terminology package date, the code or decode (either as preferred term or as submission value) is found in the codelist (case insensitive) but the corresponding decode or code does not match the codelist value (case sensitive), and/or neither code nor decode is found in the codelist.",
+      "dataset": "StudyIntervention",
+      "variable": "5bed11e8-e65b-44d2-94f7-5a006a991106"
+    },
+    {
+      "rule_id": "/study/versions/0/studyInterventions/6",
+      "severity": "Info",
+      "message": "CDISC CORE [CORE-000907/DDF00112]: The study intervention's role is not specified using the study intervention role (C207417) DDF codelist - codeSystem is not \"http://www.cdisc.org\", codeSystemVersion is not a valid terminology package date, the code or decode (either as preferred term or as submission value) is found in the codelist (case insensitive) but the corresponding decode or code does not match the codelist value (case sensitive), and/or neither code nor decode is found in the codelist.",
+      "dataset": "StudyIntervention",
+      "variable": "1922c6e4-2cba-416f-9196-74d0aadbe99a"
+    },
+    {
+      "rule_id": "/study/versions/0/studyInterventions/7",
+      "severity": "Info",
+      "message": "CDISC CORE [CORE-000907/DDF00112]: The study intervention's role is not specified using the study intervention role (C207417) DDF codelist - codeSystem is not \"http://www.cdisc.org\", codeSystemVersion is not a valid terminology package date, the code or decode (either as preferred term or as submission value) is found in the codelist (case insensitive) but the corresponding decode or code does not match the codelist value (case sensitive), and/or neither code nor decode is found in the codelist.",
+      "dataset": "StudyIntervention",
+      "variable": "d033319b-12cc-4e3a-b46f-35dbc0641ee2"
+    },
+    {
+      "rule_id": "/study/versions/0/studyInterventions/8",
+      "severity": "Info",
+      "message": "CDISC CORE [CORE-000907/DDF00112]: The study intervention's role is not specified using the study intervention role (C207417) DDF codelist - codeSystem is not \"http://www.cdisc.org\", codeSystemVersion is not a valid terminology package date, the code or decode (either as preferred term or as submission value) is found in the codelist (case insensitive) but the corresponding decode or code does not match the codelist value (case sensitive), and/or neither code nor decode is found in the codelist.",
+      "dataset": "StudyIntervention",
+      "variable": "3b8626fc-c06a-4cf5-882b-c1c0164e7e5e"
+    },
+    {
+      "rule_id": "/study/versions/0/studyInterventions/9",
+      "severity": "Info",
+      "message": "CDISC CORE [CORE-000907/DDF00112]: The study intervention's role is not specified using the study intervention role (C207417) DDF codelist - codeSystem is not \"http://www.cdisc.org\", codeSystemVersion is not a valid terminology package date, the code or decode (either as preferred term or as submission value) is found in the codelist (case insensitive) but the corresponding decode or code does not match the codelist value (case sensitive), and/or neither code nor decode is found in the codelist.",
+      "dataset": "StudyIntervention",
+      "variable": "258e87dd-02da-4c10-ab22-d06ac676686c"
+    },
+    {
+      "rule_id": "/study/versions/0/studyInterventions/10",
+      "severity": "Info",
+      "message": "CDISC CORE [CORE-000907/DDF00112]: The study intervention's role is not specified using the study intervention role (C207417) DDF codelist - codeSystem is not \"http://www.cdisc.org\", codeSystemVersion is not a valid terminology package date, the code or decode (either as preferred term or as submission value) is found in the codelist (case insensitive) but the corresponding decode or code does not match the codelist value (case sensitive), and/or neither code nor decode is found in the codelist.",
+      "dataset": "StudyIntervention",
+      "variable": "f2bf3f50-d659-4b19-9772-c7ad4e8df645"
+    },
+    {
+      "rule_id": "/study/versions/0/studyInterventions/11",
+      "severity": "Info",
+      "message": "CDISC CORE [CORE-000907/DDF00112]: The study intervention's role is not specified using the study intervention role (C207417) DDF codelist - codeSystem is not \"http://www.cdisc.org\", codeSystemVersion is not a valid terminology package date, the code or decode (either as preferred term or as submission value) is found in the codelist (case insensitive) but the corresponding decode or code does not match the codelist value (case sensitive), and/or neither code nor decode is found in the codelist.",
+      "dataset": "StudyIntervention",
+      "variable": "e062f0e4-3830-48bf-868b-17ca5779aa7f"
+    },
+    {
+      "rule_id": "/study/versions/0/studyInterventions/12",
+      "severity": "Info",
+      "message": "CDISC CORE [CORE-000907/DDF00112]: The study intervention's role is not specified using the study intervention role (C207417) DDF codelist - codeSystem is not \"http://www.cdisc.org\", codeSystemVersion is not a valid terminology package date, the code or decode (either as preferred term or as submission value) is found in the codelist (case insensitive) but the corresponding decode or code does not match the codelist value (case sensitive), and/or neither code nor decode is found in the codelist.",
+      "dataset": "StudyIntervention",
+      "variable": "a6a7b250-eccd-429e-b877-be43ff205c28"
+    },
+    {
+      "rule_id": "/study/versions/0/amendments/0/dateValues/0",
+      "severity": "Info",
+      "message": "CDISC CORE [CORE-000925/DDF00142]: The governance date type is not specified according to the extensible governance date type (C207413) DDF codelist - codeSystem is not \"http://www.cdisc.org\", codeSystemVersion is not a valid terminology package date, and/or the code or decode (either as preferred term or as submission value) is found in the codelist (case insensitive) but the corresponding decode or code does not match the codelist value (case sensitive).",
+      "dataset": "GovernanceDate",
+      "variable": "de3c239b-e76f-4977-9a5e-7b3110cb8966"
+    },
+    {
+      "rule_id": "/study/versions/0/amendments/1/dateValues/0",
+      "severity": "Info",
+      "message": "CDISC CORE [CORE-000925/DDF00142]: The governance date type is not specified according to the extensible governance date type (C207413) DDF codelist - codeSystem is not \"http://www.cdisc.org\", codeSystemVersion is not a valid terminology package date, and/or the code or decode (either as preferred term or as submission value) is found in the codelist (case insensitive) but the corresponding decode or code does not match the codelist value (case sensitive).",
+      "dataset": "GovernanceDate",
+      "variable": "d71fbf8c-0d8c-486d-81fa-a260c50cd00f"
+    },
+    {
+      "rule_id": "/study/versions/0/amendments/2/dateValues/0",
+      "severity": "Info",
+      "message": "CDISC CORE [CORE-000925/DDF00142]: The governance date type is not specified according to the extensible governance date type (C207413) DDF codelist - codeSystem is not \"http://www.cdisc.org\", codeSystemVersion is not a valid terminology package date, and/or the code or decode (either as preferred term or as submission value) is found in the codelist (case insensitive) but the corresponding decode or code does not match the codelist value (case sensitive).",
+      "dataset": "GovernanceDate",
+      "variable": "18e75320-1731-4f39-aed4-67b87062ef04"
+    },
+    {
+      "rule_id": "/study/versions/0/amendments/3/dateValues/0",
+      "severity": "Info",
+      "message": "CDISC CORE [CORE-000925/DDF00142]: The governance date type is not specified according to the extensible governance date type (C207413) DDF codelist - codeSystem is not \"http://www.cdisc.org\", codeSystemVersion is not a valid terminology package date, and/or the code or decode (either as preferred term or as submission value) is found in the codelist (case insensitive) but the corresponding decode or code does not match the codelist value (case sensitive).",
+      "dataset": "GovernanceDate",
+      "variable": "a3afd9a0-46a3-4fd3-9e2f-a9dbd3ad17f3"
+    },
+    {
+      "rule_id": "/study/versions/0/titles/1",
+      "severity": "Info",
+      "message": "CDISC CORE [CORE-000933/DDF00146]: The study title type is not specified using the study title type (C207419) DDF codelist - codeSystem is not \"http://www.cdisc.org\", codeSystemVersion is not a valid terminology package date, the code or decode (either as preferred term or as submission value) is found in the codelist (case insensitive) but the corresponding decode or code does not match the codelist value (case sensitive), and/or neither code nor decode is found in the codelist.",
+      "dataset": "StudyTitle",
+      "variable": "07f84bcf-26c5-433b-91a3-25715dde673b"
+    },
+    {
+      "rule_id": "/study/versions/0/studyDesigns/0",
+      "severity": "Warning",
+      "message": "CDISC CORE [CORE-000937/DDF00125]: Attributes are not included as defined in the USDM schema - required properties are missing or additional properties are present.",
+      "dataset": "InterventionalStudyDesign",
+      "variable": "e48d4065-c0a7-4acd-8d31-6ac5d9e1cbde"
+    },
+    {
+      "rule_id": "/study/versions/0/studyDesigns/0/scheduleTimelines/0/instances/5",
+      "severity": "Warning",
+      "message": "CDISC CORE [CORE-000937/DDF00125]: Attributes are not included as defined in the USDM schema - required properties are missing or additional properties are present.",
+      "dataset": "ScheduledActivityInstance",
+      "variable": "ba9302cb-8dee-4328-a709-9c079bfc9e3b"
+    },
+    {
+      "rule_id": "/study/versions/0/studyDesigns/0/scheduleTimelines/0/instances/6",
+      "severity": "Warning",
+      "message": "CDISC CORE [CORE-000937/DDF00125]: Attributes are not included as defined in the USDM schema - required properties are missing or additional properties are present.",
+      "dataset": "ScheduledActivityInstance",
+      "variable": "ac46a070-217d-4e1e-ac51-230dd3bf5cfa"
+    },
+    {
+      "rule_id": "/study/versions/0/studyDesigns/0/scheduleTimelines/0/instances/9",
+      "severity": "Warning",
+      "message": "CDISC CORE [CORE-000937/DDF00125]: Attributes are not included as defined in the USDM schema - required properties are missing or additional properties are present.",
+      "dataset": "ScheduledActivityInstance",
+      "variable": "6806be74-e888-4f4b-8e3b-15cc9d91cad1"
+    },
+    {
+      "rule_id": "/study/versions/0/studyDesigns/0/scheduleTimelines/0/instances/15",
+      "severity": "Warning",
+      "message": "CDISC CORE [CORE-000937/DDF00125]: Attributes are not included as defined in the USDM schema - required properties are missing or additional properties are present.",
+      "dataset": "ScheduledActivityInstance",
+      "variable": "e5999023-e250-4b99-b280-b368d165dca0"
+    },
+    {
+      "rule_id": "/study/versions/0/studyDesigns/0/scheduleTimelines/0/instances/16",
+      "severity": "Warning",
+      "message": "CDISC CORE [CORE-000937/DDF00125]: Attributes are not included as defined in the USDM schema - required properties are missing or additional properties are present.",
+      "dataset": "ScheduledActivityInstance",
+      "variable": "42999f75-3bdc-4f8a-a461-13df5522ec48"
+    },
+    {
+      "rule_id": "/study/versions/0/studyDesigns/0/scheduleTimelines/0/instances/17",
+      "severity": "Warning",
+      "message": "CDISC CORE [CORE-000937/DDF00125]: Attributes are not included as defined in the USDM schema - required properties are missing or additional properties are present.",
+      "dataset": "ScheduledActivityInstance",
+      "variable": "8254fa78-73f4-43be-887f-8502b21c426f"
+    },
+    {
+      "rule_id": "/study/versions/0/studyDesigns/0/scheduleTimelines/0/instances/21",
+      "severity": "Warning",
+      "message": "CDISC CORE [CORE-000937/DDF00125]: Attributes are not included as defined in the USDM schema - required properties are missing or additional properties are present.",
+      "dataset": "ScheduledActivityInstance",
+      "variable": "39ebed22-7e9f-45d7-a27f-eae0f621bb46"
+    },
+    {
+      "rule_id": "/study/versions/0/amendments/0/dateValues/0",
+      "severity": "Info",
+      "message": "CDISC CORE [CORE-000938/DDF00126]: The cardinality of the attribute is not as defined in the USDM schema - the attribute is required but does not have a value (the value is too short), or the attribute is a list and has either too few entries (the list is too short) or too many entries (the list is too long).",
+      "dataset": "GovernanceDate",
+      "variable": "de3c239b-e76f-4977-9a5e-7b3110cb8966"
+    },
+    {
+      "rule_id": "/study/versions/0/amendments/0/dateValues/1",
+      "severity": "Info",
+      "message": "CDISC CORE [CORE-000938/DDF00126]: The cardinality of the attribute is not as defined in the USDM schema - the attribute is required but does not have a value (the value is too short), or the attribute is a list and has either too few entries (the list is too short) or too many entries (the list is too long).",
+      "dataset": "GovernanceDate",
+      "variable": "9eb08346-dacb-45b2-be71-86af2242fc28"
+    },
+    {
+      "rule_id": "/study/versions/0/amendments/1/dateValues/0",
+      "severity": "Info",
+      "message": "CDISC CORE [CORE-000938/DDF00126]: The cardinality of the attribute is not as defined in the USDM schema - the attribute is required but does not have a value (the value is too short), or the attribute is a list and has either too few entries (the list is too short) or too many entries (the list is too long).",
+      "dataset": "GovernanceDate",
+      "variable": "d71fbf8c-0d8c-486d-81fa-a260c50cd00f"
+    },
+    {
+      "rule_id": "/study/versions/0/amendments/1/dateValues/1",
+      "severity": "Info",
+      "message": "CDISC CORE [CORE-000938/DDF00126]: The cardinality of the attribute is not as defined in the USDM schema - the attribute is required but does not have a value (the value is too short), or the attribute is a list and has either too few entries (the list is too short) or too many entries (the list is too long).",
+      "dataset": "GovernanceDate",
+      "variable": "8cd60d6c-0cf6-4c6a-9e2a-2571e7e051c6"
+    },
+    {
+      "rule_id": "/study/versions/0/amendments/2/dateValues/0",
+      "severity": "Info",
+      "message": "CDISC CORE [CORE-000938/DDF00126]: The cardinality of the attribute is not as defined in the USDM schema - the attribute is required but does not have a value (the value is too short), or the attribute is a list and has either too few entries (the list is too short) or too many entries (the list is too long).",
+      "dataset": "GovernanceDate",
+      "variable": "18e75320-1731-4f39-aed4-67b87062ef04"
+    },
+    {
+      "rule_id": "/study/versions/0/amendments/2/dateValues/1",
+      "severity": "Info",
+      "message": "CDISC CORE [CORE-000938/DDF00126]: The cardinality of the attribute is not as defined in the USDM schema - the attribute is required but does not have a value (the value is too short), or the attribute is a list and has either too few entries (the list is too short) or too many entries (the list is too long).",
+      "dataset": "GovernanceDate",
+      "variable": "d6cbbd60-fcdd-4758-a1b2-0bfd45c6731c"
+    },
+    {
+      "rule_id": "/study/versions/0/amendments/3/dateValues/0",
+      "severity": "Info",
+      "message": "CDISC CORE [CORE-000938/DDF00126]: The cardinality of the attribute is not as defined in the USDM schema - the attribute is required but does not have a value (the value is too short), or the attribute is a list and has either too few entries (the list is too short) or too many entries (the list is too long).",
+      "dataset": "GovernanceDate",
+      "variable": "a3afd9a0-46a3-4fd3-9e2f-a9dbd3ad17f3"
+    },
+    {
+      "rule_id": "/study/versions/0/amendments/3/dateValues/1",
+      "severity": "Info",
+      "message": "CDISC CORE [CORE-000938/DDF00126]: The cardinality of the attribute is not as defined in the USDM schema - the attribute is required but does not have a value (the value is too short), or the attribute is a list and has either too few entries (the list is too short) or too many entries (the list is too long).",
+      "dataset": "GovernanceDate",
+      "variable": "8c874f3c-57ea-4686-b642-932cc0d0e8ab"
+    },
+    {
+      "rule_id": "/study/versions/0/eligibilityCriterionItems/23",
+      "severity": "Info",
+      "message": "CDISC CORE [CORE-000945/DDF00247]: The text attribute contains non-conformant XHTML.",
+      "dataset": "EligibilityCriterionItem",
+      "variable": "5c3da15c-32d5-40b2-9646-dea1ec54a0d6"
+    },
+    {
+      "rule_id": "/study/versions/0/studyDesigns/0",
+      "severity": "Info",
+      "message": "CDISC CORE [CORE-000961/DDF00087]: The order of the encounters in the study design (as defined by the next attribute) does not match the order of encounters as referenced from scheduled activity instances in the main timeline that are ordered by default condition.",
+      "dataset": "InterventionalStudyDesign",
+      "variable": "e48d4065-c0a7-4acd-8d31-6ac5d9e1cbde"
+    },
+    {
+      "rule_id": "/study/versions/0",
+      "severity": "Error",
+      "message": "CDISC CORE [CORE-000973/DDF00201]: There is not exactly one study role with a code of sponsor (where code.code is C70793).",
+      "dataset": "StudyVersion",
+      "variable": "9d912237-deb5-40e7-8d58-c4cac0687e83"
+    },
+    {
+      "rule_id": "/study/versions/0/administrableProducts/0",
+      "severity": "Info",
+      "message": "CDISC CORE [CORE-000978/DDF00210]: The administrable product's product designation is not specified using the product designation (C207418) DDF codelist - codeSystem is not \"http://www.cdisc.org\", codeSystemVersion is not a valid terminology package date, the code or decode (either as preferred term or as submission value) is found in the codelist (case insensitive) but the corresponding decode or code does not match the codelist value (case sensitive), and/or neither code nor decode is found in the codelist.",
+      "dataset": "AdministrableProduct",
+      "variable": "4bcffaa2-692d-49de-a8a1-87e56aa9cf88"
+    },
+    {
+      "rule_id": "/study/versions/0/studyDesigns/0",
+      "severity": "Info",
+      "message": "CDISC CORE [CORE-001048/DDF00088]: The order of the epochs in the study design (as defined by the next attribute) does not match the order of epochs as referenced from scheduled activity instances in the main timeline that are ordered by default condition.",
+      "dataset": "InterventionalStudyDesign",
+      "variable": "e48d4065-c0a7-4acd-8d31-6ac5d9e1cbde"
+    },
+    {
+      "rule_id": "/study/versions/0",
+      "severity": "Error",
+      "message": "CDISC CORE [CORE-001054/DDF00172]: The study version does not have exactly one sponsor study identifier.",
+      "dataset": "StudyVersion",
+      "variable": "9d912237-deb5-40e7-8d58-c4cac0687e83"
+    },
+    {
+      "rule_id": "/study/versions/0/studyDesigns/0",
+      "severity": "Info",
+      "message": "CDISC CORE [CORE-001058/DDF00229]: The study design's study phase is not specified according to the extensible Trial Phase Response (C66737) SDTM codelist - codeSystem is not \"http://www.cdisc.org\", codeSystemVersion is not a valid terminology package date, and/or the code or decode (either as preferred term or as submission value) is found in the codelist (case insensitive) but the corresponding decode or code does not match the codelist value (case sensitive).",
+      "dataset": "InterventionalStudyDesign",
+      "variable": "e48d4065-c0a7-4acd-8d31-6ac5d9e1cbde"
+    },
+    {
+      "rule_id": "/study/versions/0/roles/0",
+      "severity": "Info",
+      "message": "CDISC CORE [CORE-001063/DDF00259]: The study role code is not specified using to the extensible study role code (C215480) DDF codelist - codeSystem is not \"http://www.cdisc.org\", codeSystemVersion is not a valid terminology package date, and/or the code or decode (either as preferred term or as submission value) is found in the codelist (case insensitive) but the corresponding decode or code does not match the codelist value (case sensitive).",
+      "dataset": "StudyRole",
+      "variable": "11642581-e3ae-414c-80e4-97ac3fb6f211"
+    },
+    {
+      "rule_id": "/study/versions/0/roles/1",
+      "severity": "Info",
+      "message": "CDISC CORE [CORE-001063/DDF00259]: The study role code is not specified using to the extensible study role code (C215480) DDF codelist - codeSystem is not \"http://www.cdisc.org\", codeSystemVersion is not a valid terminology package date, and/or the code or decode (either as preferred term or as submission value) is found in the codelist (case insensitive) but the corresponding decode or code does not match the codelist value (case sensitive).",
+      "dataset": "StudyRole",
+      "variable": "ddcfb2fb-d5d9-4987-9957-e016a7fd9b60"
+    },
+    {
+      "rule_id": "/study/versions/0/roles/2",
+      "severity": "Info",
+      "message": "CDISC CORE [CORE-001063/DDF00259]: The study role code is not specified using to the extensible study role code (C215480) DDF codelist - codeSystem is not \"http://www.cdisc.org\", codeSystemVersion is not a valid terminology package date, and/or the code or decode (either as preferred term or as submission value) is found in the codelist (case insensitive) but the corresponding decode or code does not match the codelist value (case sensitive).",
+      "dataset": "StudyRole",
+      "variable": "af80e673-76f4-4599-a632-9f5b93ead4a0"
+    },
+    {
+      "rule_id": "/study/versions/0/studyDesigns/0",
+      "severity": "Error",
+      "message": "CDISC CORE [CORE-001065/DDF00101]: The study type is Interventional (code=C98388) but a study intervention is not referenced from any procedure.",
+      "dataset": "InterventionalStudyDesign",
+      "variable": "e48d4065-c0a7-4acd-8d31-6ac5d9e1cbde"
+    },
+    {
+      "rule_id": "/study/versions/0/studyDesigns/0/activities/3",
+      "severity": "Warning",
+      "message": "CDISC CORE [CORE-001076/DDF00263]: The activity does not refer to any procedure, biomedical concept, biomedical concept category, biomedical concept surrogate, child activity, or timeline.",
+      "dataset": "Activity",
+      "variable": "9e89a766-31c1-4c8a-9f75-16a7b427ebfb"
+    },
+    {
+      "rule_id": "/study/versions/0/studyDesigns/0/activities/4",
+      "severity": "Warning",
+      "message": "CDISC CORE [CORE-001076/DDF00263]: The activity does not refer to any procedure, biomedical concept, biomedical concept category, biomedical concept surrogate, child activity, or timeline.",
+      "dataset": "Activity",
+      "variable": "b7bd0e17-b233-4dc4-a327-5507732ab5e7"
+    },
+    {
+      "rule_id": "/study/versions/0/studyDesigns/0/activities/5",
+      "severity": "Warning",
+      "message": "CDISC CORE [CORE-001076/DDF00263]: The activity does not refer to any procedure, biomedical concept, biomedical concept category, biomedical concept surrogate, child activity, or timeline.",
+      "dataset": "Activity",
+      "variable": "ea462f59-bc7f-4ddc-8fbb-8c623f48a851"
+    },
+    {
+      "rule_id": "/study/versions/0/studyDesigns/0/activities/6",
+      "severity": "Warning",
+      "message": "CDISC CORE [CORE-001076/DDF00263]: The activity does not refer to any procedure, biomedical concept, biomedical concept category, biomedical concept surrogate, child activity, or timeline.",
+      "dataset": "Activity",
+      "variable": "29dae402-b348-4c63-940f-b7d4c93e8c35"
+    },
+    {
+      "rule_id": "/study/versions/0/studyDesigns/0/activities/9",
+      "severity": "Warning",
+      "message": "CDISC CORE [CORE-001076/DDF00263]: The activity does not refer to any procedure, biomedical concept, biomedical concept category, biomedical concept surrogate, child activity, or timeline.",
+      "dataset": "Activity",
+      "variable": "619afdce-c426-4792-8125-4f85a5eaace0"
+    },
+    {
+      "rule_id": "/study/versions/0/studyDesigns/0/activities/10",
+      "severity": "Warning",
+      "message": "CDISC CORE [CORE-001076/DDF00263]: The activity does not refer to any procedure, biomedical concept, biomedical concept category, biomedical concept surrogate, child activity, or timeline.",
+      "dataset": "Activity",
+      "variable": "5216284c-03a8-4424-8c88-6c19ac06dcb1"
+    },
+    {
+      "rule_id": "/study/versions/0/studyDesigns/0/activities/11",
+      "severity": "Warning",
+      "message": "CDISC CORE [CORE-001076/DDF00263]: The activity does not refer to any procedure, biomedical concept, biomedical concept category, biomedical concept surrogate, child activity, or timeline.",
+      "dataset": "Activity",
+      "variable": "0c369fc7-2f1c-4145-9c83-21f262703447"
+    },
+    {
+      "rule_id": "/study/versions/0/studyDesigns/0/activities/12",
+      "severity": "Warning",
+      "message": "CDISC CORE [CORE-001076/DDF00263]: The activity does not refer to any procedure, biomedical concept, biomedical concept category, biomedical concept surrogate, child activity, or timeline.",
+      "dataset": "Activity",
+      "variable": "f5d6c829-94e5-46ed-bef2-37aca49a13a5"
+    },
+    {
+      "rule_id": "/study/versions/0/studyDesigns/0/activities/14",
+      "severity": "Warning",
+      "message": "CDISC CORE [CORE-001076/DDF00263]: The activity does not refer to any procedure, biomedical concept, biomedical concept category, biomedical concept surrogate, child activity, or timeline.",
+      "dataset": "Activity",
+      "variable": "304a20b5-29fe-4fde-b0aa-5777b2fd0856"
+    },
+    {
+      "rule_id": "/study/versions/0/studyDesigns/0/activities/15",
+      "severity": "Warning",
+      "message": "CDISC CORE [CORE-001076/DDF00263]: The activity does not refer to any procedure, biomedical concept, biomedical concept category, biomedical concept surrogate, child activity, or timeline.",
+      "dataset": "Activity",
+      "variable": "e59491d4-2ad3-484e-8984-6b7598ba4ebc"
+    },
+    {
+      "rule_id": "/study/versions/0/studyDesigns/0/activities/16",
+      "severity": "Warning",
+      "message": "CDISC CORE [CORE-001076/DDF00263]: The activity does not refer to any procedure, biomedical concept, biomedical concept category, biomedical concept surrogate, child activity, or timeline.",
+      "dataset": "Activity",
+      "variable": "03fbe7b8-552e-492a-8528-2567855154e3"
+    },
+    {
+      "rule_id": "/study/versions/0/studyDesigns/0/activities/17",
+      "severity": "Warning",
+      "message": "CDISC CORE [CORE-001076/DDF00263]: The activity does not refer to any procedure, biomedical concept, biomedical concept category, biomedical concept surrogate, child activity, or timeline.",
+      "dataset": "Activity",
+      "variable": "183e269e-4bd4-4cfa-aaba-506fb5c7180f"
+    },
+    {
+      "rule_id": "/study/versions/0/studyDesigns/0/activities/18",
+      "severity": "Warning",
+      "message": "CDISC CORE [CORE-001076/DDF00263]: The activity does not refer to any procedure, biomedical concept, biomedical concept category, biomedical concept surrogate, child activity, or timeline.",
+      "dataset": "Activity",
+      "variable": "2c28d929-0d85-489f-a4ad-5a9d8448bc7e"
+    },
+    {
+      "rule_id": "/study/versions/0/studyDesigns/0/activities/20",
+      "severity": "Warning",
+      "message": "CDISC CORE [CORE-001076/DDF00263]: The activity does not refer to any procedure, biomedical concept, biomedical concept category, biomedical concept surrogate, child activity, or timeline.",
+      "dataset": "Activity",
+      "variable": "24876768-b21d-450b-91f2-b66e65bf5c7d"
+    },
+    {
+      "rule_id": "/study/versions/0/studyDesigns/0/activities/21",
+      "severity": "Warning",
+      "message": "CDISC CORE [CORE-001076/DDF00263]: The activity does not refer to any procedure, biomedical concept, biomedical concept category, biomedical concept surrogate, child activity, or timeline.",
+      "dataset": "Activity",
+      "variable": "88a83443-a0f5-4676-9831-1bfc92e296cb"
+    },
+    {
+      "rule_id": "/study/versions/0/studyDesigns/0/activities/22",
+      "severity": "Warning",
+      "message": "CDISC CORE [CORE-001076/DDF00263]: The activity does not refer to any procedure, biomedical concept, biomedical concept category, biomedical concept surrogate, child activity, or timeline.",
+      "dataset": "Activity",
+      "variable": "43b1495e-ed76-4e35-816c-e81a04e5f9f5"
+    },
+    {
+      "rule_id": "/study/versions/0/studyDesigns/0/activities/24",
+      "severity": "Warning",
+      "message": "CDISC CORE [CORE-001076/DDF00263]: The activity does not refer to any procedure, biomedical concept, biomedical concept category, biomedical concept surrogate, child activity, or timeline.",
+      "dataset": "Activity",
+      "variable": "13e8d3f2-2823-4ce4-9d88-2da066333bea"
+    },
+    {
+      "rule_id": "/study/versions/0/studyDesigns/0/activities/25",
+      "severity": "Warning",
+      "message": "CDISC CORE [CORE-001076/DDF00263]: The activity does not refer to any procedure, biomedical concept, biomedical concept category, biomedical concept surrogate, child activity, or timeline.",
+      "dataset": "Activity",
+      "variable": "f86dcaea-0671-4f09-83db-8faa89282d55"
+    },
+    {
+      "rule_id": "/study/versions/0/studyDesigns/0/activities/26",
+      "severity": "Warning",
+      "message": "CDISC CORE [CORE-001076/DDF00263]: The activity does not refer to any procedure, biomedical concept, biomedical concept category, biomedical concept surrogate, child activity, or timeline.",
+      "dataset": "Activity",
+      "variable": "fa203b09-fcd3-43ec-825c-aebdbda9f25a"
+    },
+    {
+      "rule_id": "/study/versions/0/studyDesigns/0/activities/27",
+      "severity": "Warning",
+      "message": "CDISC CORE [CORE-001076/DDF00263]: The activity does not refer to any procedure, biomedical concept, biomedical concept category, biomedical concept surrogate, child activity, or timeline.",
+      "dataset": "Activity",
+      "variable": "84f5cfa5-27da-4daa-a1fd-003f1b86f7a7"
+    },
+    {
+      "rule_id": "/study/versions/0/studyDesigns/0/activities/29",
+      "severity": "Warning",
+      "message": "CDISC CORE [CORE-001076/DDF00263]: The activity does not refer to any procedure, biomedical concept, biomedical concept category, biomedical concept surrogate, child activity, or timeline.",
+      "dataset": "Activity",
+      "variable": "47f23a69-5426-46ae-93dd-2dfdeded7b65"
+    },
+    {
+      "rule_id": "/study/versions/0/studyDesigns/0/activities/31",
+      "severity": "Warning",
+      "message": "CDISC CORE [CORE-001076/DDF00263]: The activity does not refer to any procedure, biomedical concept, biomedical concept category, biomedical concept surrogate, child activity, or timeline.",
+      "dataset": "Activity",
+      "variable": "b045cb22-b6ff-40bc-851a-36d53d90b265"
+    },
+    {
+      "rule_id": "/study/versions/0/studyDesigns/0/activities/32",
+      "severity": "Warning",
+      "message": "CDISC CORE [CORE-001076/DDF00263]: The activity does not refer to any procedure, biomedical concept, biomedical concept category, biomedical concept surrogate, child activity, or timeline.",
+      "dataset": "Activity",
+      "variable": "20c93538-790b-47f7-8927-2eefac15ecda"
+    },
+    {
+      "rule_id": "/study/versions/0/studyDesigns/0/activities/33",
+      "severity": "Warning",
+      "message": "CDISC CORE [CORE-001076/DDF00263]: The activity does not refer to any procedure, biomedical concept, biomedical concept category, biomedical concept surrogate, child activity, or timeline.",
+      "dataset": "Activity",
+      "variable": "dda07178-b8e8-4afe-ab34-bd22d68b4c7c"
+    },
+    {
+      "rule_id": "/study/versions/0/studyDesigns/0/activities/34",
+      "severity": "Warning",
+      "message": "CDISC CORE [CORE-001076/DDF00263]: The activity does not refer to any procedure, biomedical concept, biomedical concept category, biomedical concept surrogate, child activity, or timeline.",
+      "dataset": "Activity",
+      "variable": "ca1cbc4a-2db6-4376-8015-948e4dc7e02b"
+    },
+    {
+      "rule_id": "/study/versions/0/studyDesigns/0/activities/35",
+      "severity": "Warning",
+      "message": "CDISC CORE [CORE-001076/DDF00263]: The activity does not refer to any procedure, biomedical concept, biomedical concept category, biomedical concept surrogate, child activity, or timeline.",
+      "dataset": "Activity",
+      "variable": "bcec59c0-59b2-434d-9398-c7c3d8a44bd1"
+    }
+  ]
+}

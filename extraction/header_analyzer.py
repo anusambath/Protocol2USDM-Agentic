@@ -46,6 +46,9 @@ EXTRACT:
 1. **Epochs** - Study phases from the TOP-LEVEL merged header row
    - These span multiple columns (e.g., "Screening", "Treatment", "Follow-up")
    - Usually in the first header row with merged cells
+   - CRITICAL: Determine epoch boundaries by the MERGED CELL BORDERS, not by encounter names.
+     An epoch's span is defined by how many data columns its merged header cell covers.
+     Count the column borders/gridlines carefully to determine exactly which columns fall under each epoch.
    
 2. **Encounters** - One per COLUMN, from the PLANNED VISIT DAY sub-header row
    - CRITICAL: Each encounter MUST have a UNIQUE name
@@ -53,6 +56,10 @@ EXTRACT:
    - If multiple columns are under the same epoch, use the sub-header text to make names unique
    - Pattern: "{Epoch} ({Timing})" or just "{Timing}" if timing is descriptive enough
    - NEVER use the same name for multiple encounters - look for day numbers, week numbers, or visit numbers
+   - CRITICAL: Assign each encounter's epochId based on which epoch's MERGED CELL visually spans
+     that column, NOT based on the encounter's name prefix. A column named "Day -7" under an
+     epoch header "Inpatient Period 1" must get epochId for "Inpatient Period 1", even if a
+     neighbouring epoch has a similar-sounding name.
    
    CRITICAL - 3-ROW HEADER STRUCTURE:
    Many SoA tables have 3 header rows:
@@ -88,11 +95,15 @@ EXTRACT:
 
 5. **Footnotes** - CRITICAL: Extract ALL footnotes from ALL pages
    - Look at the BOTTOM of EACH PAGE for footnote text
-   - Footnotes are lettered (a, b, c... through x, y, z) or numbered (1, 2, 3...)
+   - Footnotes may be lettered (a, b, c... through x, y, z) or numbered (1, 2, 3...) or both
    - EXTRACT EVERY SINGLE FOOTNOTE - protocols often have 20-30+ footnotes
    - Include footnotes from appendix tables and continuation pages
-   - Format: "a. Full text of footnote a", "b. Full text of footnote b", etc.
-   - Do NOT skip any letters - if you see footnotes a, b, c, l, u, w, x there are likely d-k, m-t, v in between
+   - CRITICAL: Preserve the ORIGINAL label exactly as printed in the PDF.
+     If the PDF uses letters (a, b, c...), output "a. text", "b. text", etc.
+     If the PDF uses numbers (1, 2, 3...), output "1. text", "2. text", etc.
+     If the PDF has BOTH numbered AND lettered footnotes, include BOTH sets with their original labels.
+     Do NOT renumber lettered footnotes as numbers or vice versa.
+   - Do NOT skip any labels - if you see footnotes a, b, c, l, u, w, x there are likely d-k, m-t, v in between
    - Look for footnotes on EVERY page image provided
 
 OUTPUT FORMAT:

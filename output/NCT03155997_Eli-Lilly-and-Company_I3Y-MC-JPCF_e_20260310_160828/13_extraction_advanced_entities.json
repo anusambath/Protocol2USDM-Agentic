@@ -1,0 +1,31 @@
+{
+  "agent_id": "advanced_agent",
+  "timestamp": "2026-03-10T16:09:32.570713",
+  "confidence": 0.85,
+  "entity_count": 1,
+  "entities": [
+    {
+      "id": "geo_1",
+      "entity_type": "geographic_scope",
+      "data": {
+        "id": "geo_1",
+        "name": "Study Geographic Scope",
+        "scopeType": "Global",
+        "instanceType": "GeographicScope"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "advanced_summary": {
+    "amendment_count": 0,
+    "country_count": 0,
+    "site_count": 0,
+    "has_geographic_scope": true
+  }
+}

@@ -1,0 +1,234 @@
+{
+  "agent_id": "eligibility_agent",
+  "timestamp": "2026-03-10T16:09:28.022357",
+  "confidence": 0.85,
+  "entity_count": 11,
+  "entities": [
+    {
+      "id": "eci_1",
+      "entity_type": "criterion_item",
+      "data": {
+        "id": "eci_1",
+        "name": "Age and Sex Requirement",
+        "text": "Female (regardless of menopausal status) or male ≥18 years of age (or of an acceptable age according to local regulations, whichever is older).",
+        "instanceType": "EligibilityCriterionItem"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "id": "eci_2",
+      "entity_type": "criterion_item",
+      "data": {
+        "id": "eci_2",
+        "name": "Confirmed HR+, HER2-negative, early stage resected invasive breast cancer",
+        "text": "The patient has confirmed HR+, HER2-negative (HER2-), early stage resected invasive breast cancer without evidence of distant metastases.\n To fulfill the requirement for HR+ disease by local testing on primary disease specimen, tumor must be ER or PgR positive defined by immunohistochemistry (IHC) according to American Society of Clinical Oncology (ASCO)/College of American Pathologists (CAP) guidelines for hormone receptor testing (Hammond et al. 2010).\n To fulfill the requirement of HER2- disease by local testing on primary disease specimen, tumor must be HER2- according to ASCO/CAP guidelines for HER2 testing (Wolff et al. 2018).\nPatients with bilateral breast cancer (diagnosis of invasive tumors in both breasts simultaneously or within 6 months of each other) can be eligible if all lesions tested on both sides are HR+/HER2- and adequate surgery has been performed in both breasts (see inclusion criterion [3]). The Lilly Clinical Research Physician and Clinical Research Scientist (CRP/CRS) must be consulted for all cases of bilateral breast cancer.",
+        "instanceType": "EligibilityCriterionItem"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "id": "eci_3",
+      "entity_type": "criterion_item",
+      "data": {
+        "id": "eci_3",
+        "name": "Definitive surgery of primary breast tumor(s)",
+        "text": "The patient must have undergone definitive surgery of the primary breast tumor(s).\n With the exception of the situations described below, the margins of the resected specimen must be histologically free of invasive tumor and /or a component of ductal carcinoma in situ (DCIS) as determined by the local pathologist. If pathologic examination demonstrates tumor at the line of resection, additional excisions may be performed to obtain clear margins. If tumor is still present at the resected margin after re-excision(s), the patient must undergo mastectomy to be eligible. Of note, patients with margins positive for lobular carcinoma in situ (LCIS) are eligible without additional resection.\n For patients who undergo mastectomy or wide local excision where deep margin abuts the pectoralis fascia, patients with microscopic positive margins are eligible as long as radiotherapy of the chest wall is administered prior to study entry. Patients with positive anterior margins may be eligible if there is no gross disease left behind (radiotherapy as per local guidelines).\n Where surgical excision of supraclavicular or internal mammary nodes is not feasible, residual nodes should be irradiated in accordance with standard guidelines.\n If given, radiation therapy (for example, post-mastectomy or post-lumpectomy) should be administered according to standard guidelines.",
+        "instanceType": "EligibilityCriterionItem"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "id": "eci_4",
+      "entity_type": "criterion_item",
+      "data": {
+        "id": "eci_4",
+        "name": "Tumor tissue for exploratory biomarker analysis",
+        "text": "The patient must have tumor tissue from breast (preferred) or lymph node for exploratory biomarker analysis available prior to randomization. \nNote: Sites should confirm the availability of tumor tissue for exploratory analysis (Section 9.8.2.2) with the pathological laboratory prior to randomization",
+        "instanceType": "EligibilityCriterionItem"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "id": "eci_5",
+      "entity_type": "criterion_item",
+      "data": {
+        "id": "eci_5",
+        "name": "Node positive status and additional criteria",
+        "text": "Patients must be node positive (microscopic and macroscopic tumor involvement are allowed; ipsilateral internal mammary and supraclavicular lymph nodes are allowed, but will not count toward the number of positive lymph nodes) and fulfill one of the following criteria: \nA. Pathological tumor involvement in ≥4 ipsilateral axillary lymph nodes.\nOR\nB. Pathological tumor involvement in 1 to 3 ipsilateral axillary lymph node(s) (for patients who received neoadjuvant therapy also cytological tumor involvement at time of initial diagnosis is allowed) and meet at least 1 of the following criteria:\n1. Grade 3 as defined by a combined score of at least 8 points per the modified Bloom-Richardson grading system (Elston and Ellis 1991), also known as the Nottingham scale, or equivalent following discussion with the Lilly CRP/CRS\n– pathological primary invasive tumor size ≥5 cm (for patients who received neoadjuvant therapy primary tumor size ≥5 cm on breast imaging is allowed). Note: if tumor size is needed to meet eligibility criteria, patients with multifocal/multicentric tumors may be eligible based on the addition of diameters of the individual lesions following discussion with the Lilly CRP/CRS.\n– Ki-67 index of ≥20% (for Cohort 2) on untreated breast tissue as determined by the investigational assay (described in Section 3.2.1) at the Study JPCF central laboratory. See Section 9.8.1 for Ki-67 sample requirements.",
+        "instanceType": "EligibilityCriterionItem"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "id": "ec_1",
+      "entity_type": "eligibility_criterion",
+      "data": {
+        "id": "ec_1",
+        "identifier": "[1]",
+        "category": {
+          "code": "Inclusion",
+          "codeSystem": "USDM",
+          "decode": "Inclusion"
+        },
+        "criterionItemId": "eci_1",
+        "instanceType": "EligibilityCriterion",
+        "name": "Age and Sex Requirement",
+        "nextId": "ec_2"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "id": "ec_2",
+      "entity_type": "eligibility_criterion",
+      "data": {
+        "id": "ec_2",
+        "identifier": "[2]",
+        "category": {
+          "code": "Inclusion",
+          "codeSystem": "USDM",
+          "decode": "Inclusion"
+        },
+        "criterionItemId": "eci_2",
+        "instanceType": "EligibilityCriterion",
+        "name": "Confirmed HR+, HER2-negative, early stage resected invasive breast cancer",
+        "previousId": "ec_1",
+        "nextId": "ec_3"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "id": "ec_3",
+      "entity_type": "eligibility_criterion",
+      "data": {
+        "id": "ec_3",
+        "identifier": "[3]",
+        "category": {
+          "code": "Inclusion",
+          "codeSystem": "USDM",
+          "decode": "Inclusion"
+        },
+        "criterionItemId": "eci_3",
+        "instanceType": "EligibilityCriterion",
+        "name": "Definitive surgery of primary breast tumor(s)",
+        "previousId": "ec_2",
+        "nextId": "ec_4"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "id": "ec_4",
+      "entity_type": "eligibility_criterion",
+      "data": {
+        "id": "ec_4",
+        "identifier": "[4]",
+        "category": {
+          "code": "Inclusion",
+          "codeSystem": "USDM",
+          "decode": "Inclusion"
+        },
+        "criterionItemId": "eci_4",
+        "instanceType": "EligibilityCriterion",
+        "name": "Tumor tissue for exploratory biomarker analysis",
+        "previousId": "ec_3",
+        "nextId": "ec_5"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "id": "ec_5",
+      "entity_type": "eligibility_criterion",
+      "data": {
+        "id": "ec_5",
+        "identifier": "[5]",
+        "category": {
+          "code": "Inclusion",
+          "codeSystem": "USDM",
+          "decode": "Inclusion"
+        },
+        "criterionItemId": "eci_5",
+        "instanceType": "EligibilityCriterion",
+        "name": "Node positive status and additional criteria",
+        "previousId": "ec_4"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "id": "pop_1",
+      "entity_type": "study_population",
+      "data": {
+        "id": "pop_1",
+        "name": "Study Population",
+        "includesHealthySubjects": false,
+        "criterionIds": [
+          "ec_1",
+          "ec_2",
+          "ec_3",
+          "ec_4",
+          "ec_5"
+        ],
+        "instanceType": "StudyDesignPopulation",
+        "description": "Target population defined by eligibility criteria"
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        28,
+        29,
+        30
+      ]
+    }
+  ],
+  "eligibility_summary": {
+    "inclusion_count": 5,
+    "exclusion_count": 0
+  }
+}

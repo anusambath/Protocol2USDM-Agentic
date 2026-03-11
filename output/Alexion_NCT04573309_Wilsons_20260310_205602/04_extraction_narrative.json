@@ -1,0 +1,1773 @@
+{
+  "agent_id": "narrative_agent",
+  "timestamp": "2026-03-10T20:56:49.591961",
+  "confidence": 0.85,
+  "entity_count": 68,
+  "entities": [
+    {
+      "id": "nc_1",
+      "entity_type": "narrative_content",
+      "data": {
+        "id": "nc_1",
+        "name": "PROTOCOL SUMMARY",
+        "text": "PROTOCOL SUMMARY",
+        "order": 0,
+        "instanceType": "NarrativeContent",
+        "sectionNumber": "1",
+        "sectionTitle": "PROTOCOL SUMMARY",
+        "sectionType": {
+          "id": "9b28e86b-b866-4e4e-a864-66d708491311",
+          "code": "Synopsis",
+          "codeSystem": "USDM",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Synopsis",
+          "instanceType": "Code"
+        },
+        "childIds": [
+          "nci_1_1",
+          "nci_1_2",
+          "nci_1_3"
+        ]
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "nc_2",
+      "entity_type": "narrative_content",
+      "data": {
+        "id": "nc_2",
+        "name": "INTRODUCTION",
+        "text": "INTRODUCTION",
+        "order": 1,
+        "instanceType": "NarrativeContent",
+        "sectionNumber": "2",
+        "sectionTitle": "INTRODUCTION",
+        "sectionType": {
+          "id": "1b994c84-0b94-4c06-8ebb-cfd6e87b155f",
+          "code": "Introduction",
+          "codeSystem": "USDM",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Introduction",
+          "instanceType": "Code"
+        },
+        "childIds": [
+          "nci_2_1",
+          "nci_2_2",
+          "nci_2_3"
+        ]
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "nc_3",
+      "entity_type": "narrative_content",
+      "data": {
+        "id": "nc_3",
+        "name": "OBJECTIVES AND ENDPOINTS",
+        "text": "OBJECTIVES AND ENDPOINTS",
+        "order": 2,
+        "instanceType": "NarrativeContent",
+        "sectionNumber": "3",
+        "sectionTitle": "OBJECTIVES AND ENDPOINTS",
+        "sectionType": {
+          "id": "2bce40f0-038c-4ade-a24a-5465aa81c362",
+          "code": "Objectives",
+          "codeSystem": "USDM",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Objectives",
+          "instanceType": "Code"
+        }
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "nc_4",
+      "entity_type": "narrative_content",
+      "data": {
+        "id": "nc_4",
+        "name": "STUDY DESIGN",
+        "text": "STUDY DESIGN",
+        "order": 3,
+        "instanceType": "NarrativeContent",
+        "sectionNumber": "4",
+        "sectionTitle": "STUDY DESIGN",
+        "sectionType": {
+          "id": "f62da66b-ebaa-4a7d-9e32-b68dc05b9363",
+          "code": "Study Design",
+          "codeSystem": "USDM",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Study Design",
+          "instanceType": "Code"
+        },
+        "childIds": [
+          "nci_4_1",
+          "nci_4_2",
+          "nci_4_3",
+          "nci_4_4"
+        ]
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "nc_5",
+      "entity_type": "narrative_content",
+      "data": {
+        "id": "nc_5",
+        "name": "STUDY POPULATION",
+        "text": "STUDY POPULATION",
+        "order": 4,
+        "instanceType": "NarrativeContent",
+        "sectionNumber": "5",
+        "sectionTitle": "STUDY POPULATION",
+        "sectionType": {
+          "id": "b6b3e922-9417-48be-8622-b4364f8ada9b",
+          "code": "Study Population",
+          "codeSystem": "USDM",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Study Population",
+          "instanceType": "Code"
+        },
+        "childIds": [
+          "nci_5_1",
+          "nci_5_2",
+          "nci_5_3",
+          "nci_5_4"
+        ]
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "nc_6",
+      "entity_type": "narrative_content",
+      "data": {
+        "id": "nc_6",
+        "name": "STUDY INTERVENTION",
+        "text": "STUDY INTERVENTION",
+        "order": 5,
+        "instanceType": "NarrativeContent",
+        "sectionNumber": "6",
+        "sectionTitle": "STUDY INTERVENTION",
+        "sectionType": {
+          "id": "d3910685-42cc-46f9-929b-b4f6d5c4b54b",
+          "code": "Treatment",
+          "codeSystem": "USDM",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Treatment",
+          "instanceType": "Code"
+        }
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "nc_7",
+      "entity_type": "narrative_content",
+      "data": {
+        "id": "nc_7",
+        "name": "Unknown Section 10",
+        "text": "Unknown Section 10",
+        "order": 6,
+        "instanceType": "NarrativeContent",
+        "sectionNumber": "10",
+        "sectionTitle": "Unknown Section 10",
+        "sectionType": {
+          "id": "47cf7fbc-0581-4f2a-8220-b3d8fd7658e1",
+          "code": "Other",
+          "codeSystem": "USDM",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "Other",
+          "instanceType": "Code"
+        },
+        "childIds": [
+          "nci_7_1",
+          "nci_7_2",
+          "nci_7_3",
+          "nci_7_4",
+          "nci_7_5",
+          "nci_7_6",
+          "nci_7_7"
+        ]
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "nc_8",
+      "entity_type": "narrative_content",
+      "data": {
+        "id": "nc_8",
+        "name": "REFERENCES",
+        "text": "REFERENCES",
+        "order": 7,
+        "instanceType": "NarrativeContent",
+        "sectionNumber": "11",
+        "sectionTitle": "REFERENCES",
+        "sectionType": {
+          "id": "944b1a04-39ce-4b57-8c0e-944680d17743",
+          "code": "References",
+          "codeSystem": "USDM",
+          "codeSystemVersion": "2024-09-27",
+          "decode": "References",
+          "instanceType": "Code"
+        }
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "nci_1_1",
+      "entity_type": "narrative_content_item",
+      "data": {
+        "id": "nci_1_1",
+        "name": "Synopsis",
+        "text": "",
+        "order": 0,
+        "instanceType": "NarrativeContentItem",
+        "sectionNumber": "1.1.",
+        "sectionTitle": "Synopsis"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "nci_1_2",
+      "entity_type": "narrative_content_item",
+      "data": {
+        "id": "nci_1_2",
+        "name": "Schema",
+        "text": "",
+        "order": 1,
+        "instanceType": "NarrativeContentItem",
+        "sectionNumber": "1.2.",
+        "sectionTitle": "Schema"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "nci_1_3",
+      "entity_type": "narrative_content_item",
+      "data": {
+        "id": "nci_1_3",
+        "name": "Schedule of Activities (SoA)",
+        "text": "",
+        "order": 2,
+        "instanceType": "NarrativeContentItem",
+        "sectionNumber": "1.3.",
+        "sectionTitle": "Schedule of Activities (SoA)"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "nci_2_1",
+      "entity_type": "narrative_content_item",
+      "data": {
+        "id": "nci_2_1",
+        "name": "Study Rationale",
+        "text": "",
+        "order": 0,
+        "instanceType": "NarrativeContentItem",
+        "sectionNumber": "2.1.",
+        "sectionTitle": "Study Rationale"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "nci_2_2",
+      "entity_type": "narrative_content_item",
+      "data": {
+        "id": "nci_2_2",
+        "name": "Background",
+        "text": "",
+        "order": 1,
+        "instanceType": "NarrativeContentItem",
+        "sectionNumber": "2.2.",
+        "sectionTitle": "Background"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "nci_2_3",
+      "entity_type": "narrative_content_item",
+      "data": {
+        "id": "nci_2_3",
+        "name": "Benefit-Risk Assessment",
+        "text": "",
+        "order": 2,
+        "instanceType": "NarrativeContentItem",
+        "sectionNumber": "2.3.",
+        "sectionTitle": "Benefit-Risk Assessment"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "nci_4_1",
+      "entity_type": "narrative_content_item",
+      "data": {
+        "id": "nci_4_1",
+        "name": "Overall Design",
+        "text": "",
+        "order": 0,
+        "instanceType": "NarrativeContentItem",
+        "sectionNumber": "4.1.",
+        "sectionTitle": "Overall Design"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "nci_4_2",
+      "entity_type": "narrative_content_item",
+      "data": {
+        "id": "nci_4_2",
+        "name": "Scientific Rationale for Study Design",
+        "text": "",
+        "order": 1,
+        "instanceType": "NarrativeContentItem",
+        "sectionNumber": "4.2.",
+        "sectionTitle": "Scientific Rationale for Study Design"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "nci_4_3",
+      "entity_type": "narrative_content_item",
+      "data": {
+        "id": "nci_4_3",
+        "name": "Justification for Dose",
+        "text": "",
+        "order": 2,
+        "instanceType": "NarrativeContentItem",
+        "sectionNumber": "4.3.",
+        "sectionTitle": "Justification for Dose"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "nci_4_4",
+      "entity_type": "narrative_content_item",
+      "data": {
+        "id": "nci_4_4",
+        "name": "End of Study Definition",
+        "text": "",
+        "order": 3,
+        "instanceType": "NarrativeContentItem",
+        "sectionNumber": "4.4.",
+        "sectionTitle": "End of Study Definition"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "nci_5_1",
+      "entity_type": "narrative_content_item",
+      "data": {
+        "id": "nci_5_1",
+        "name": "Inclusion Criteria",
+        "text": "",
+        "order": 0,
+        "instanceType": "NarrativeContentItem",
+        "sectionNumber": "5.1.",
+        "sectionTitle": "Inclusion Criteria"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "nci_5_2",
+      "entity_type": "narrative_content_item",
+      "data": {
+        "id": "nci_5_2",
+        "name": "Exclusion Criteria",
+        "text": "",
+        "order": 1,
+        "instanceType": "NarrativeContentItem",
+        "sectionNumber": "5.2.",
+        "sectionTitle": "Exclusion Criteria"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "nci_5_3",
+      "entity_type": "narrative_content_item",
+      "data": {
+        "id": "nci_5_3",
+        "name": "Lifestyle Considerations",
+        "text": "",
+        "order": 2,
+        "instanceType": "NarrativeContentItem",
+        "sectionNumber": "5.3.",
+        "sectionTitle": "Lifestyle Considerations"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "nci_5_4",
+      "entity_type": "narrative_content_item",
+      "data": {
+        "id": "nci_5_4",
+        "name": "Screen Failures",
+        "text": "",
+        "order": 3,
+        "instanceType": "NarrativeContentItem",
+        "sectionNumber": "5.4.",
+        "sectionTitle": "Screen Failures"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "nci_7_1",
+      "entity_type": "narrative_content_item",
+      "data": {
+        "id": "nci_7_1",
+        "name": "Unknown Section 10.1",
+        "text": "",
+        "order": 0,
+        "instanceType": "NarrativeContentItem",
+        "sectionNumber": "10.1",
+        "sectionTitle": "Unknown Section 10.1"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "nci_7_2",
+      "entity_type": "narrative_content_item",
+      "data": {
+        "id": "nci_7_2",
+        "name": "Clinical Laboratory Tests",
+        "text": "",
+        "order": 1,
+        "instanceType": "NarrativeContentItem",
+        "sectionNumber": "10.2.",
+        "sectionTitle": "Clinical Laboratory Tests"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "nci_7_3",
+      "entity_type": "narrative_content_item",
+      "data": {
+        "id": "nci_7_3",
+        "name": "Adverse Events: Definitions and Procedures for Recording, Evaluating, Follow-up, and Reporting",
+        "text": "",
+        "order": 2,
+        "instanceType": "NarrativeContentItem",
+        "sectionNumber": "10.3.",
+        "sectionTitle": "Adverse Events: Definitions and Procedures for Recording, Evaluating, Follow-up, and Reporting"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "nci_7_4",
+      "entity_type": "narrative_content_item",
+      "data": {
+        "id": "nci_7_4",
+        "name": "Contraceptive Guidance and Collection of Pregnancy Information",
+        "text": "",
+        "order": 3,
+        "instanceType": "NarrativeContentItem",
+        "sectionNumber": "10.4.",
+        "sectionTitle": "Contraceptive Guidance and Collection of Pregnancy Information"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "nci_7_5",
+      "entity_type": "narrative_content_item",
+      "data": {
+        "id": "nci_7_5",
+        "name": "COVID-19 Vaccine Risk Assessment",
+        "text": "",
+        "order": 4,
+        "instanceType": "NarrativeContentItem",
+        "sectionNumber": "10.5.",
+        "sectionTitle": "COVID-19 Vaccine Risk Assessment"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "nci_7_6",
+      "entity_type": "narrative_content_item",
+      "data": {
+        "id": "nci_7_6",
+        "name": "Abbreviations",
+        "text": "",
+        "order": 5,
+        "instanceType": "NarrativeContentItem",
+        "sectionNumber": "10.6.",
+        "sectionTitle": "Abbreviations"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "nci_7_7",
+      "entity_type": "narrative_content_item",
+      "data": {
+        "id": "nci_7_7",
+        "name": "Protocol Amendment History",
+        "text": "",
+        "order": 6,
+        "instanceType": "NarrativeContentItem",
+        "sectionNumber": "10.7.",
+        "sectionTitle": "Protocol Amendment History"
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "abbr_1",
+      "entity_type": "abbreviation",
+      "data": {
+        "id": "abbr_1",
+        "abbreviatedText": "ADME",
+        "expandedText": "absorption, distribution, metabolism, and excretion",
+        "instanceType": "Abbreviation"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "abbr_2",
+      "entity_type": "abbreviation",
+      "data": {
+        "id": "abbr_2",
+        "abbreviatedText": "AE",
+        "expandedText": "adverse event",
+        "instanceType": "Abbreviation"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "abbr_3",
+      "entity_type": "abbreviation",
+      "data": {
+        "id": "abbr_3",
+        "abbreviatedText": "ALT",
+        "expandedText": "alanine aminotransferase",
+        "instanceType": "Abbreviation"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "abbr_4",
+      "entity_type": "abbreviation",
+      "data": {
+        "id": "abbr_4",
+        "abbreviatedText": "AP",
+        "expandedText": "accumulation period",
+        "instanceType": "Abbreviation"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "abbr_5",
+      "entity_type": "abbreviation",
+      "data": {
+        "id": "abbr_5",
+        "abbreviatedText": "AST",
+        "expandedText": "aspartate aminotransferase",
+        "instanceType": "Abbreviation"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "abbr_6",
+      "entity_type": "abbreviation",
+      "data": {
+        "id": "abbr_6",
+        "abbreviatedText": "BMI",
+        "expandedText": "body mass index",
+        "instanceType": "Abbreviation"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "abbr_7",
+      "entity_type": "abbreviation",
+      "data": {
+        "id": "abbr_7",
+        "abbreviatedText": "BP",
+        "expandedText": "Blood Pressure",
+        "instanceType": "Abbreviation"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "abbr_8",
+      "entity_type": "abbreviation",
+      "data": {
+        "id": "abbr_8",
+        "abbreviatedText": "C-I",
+        "expandedText": "check-in",
+        "instanceType": "Abbreviation"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "abbr_9",
+      "entity_type": "abbreviation",
+      "data": {
+        "id": "abbr_9",
+        "abbreviatedText": "COVID-19",
+        "expandedText": "Coronavirus Disease 2019",
+        "instanceType": "Abbreviation"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "abbr_10",
+      "entity_type": "abbreviation",
+      "data": {
+        "id": "abbr_10",
+        "abbreviatedText": "CRU",
+        "expandedText": "clinical research unit",
+        "instanceType": "Abbreviation"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "abbr_11",
+      "entity_type": "abbreviation",
+      "data": {
+        "id": "abbr_11",
+        "abbreviatedText": "Cu",
+        "expandedText": "copper",
+        "instanceType": "Abbreviation"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "abbr_12",
+      "entity_type": "abbreviation",
+      "data": {
+        "id": "abbr_12",
+        "abbreviatedText": "D",
+        "expandedText": "day",
+        "instanceType": "Abbreviation"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "abbr_13",
+      "entity_type": "abbreviation",
+      "data": {
+        "id": "abbr_13",
+        "abbreviatedText": "ECG",
+        "expandedText": "electrocardiogram",
+        "instanceType": "Abbreviation"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "abbr_14",
+      "entity_type": "abbreviation",
+      "data": {
+        "id": "abbr_14",
+        "abbreviatedText": "EOS",
+        "expandedText": "End of Study",
+        "instanceType": "Abbreviation"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "abbr_15",
+      "entity_type": "abbreviation",
+      "data": {
+        "id": "abbr_15",
+        "abbreviatedText": "EOS/ET",
+        "expandedText": "End of Study or Early Termination",
+        "instanceType": "Abbreviation"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "abbr_16",
+      "entity_type": "abbreviation",
+      "data": {
+        "id": "abbr_16",
+        "abbreviatedText": "FDA",
+        "expandedText": "US Food and Drug Administration",
+        "instanceType": "Abbreviation"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "abbr_17",
+      "entity_type": "abbreviation",
+      "data": {
+        "id": "abbr_17",
+        "abbreviatedText": "HIV",
+        "expandedText": "human immunodeficiency virus",
+        "instanceType": "Abbreviation"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "abbr_18",
+      "entity_type": "abbreviation",
+      "data": {
+        "id": "abbr_18",
+        "abbreviatedText": "HR",
+        "expandedText": "heart rate",
+        "instanceType": "Abbreviation"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "abbr_19",
+      "entity_type": "abbreviation",
+      "data": {
+        "id": "abbr_19",
+        "abbreviatedText": "I/O",
+        "expandedText": "input/output",
+        "instanceType": "Abbreviation"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "abbr_20",
+      "entity_type": "abbreviation",
+      "data": {
+        "id": "abbr_20",
+        "abbreviatedText": "IB",
+        "expandedText": "Investigator’s Brochure",
+        "instanceType": "Abbreviation"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "abbr_21",
+      "entity_type": "abbreviation",
+      "data": {
+        "id": "abbr_21",
+        "abbreviatedText": "IECs",
+        "expandedText": "Independent Ethics Committees",
+        "instanceType": "Abbreviation"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "abbr_22",
+      "entity_type": "abbreviation",
+      "data": {
+        "id": "abbr_22",
+        "abbreviatedText": "IRBs",
+        "expandedText": "Institutional Review Boards",
+        "instanceType": "Abbreviation"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "abbr_23",
+      "entity_type": "abbreviation",
+      "data": {
+        "id": "abbr_23",
+        "abbreviatedText": "LBC",
+        "expandedText": "labile bound copper",
+        "instanceType": "Abbreviation"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "abbr_24",
+      "entity_type": "abbreviation",
+      "data": {
+        "id": "abbr_24",
+        "abbreviatedText": "Mo",
+        "expandedText": "molybdenum",
+        "instanceType": "Abbreviation"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "abbr_25",
+      "entity_type": "abbreviation",
+      "data": {
+        "id": "abbr_25",
+        "abbreviatedText": "NCC",
+        "expandedText": "non-ceruloplasmin-bound copper",
+        "instanceType": "Abbreviation"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "abbr_26",
+      "entity_type": "abbreviation",
+      "data": {
+        "id": "abbr_26",
+        "abbreviatedText": "NCCcorrected",
+        "expandedText": "non-ceruloplasmin corrected copper concentrations corrected for TPC",
+        "instanceType": "Abbreviation"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "abbr_27",
+      "entity_type": "abbreviation",
+      "data": {
+        "id": "abbr_27",
+        "abbreviatedText": "OP",
+        "expandedText": "outpatient",
+        "instanceType": "Abbreviation"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "abbr_28",
+      "entity_type": "abbreviation",
+      "data": {
+        "id": "abbr_28",
+        "abbreviatedText": "PD",
+        "expandedText": "pharmacodynamic",
+        "instanceType": "Abbreviation"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "abbr_29",
+      "entity_type": "abbreviation",
+      "data": {
+        "id": "abbr_29",
+        "abbreviatedText": "PK",
+        "expandedText": "pharmacokinetics",
+        "instanceType": "Abbreviation"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "abbr_30",
+      "entity_type": "abbreviation",
+      "data": {
+        "id": "abbr_30",
+        "abbreviatedText": "PK/PD",
+        "expandedText": "Pharmacokinetic/Pharmacodynamic",
+        "instanceType": "Abbreviation"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "abbr_31",
+      "entity_type": "abbreviation",
+      "data": {
+        "id": "abbr_31",
+        "abbreviatedText": "PUF",
+        "expandedText": "plasma ultrafiltrate",
+        "instanceType": "Abbreviation"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "abbr_32",
+      "entity_type": "abbreviation",
+      "data": {
+        "id": "abbr_32",
+        "abbreviatedText": "SAE",
+        "expandedText": "Serious Adverse Event",
+        "instanceType": "Abbreviation"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "abbr_33",
+      "entity_type": "abbreviation",
+      "data": {
+        "id": "abbr_33",
+        "abbreviatedText": "SARS-CoV-2",
+        "expandedText": "Coronavirus",
+        "instanceType": "Abbreviation"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "abbr_34",
+      "entity_type": "abbreviation",
+      "data": {
+        "id": "abbr_34",
+        "abbreviatedText": "SoA",
+        "expandedText": "Schedule of Activities",
+        "instanceType": "Abbreviation"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "abbr_35",
+      "entity_type": "abbreviation",
+      "data": {
+        "id": "abbr_35",
+        "abbreviatedText": "SS",
+        "expandedText": "steady state",
+        "instanceType": "Abbreviation"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "abbr_36",
+      "entity_type": "abbreviation",
+      "data": {
+        "id": "abbr_36",
+        "abbreviatedText": "TPC",
+        "expandedText": "tetrathiomolybdate- copper -albumin tripartite complex",
+        "instanceType": "Abbreviation"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "abbr_37",
+      "entity_type": "abbreviation",
+      "data": {
+        "id": "abbr_37",
+        "abbreviatedText": "UNS",
+        "expandedText": "unscheduled",
+        "instanceType": "Abbreviation"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "abbr_38",
+      "entity_type": "abbreviation",
+      "data": {
+        "id": "abbr_38",
+        "abbreviatedText": "WD",
+        "expandedText": "Wilson disease",
+        "instanceType": "Abbreviation"
+      },
+      "confidence": 0.9,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    },
+    {
+      "id": "sdd_1",
+      "entity_type": "study_definition_document",
+      "data": {
+        "id": "sdd_1",
+        "name": "A Phase 2, Open-label Study to Assess Copper and Molybdenum Balance in Participants with Wilson Disease Treated with ALXN1840",
+        "documentType": "Protocol",
+        "language": "en",
+        "instanceType": "StudyDefinitionDocument",
+        "version": "3.1",
+        "versionDate": "2022-03-18",
+        "contentIds": [
+          "nc_1",
+          "nc_2",
+          "nc_3",
+          "nc_4",
+          "nc_5",
+          "nc_6",
+          "nc_7",
+          "nc_8"
+        ]
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        2,
+        3,
+        6,
+        8,
+        12,
+        13,
+        15,
+        16,
+        20,
+        29
+      ]
+    }
+  ],
+  "narrative_summary": {
+    "section_count": 8,
+    "item_count": 21,
+    "abbreviation_count": 38,
+    "has_document": true
+  }
+}

@@ -1,0 +1,1495 @@
+{
+  "agent_id": "soa_vision_agent",
+  "timestamp": "2026-03-10T20:56:57.930515",
+  "confidence": 0.8,
+  "entity_count": 30,
+  "entities": [
+    {
+      "id": "soa_header_structure",
+      "entity_type": "header_structure",
+      "data": {
+        "source": "vision",
+        "page_numbers": [
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          23,
+          24,
+          25
+        ],
+        "image_count": 10,
+        "structure": {
+          "columnHierarchy": {
+            "epochs": [
+              {
+                "id": "epoch_1",
+                "name": "Screening",
+                "instanceType": "StudyEpoch",
+                "type": {
+                  "id": "1d05768d-3a10-4c2b-8575-9bed7ac3f7d2",
+                  "code": "C98779",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Screening Epoch",
+                  "instanceType": "Code"
+                }
+              },
+              {
+                "id": "epoch_2",
+                "name": "C-I",
+                "instanceType": "StudyEpoch",
+                "type": {
+                  "id": "fb982e25-04d6-4b34-a511-167038508d05",
+                  "code": "C98780",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Treatment Epoch",
+                  "instanceType": "Code"
+                }
+              },
+              {
+                "id": "epoch_3",
+                "name": "Inpatient Period 1",
+                "instanceType": "StudyEpoch",
+                "type": {
+                  "id": "44711db9-1916-4d58-9202-75fb0e9ef3fe",
+                  "code": "C98780",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Treatment Epoch",
+                  "instanceType": "Code"
+                }
+              },
+              {
+                "id": "epoch_4",
+                "name": "OP",
+                "instanceType": "StudyEpoch",
+                "type": {
+                  "id": "815d03d9-4f7a-4fe8-a931-11ed606c1e2b",
+                  "code": "C98780",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Treatment Epoch",
+                  "instanceType": "Code"
+                }
+              },
+              {
+                "id": "epoch_5",
+                "name": "Inpatient Period 2",
+                "instanceType": "StudyEpoch",
+                "type": {
+                  "id": "dcfe3507-f6bc-4fe5-973f-1ae4ce3c38ef",
+                  "code": "C98780",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Treatment Epoch",
+                  "instanceType": "Code"
+                }
+              },
+              {
+                "id": "epoch_6",
+                "name": "UNS¹ EOS or ET²",
+                "instanceType": "StudyEpoch",
+                "type": {
+                  "id": "a704fb9e-fed4-4e13-bb88-f9ceef888b9c",
+                  "code": "C98780",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Treatment Epoch",
+                  "instanceType": "Code"
+                }
+              }
+            ],
+            "encounters": [
+              {
+                "id": "enc_1",
+                "name": "Screening (Day -9)",
+                "instanceType": "Encounter",
+                "type": {
+                  "id": "9618f852-9a0c-4714-bf06-37fbc9ff8c53",
+                  "code": "C48262",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Screening",
+                  "instanceType": "Code"
+                },
+                "epochId": "epoch_1"
+              },
+              {
+                "id": "enc_2",
+                "name": "Screening (Day -21)",
+                "instanceType": "Encounter",
+                "type": {
+                  "id": "0dd6cd0f-986f-4f0e-9f09-4e9603b2e103",
+                  "code": "C48262",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Screening",
+                  "instanceType": "Code"
+                },
+                "epochId": "epoch_1"
+              },
+              {
+                "id": "enc_3",
+                "name": "C-I (Day -8)",
+                "instanceType": "Encounter",
+                "type": {
+                  "id": "0d66e266-493b-4f15-b02f-9bda35daf469",
+                  "code": "C99156",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Scheduled Visit",
+                  "instanceType": "Code"
+                },
+                "epochId": "epoch_2"
+              },
+              {
+                "id": "enc_4",
+                "name": "Inpatient Period 1 (Day -7)",
+                "instanceType": "Encounter",
+                "type": {
+                  "id": "fc956023-64a8-424a-b638-5606a0680634",
+                  "code": "C99156",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Scheduled Visit",
+                  "instanceType": "Code"
+                },
+                "epochId": "epoch_3"
+              },
+              {
+                "id": "enc_5",
+                "name": "Inpatient Period 1 (Day -6 through -4)",
+                "instanceType": "Encounter",
+                "type": {
+                  "id": "aa007b2b-1c15-4f35-ad6d-64e75c4b7246",
+                  "code": "C99156",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Scheduled Visit",
+                  "instanceType": "Code"
+                },
+                "epochId": "epoch_3"
+              },
+              {
+                "id": "enc_6",
+                "name": "Inpatient Period 1 (Day -1)",
+                "instanceType": "Encounter",
+                "type": {
+                  "id": "18e02220-eb9a-4741-a551-b2a20bec3af6",
+                  "code": "C99156",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Scheduled Visit",
+                  "instanceType": "Code"
+                },
+                "epochId": "epoch_3"
+              },
+              {
+                "id": "enc_7",
+                "name": "Inpatient Period 1 (Day 1)",
+                "instanceType": "Encounter",
+                "type": {
+                  "id": "798cf537-2262-45a0-bc1c-1c9d9d279e54",
+                  "code": "C82517",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Baseline",
+                  "instanceType": "Code"
+                },
+                "epochId": "epoch_3"
+              },
+              {
+                "id": "enc_8",
+                "name": "Inpatient Period 1 (Day 2-3)",
+                "instanceType": "Encounter",
+                "type": {
+                  "id": "fa45dea8-9767-46c5-b768-a5a21d864569",
+                  "code": "C99156",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Scheduled Visit",
+                  "instanceType": "Code"
+                },
+                "epochId": "epoch_3"
+              },
+              {
+                "id": "enc_9",
+                "name": "Inpatient Period 1 (Day 4-7)",
+                "instanceType": "Encounter",
+                "type": {
+                  "id": "f4c9c5f2-e61e-4041-aea5-0c5975bc8c6d",
+                  "code": "C99156",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Scheduled Visit",
+                  "instanceType": "Code"
+                },
+                "epochId": "epoch_3"
+              },
+              {
+                "id": "enc_10",
+                "name": "Inpatient Period 1 (Day 8)",
+                "instanceType": "Encounter",
+                "type": {
+                  "id": "c94b64c2-e03d-4983-8ce2-a23daf527eb0",
+                  "code": "C99156",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Scheduled Visit",
+                  "instanceType": "Code"
+                },
+                "epochId": "epoch_3"
+              },
+              {
+                "id": "enc_11",
+                "name": "Inpatient Period 1 (Day 9)",
+                "instanceType": "Encounter",
+                "type": {
+                  "id": "ffc65124-cb03-4bad-8501-1a62181f4846",
+                  "code": "C99156",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Scheduled Visit",
+                  "instanceType": "Code"
+                },
+                "epochId": "epoch_3"
+              },
+              {
+                "id": "enc_12",
+                "name": "Inpatient Period 1 (Day 10-22)",
+                "instanceType": "Encounter",
+                "type": {
+                  "id": "9f8b0948-80d5-4f0a-9976-a5eca39c0907",
+                  "code": "C82517",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Baseline",
+                  "instanceType": "Code"
+                },
+                "epochId": "epoch_3"
+              },
+              {
+                "id": "enc_13",
+                "name": "OP (Day 23)",
+                "instanceType": "Encounter",
+                "type": {
+                  "id": "26de959d-91e5-4f15-ae64-9a38fafde106",
+                  "code": "C99156",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Scheduled Visit",
+                  "instanceType": "Code"
+                },
+                "epochId": "epoch_4"
+              },
+              {
+                "id": "enc_14",
+                "name": "Inpatient Period 2 (Day 24)",
+                "instanceType": "Encounter",
+                "type": {
+                  "id": "8062d3c2-421f-4b53-807a-7b668f4fc5f0",
+                  "code": "C99156",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Scheduled Visit",
+                  "instanceType": "Code"
+                },
+                "epochId": "epoch_5"
+              },
+              {
+                "id": "enc_15",
+                "name": "Inpatient Period 2 (Day 25)",
+                "instanceType": "Encounter",
+                "type": {
+                  "id": "9060bd01-2686-4320-9181-9b0a05aec843",
+                  "code": "C99156",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Scheduled Visit",
+                  "instanceType": "Code"
+                },
+                "epochId": "epoch_5"
+              },
+              {
+                "id": "enc_16",
+                "name": "Inpatient Period 2 (Day 26-28)",
+                "instanceType": "Encounter",
+                "type": {
+                  "id": "adf31f4d-4f0b-4344-80ff-960223bd5c56",
+                  "code": "C99156",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Scheduled Visit",
+                  "instanceType": "Code"
+                },
+                "epochId": "epoch_5"
+              },
+              {
+                "id": "enc_17",
+                "name": "Inpatient Period 2 (Day 29)",
+                "instanceType": "Encounter",
+                "type": {
+                  "id": "1da8db05-caf9-451a-ab89-9538a62e274a",
+                  "code": "C99156",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Scheduled Visit",
+                  "instanceType": "Code"
+                },
+                "epochId": "epoch_5"
+              },
+              {
+                "id": "enc_18",
+                "name": "Inpatient Period 2 (Day 30-35)",
+                "instanceType": "Encounter",
+                "type": {
+                  "id": "5d801941-a13b-4c34-88fc-c0e00877b4f7",
+                  "code": "C99156",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Scheduled Visit",
+                  "instanceType": "Code"
+                },
+                "epochId": "epoch_5"
+              },
+              {
+                "id": "enc_19",
+                "name": "Inpatient Period 2 (Day 36-37)",
+                "instanceType": "Encounter",
+                "type": {
+                  "id": "d39da9ae-fb6e-4a68-8510-692b0987fbcc",
+                  "code": "C99156",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Scheduled Visit",
+                  "instanceType": "Code"
+                },
+                "epochId": "epoch_5"
+              },
+              {
+                "id": "enc_20",
+                "name": "Inpatient Period 2 (Day 38)",
+                "instanceType": "Encounter",
+                "type": {
+                  "id": "680193db-78b5-4bb2-b634-ca8cc48cb473",
+                  "code": "C99156",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Scheduled Visit",
+                  "instanceType": "Code"
+                },
+                "epochId": "epoch_5"
+              },
+              {
+                "id": "enc_21",
+                "name": "Inpatient Period 2 (Day 39)",
+                "instanceType": "Encounter",
+                "type": {
+                  "id": "f10e9122-f1e8-4c9c-9a3b-d295b6acaf07",
+                  "code": "C99156",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Scheduled Visit",
+                  "instanceType": "Code"
+                },
+                "epochId": "epoch_5"
+              },
+              {
+                "id": "enc_22",
+                "name": "Inpatient Period 2 (Day 40)",
+                "instanceType": "Encounter",
+                "type": {
+                  "id": "b0cbfc2a-6188-4727-a261-15d44942439d",
+                  "code": "C99156",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "Scheduled Visit",
+                  "instanceType": "Code"
+                },
+                "epochId": "epoch_5"
+              },
+              {
+                "id": "enc_23",
+                "name": "UNS EOS or ET (Day 54+/-2)",
+                "instanceType": "Encounter",
+                "type": {
+                  "id": "0184410a-d3a8-48a2-a7ba-81ed11b51a50",
+                  "code": "C126070",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2024-09-27",
+                  "decode": "End of Study",
+                  "instanceType": "Code"
+                },
+                "epochId": "epoch_6"
+              }
+            ],
+            "plannedTimepoints": [
+              {
+                "id": "pt_1",
+                "visit": "Day -9",
+                "epoch": "",
+                "epochId": "",
+                "day": "",
+                "window": null,
+                "encounterId": "enc_1",
+                "instanceType": "Timing"
+              },
+              {
+                "id": "pt_2",
+                "visit": "Day -21",
+                "epoch": "",
+                "epochId": "",
+                "day": "",
+                "window": null,
+                "encounterId": "enc_2",
+                "instanceType": "Timing"
+              },
+              {
+                "id": "pt_3",
+                "visit": "Day -8",
+                "epoch": "",
+                "epochId": "",
+                "day": "",
+                "window": null,
+                "encounterId": "enc_3",
+                "instanceType": "Timing"
+              },
+              {
+                "id": "pt_4",
+                "visit": "Day -7",
+                "epoch": "",
+                "epochId": "",
+                "day": "",
+                "window": null,
+                "encounterId": "enc_4",
+                "instanceType": "Timing"
+              },
+              {
+                "id": "pt_5",
+                "visit": "Day -6 through -4",
+                "epoch": "",
+                "epochId": "",
+                "day": "",
+                "window": null,
+                "encounterId": "enc_5",
+                "instanceType": "Timing"
+              },
+              {
+                "id": "pt_6",
+                "visit": "Day -1",
+                "epoch": "",
+                "epochId": "",
+                "day": "",
+                "window": null,
+                "encounterId": "enc_6",
+                "instanceType": "Timing"
+              },
+              {
+                "id": "pt_7",
+                "visit": "Day 1",
+                "epoch": "",
+                "epochId": "",
+                "day": "",
+                "window": null,
+                "encounterId": "enc_7",
+                "instanceType": "Timing"
+              },
+              {
+                "id": "pt_8",
+                "visit": "Day 2-3",
+                "epoch": "",
+                "epochId": "",
+                "day": "",
+                "window": null,
+                "encounterId": "enc_8",
+                "instanceType": "Timing"
+              },
+              {
+                "id": "pt_9",
+                "visit": "Day 4-7",
+                "epoch": "",
+                "epochId": "",
+                "day": "",
+                "window": null,
+                "encounterId": "enc_9",
+                "instanceType": "Timing"
+              },
+              {
+                "id": "pt_10",
+                "visit": "Day 8",
+                "epoch": "",
+                "epochId": "",
+                "day": "",
+                "window": null,
+                "encounterId": "enc_10",
+                "instanceType": "Timing"
+              },
+              {
+                "id": "pt_11",
+                "visit": "Day 9",
+                "epoch": "",
+                "epochId": "",
+                "day": "",
+                "window": null,
+                "encounterId": "enc_11",
+                "instanceType": "Timing"
+              },
+              {
+                "id": "pt_12",
+                "visit": "Day 10-22",
+                "epoch": "",
+                "epochId": "",
+                "day": "",
+                "window": null,
+                "encounterId": "enc_12",
+                "instanceType": "Timing"
+              },
+              {
+                "id": "pt_13",
+                "visit": "Day 23",
+                "epoch": "",
+                "epochId": "",
+                "day": "",
+                "window": null,
+                "encounterId": "enc_13",
+                "instanceType": "Timing"
+              },
+              {
+                "id": "pt_14",
+                "visit": "Day 24",
+                "epoch": "",
+                "epochId": "",
+                "day": "",
+                "window": null,
+                "encounterId": "enc_14",
+                "instanceType": "Timing"
+              },
+              {
+                "id": "pt_15",
+                "visit": "Day 25",
+                "epoch": "",
+                "epochId": "",
+                "day": "",
+                "window": null,
+                "encounterId": "enc_15",
+                "instanceType": "Timing"
+              },
+              {
+                "id": "pt_16",
+                "visit": "Day 26-28",
+                "epoch": "",
+                "epochId": "",
+                "day": "",
+                "window": null,
+                "encounterId": "enc_16",
+                "instanceType": "Timing"
+              },
+              {
+                "id": "pt_17",
+                "visit": "Day 29",
+                "epoch": "",
+                "epochId": "",
+                "day": "",
+                "window": null,
+                "encounterId": "enc_17",
+                "instanceType": "Timing"
+              },
+              {
+                "id": "pt_18",
+                "visit": "Day 30-35",
+                "epoch": "",
+                "epochId": "",
+                "day": "",
+                "window": null,
+                "encounterId": "enc_18",
+                "instanceType": "Timing"
+              },
+              {
+                "id": "pt_19",
+                "visit": "Day 36-37",
+                "epoch": "",
+                "epochId": "",
+                "day": "",
+                "window": null,
+                "encounterId": "enc_19",
+                "instanceType": "Timing"
+              },
+              {
+                "id": "pt_20",
+                "visit": "Day 38",
+                "epoch": "",
+                "epochId": "",
+                "day": "",
+                "window": null,
+                "encounterId": "enc_20",
+                "instanceType": "Timing"
+              },
+              {
+                "id": "pt_21",
+                "visit": "Day 39",
+                "epoch": "",
+                "epochId": "",
+                "day": "",
+                "window": null,
+                "encounterId": "enc_21",
+                "instanceType": "Timing"
+              },
+              {
+                "id": "pt_22",
+                "visit": "Day 40",
+                "epoch": "",
+                "epochId": "",
+                "day": "",
+                "window": null,
+                "encounterId": "enc_22",
+                "instanceType": "Timing"
+              },
+              {
+                "id": "pt_23",
+                "visit": "EOS Day 54",
+                "epoch": "",
+                "epochId": "",
+                "day": "",
+                "window": "+/-2",
+                "encounterId": "enc_23",
+                "instanceType": "Timing"
+              }
+            ]
+          },
+          "rowGroups": [
+            {
+              "id": "grp_1",
+              "name": "Eligibility",
+              "description": null,
+              "childIds": [],
+              "instanceType": "Activity",
+              "activityNames": [
+                "Informed Consent",
+                "Admit to unit",
+                "Discharge from unit³",
+                "Outpatient visit or phone call",
+                "Investigator notification",
+                "Discuss/document contraception",
+                "Follicle-stimulating hormone (post-menopausal females only⁴)",
+                "Alcohol test",
+                "Urine drug screen",
+                "HIV, hepatitis B and C screen"
+              ]
+            },
+            {
+              "id": "grp_2",
+              "name": "Study Administration",
+              "description": null,
+              "childIds": [],
+              "instanceType": "Activity",
+              "activityNames": [
+                "Medical history/demographics⁵",
+                "WD history⁶",
+                "Prior WD treatment⁷",
+                "Physical examination⁸",
+                "Height, weight, and BMI"
+              ]
+            },
+            {
+              "id": "grp_3",
+              "name": "Enrollment",
+              "description": null,
+              "childIds": [],
+              "instanceType": "Activity",
+              "activityNames": [
+                "Enrollment/inclusion",
+                "Discontinue chelation therapy",
+                "Discontinue zinc therapy"
+              ]
+            },
+            {
+              "id": "grp_4",
+              "name": "Administration of Study Intervention",
+              "description": null,
+              "childIds": [],
+              "instanceType": "Activity",
+              "activityNames": [
+                "ALXN1840 15 mg/day",
+                "ALXN1840 30 mg/day",
+                "Study intervention compliance"
+              ]
+            },
+            {
+              "id": "grp_5",
+              "name": "PK/PD Analyses⁹",
+              "description": null,
+              "childIds": [],
+              "instanceType": "Activity",
+              "activityNames": [
+                "Blood sampling for PK: Plasma total Mo and PUF-Mo",
+                "PD: Plasma total and PUF-Cu, LBC, ceruloplasmin, ceruloplasmin-bound Cu"
+              ]
+            },
+            {
+              "id": "grp_6",
+              "name": "Safety Assessments / Laboratory Analyses",
+              "description": null,
+              "childIds": [],
+              "instanceType": "Activity",
+              "activityNames": [
+                "Chemistry, hematology, coagulation",
+                "Urinalysis",
+                "Urine/serum pregnancy test¹",
+                "Retained serum sample (safety)¹",
+                "Vital signs measurements¹",
+                "12-lead ECG (triplicate)¹",
+                "Adverse events"
+              ]
+            },
+            {
+              "id": "grp_7",
+              "name": "Substance assessments",
+              "description": null,
+              "childIds": [],
+              "instanceType": "Activity",
+              "activityNames": [
+                "Cu/Mo-controlled meals¹",
+                "Light exercise regimen",
+                "Urination and bowel movement monitoring, menstruation check",
+                "24-hour urine for Cu and Mo¹",
+                "Feces for Cu and Mo¹"
+              ]
+            },
+            {
+              "id": "grp_8",
+              "name": "Other",
+              "description": null,
+              "childIds": [],
+              "instanceType": "Activity",
+              "activityNames": [
+                "Concomitant medication and non-pharmacologic therapy/procedure",
+                "Withdrawal of ALXN1840 administration. Details of procedures that may be performed by sites designated as “screening sites” (only in the US) are detailed in Section 8."
+              ]
+            }
+          ],
+          "footnotes": [
+            "a. Participants will be admitted to the CRU (clinical research unit) at least 10 hours prior to enrollment and initiation of copper- and molybdenum-controlled diet.",
+            "b. At the CRU’s discretion, participants may remain in the CRU or be readmitted on Day 22 with all procedures starting on Day 23.",
+            "c. Unscheduled study visits may occur at any time during the study and may include any study procedure as deemed necessary by the Investigator.",
+            "d. Participants are required to return to the CRU Day 54+/-2; participants will be discontinued from ALXN1840 medication by their physician at the latest by the Day 54 follow-up.",
+            "e. Discharge from the unit may occur after completion of all procedures on Day 9 and on Day 40 after the Investigator has reviewed all safety assessment (including safety laboratory tests) and confirmed that the participant is appropriate for discharge.",
+            "f. A single outpatient visit or phone call and safety laboratory assessment should occur between Day 14 and Day 18. A phone call may take place on a different day than the blood draw within the Day 14 through Day 18 period.",
+            "g. If needed to confirm menopause.",
+            "1. Parameters include age and sex. Race and ethnicity will be collected where permitted by local regulations.",
+            "2. Wilson disease history will include diagnosis date, method of diagnosis, history of cirrhosis, details of any previous liver biopsies performed, and treatment received.",
+            "3. A full physical examination will be performed at Screening, at check-in for the study, and at the End of the study/Early Termination Visit. A physical examination should also be performed on any participants with ongoing adverse events prior to discharge from the unit. Otherwise, a symptom-driven physical examination may be performed at other times, at the Principal Investigator’s discretion.",
+            "4. Height at screening only.",
+            "5. While in the CRU, study intervention will be administered after an overnight fast (or, at least 10 hours) at the same time every morning; drug is to be administered with 240 mL of water and meals should be delayed a minimum of 2 hours after dosing. As an outpatient, participants are expected to take ALXN1840 at approximately the same time daily (+/-1 hour). Participants should take the medication with a glass of water on an empty stomach; meals should be delayed a minimum of 2 hours after dosing.",
+            "6. During the outpatient period, participants will use SMS text messaging to confirm study intervention administration.",
+            "7. Blood sampling for PK/PD will occur before ALXN1840 administration and represents a predose trough. See Table 2 for PK/PD sampling on Days 1, 25, 29, and 39.",
+            "8. PK/PD collection will include timepoints described in the schedule of PK/PD assessment for Days 1, 25, 29, and 39 (Table 2).",
+            "9. Samples for serum chemistry will be obtained following a fast of at least 8 hours at the Screening Visit and at check-in. In case of rechecks, and postdose serum chemistry, participants may not have fasted for 6 or 8 hours before the serum chemistry sample is taken.",
+            "10. Laboratory assessment including chemistry, hematology, and coagulation parameters should be performed on Days -8, -1, 8, 23, and 28 only.",
+            "11. Menstruation check is for women only; women of childbearing potential should only be enrolled after a negative serum pregnancy test result at Screening. Additional urine pregnancy testing will be standard for the protocol unless serum testing is required by site policies, local regulation, or Institutional Review Boards (IRBs)/Independent Ethics Committees (IECs) (Section 10.2). In addition to pregnancy tests detailed at the visits in the SoA, females of childbearing potential will be required to perform urine pregnancy tests at least every 4 weeks at their home or the study site throughout their time in the study.",
+            "12. A single 15 mL serum sample will be retained for evaluation in the event of an unexpected safety finding; retained samples may be destroyed after completion of the clinical study report.",
+            "13. Vital signs assessments and ECGs should be performed predose, unless otherwise specified. Vitals signs include body temperature, heart rate, respiratory rate, and systolic and diastolic blood pressure.",
+            "14. Copper- and molybdenum-controlled diet will be initiated after registration/inclusion. Participants will remain on a copper/molybdenum controlled diet throughout both the Inpatient Period 1 (Day 8 to Day 9) and Inpatient Period 2 (Day 23 to Day 40); during this time participants will be strongly encouraged to complete all meals. While not in the CRU, participants will be encouraged to adhere to their usual copper-controlled diet.",
+            "15. For each input/output balance period, 24-hour urine samples are to be collected for measurement of copper and molybdenum.",
+            "16. For fecal samples, each individual sample will be collected at each meal; the mean daily copper:molybdenum ratio in urine and feces at steady state compared with predose baseline."
+          ]
+        }
+      },
+      "confidence": 0.8,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "id": "epoch_v_1",
+      "entity_type": "epoch",
+      "data": {
+        "name": "Screening",
+        "source": "vision",
+        "order": 0
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "id": "epoch_v_2",
+      "entity_type": "epoch",
+      "data": {
+        "name": "C-I",
+        "source": "vision",
+        "order": 1
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "id": "epoch_v_3",
+      "entity_type": "epoch",
+      "data": {
+        "name": "Inpatient Period 1",
+        "source": "vision",
+        "order": 2
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "id": "epoch_v_4",
+      "entity_type": "epoch",
+      "data": {
+        "name": "OP",
+        "source": "vision",
+        "order": 3
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "id": "epoch_v_5",
+      "entity_type": "epoch",
+      "data": {
+        "name": "Inpatient Period 2",
+        "source": "vision",
+        "order": 4
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "id": "epoch_v_6",
+      "entity_type": "epoch",
+      "data": {
+        "name": "UNS¹ EOS or ET²",
+        "source": "vision",
+        "order": 5
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "id": "encounter_v_1",
+      "entity_type": "encounter",
+      "data": {
+        "name": "Screening (Day -9)",
+        "epochId": "epoch_1",
+        "source": "vision",
+        "order": 0
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "id": "encounter_v_2",
+      "entity_type": "encounter",
+      "data": {
+        "name": "Screening (Day -21)",
+        "epochId": "epoch_1",
+        "source": "vision",
+        "order": 1
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "id": "encounter_v_3",
+      "entity_type": "encounter",
+      "data": {
+        "name": "C-I (Day -8)",
+        "epochId": "epoch_2",
+        "source": "vision",
+        "order": 2
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "id": "encounter_v_4",
+      "entity_type": "encounter",
+      "data": {
+        "name": "Inpatient Period 1 (Day -7)",
+        "epochId": "epoch_3",
+        "source": "vision",
+        "order": 3
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "id": "encounter_v_5",
+      "entity_type": "encounter",
+      "data": {
+        "name": "Inpatient Period 1 (Day -6 through -4)",
+        "epochId": "epoch_3",
+        "source": "vision",
+        "order": 4
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "id": "encounter_v_6",
+      "entity_type": "encounter",
+      "data": {
+        "name": "Inpatient Period 1 (Day -1)",
+        "epochId": "epoch_3",
+        "source": "vision",
+        "order": 5
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "id": "encounter_v_7",
+      "entity_type": "encounter",
+      "data": {
+        "name": "Inpatient Period 1 (Day 1)",
+        "epochId": "epoch_3",
+        "source": "vision",
+        "order": 6
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "id": "encounter_v_8",
+      "entity_type": "encounter",
+      "data": {
+        "name": "Inpatient Period 1 (Day 2-3)",
+        "epochId": "epoch_3",
+        "source": "vision",
+        "order": 7
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "id": "encounter_v_9",
+      "entity_type": "encounter",
+      "data": {
+        "name": "Inpatient Period 1 (Day 4-7)",
+        "epochId": "epoch_3",
+        "source": "vision",
+        "order": 8
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "id": "encounter_v_10",
+      "entity_type": "encounter",
+      "data": {
+        "name": "Inpatient Period 1 (Day 8)",
+        "epochId": "epoch_3",
+        "source": "vision",
+        "order": 9
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "id": "encounter_v_11",
+      "entity_type": "encounter",
+      "data": {
+        "name": "Inpatient Period 1 (Day 9)",
+        "epochId": "epoch_3",
+        "source": "vision",
+        "order": 10
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "id": "encounter_v_12",
+      "entity_type": "encounter",
+      "data": {
+        "name": "Inpatient Period 1 (Day 10-22)",
+        "epochId": "epoch_3",
+        "source": "vision",
+        "order": 11
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "id": "encounter_v_13",
+      "entity_type": "encounter",
+      "data": {
+        "name": "OP (Day 23)",
+        "epochId": "epoch_4",
+        "source": "vision",
+        "order": 12
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "id": "encounter_v_14",
+      "entity_type": "encounter",
+      "data": {
+        "name": "Inpatient Period 2 (Day 24)",
+        "epochId": "epoch_5",
+        "source": "vision",
+        "order": 13
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "id": "encounter_v_15",
+      "entity_type": "encounter",
+      "data": {
+        "name": "Inpatient Period 2 (Day 25)",
+        "epochId": "epoch_5",
+        "source": "vision",
+        "order": 14
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "id": "encounter_v_16",
+      "entity_type": "encounter",
+      "data": {
+        "name": "Inpatient Period 2 (Day 26-28)",
+        "epochId": "epoch_5",
+        "source": "vision",
+        "order": 15
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "id": "encounter_v_17",
+      "entity_type": "encounter",
+      "data": {
+        "name": "Inpatient Period 2 (Day 29)",
+        "epochId": "epoch_5",
+        "source": "vision",
+        "order": 16
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "id": "encounter_v_18",
+      "entity_type": "encounter",
+      "data": {
+        "name": "Inpatient Period 2 (Day 30-35)",
+        "epochId": "epoch_5",
+        "source": "vision",
+        "order": 17
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "id": "encounter_v_19",
+      "entity_type": "encounter",
+      "data": {
+        "name": "Inpatient Period 2 (Day 36-37)",
+        "epochId": "epoch_5",
+        "source": "vision",
+        "order": 18
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "id": "encounter_v_20",
+      "entity_type": "encounter",
+      "data": {
+        "name": "Inpatient Period 2 (Day 38)",
+        "epochId": "epoch_5",
+        "source": "vision",
+        "order": 19
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "id": "encounter_v_21",
+      "entity_type": "encounter",
+      "data": {
+        "name": "Inpatient Period 2 (Day 39)",
+        "epochId": "epoch_5",
+        "source": "vision",
+        "order": 20
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "id": "encounter_v_22",
+      "entity_type": "encounter",
+      "data": {
+        "name": "Inpatient Period 2 (Day 40)",
+        "epochId": "epoch_5",
+        "source": "vision",
+        "order": 21
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "id": "encounter_v_23",
+      "entity_type": "encounter",
+      "data": {
+        "name": "UNS EOS or ET (Day 54+/-2)",
+        "epochId": "epoch_6",
+        "source": "vision",
+        "order": 22
+      },
+      "confidence": 0.85,
+      "source_pages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        23,
+        24,
+        25
+      ]
+    }
+  ],
+  "vision_summary": {
+    "soa_pages": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      23,
+      24,
+      25
+    ],
+    "image_count": 10,
+    "epoch_count": 6,
+    "encounter_count": 23
+  }
+}
