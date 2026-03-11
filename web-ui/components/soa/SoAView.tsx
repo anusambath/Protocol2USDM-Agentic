@@ -195,25 +195,21 @@ export function SoAView({ provenance, onCellSelect }: SoAViewProps) {
         />
       )}
 
-      {/* Selected cell info */}
+      {/* Selected cell info - compact inline bar */}
       {selectedCell && selectedCell.cell && (
-        <Card>
-          <CardHeader className="py-3">
-            <CardTitle className="text-sm">Selected Cell</CardTitle>
-          </CardHeader>
-          <CardContent className="py-3 text-sm">
-            <dl className="grid grid-cols-2 gap-2">
-              <dt className="text-muted-foreground">Activity:</dt>
-              <dd>{tableModel.rows.find((r) => r.id === selectedCell.activityId)?.name}</dd>
-              <dt className="text-muted-foreground">Visit:</dt>
-              <dd>{tableModel.columns.find((c) => c.id === selectedCell.visitId)?.name}</dd>
-              <dt className="text-muted-foreground">Mark:</dt>
-              <dd>{selectedCell.cell.mark || '(empty)'}</dd>
-              <dt className="text-muted-foreground">Provenance:</dt>
-              <dd className="capitalize">{selectedCell.cell.provenance.source}</dd>
-            </dl>
-          </CardContent>
-        </Card>
+        <div className="flex items-center gap-4 px-3 py-2 text-xs bg-muted/50 border rounded-md">
+          <span className="font-medium text-foreground">
+            {tableModel.rows.find((r) => r.id === selectedCell.activityId)?.name}
+          </span>
+          <span className="text-muted-foreground">→</span>
+          <span className="text-muted-foreground">
+            {tableModel.columns.find((c) => c.id === selectedCell.visitId)?.name}
+          </span>
+          <span className="font-mono">{selectedCell.cell.mark || '–'}</span>
+          <span className="capitalize text-muted-foreground">
+            {selectedCell.cell.provenance.source}
+          </span>
+        </div>
       )}
 
       {/* Enrichment Instances (from execution model) */}

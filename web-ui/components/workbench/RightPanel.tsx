@@ -490,15 +490,6 @@ function FootnotesPanel({
     }
   }, [usdm]);
 
-  // Build label → footnote lookup
-  const labelToFootnote = useMemo(() => {
-    const map = new Map<string, { id: string; label: string; text: string }>();
-    for (const fn of soaFootnotes) {
-      map.set(fn.label.toLowerCase(), fn);
-    }
-    return map;
-  }, [soaFootnotes]);
-
   // Get footnote labels for the selected cell from provenance
   const cellFootnoteLabels = useMemo(() => {
     if (!selectedCellId || !provenance) return [];
@@ -506,108 +497,54 @@ function FootnotesPanel({
     return labels;
   }, [selectedCellId, provenance]);
 
-  // Resolve labels to full footnote objects
-  const resolvedFootnotes = useMemo(() => {
-    return cellFootnoteLabels
-      .map(label => labelToFootnote.get(label.toLowerCase()))
-      .filter((fn): fn is { id: string; label: string; text: string } => !!fn);
-  }, [cellFootnoteLabels, labelToFootnote]);
-
-  // Unresolved labels (have label but no text in USDM)
-  const unresolvedLabels = useMemo(() => {
-    return cellFootnoteLabels.filter(
-      label => !labelToFootnote.has(label.toLowerCase())
-    );
-  }, [cellFootnoteLabels, labelToFootnote]);
+  // Set of active labels for quick lookup
+  const activeLabels = useMemo(() => {
+    return new Set(cellFootnoteLabels.map(l => l.toLowerCase()));
+  }, [cellFootnoteLabels]);
 
   return (
     <div className="p-4 space-y-4">
       <div className="flex items-center gap-2 text-muted-foreground">
         <FileText className="h-5 w-5" />
         <h3 className="font-medium text-foreground">Footnotes</h3>
+        {soaFootnotes.length > 0 && (
+          <span className="text-xs">({soaFootnotes.length})</span>
+        )}
       </div>
 
-      {selectedCellId ? (
-        <div className="space-y-3">
-          {/* Cell-specific footnotes */}
-          {resolvedFootnotes.length > 0 ? (
-            <div className="space-y-2">
-              <p className="text-xs text-muted-foreground">
-                {resolvedFootnotes.length} footnote{resolvedFootnotes.length !== 1 ? 's' : ''} for this cell
-              </p>
-              {resolvedFootnotes.map((fn) => (
-                <div
-                  key={fn.id}
-                  className="p-3 rounded-md bg-blue-50 dark:bg-blue-950/20 border border-blue-200 dark:border-blue-800"
-                >
-                  <div className="flex items-start gap-2">
-                    <span className="px-2 py-0.5 text-xs font-bold font-mono bg-blue-200 dark:bg-blue-800 text-blue-900 dark:text-blue-100 rounded shrink-0">
-                      {fn.label}
-                    </span>
-                    <p className="text-sm text-foreground leading-relaxed">
-                      {fn.text || <span className="italic text-muted-foreground">No text available</span>}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          ) : cellFootnoteLabels.length > 0 ? (
-            <div className="space-y-2">
-              <p className="text-xs text-muted-foreground">
-                Footnote references found (text not yet extracted)
-              </p>
-              <div className="flex flex-wrap gap-1">
-                {cellFootnoteLabels.map((label, i) => (
-                  <span
-                    key={i}
-                    className="px-2 py-1 text-xs font-mono bg-amber-100 dark:bg-amber-900/40 text-amber-900 dark:text-amber-100 rounded"
-                  >
-                    {label}
+      {soaFootnotes.length > 0 ? (
+        <div className="space-y-1.5 max-h-[calc(100vh-300px)] overflow-auto">
+          {soaFootnotes.map((fn) => {
+            const isActive = activeLabels.has(fn.label.toLowerCase());
+            return (
+              <div
+                key={fn.id}
+                className={`p-2 rounded text-xs border transition-colors ${
+                  isActive
+                    ? 'bg-blue-50 dark:bg-blue-950/30 border-blue-300 dark:border-blue-700 ring-1 ring-blue-400 dark:ring-blue-600'
+                    : 'bg-muted/30 border-border'
+                }`}
+              >
+                <div className="flex items-start gap-1.5">
+                  <span className={`font-mono font-bold shrink-0 ${
+                    isActive ? 'text-blue-700 dark:text-blue-300' : 'text-foreground'
+                  }`}>
+                    {fn.label}.
                   </span>
-                ))}
+                  <span className={isActive ? 'text-foreground' : 'text-muted-foreground'}>
+                    {fn.text || '(no text)'}
+                  </span>
+                </div>
               </div>
-            </div>
-          ) : (
-            <EmptyState
-              icon={FileText}
-              message="No footnotes"
-              description="This cell has no associated footnotes"
-            />
-          )}
-
-          {/* Unresolved labels */}
-          {unresolvedLabels.length > 0 && resolvedFootnotes.length > 0 && (
-            <div className="p-3 rounded-md bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800">
-              <p className="text-xs text-amber-700 dark:text-amber-300">
-                Additional references without text: {unresolvedLabels.join(', ')}
-              </p>
-            </div>
-          )}
-
-          {/* All footnotes section */}
-          {soaFootnotes.length > 0 && (
-            <details className="mt-4">
-              <summary className="text-xs text-muted-foreground cursor-pointer hover:text-foreground">
-                All SoA footnotes ({soaFootnotes.length})
-              </summary>
-              <div className="mt-2 space-y-1.5 max-h-64 overflow-auto">
-                {soaFootnotes.map((fn) => (
-                  <div
-                    key={fn.id}
-                    className={`p-2 rounded text-xs border ${
-                      cellFootnoteLabels.some(l => l.toLowerCase() === fn.label.toLowerCase())
-                        ? 'bg-blue-50 dark:bg-blue-950/20 border-blue-200 dark:border-blue-800'
-                        : 'bg-muted/30 border-border'
-                    }`}
-                  >
-                    <span className="font-mono font-bold mr-1.5">{fn.label}.</span>
-                    <span className="text-muted-foreground">{fn.text || '(no text)'}</span>
-                  </div>
-                ))}
-              </div>
-            </details>
-          )}
+            );
+          })}
         </div>
+      ) : selectedCellId ? (
+        <EmptyState
+          icon={FileText}
+          message="No footnotes"
+          description="No SoA footnotes found in this protocol"
+        />
       ) : (
         <EmptyState
           icon={FileText}
