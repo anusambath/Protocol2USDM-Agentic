@@ -79,3 +79,11 @@ _tmp_write.py
 # Node modules (web-ui)
 web-ui/node_modules/
 web-ui/.next/
+
+# External/temp JSON and reports
+EliLilly_NCT03421379_Diabetes_USDM.json
+finalResultJson.json
+Prodigy_Eli_report.xlsx
+Prodigy_Golden_Eli_report.xlsx
+core_validation_output/
+~$*.xlsx
