@@ -211,6 +211,16 @@ CRITICAL - ENCOUNTER COUNTING AND NAMING:
 - For multi-column epochs:
   - Each column gets its own encounter named by the sub-header text (e.g., "Day -1", "Day 1")
 
+CRITICAL - VERIFICATION STEP (do this before outputting):
+- For EACH epoch, count how many vertical column dividers (gridlines) fall WITHIN that epoch's
+  merged header cell. The number of data columns = number of dividers + 1.
+- Cross-check: the sum of encounters across all epochs must equal the total number of data columns
+  in the table (excluding any Comments/Notes column).
+- If an epoch header cell spans exactly ONE column width (no internal dividers), it has ONE encounter.
+  Do NOT assign encounters from adjacent epochs to it based on text similarity.
+- Example: If "Screening" header spans 1 column and the next column "Day -1" is under "Period 1",
+  then "Day -1" belongs to Period 1, NOT Screening — even if the screening visit happens on Day -1.
+
 ROW GROUP VISUAL PROPERTIES (required for each group):
 - `isBold`: true if the text appears bold/emphasized
 - `hasMergedCells`: true if cells span across columns
