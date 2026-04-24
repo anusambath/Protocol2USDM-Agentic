@@ -1560,6 +1560,7 @@ def _build_soa_footnotes(design: Dict[str, Any],
     footnoteIds onto ScheduledActivityInstance objects.
 
     Footnote text comes from the header_structure entity (vision extraction).
+    If the vision LLM missed some footnotes, falls back to PDF text extraction.
     Footnote labels come from cellFootnotes in provenance / footnoteRefs on
     scheduled_instance entities.
     """
@@ -1593,6 +1594,20 @@ def _build_soa_footnotes(design: Dict[str, Any],
             text = m.group(2).strip()
             label_to_text[label] = text
 
+    # ── PDF text fallback for missing footnote text ──────────────────────
+    # If the vision LLM missed some footnotes, try to extract them from the
+    # PDF text layer (deterministic, no LLM involved).
+    missing_labels = {lbl.lower() for lbl in all_labels} - set(label_to_text.keys())
+    if missing_labels:
+        pdf_fallback = _extract_footnotes_from_pdf_text(design)
+        filled = 0
+        for lbl, txt in pdf_fallback.items():
+            if lbl in missing_labels and txt:
+                label_to_text[lbl] = txt
+                filled += 1
+        if filled:
+            logger.info(f"PDF text fallback filled {filled}/{len(missing_labels)} missing footnote(s)")
+
     # Create SoAFootnote objects for each referenced label
     label_to_footnote_id: Dict[str, str] = {}
     soa_footnotes: List[Dict[str, Any]] = []
@@ -1625,6 +1640,84 @@ def _build_soa_footnotes(design: Dict[str, Any],
         enc_id = inst.get("encounterId")
         if enc_id and enc_id in enc_to_fn_ids:
             inst["footnoteIds"] = enc_to_fn_ids[enc_id]
+
+
+def _extract_footnotes_from_pdf_text(design: Dict[str, Any]) -> Dict[str, str]:
+    """
+    Extract footnote label→text from the PDF text layer of SoA pages.
+
+    This is a deterministic fallback when the vision LLM misses footnotes.
+    Parses lines like "n. Some footnote text here" from the raw PDF text.
+    """
+    import re as _re
+
+    pdf_path: str = design.get("_pdfPath", "")
+    soa_pages: List[int] = design.get("_soaSourcePages", [])
+    if not pdf_path or not soa_pages:
+        return {}
+
+    try:
+        from core.pdf_utils import extract_text_from_pages
+        # Pages in source_pages are 0-indexed (from soa_finder)
+        raw_text = extract_text_from_pages(pdf_path, soa_pages,
+                                           max_chars_per_page=15000)
+        if not raw_text:
+            return {}
+    except Exception:
+        return {}
+
+    # Parse footnotes from the raw text.
+    # Clinical protocol footnotes appear in various formats:
+    #   "a. Some text"  (letter + period + space)
+    #   "a) Some text"  (letter + paren + space)
+    #   "a Some text"   (letter + space, no punctuation — common in PDF text layer)
+    #   "1. Some text"  (number + period)
+    label_to_text: Dict[str, str] = {}
+    lines = raw_text.split('\n')
+    i = 0
+    while i < len(lines):
+        line = lines[i].strip()
+        # Match: "a. text", "a) text" (letter + punctuation)
+        m = _re.match(r'^([a-zA-Z])[.\)]\s+(.+)', line)
+        if not m:
+            # Match: "1. text", "16. text" (number + punctuation)
+            m = _re.match(r'^(\d+)[.\)]\s+(.+)', line)
+        if not m:
+            # Match: "a Some text" (single letter + space + uppercase or long text)
+            # Only match if the text after the letter is substantial (>20 chars)
+            # to avoid false positives from table cell content like "X" markers
+            m2 = _re.match(r'^([a-zA-Z])\s+([A-Z].{20,})', line)
+            if m2:
+                m = m2
+        if m:
+            label = m.group(1).lower()
+            text = m.group(2).strip()
+            # Continuation: if next lines don't start a new footnote, append them
+            j = i + 1
+            while j < len(lines):
+                next_line = lines[j].strip()
+                if not next_line:
+                    break
+                # Check if next line starts a new footnote (letter or number)
+                if _re.match(r'^([a-zA-Z])[.\)]\s+', next_line):
+                    break
+                if _re.match(r'^(\d+)[.\)]\s+', next_line):
+                    break
+                if _re.match(r'^([a-zA-Z])\s+[A-Z].{20,}', next_line):
+                    break
+                # Check if next line is a page separator or abbreviations section
+                if next_line.startswith('--- Page'):
+                    break
+                if next_line.startswith('Abbreviations:'):
+                    break
+                text += ' ' + next_line
+                j += 1
+            label_to_text[label] = text
+            i = j
+        else:
+            i += 1
+
+    return label_to_text
 
 
 def _post_normalize_cleanup(usdm: Dict[str, Any]) -> None:
@@ -1662,6 +1755,10 @@ def _post_normalize_cleanup(usdm: Dict[str, Any]) -> None:
 
     # Remove internal header epoch stash (consumed by _normalize_codelists)
     design.pop("_headerEpochs", None)
+
+    # Remove internal PDF path and SoA source pages stash (consumed by _build_soa_footnotes)
+    design.pop("_pdfPath", None)
+    design.pop("_soaSourcePages", None)
 
     # Strip null entryId from ScheduleTimelines (must be string or absent — DDF00082)
     for tl in design.get("scheduleTimelines", []):
@@ -2476,6 +2573,14 @@ class USDMGeneratorAgent(BaseAgent):
                     footnotes = structure.get("footnotes", [])
                     if footnotes:
                         design["_headerFootnotes"] = footnotes
+                    # Stash SoA source pages and PDF path so _build_soa_footnotes
+                    # can fall back to PDF text extraction for missing footnote text.
+                    soa_pages = hs_data.get("page_numbers", [])
+                    if soa_pages:
+                        design["_soaSourcePages"] = soa_pages
+                    pdf_path = task.input_data.get("pdf_path", "")
+                    if pdf_path:
+                        design["_pdfPath"] = pdf_path
                     # Stash header epoch data so _normalize_codelists can resolve
                     # stale epoch IDs (e.g. "epoch_1") to USDM epoch entity IDs.
                     col_hierarchy = structure.get("columnHierarchy", {})

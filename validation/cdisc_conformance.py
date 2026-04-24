@@ -142,8 +142,6 @@ def _run_local_core_engine(json_path: str, output_dir: str) -> Dict[str, Any]:
     
     try:
         # Run CORE engine
-        # Note: Exclude CORE-000955 and CORE-000956 due to JSONata bugs in CORE engine
-        # when processing certain USDM data structures (causes NoneType errors)
         result = subprocess.run(
             [
                 str(CORE_ENGINE_PATH),
@@ -153,8 +151,6 @@ def _run_local_core_engine(json_path: str, output_dir: str) -> Dict[str, Any]:
                 "-dp", os.path.abspath(json_path),  # Dataset file path (absolute)
                 "-o", os.path.abspath(output_base),  # Output base (CORE appends .json)
                 "-of", "JSON",  # Output format
-                "-er", "CORE-000955",  # Exclude buggy rule
-                "-er", "CORE-000956",  # Exclude buggy rule
                 "-p", "disabled",  # Disable progress bar for cleaner logs
             ],
             capture_output=True,

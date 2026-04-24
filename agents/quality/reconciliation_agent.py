@@ -499,6 +499,7 @@ class ReconciliationAgent(BaseAgent):
             "eligibility_criterion", "criterion_item",
             "objective", "endpoint", "procedure",
             "epoch", "study_epoch",
+            "encounter",
         }
 
         for etype, type_entities in by_type.items():
