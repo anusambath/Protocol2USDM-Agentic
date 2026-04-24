@@ -456,12 +456,21 @@ def validate_cross_references(data: Dict[str, Any]) -> List[ValidationIssue]:
                     severity=ValidationSeverity.WARNING
                 ))
         
-        # 5. Check for encounters without epochs
+        # 5. Check for encounters not referenced by any timeline instance with an epochId
+        # (USDM v4.0 does not have epochId on Encounter — the mapping is via timeline instances)
+        enc_ids_in_timeline = set()
+        for tl in design.get('scheduleTimelines', []):
+            for inst in tl.get('instances', []):
+                enc_id = inst.get('encounterId')
+                epoch_id = inst.get('epochId')
+                if enc_id and epoch_id:
+                    enc_ids_in_timeline.add(enc_id)
         for enc in design.get('encounters', []):
-            if not enc.get('epochId'):
+            enc_id = enc.get('id')
+            if enc_id and enc_id not in enc_ids_in_timeline:
                 issues.append(ValidationIssue(
-                    location=f"encounters -> {enc.get('id', '?')}",
-                    message="Encounter has no epochId (cannot be placed in timeline)",
+                    location=f"encounters -> {enc_id}",
+                    message="Encounter is not referenced by any timeline instance with an epochId",
                     error_type="missing_relationship",
                     severity=ValidationSeverity.WARNING
                 ))

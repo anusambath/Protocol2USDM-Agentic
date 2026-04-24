@@ -540,12 +540,10 @@ _STUDY_ROLE_NAME_MAP = {
     "Principal investigator": ("C25936", "Principal Investigator"),
     "PrincipalInvestigator": ("C25936", "Principal Investigator"),
     "Statistician": ("C25943", "Statistician"),
-    # Registry and Regulatory not in C215480 — map to closest valid code
-    "Registry": ("C70793", "Sponsor"),
-    "registry": ("C70793", "Sponsor"),
-    "RegulatoryAuthority": ("C70793", "Sponsor"),
-    "Regulatory": ("C70793", "Sponsor"),
-    "RegulatoryAgency": ("C70793", "Sponsor"),
+    # Registry and Regulatory are NOT valid StudyRole values in CDISC C215480.
+    # They are Organization types, not roles. Remove them to avoid duplicate Sponsor codes.
+    # "Registry": removed (not a study role)
+    # "Regulatory Authority": removed (not a study role)
 }
 
 # Organization type → CDISC codelist C188724
@@ -946,6 +944,67 @@ def _normalize_codelists(usdm: Dict[str, Any]) -> None:
     for role in version.get("roles", []):
         if role.get("appliesToIds"):
             role["appliesToIds"] = [version_id] if version_id else []
+
+    # DDF00201: Ensure exactly one Sponsor role (C70793).
+    # Remove roles whose names don't map to any valid C215480 code
+    # (e.g. "Registry", "Regulatory Authority" are org types, not roles).
+    valid_roles = []
+    has_sponsor = False
+    for role in version.get("roles", []):
+        code_obj = role.get("code", {})
+        role_name = role.get("name", "")
+        mapped = _STUDY_ROLE_NAME_MAP.get(role_name)
+        if mapped:
+            valid_roles.append(role)
+            if mapped[0] == "C70793":
+                has_sponsor = True
+        elif isinstance(code_obj, dict) and code_obj.get("code") == "C70793":
+            if not has_sponsor:
+                valid_roles.append(role)
+                has_sponsor = True
+            # Skip duplicate sponsor roles
+    # If no sponsor role exists, create one
+    if not has_sponsor:
+        valid_roles.insert(0, {
+            "id": str(uuid.uuid4()).replace("-", "_"),
+            "name": "Sponsor",
+            "code": {
+                "id": str(uuid.uuid4()).replace("-", "_"),
+                "code": "C70793",
+                "codeSystem": cdisc_sys,
+                "codeSystemVersion": cdisc_ver,
+                "decode": "Sponsor",
+                "instanceType": "Code",
+            },
+            "appliesToIds": [version_id] if version_id else [],
+            "instanceType": "StudyRole",
+        })
+    version["roles"] = valid_roles
+
+    # DDF00172: Wire organizationId on roles by matching role name to org type.
+    # Sponsor role → org with type C70793 (Clinical Study Sponsor) or C54086 (Pharma)
+    # This enables CORE to find the sponsor study identifier.
+    orgs = version.get("organizations", [])
+    for role in version.get("roles", []):
+        if role.get("organizationId"):
+            continue  # Already linked
+        role_code = role.get("code", {}).get("code", "")
+        if role_code == "C70793":  # Sponsor
+            # Find sponsor org (type C70793 or C54086)
+            sponsor_org = next(
+                (o for o in orgs if o.get("type", {}).get("code") in ("C70793", "C54086")),
+                None
+            )
+            if sponsor_org:
+                role["organizationId"] = sponsor_org["id"]
+        elif role_code == "C25936":  # Principal Investigator
+            # Find healthcare facility org
+            pi_org = next(
+                (o for o in orgs if o.get("type", {}).get("code") == "C19326"),
+                None
+            )
+            if pi_org:
+                role["organizationId"] = pi_org["id"]
 
 
 def _fix_activity_names(usdm: Dict[str, Any]) -> None:
@@ -1549,6 +1608,48 @@ def _ensure_sponsor_identifier(usdm: Dict[str, Any]) -> None:
         design["studyInterventionIds"] = [
             inv.get("id") for inv in all_interventions if inv.get("id")
         ]
+
+    # --- DDF00101: Ensure at least one procedure references a study intervention ---
+    # CORE requires that for interventional studies, at least one Procedure has
+    # studyInterventionIds linking to a StudyIntervention.
+    procedures = design.get("procedures", [])
+    has_proc_inv_link = any(
+        p.get("studyInterventionIds") for p in procedures
+    )
+    if all_interventions and not has_proc_inv_link:
+        # Find investigational interventions (type decode contains "Investigational")
+        inv_interventions = [
+            inv for inv in all_interventions
+            if inv.get("id") and (
+                "investigational" in (inv.get("type", {}).get("decode", "") or "").lower()
+                or "investigational" in (inv.get("role", {}).get("decode", "") or "").lower()
+            )
+        ]
+        if not inv_interventions:
+            # Fall back to first intervention
+            inv_interventions = [all_interventions[0]]
+
+        for inv in inv_interventions:
+            inv_id = inv.get("id")
+            inv_name = inv.get("name", "Study Drug Administration")
+            # Check if a procedure with similar name already exists
+            matched_proc = next(
+                (p for p in procedures
+                 if inv_name.lower() in (p.get("name", "").lower())),
+                None
+            )
+            if matched_proc:
+                matched_proc.setdefault("studyInterventionIds", []).append(inv_id)
+            else:
+                # Create a new procedure linked to this intervention
+                procedures.append({
+                    "id": str(uuid.uuid4()).replace("-", "_"),
+                    "name": f"{inv_name} Administration",
+                    "procedureType": "Study Drug Administration",
+                    "studyInterventionIds": [inv_id],
+                    "instanceType": "Procedure",
+                })
+        design["procedures"] = procedures
 
 
 def _build_soa_footnotes(design: Dict[str, Any],

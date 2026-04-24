@@ -190,6 +190,27 @@ CRITICAL - VISIT WINDOWS ARE NOT ENCOUNTERS:
 - The number of encounters should match the number of COLUMNS in the table, not the number of header rows
 - Count the actual data columns (where tick marks appear) to verify your encounter count
 
+CRITICAL - COMMENTS/NOTES COLUMNS ARE NOT EPOCHS:
+- Columns labeled "Comments", "Notes", "Remarks", or similar are annotation columns, NOT study epochs
+- They do not represent a study phase or visit — they hold free-text notes about activities
+- Do NOT create an epoch or encounter for these columns
+- Simply ignore them when building the epoch/encounter hierarchy
+
+CRITICAL - ENCOUNTER COUNTING AND NAMING:
+- Each DATA COLUMN (where tick marks / X marks appear) = exactly ONE encounter
+- Count the actual data columns carefully — this is the number of encounters you should output
+- If an epoch spans only ONE data column, that epoch has exactly ONE encounter
+- For single-column epochs:
+  - If there is timing text below the epoch header (e.g., "Within 28±2 days after last study treatment"),
+    that text is a VISIT GUIDELINE describing when the visit should happen — capture it in the
+    PlannedTimepoint's valueLabel and/or window field
+  - The encounter NAME should be short and derived from the epoch name (e.g., epoch "Follow-up/ED"
+    → encounter name "Follow Up", epoch "Additional Follow-up for TE ADA" → encounter name
+    "Additional Follow-up for TE ADA")
+  - Do NOT use the full timing guideline text as the encounter name
+- For multi-column epochs:
+  - Each column gets its own encounter named by the sub-header text (e.g., "Day -1", "Day 1")
+
 ROW GROUP VISUAL PROPERTIES (required for each group):
 - `isBold`: true if the text appears bold/emphasized
 - `hasMergedCells`: true if cells span across columns
