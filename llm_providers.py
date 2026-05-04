@@ -1064,18 +1064,90 @@ class ClaudeProvider(LLMProvider):
         'claude-opus-4.6': 'claude-opus-4-6',     # dot notation alias
         'claude-sonnet': 'claude-sonnet-4',
     }
-    
+
+    # Bedrock model ID mapping — Anthropic API model names → Bedrock model IDs
+    BEDROCK_MODEL_MAP = {
+        'claude-opus-4-6-20260205': 'anthropic.claude-opus-4-6-20260205-v1:0',
+        'claude-opus-4-6': 'anthropic.claude-opus-4-6-20260205-v1:0',
+        'claude-opus-4-5-20250918': 'anthropic.claude-opus-4-5-20250918-v1:0',
+        'claude-opus-4-5': 'anthropic.claude-opus-4-5-20250918-v1:0',
+        'claude-sonnet-4-5-20250918': 'anthropic.claude-sonnet-4-5-20250918-v1:0',
+        'claude-sonnet-4-5': 'anthropic.claude-sonnet-4-5-20250918-v1:0',
+        'claude-opus-4-1-20250805': 'anthropic.claude-opus-4-1-20250805-v1:0',
+        'claude-opus-4-1': 'anthropic.claude-opus-4-1-20250805-v1:0',
+        'claude-opus-4-20250514': 'anthropic.claude-opus-4-20250514-v1:0',
+        'claude-opus-4': 'anthropic.claude-opus-4-20250514-v1:0',
+        'claude-sonnet-4-20250514': 'anthropic.claude-sonnet-4-20250514-v1:0',
+        'claude-sonnet-4': 'anthropic.claude-sonnet-4-20250514-v1:0',
+        'claude-3-7-sonnet-20250219': 'anthropic.claude-3-7-sonnet-20250219-v1:0',
+        'claude-3-7-sonnet-latest': 'anthropic.claude-3-7-sonnet-20250219-v1:0',
+        'claude-3-5-sonnet-20241022': 'anthropic.claude-3-5-sonnet-20241022-v2:0',
+        'claude-3-5-sonnet-latest': 'anthropic.claude-3-5-sonnet-20241022-v2:0',
+        'claude-3-5-haiku-20241022': 'anthropic.claude-3-5-haiku-20241022-v1:0',
+        'claude-3-5-haiku-latest': 'anthropic.claude-3-5-haiku-20241022-v1:0',
+        'claude-3-haiku-20240307': 'anthropic.claude-3-haiku-20240307-v1:0',
+        'claude-3-haiku': 'anthropic.claude-3-haiku-20240307-v1:0',
+    }
+
     def __init__(self, model: str, api_key: Optional[str] = None):
         # Resolve alias before passing to parent
         resolved = self.MODEL_ALIASES.get(model, model)
         if resolved != model:
             import logging
             logging.getLogger(__name__).info(f"Model alias resolved: {model} → {resolved}")
-        super().__init__(resolved, api_key)
-        self.client = anthropic.Anthropic(api_key=self.api_key, timeout=600.0)
+
+        # Determine if using Bedrock
+        self._use_bedrock = os.environ.get("CLAUDE_PROVIDER", "").lower() == "bedrock"
+
+        if self._use_bedrock:
+            # Bedrock doesn't need an Anthropic API key
+            super().__init__(resolved, api_key="bedrock-not-needed")
+            self._init_bedrock_client(resolved)
+        else:
+            super().__init__(resolved, api_key)
+            self.client = anthropic.Anthropic(api_key=self.api_key, timeout=600.0)
+
+    def _init_bedrock_client(self, model: str) -> None:
+        """Initialize the Anthropic Bedrock client."""
+        import logging
+        logger = logging.getLogger(__name__)
+
+        try:
+            from anthropic import AnthropicBedrock
+        except ImportError:
+            raise ImportError(
+                "Bedrock support requires the 'anthropic[bedrock]' extra. "
+                "Install with: pip install 'anthropic[bedrock]'"
+            )
+
+        aws_region = os.environ.get("AWS_REGION") or os.environ.get("AWS_DEFAULT_REGION", "us-east-1")
+        aws_access_key = os.environ.get("AWS_ACCESS_KEY_ID")
+        aws_secret_key = os.environ.get("AWS_SECRET_ACCESS_KEY")
+        aws_session_token = os.environ.get("AWS_SESSION_TOKEN")
+
+        kwargs = {"aws_region": aws_region, "timeout": 600.0}
+        if aws_access_key and aws_secret_key:
+            kwargs["aws_access_key"] = aws_access_key
+            kwargs["aws_secret_key"] = aws_secret_key
+            if aws_session_token:
+                kwargs["aws_session_token"] = aws_session_token
+
+        self.client = AnthropicBedrock(**kwargs)
+
+        # Resolve model to Bedrock model ID
+        bedrock_model = self.BEDROCK_MODEL_MAP.get(model)
+        if bedrock_model:
+            self.model = bedrock_model
+            logger.info(f"Using Bedrock model: {bedrock_model} (region={aws_region})")
+        else:
+            # Assume user passed a full Bedrock model ID directly
+            logger.info(f"Using Bedrock model (as-is): {model} (region={aws_region})")
     
     def _get_api_key_from_env(self) -> str:
         """Get Anthropic API key from environment."""
+        # Bedrock doesn't need an Anthropic API key
+        if os.environ.get("CLAUDE_PROVIDER", "").lower() == "bedrock":
+            return "bedrock-not-needed"
         # Check common environment variable names
         api_key = os.environ.get("ANTHROPIC_API_KEY") or os.environ.get("CLAUDE_API_KEY")
         if not api_key:
