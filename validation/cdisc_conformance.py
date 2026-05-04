@@ -15,7 +15,7 @@ from typing import Dict, Any, Optional, List
 logger = logging.getLogger(__name__)
 
 # Path to local CDISC CORE engine
-CORE_ENGINE_PATH = Path(__file__).parent.parent / "tools" / "core" / "core" / "core.exe"
+CORE_ENGINE_PATH = Path(__file__).parent.parent / "tools" / "core" / "core" / "core" / "core.exe"
 
 
 def run_cdisc_conformance(
