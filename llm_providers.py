@@ -1065,28 +1065,29 @@ class ClaudeProvider(LLMProvider):
         'claude-sonnet': 'claude-sonnet-4',
     }
 
-    # Bedrock model ID mapping — Anthropic API model names → Bedrock model IDs
+    # Bedrock model ID mapping — Anthropic API model names → Bedrock inference profile IDs
+    # Uses cross-region inference profiles (us. prefix) as required by Bedrock
     BEDROCK_MODEL_MAP = {
-        'claude-opus-4-6-20260205': 'anthropic.claude-opus-4-6-20260205-v1:0',
-        'claude-opus-4-6': 'anthropic.claude-opus-4-6-20260205-v1:0',
-        'claude-opus-4-5-20250918': 'anthropic.claude-opus-4-5-20250918-v1:0',
-        'claude-opus-4-5': 'anthropic.claude-opus-4-5-20250918-v1:0',
-        'claude-sonnet-4-5-20250918': 'anthropic.claude-sonnet-4-5-20250918-v1:0',
-        'claude-sonnet-4-5': 'anthropic.claude-sonnet-4-5-20250918-v1:0',
-        'claude-opus-4-1-20250805': 'anthropic.claude-opus-4-1-20250805-v1:0',
-        'claude-opus-4-1': 'anthropic.claude-opus-4-1-20250805-v1:0',
-        'claude-opus-4-20250514': 'anthropic.claude-opus-4-20250514-v1:0',
-        'claude-opus-4': 'anthropic.claude-opus-4-20250514-v1:0',
-        'claude-sonnet-4-20250514': 'anthropic.claude-sonnet-4-20250514-v1:0',
-        'claude-sonnet-4': 'anthropic.claude-sonnet-4-20250514-v1:0',
-        'claude-3-7-sonnet-20250219': 'anthropic.claude-3-7-sonnet-20250219-v1:0',
-        'claude-3-7-sonnet-latest': 'anthropic.claude-3-7-sonnet-20250219-v1:0',
-        'claude-3-5-sonnet-20241022': 'anthropic.claude-3-5-sonnet-20241022-v2:0',
-        'claude-3-5-sonnet-latest': 'anthropic.claude-3-5-sonnet-20241022-v2:0',
-        'claude-3-5-haiku-20241022': 'anthropic.claude-3-5-haiku-20241022-v1:0',
-        'claude-3-5-haiku-latest': 'anthropic.claude-3-5-haiku-20241022-v1:0',
-        'claude-3-haiku-20240307': 'anthropic.claude-3-haiku-20240307-v1:0',
-        'claude-3-haiku': 'anthropic.claude-3-haiku-20240307-v1:0',
+        'claude-opus-4-6-20260205': 'us.anthropic.claude-opus-4-6-20260205-v1:0',
+        'claude-opus-4-6': 'us.anthropic.claude-opus-4-6-20260205-v1:0',
+        'claude-opus-4-5-20250918': 'us.anthropic.claude-opus-4-5-20250918-v1:0',
+        'claude-opus-4-5': 'us.anthropic.claude-opus-4-5-20250918-v1:0',
+        'claude-sonnet-4-5-20250918': 'us.anthropic.claude-sonnet-4-5-20250918-v1:0',
+        'claude-sonnet-4-5': 'us.anthropic.claude-sonnet-4-5-20250918-v1:0',
+        'claude-opus-4-1-20250805': 'us.anthropic.claude-opus-4-1-20250805-v1:0',
+        'claude-opus-4-1': 'us.anthropic.claude-opus-4-1-20250805-v1:0',
+        'claude-opus-4-20250514': 'us.anthropic.claude-opus-4-20250514-v1:0',
+        'claude-opus-4': 'us.anthropic.claude-opus-4-20250514-v1:0',
+        'claude-sonnet-4-20250514': 'us.anthropic.claude-sonnet-4-20250514-v1:0',
+        'claude-sonnet-4': 'us.anthropic.claude-sonnet-4-20250514-v1:0',
+        'claude-3-7-sonnet-20250219': 'us.anthropic.claude-3-7-sonnet-20250219-v1:0',
+        'claude-3-7-sonnet-latest': 'us.anthropic.claude-3-7-sonnet-20250219-v1:0',
+        'claude-3-5-sonnet-20241022': 'us.anthropic.claude-3-5-sonnet-20241022-v2:0',
+        'claude-3-5-sonnet-latest': 'us.anthropic.claude-3-5-sonnet-20241022-v2:0',
+        'claude-3-5-haiku-20241022': 'us.anthropic.claude-3-5-haiku-20241022-v1:0',
+        'claude-3-5-haiku-latest': 'us.anthropic.claude-3-5-haiku-20241022-v1:0',
+        'claude-3-haiku-20240307': 'us.anthropic.claude-3-haiku-20240307-v1:0',
+        'claude-3-haiku': 'us.anthropic.claude-3-haiku-20240307-v1:0',
     }
 
     def __init__(self, model: str, api_key: Optional[str] = None):
