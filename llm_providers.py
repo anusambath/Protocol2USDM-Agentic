@@ -1037,7 +1037,9 @@ class ClaudeProvider(LLMProvider):
     """
     
     SUPPORTED_MODELS = [
-        # Claude Opus 4.6 (latest, most powerful — Feb 2026)
+        # Claude Opus 4.7 (latest, most powerful — Apr 2026)
+        'claude-opus-4-7',
+        # Claude Opus 4.6 (Feb 2026)
         'claude-opus-4-6-20260205', 'claude-opus-4-6',
         # Claude Opus 4.5
         'claude-opus-4-5-20250918', 'claude-opus-4-5',
@@ -1059,19 +1061,21 @@ class ClaudeProvider(LLMProvider):
 
     # Aliases for convenience — map short/deprecated names to actual API model IDs
     MODEL_ALIASES = {
-        'claude-opus': 'claude-opus-4-6',
-        'claude-opus-4': 'claude-opus-4-6',       # deprecated, redirect to latest
+        'claude-opus': 'claude-opus-4-7',
+        'claude-opus-4': 'claude-opus-4-7',       # redirect to latest
         'claude-opus-4.6': 'claude-opus-4-6',     # dot notation alias
+        'claude-opus-4.7': 'claude-opus-4-7',     # dot notation alias
         'claude-sonnet': 'claude-sonnet-4',
     }
 
     # Bedrock model ID mapping — Anthropic API model names → Bedrock inference profile IDs
     # Uses cross-region inference profiles (us. prefix) as required by Bedrock
     BEDROCK_MODEL_MAP = {
-        'claude-opus-4-6-20260205': 'us.anthropic.claude-opus-4-6-20260205-v1:0',
-        'claude-opus-4-6': 'us.anthropic.claude-opus-4-6-20260205-v1:0',
-        'claude-opus-4-5-20250918': 'us.anthropic.claude-opus-4-5-20250918-v1:0',
-        'claude-opus-4-5': 'us.anthropic.claude-opus-4-5-20250918-v1:0',
+        'claude-opus-4-7': 'us.anthropic.claude-opus-4-7',
+        'claude-opus-4-6-20260205': 'us.anthropic.claude-opus-4-6-v1',
+        'claude-opus-4-6': 'us.anthropic.claude-opus-4-6-v1',
+        'claude-opus-4-5-20250918': 'us.anthropic.claude-opus-4-5-20251101-v1:0',
+        'claude-opus-4-5': 'us.anthropic.claude-opus-4-5-20251101-v1:0',
         'claude-sonnet-4-5-20250918': 'us.anthropic.claude-sonnet-4-5-20250918-v1:0',
         'claude-sonnet-4-5': 'us.anthropic.claude-sonnet-4-5-20250918-v1:0',
         'claude-opus-4-1-20250805': 'us.anthropic.claude-opus-4-1-20250805-v1:0',
