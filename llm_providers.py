@@ -1214,8 +1214,11 @@ class ClaudeProvider(LLMProvider):
         if system_content:
             params["system"] = system_content
         
-        # Add temperature
-        params["temperature"] = config.temperature
+        # Add temperature (some newer reasoning models like opus-4-7 don't support it)
+        _NO_TEMPERATURE_MODELS = {'claude-opus-4-7', 'us.anthropic.claude-opus-4-7'}
+        model_base = self.model.split(':')[0]  # Strip version suffix
+        if model_base not in _NO_TEMPERATURE_MODELS:
+            params["temperature"] = config.temperature
         
         # Add optional parameters
         if config.stop_sequences:
@@ -1319,8 +1322,12 @@ class ClaudeProvider(LLMProvider):
             "model": self.model,
             "max_tokens": config.max_tokens or 16384,
             "messages": [{"role": "user", "content": content}],
-            "temperature": config.temperature,
         }
+        # Skip temperature for models that don't support it
+        _NO_TEMPERATURE_MODELS = {'claude-opus-4-7', 'us.anthropic.claude-opus-4-7'}
+        model_base = self.model.split(':')[0]
+        if model_base not in _NO_TEMPERATURE_MODELS:
+            params["temperature"] = config.temperature
         if system_content:
             params["system"] = system_content
 
