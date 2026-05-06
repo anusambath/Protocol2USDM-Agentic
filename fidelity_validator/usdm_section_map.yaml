@@ -1,0 +1,429 @@
+# USDM 4.0 Fidelity Section Map
+# Maps protocol sections → USDM entities/attributes that should capture them.
+# This is the single source of truth for "what USDM says should go where."
+
+schema_version: "1.0"
+usdm_version: "4.0"
+
+sections:
+
+  # ─────────────────────────────────────────────────────────────────────────
+  # TITLE PAGE / PROTOCOL IDENTIFIERS
+  # ─────────────────────────────────────────────────────────────────────────
+  - id: title_page
+    name: "Title Page / Protocol Identifiers"
+    aliases:
+      - "Title Page"
+      - "Cover Page"
+      - "Protocol Summary"
+      - "Protocol Identification"
+    usdm_targets:
+      - entity: StudyVersion
+        path: "study.versions[0]"
+        attributes:
+          - name: versionIdentifier
+            required: true
+            description: "Protocol version/amendment number"
+          - name: rationale
+            required: false
+            description: "Rationale for this version"
+      - entity: StudyTitle
+        path: "study.versions[0].titles[]"
+        cardinality: one_to_many
+        attributes:
+          - name: text
+            required: true
+            description: "Full protocol title"
+          - name: type
+            required: true
+            description: "Title type code (Official, Brief, Scientific)"
+      - entity: StudyIdentifier
+        path: "study.versions[0].studyIdentifiers[]"
+        cardinality: one_to_many
+        attributes:
+          - name: text
+            required: true
+            description: "Identifier value (NCT number, sponsor protocol ID)"
+          - name: scopeId
+            required: true
+            description: "Reference to the organization that owns this identifier"
+      - entity: Organization
+        path: "study.versions[0].organizations[]"
+        cardinality: one_to_many
+        attributes:
+          - name: name
+            required: true
+          - name: type
+            required: true
+            description: "Organization type code (Sponsor, Registry, Regulatory)"
+
+  # ─────────────────────────────────────────────────────────────────────────
+  # SYNOPSIS
+  # ─────────────────────────────────────────────────────────────────────────
+  - id: synopsis
+    name: "Synopsis"
+    aliases:
+      - "Protocol Synopsis"
+      - "Study Synopsis"
+      - "Protocol Summary"
+    usdm_targets:
+      - entity: NarrativeContentItem
+        path: "study.versions[0].narrativeContentItems[]"
+        cardinality: one_to_many
+        attributes:
+          - name: text
+            required: true
+            description: "XHTML narrative content"
+          - name: name
+            required: true
+            description: "Section name"
+    notes: "Synopsis content may also be distributed across specific entities (phase, design, etc.)"
+
+  # ─────────────────────────────────────────────────────────────────────────
+  # OBJECTIVES & ENDPOINTS
+  # ─────────────────────────────────────────────────────────────────────────
+  - id: objectives_endpoints
+    name: "Objectives and Endpoints"
+    aliases:
+      - "Study Objectives"
+      - "Objectives & Endpoints"
+      - "Objectives and Outcome Measures"
+      - "Primary and Secondary Objectives"
+    usdm_targets:
+      - entity: Objective
+        path: "study.versions[0].studyDesigns[0].objectives[]"
+        cardinality: one_to_many
+        attributes:
+          - name: name
+            required: true
+            description: "Objective name/text"
+          - name: text
+            required: true
+            description: "Full objective statement"
+          - name: level
+            required: true
+            description: "Code: Primary (C85826), Secondary (C85827), Exploratory (C163559)"
+          - name: endpointIds
+            required: true
+            description: "References to associated endpoints"
+      - entity: Endpoint
+        path: "study.versions[0].studyDesigns[0].endpoints[]"
+        cardinality: one_to_many
+        attributes:
+          - name: name
+            required: true
+            description: "Endpoint name"
+          - name: text
+            required: true
+            description: "Full endpoint description"
+          - name: level
+            required: true
+            description: "Code: Primary (C98772), Secondary (C98781), Exploratory (C98724)"
+
+  # ─────────────────────────────────────────────────────────────────────────
+  # ESTIMANDS
+  # ─────────────────────────────────────────────────────────────────────────
+  - id: estimands
+    name: "Estimands"
+    aliases:
+      - "Estimand Framework"
+      - "Estimand Description"
+      - "ICH E9(R1) Estimands"
+    usdm_targets:
+      - entity: Estimand
+        path: "study.versions[0].studyDesigns[0].estimands[]"
+        cardinality: one_to_many
+        attributes:
+          - name: name
+            required: true
+          - name: summaryMeasure
+            required: true
+            description: "Statistical summary measure"
+          - name: treatment
+            required: true
+            description: "Treatment condition reference"
+          - name: populationDescription
+            required: true
+          - name: intercurrentEvents
+            required: true
+            description: "List of intercurrent events with strategies"
+          - name: variableOfInterest
+            required: true
+
+  # ─────────────────────────────────────────────────────────────────────────
+  # STUDY DESIGN
+  # ─────────────────────────────────────────────────────────────────────────
+  - id: study_design
+    name: "Study Design"
+    aliases:
+      - "Overall Study Design"
+      - "Study Design and Plan"
+      - "Design Overview"
+      - "Type of Study"
+    usdm_targets:
+      - entity: InterventionalStudyDesign
+        path: "study.versions[0].studyDesigns[0]"
+        attributes:
+          - name: studyType
+            required: true
+            description: "Interventional (C98388) or Observational"
+          - name: blindingSchema
+            required: true
+            description: "Blinding code (Open Label, Double Blind, etc.)"
+          - name: intentTypes
+            required: false
+            description: "Trial intent (Treatment, Prevention, etc.)"
+      - entity: StudyArm
+        path: "study.versions[0].studyDesigns[0].arms[]"
+        cardinality: one_to_many
+        attributes:
+          - name: name
+            required: true
+          - name: type
+            required: true
+            description: "Arm type code (Investigational, Placebo Control, etc.)"
+          - name: description
+            required: false
+      - entity: StudyEpoch
+        path: "study.versions[0].studyDesigns[0].epochs[]"
+        cardinality: one_to_many
+        attributes:
+          - name: name
+            required: true
+          - name: type
+            required: true
+            description: "Epoch type code (Screening, Treatment, Follow-up)"
+
+  # ─────────────────────────────────────────────────────────────────────────
+  # STUDY POPULATION (ELIGIBILITY)
+  # ─────────────────────────────────────────────────────────────────────────
+  - id: eligibility
+    name: "Study Population"
+    aliases:
+      - "Eligibility Criteria"
+      - "Inclusion and Exclusion Criteria"
+      - "Inclusion Criteria"
+      - "Exclusion Criteria"
+      - "Subject Selection"
+      - "Patient Population"
+    usdm_targets:
+      - entity: EligibilityCriterion
+        path: "study.versions[0].studyDesigns[0].eligibilityCriteria[]"
+        cardinality: one_to_many
+        attributes:
+          - name: name
+            required: true
+            description: "Short criterion identifier (e.g., 'I01', 'E03')"
+          - name: text
+            required: true
+            description: "Full criterion text"
+          - name: category
+            required: true
+            description: "Code: Inclusion (C25532) or Exclusion (C25370)"
+          - name: identifier
+            required: false
+            description: "Criterion number as stated in protocol"
+    validation_rules:
+      - rule: "count_match"
+        description: "Number of USDM criteria should match protocol count"
+        tolerance: 0
+      - rule: "text_fidelity"
+        description: "Each criterion text must preserve clinical meaning including qualifiers, units, and thresholds"
+        severity: critical
+
+  # ─────────────────────────────────────────────────────────────────────────
+  # STUDY INTERVENTIONS
+  # ─────────────────────────────────────────────────────────────────────────
+  - id: interventions
+    name: "Study Interventions"
+    aliases:
+      - "Investigational Product"
+      - "Study Treatment"
+      - "Study Drug"
+      - "Investigational Medicinal Product"
+      - "Study Medication"
+    usdm_targets:
+      - entity: StudyIntervention
+        path: "study.versions[0].studyInterventions[]"
+        cardinality: one_to_many
+        attributes:
+          - name: name
+            required: true
+            description: "Intervention name (drug name, device name)"
+          - name: type
+            required: true
+            description: "Type code (Investigational Product, Comparator, Placebo, etc.)"
+          - name: role
+            required: true
+            description: "Role code from C207417"
+          - name: description
+            required: false
+      - entity: AdministrableProduct
+        path: "study.versions[0].administrableProducts[]"
+        cardinality: one_to_many
+        attributes:
+          - name: name
+            required: true
+          - name: administrableDoseForm
+            required: false
+          - name: routeOfAdministration
+            required: false
+
+  # ─────────────────────────────────────────────────────────────────────────
+  # SCHEDULE OF ACTIVITIES (SoA)
+  # ─────────────────────────────────────────────────────────────────────────
+  - id: schedule_of_activities
+    name: "Schedule of Activities"
+    aliases:
+      - "Schedule of Assessments"
+      - "SoA"
+      - "Schedule of Events"
+      - "Time and Events Table"
+      - "Study Procedures Table"
+    usdm_targets:
+      - entity: ScheduleTimeline
+        path: "study.versions[0].studyDesigns[0].scheduleTimelines[]"
+        cardinality: one_to_many
+        attributes:
+          - name: name
+            required: true
+          - name: mainTimeline
+            required: true
+            description: "Boolean — at least one must be true"
+          - name: instances
+            required: true
+            description: "Array of ScheduledActivityInstance"
+      - entity: Activity
+        path: "study.versions[0].studyDesigns[0].activities[]"
+        cardinality: one_to_many
+        attributes:
+          - name: name
+            required: true
+            description: "Activity/assessment name from SoA row header"
+          - name: definedProcedures
+            required: false
+          - name: biomedicalConceptIds
+            required: false
+      - entity: Encounter
+        path: "study.versions[0].studyDesigns[0].encounters[]"
+        cardinality: one_to_many
+        attributes:
+          - name: name
+            required: true
+            description: "Visit/encounter name from SoA column header"
+      - entity: ScheduledActivityInstance
+        path: "study.versions[0].studyDesigns[0].scheduleTimelines[0].instances[]"
+        cardinality: one_to_many
+        attributes:
+          - name: epochId
+            required: true
+            description: "Link to epoch"
+          - name: encounterId
+            required: true
+            description: "Link to encounter (column)"
+          - name: activityIds
+            required: true
+            description: "Links to activities performed at this visit"
+      - entity: SoAFootnote
+        path: "study.versions[0].studyDesigns[0].soaFootnotes[]"
+        cardinality: one_to_many
+        attributes:
+          - name: label
+            required: true
+            description: "Footnote marker (a, b, 1, 2, etc.)"
+          - name: text
+            required: true
+            description: "Footnote text"
+    validation_rules:
+      - rule: "soa_matrix_match"
+        description: "The tick-mark matrix (activity × encounter) must match the protocol SoA table"
+        severity: critical
+      - rule: "epoch_encounter_mapping"
+        description: "Each encounter must be under the correct epoch per the SoA header structure"
+        severity: critical
+      - rule: "footnote_completeness"
+        description: "All footnotes referenced in cells must have text"
+        severity: major
+
+  # ─────────────────────────────────────────────────────────────────────────
+  # STUDY ASSESSMENTS
+  # ─────────────────────────────────────────────────────────────────────────
+  - id: assessments
+    name: "Study Assessments"
+    aliases:
+      - "Efficacy Assessments"
+      - "Safety Assessments"
+      - "Pharmacokinetic Assessments"
+      - "Pharmacodynamic Assessments"
+      - "Laboratory Assessments"
+    usdm_targets:
+      - entity: Procedure
+        path: "study.versions[0].studyDesigns[0].procedures[]"
+        cardinality: one_to_many
+        attributes:
+          - name: name
+            required: true
+          - name: procedureType
+            required: true
+      - entity: BiomedicalConcept
+        path: "study.versions[0].biomedicalConcepts[]"
+        cardinality: one_to_many
+        attributes:
+          - name: name
+            required: true
+          - name: code
+            required: false
+            description: "NCI Thesaurus code"
+
+  # ─────────────────────────────────────────────────────────────────────────
+  # STATISTICAL CONSIDERATIONS
+  # ─────────────────────────────────────────────────────────────────────────
+  - id: statistics
+    name: "Statistical Considerations"
+    aliases:
+      - "Statistical Analysis"
+      - "Statistical Methods"
+      - "Sample Size"
+      - "Analysis Populations"
+    usdm_targets:
+      - entity: StudyCohort
+        path: "study.versions[0].studyDesigns[0].population.cohorts[]"
+        cardinality: one_to_many
+        attributes:
+          - name: name
+            required: true
+          - name: description
+            required: false
+    notes: "USDM 4.0 has limited statistical modeling. Sample size and analysis methods are typically in NarrativeContentItems."
+
+  # ─────────────────────────────────────────────────────────────────────────
+  # STUDY EPOCHS / PERIODS / ARMS
+  # ─────────────────────────────────────────────────────────────────────────
+  - id: epochs_periods
+    name: "Study Epochs and Periods"
+    aliases:
+      - "Study Periods"
+      - "Study Phases"
+      - "Treatment Periods"
+    usdm_targets:
+      - entity: StudyEpoch
+        path: "study.versions[0].studyDesigns[0].epochs[]"
+        cardinality: one_to_many
+        attributes:
+          - name: name
+            required: true
+          - name: type
+            required: true
+          - name: nextId
+            required: false
+            description: "Chain ordering"
+      - entity: StudyCell
+        path: "study.versions[0].studyDesigns[0].studyCells[]"
+        cardinality: one_to_many
+        attributes:
+          - name: armId
+            required: true
+          - name: epochId
+            required: true
+          - name: elementIds
+            required: true
